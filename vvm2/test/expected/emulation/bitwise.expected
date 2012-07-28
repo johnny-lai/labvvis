@@ -1,0 +1,90 @@
+Testing char
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing signed char
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing unsigned char
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = f8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing short int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing unsigned short int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fffffff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing unsigned int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fffffff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing long int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fffffff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f
+Testing unsigned long int
++   scalar_count: 1
++ vpvector_count: 1
+>       v1 = 7
+>       v2 = 8
+>       v3 = 10
+>      ~v1 = fffffff8
+> v1^v2^v3 = 1f
+> v1&v2&v3 = 0
+> v1|v2|v3 = 1f

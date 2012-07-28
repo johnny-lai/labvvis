@@ -1,0 +1,1120 @@
+Run at Thu Oct  5 13:16:10 2006
+AltiVec	char	altivec	1	4019
+AltiVec	char	altivec	1	3841
+AltiVec	signed char	altivec	1	3785
+AltiVec	unsigned char	altivec	1	3666
+AltiVec	short int	altivec	1	7966
+AltiVec	unsigned short int	altivec	1	7260
+AltiVec	int	altivec	1	31233
+AltiVec	unsigned int	altivec	1	16373
+AltiVec	long int	altivec	1	16472
+AltiVec	unsigned long int	altivec	1	15713
+AltiVec	float	altivec	1	17322
+AltiVec	char	altivec	2	19284
+AltiVec	char	altivec	2	3847
+AltiVec	signed char	altivec	2	3496
+AltiVec	unsigned char	altivec	2	4052
+AltiVec	short int	altivec	2	7596
+AltiVec	unsigned short int	altivec	2	8142
+AltiVec	int	altivec	2	16531
+AltiVec	unsigned int	altivec	2	16063
+AltiVec	long int	altivec	2	31162
+AltiVec	unsigned long int	altivec	2	15897
+AltiVec	float	altivec	2	16998
+AltiVec	char	altivec	3	4075
+AltiVec	char	altivec	3	3415
+AltiVec	signed char	altivec	3	3897
+AltiVec	unsigned char	altivec	3	3826
+AltiVec	short int	altivec	3	7657
+AltiVec	unsigned short int	altivec	3	9765
+AltiVec	int	altivec	3	30675
+AltiVec	unsigned int	altivec	3	16796
+AltiVec	long int	altivec	3	16081
+AltiVec	unsigned long int	altivec	3	16619
+AltiVec	float	altivec	3	17258
+AltiVec	char	altivec	4	4146
+AltiVec	char	altivec	4	3691
+AltiVec	signed char	altivec	4	4131
+AltiVec	unsigned char	altivec	4	3474
+AltiVec	short int	altivec	4	8278
+AltiVec	unsigned short int	altivec	4	7420
+AltiVec	int	altivec	4	16660
+AltiVec	unsigned int	altivec	4	16073
+AltiVec	long int	altivec	4	29795
+AltiVec	unsigned long int	altivec	4	16866
+AltiVec	float	altivec	4	16885
+AltiVec	char	altivec	5	17414
+AltiVec	char	altivec	5	4359
+AltiVec	signed char	altivec	5	4045
+AltiVec	unsigned char	altivec	5	4038
+AltiVec	short int	altivec	5	7436
+AltiVec	unsigned short int	altivec	5	8545
+AltiVec	int	altivec	5	16767
+AltiVec	unsigned int	altivec	5	16279
+AltiVec	long int	altivec	5	15837
+AltiVec	unsigned long int	altivec	5	16580
+AltiVec	float	altivec	5	30904
+Run at Thu Oct  5 13:16:12 2006
+AltiVec	char	altivec	1	3720
+AltiVec	char	altivec	1	3453
+AltiVec	signed char	altivec	1	3529
+AltiVec	unsigned char	altivec	1	3414
+AltiVec	short int	altivec	1	8253
+AltiVec	unsigned short int	altivec	1	8450
+AltiVec	int	altivec	1	29269
+AltiVec	unsigned int	altivec	1	15579
+AltiVec	long int	altivec	1	16313
+AltiVec	unsigned long int	altivec	1	15957
+AltiVec	float	altivec	1	17380
+AltiVec	char	altivec	2	3659
+AltiVec	char	altivec	2	4196
+AltiVec	signed char	altivec	2	3529
+AltiVec	unsigned char	altivec	2	3715
+AltiVec	short int	altivec	2	7985
+AltiVec	unsigned short int	altivec	2	7555
+AltiVec	int	altivec	2	16326
+AltiVec	unsigned int	altivec	2	15817
+AltiVec	long int	altivec	2	15853
+AltiVec	unsigned long int	altivec	2	16442
+AltiVec	float	altivec	2	16320
+AltiVec	char	altivec	3	4171
+AltiVec	char	altivec	3	3933
+AltiVec	signed char	altivec	3	3626
+AltiVec	unsigned char	altivec	3	3668
+AltiVec	short int	altivec	3	8178
+AltiVec	unsigned short int	altivec	3	7221
+AltiVec	int	altivec	3	28833
+AltiVec	unsigned int	altivec	3	16979
+AltiVec	long int	altivec	3	17816
+AltiVec	unsigned long int	altivec	3	15900
+AltiVec	float	altivec	3	17317
+AltiVec	char	altivec	4	4837
+AltiVec	char	altivec	4	3931
+AltiVec	signed char	altivec	4	3562
+AltiVec	unsigned char	altivec	4	3378
+AltiVec	short int	altivec	4	8269
+AltiVec	unsigned short int	altivec	4	7723
+AltiVec	int	altivec	4	18952
+AltiVec	unsigned int	altivec	4	15703
+AltiVec	long int	altivec	4	16341
+AltiVec	unsigned long int	altivec	4	16685
+AltiVec	float	altivec	4	17260
+AltiVec	char	altivec	5	5377
+AltiVec	char	altivec	5	3603
+AltiVec	signed char	altivec	5	13832
+AltiVec	unsigned char	altivec	5	4153
+AltiVec	short int	altivec	5	8618
+AltiVec	unsigned short int	altivec	5	8427
+AltiVec	int	altivec	5	16733
+AltiVec	unsigned int	altivec	5	16114
+AltiVec	long int	altivec	5	16011
+AltiVec	unsigned long int	altivec	5	16085
+AltiVec	float	altivec	5	18807
+Run at Thu Oct  5 13:16:13 2006
+AltiVec	char	altivec	1	4034
+AltiVec	char	altivec	1	3464
+AltiVec	signed char	altivec	1	3397
+AltiVec	unsigned char	altivec	1	3699
+AltiVec	short int	altivec	1	7625
+AltiVec	unsigned short int	altivec	1	8348
+AltiVec	int	altivec	1	17156
+AltiVec	unsigned int	altivec	1	15934
+AltiVec	long int	altivec	1	15832
+AltiVec	unsigned long int	altivec	1	16200
+AltiVec	float	altivec	1	15582
+AltiVec	char	altivec	2	4018
+AltiVec	char	altivec	2	3522
+AltiVec	signed char	altivec	2	16595
+AltiVec	unsigned char	altivec	2	4119
+AltiVec	short int	altivec	2	8079
+AltiVec	unsigned short int	altivec	2	7269
+AltiVec	int	altivec	2	16525
+AltiVec	unsigned int	altivec	2	16659
+AltiVec	long int	altivec	2	15994
+AltiVec	unsigned long int	altivec	2	30263
+AltiVec	float	altivec	2	16098
+AltiVec	char	altivec	3	3603
+AltiVec	char	altivec	3	4277
+AltiVec	signed char	altivec	3	3645
+AltiVec	unsigned char	altivec	3	3687
+AltiVec	short int	altivec	3	7914
+AltiVec	unsigned short int	altivec	3	8038
+AltiVec	int	altivec	3	17290
+AltiVec	unsigned int	altivec	3	15804
+AltiVec	long int	altivec	3	16631
+AltiVec	unsigned long int	altivec	3	15595
+AltiVec	float	altivec	3	16530
+AltiVec	char	altivec	4	4213
+AltiVec	char	altivec	4	4090
+AltiVec	signed char	altivec	4	3749
+AltiVec	unsigned char	altivec	4	3860
+AltiVec	short int	altivec	4	7764
+AltiVec	unsigned short int	altivec	4	7532
+AltiVec	int	altivec	4	17989
+AltiVec	unsigned int	altivec	4	16324
+AltiVec	long int	altivec	4	37906
+AltiVec	unsigned long int	altivec	4	16333
+AltiVec	float	altivec	4	17343
+AltiVec	char	altivec	5	23993
+AltiVec	char	altivec	5	4219
+AltiVec	signed char	altivec	5	3579
+AltiVec	unsigned char	altivec	5	3852
+AltiVec	short int	altivec	5	8016
+AltiVec	unsigned short int	altivec	5	7776
+AltiVec	int	altivec	5	16930
+AltiVec	unsigned int	altivec	5	15929
+AltiVec	long int	altivec	5	16029
+AltiVec	unsigned long int	altivec	5	16590
+AltiVec	float	altivec	5	35620
+Run at Thu Oct  5 13:16:14 2006
+AltiVec	char	altivec	1	3763
+AltiVec	char	altivec	1	3879
+AltiVec	signed char	altivec	1	3701
+AltiVec	unsigned char	altivec	1	4024
+AltiVec	short int	altivec	1	7962
+AltiVec	unsigned short int	altivec	1	27509
+AltiVec	int	altivec	1	16009
+AltiVec	unsigned int	altivec	1	15761
+AltiVec	long int	altivec	1	16094
+AltiVec	unsigned long int	altivec	1	17330
+AltiVec	float	altivec	1	15887
+AltiVec	char	altivec	2	4285
+AltiVec	char	altivec	2	4051
+AltiVec	signed char	altivec	2	3965
+AltiVec	unsigned char	altivec	2	3439
+AltiVec	short int	altivec	2	8082
+AltiVec	unsigned short int	altivec	2	7161
+AltiVec	int	altivec	2	16177
+AltiVec	unsigned int	altivec	2	35006
+AltiVec	long int	altivec	2	16145
+AltiVec	unsigned long int	altivec	2	16489
+AltiVec	float	altivec	2	16076
+AltiVec	char	altivec	3	4330
+AltiVec	char	altivec	3	4302
+AltiVec	signed char	altivec	3	3485
+AltiVec	unsigned char	altivec	3	16902
+AltiVec	short int	altivec	3	7995
+AltiVec	unsigned short int	altivec	3	7883
+AltiVec	int	altivec	3	17312
+AltiVec	unsigned int	altivec	3	16304
+AltiVec	long int	altivec	3	16264
+AltiVec	unsigned long int	altivec	3	29836
+AltiVec	float	altivec	3	16881
+AltiVec	char	altivec	4	3956
+AltiVec	char	altivec	4	4001
+AltiVec	signed char	altivec	4	4990
+AltiVec	unsigned char	altivec	4	4196
+AltiVec	short int	altivec	4	7453
+AltiVec	unsigned short int	altivec	4	8046
+AltiVec	int	altivec	4	16920
+AltiVec	unsigned int	altivec	4	31262
+AltiVec	long int	altivec	4	15806
+AltiVec	unsigned long int	altivec	4	15830
+AltiVec	float	altivec	4	17654
+AltiVec	char	altivec	5	3998
+AltiVec	char	altivec	5	4484
+AltiVec	signed char	altivec	5	3458
+AltiVec	unsigned char	altivec	5	3457
+AltiVec	short int	altivec	5	8002
+AltiVec	unsigned short int	altivec	5	7572
+AltiVec	int	altivec	5	16944
+AltiVec	unsigned int	altivec	5	16185
+AltiVec	long int	altivec	5	16278
+AltiVec	unsigned long int	altivec	5	30569
+AltiVec	float	altivec	5	17898
+Run at Thu Oct  5 13:16:15 2006
+AltiVec	char	altivec	1	3970
+AltiVec	char	altivec	1	4084
+AltiVec	signed char	altivec	1	4252
+AltiVec	unsigned char	altivec	1	14501
+AltiVec	short int	altivec	1	8229
+AltiVec	unsigned short int	altivec	1	7813
+AltiVec	int	altivec	1	16754
+AltiVec	unsigned int	altivec	1	15572
+AltiVec	long int	altivec	1	16189
+AltiVec	unsigned long int	altivec	1	16657
+AltiVec	float	altivec	1	15581
+AltiVec	char	altivec	2	3743
+AltiVec	char	altivec	2	4188
+AltiVec	signed char	altivec	2	3479
+AltiVec	unsigned char	altivec	2	3588
+AltiVec	short int	altivec	2	8282
+AltiVec	unsigned short int	altivec	2	8208
+AltiVec	int	altivec	2	16034
+AltiVec	unsigned int	altivec	2	24481
+AltiVec	long int	altivec	2	17001
+AltiVec	unsigned long int	altivec	2	16420
+AltiVec	float	altivec	2	15906
+AltiVec	char	altivec	3	3703
+AltiVec	char	altivec	3	3862
+AltiVec	signed char	altivec	3	3649
+AltiVec	unsigned char	altivec	3	3802
+AltiVec	short int	altivec	3	17711
+AltiVec	unsigned short int	altivec	3	7952
+AltiVec	int	altivec	3	15725
+AltiVec	unsigned int	altivec	3	16176
+AltiVec	long int	altivec	3	16604
+AltiVec	unsigned long int	altivec	3	16848
+AltiVec	float	altivec	3	26270
+AltiVec	char	altivec	4	3880
+AltiVec	char	altivec	4	4312
+AltiVec	signed char	altivec	4	3990
+AltiVec	unsigned char	altivec	4	3603
+AltiVec	short int	altivec	4	8840
+AltiVec	unsigned short int	altivec	4	8067
+AltiVec	int	altivec	4	16696
+AltiVec	unsigned int	altivec	4	16470
+AltiVec	long int	altivec	4	16426
+AltiVec	unsigned long int	altivec	4	16762
+AltiVec	float	altivec	4	16861
+AltiVec	char	altivec	5	4469
+AltiVec	char	altivec	5	3751
+AltiVec	signed char	altivec	5	3503
+AltiVec	unsigned char	altivec	5	4496
+AltiVec	short int	altivec	5	8336
+AltiVec	unsigned short int	altivec	5	7792
+AltiVec	int	altivec	5	16197
+AltiVec	unsigned int	altivec	5	16488
+AltiVec	long int	altivec	5	16541
+AltiVec	unsigned long int	altivec	5	16478
+AltiVec	float	altivec	5	28708
+Run at Thu Oct  5 13:16:16 2006
+AltiVec	char	altivec	1	3771
+AltiVec	char	altivec	1	3516
+AltiVec	signed char	altivec	1	4448
+AltiVec	unsigned char	altivec	1	3362
+AltiVec	short int	altivec	1	7528
+AltiVec	unsigned short int	altivec	1	8863
+AltiVec	int	altivec	1	25753
+AltiVec	unsigned int	altivec	1	16469
+AltiVec	long int	altivec	1	15714
+AltiVec	unsigned long int	altivec	1	15739
+AltiVec	float	altivec	1	17315
+AltiVec	char	altivec	2	4437
+AltiVec	char	altivec	2	3422
+AltiVec	signed char	altivec	2	3720
+AltiVec	unsigned char	altivec	2	3948
+AltiVec	short int	altivec	2	7861
+AltiVec	unsigned short int	altivec	2	8335
+AltiVec	int	altivec	2	16070
+AltiVec	unsigned int	altivec	2	16960
+AltiVec	long int	altivec	2	16016
+AltiVec	unsigned long int	altivec	2	15805
+AltiVec	float	altivec	2	16622
+AltiVec	char	altivec	3	4257
+AltiVec	char	altivec	3	3701
+AltiVec	signed char	altivec	3	3362
+AltiVec	unsigned char	altivec	3	3524
+AltiVec	short int	altivec	3	8387
+AltiVec	unsigned short int	altivec	3	7385
+AltiVec	int	altivec	3	30137
+AltiVec	unsigned int	altivec	3	16271
+AltiVec	long int	altivec	3	16950
+AltiVec	unsigned long int	altivec	3	15906
+AltiVec	float	altivec	3	17071
+AltiVec	char	altivec	4	4442
+AltiVec	char	altivec	4	3894
+AltiVec	signed char	altivec	4	4265
+AltiVec	unsigned char	altivec	4	3466
+AltiVec	short int	altivec	4	8705
+AltiVec	unsigned short int	altivec	4	7688
+AltiVec	int	altivec	4	17669
+AltiVec	unsigned int	altivec	4	15859
+AltiVec	long int	altivec	4	16358
+AltiVec	unsigned long int	altivec	4	25777
+AltiVec	float	altivec	4	16808
+AltiVec	char	altivec	5	4042
+AltiVec	char	altivec	5	4108
+AltiVec	signed char	altivec	5	3983
+AltiVec	unsigned char	altivec	5	3685
+AltiVec	short int	altivec	5	18679
+AltiVec	unsigned short int	altivec	5	8097
+AltiVec	int	altivec	5	17614
+AltiVec	unsigned int	altivec	5	16233
+AltiVec	long int	altivec	5	16039
+AltiVec	unsigned long int	altivec	5	16250
+AltiVec	float	altivec	5	17245
+Run at Thu Oct  5 13:16:17 2006
+AltiVec	char	altivec	1	4088
+AltiVec	char	altivec	1	3416
+AltiVec	signed char	altivec	1	4429
+AltiVec	unsigned char	altivec	1	3625
+AltiVec	short int	altivec	1	8055
+AltiVec	unsigned short int	altivec	1	7490
+AltiVec	int	altivec	1	15911
+AltiVec	unsigned int	altivec	1	29200
+AltiVec	long int	altivec	1	15793
+AltiVec	unsigned long int	altivec	1	16115
+AltiVec	float	altivec	1	16092
+AltiVec	char	altivec	2	3882
+AltiVec	char	altivec	2	3732
+AltiVec	signed char	altivec	2	4265
+AltiVec	unsigned char	altivec	2	3804
+AltiVec	short int	altivec	2	20367
+AltiVec	unsigned short int	altivec	2	7627
+AltiVec	int	altivec	2	16399
+AltiVec	unsigned int	altivec	2	16047
+AltiVec	long int	altivec	2	16472
+AltiVec	unsigned long int	altivec	2	15733
+AltiVec	float	altivec	2	33028
+AltiVec	char	altivec	3	4320
+AltiVec	char	altivec	3	3868
+AltiVec	signed char	altivec	3	3694
+AltiVec	unsigned char	altivec	3	3412
+AltiVec	short int	altivec	3	8230
+AltiVec	unsigned short int	altivec	3	7589
+AltiVec	int	altivec	3	16550
+AltiVec	unsigned int	altivec	3	32449
+AltiVec	long int	altivec	3	17270
+AltiVec	unsigned long int	altivec	3	17511
+AltiVec	float	altivec	3	16945
+AltiVec	char	altivec	4	3783
+AltiVec	char	altivec	4	3817
+AltiVec	signed char	altivec	4	26926
+AltiVec	unsigned char	altivec	4	3531
+AltiVec	short int	altivec	4	7977
+AltiVec	unsigned short int	altivec	4	9305
+AltiVec	int	altivec	4	16879
+AltiVec	unsigned int	altivec	4	16196
+AltiVec	long int	altivec	4	31762
+AltiVec	unsigned long int	altivec	4	16179
+AltiVec	float	altivec	4	17796
+AltiVec	char	altivec	5	4369
+AltiVec	char	altivec	5	3743
+AltiVec	signed char	altivec	5	3853
+AltiVec	unsigned char	altivec	5	3576
+AltiVec	short int	altivec	5	8610
+AltiVec	unsigned short int	altivec	5	8438
+AltiVec	int	altivec	5	16391
+AltiVec	unsigned int	altivec	5	16170
+AltiVec	long int	altivec	5	16468
+AltiVec	unsigned long int	altivec	5	16420
+AltiVec	float	altivec	5	29121
+Run at Thu Oct  5 13:16:18 2006
+AltiVec	char	altivec	1	3752
+AltiVec	char	altivec	1	3470
+AltiVec	signed char	altivec	1	3828
+AltiVec	unsigned char	altivec	1	3944
+AltiVec	short int	altivec	1	7690
+AltiVec	unsigned short int	altivec	1	7493
+AltiVec	int	altivec	1	28782
+AltiVec	unsigned int	altivec	1	16088
+AltiVec	long int	altivec	1	15501
+AltiVec	unsigned long int	altivec	1	16066
+AltiVec	float	altivec	1	16999
+AltiVec	char	altivec	2	4406
+AltiVec	char	altivec	2	3505
+AltiVec	signed char	altivec	2	3935
+AltiVec	unsigned char	altivec	2	3863
+AltiVec	short int	altivec	2	8261
+AltiVec	unsigned short int	altivec	2	7574
+AltiVec	int	altivec	2	16203
+AltiVec	unsigned int	altivec	2	16076
+AltiVec	long int	altivec	2	29000
+AltiVec	unsigned long int	altivec	2	16072
+AltiVec	float	altivec	2	16710
+AltiVec	char	altivec	3	3653
+AltiVec	char	altivec	3	4177
+AltiVec	signed char	altivec	3	3404
+AltiVec	unsigned char	altivec	3	3726
+AltiVec	short int	altivec	3	7667
+AltiVec	unsigned short int	altivec	3	7882
+AltiVec	int	altivec	3	16942
+AltiVec	unsigned int	altivec	3	27211
+AltiVec	long int	altivec	3	15950
+AltiVec	unsigned long int	altivec	3	16263
+AltiVec	float	altivec	3	16156
+AltiVec	char	altivec	4	4698
+AltiVec	char	altivec	4	3547
+AltiVec	signed char	altivec	4	3869
+AltiVec	unsigned char	altivec	4	3867
+AltiVec	short int	altivec	4	8424
+AltiVec	unsigned short int	altivec	4	7617
+AltiVec	int	altivec	4	16277
+AltiVec	unsigned int	altivec	4	17690
+AltiVec	long int	altivec	4	15956
+AltiVec	unsigned long int	altivec	4	16197
+AltiVec	float	altivec	4	26530
+AltiVec	char	altivec	5	3747
+AltiVec	char	altivec	5	3612
+AltiVec	signed char	altivec	5	3938
+AltiVec	unsigned char	altivec	5	3765
+AltiVec	short int	altivec	5	8061
+AltiVec	unsigned short int	altivec	5	8647
+AltiVec	int	altivec	5	24713
+AltiVec	unsigned int	altivec	5	16968
+AltiVec	long int	altivec	5	16058
+AltiVec	unsigned long int	altivec	5	15784
+AltiVec	float	altivec	5	18031
+Run at Thu Oct  5 13:16:19 2006
+AltiVec	char	altivec	1	4991
+AltiVec	char	altivec	1	3416
+AltiVec	signed char	altivec	1	3764
+AltiVec	unsigned char	altivec	1	3730
+AltiVec	short int	altivec	1	7617
+AltiVec	unsigned short int	altivec	1	8928
+AltiVec	int	altivec	1	17177
+AltiVec	unsigned int	altivec	1	16326
+AltiVec	long int	altivec	1	17030
+AltiVec	unsigned long int	altivec	1	16459
+AltiVec	float	altivec	1	15821
+AltiVec	char	altivec	2	5501
+AltiVec	char	altivec	2	3510
+AltiVec	signed char	altivec	2	3459
+AltiVec	unsigned char	altivec	2	3390
+AltiVec	short int	altivec	2	8122
+AltiVec	unsigned short int	altivec	2	7268
+AltiVec	int	altivec	2	23371
+AltiVec	unsigned int	altivec	2	15992
+AltiVec	long int	altivec	2	16056
+AltiVec	unsigned long int	altivec	2	15553
+AltiVec	float	altivec	2	16320
+AltiVec	char	altivec	3	3768
+AltiVec	char	altivec	3	4102
+AltiVec	signed char	altivec	3	4000
+AltiVec	unsigned char	altivec	3	4094
+AltiVec	short int	altivec	3	7390
+AltiVec	unsigned short int	altivec	3	7943
+AltiVec	int	altivec	3	16690
+AltiVec	unsigned int	altivec	3	16095
+AltiVec	long int	altivec	3	15876
+AltiVec	unsigned long int	altivec	3	24224
+AltiVec	float	altivec	3	16656
+AltiVec	char	altivec	4	4001
+AltiVec	char	altivec	4	3931
+AltiVec	signed char	altivec	4	3521
+AltiVec	unsigned char	altivec	4	4195
+AltiVec	short int	altivec	4	7984
+AltiVec	unsigned short int	altivec	4	18710
+AltiVec	int	altivec	4	17369
+AltiVec	unsigned int	altivec	4	16134
+AltiVec	long int	altivec	4	16170
+AltiVec	unsigned long int	altivec	4	17894
+AltiVec	float	altivec	4	17427
+AltiVec	char	altivec	5	4702
+AltiVec	char	altivec	5	3866
+AltiVec	signed char	altivec	5	3487
+AltiVec	unsigned char	altivec	5	4308
+AltiVec	short int	altivec	5	8386
+AltiVec	unsigned short int	altivec	5	7815
+AltiVec	int	altivec	5	17017
+AltiVec	unsigned int	altivec	5	16715
+AltiVec	long int	altivec	5	27448
+AltiVec	unsigned long int	altivec	5	16507
+AltiVec	float	altivec	5	17945
+Run at Thu Oct  5 13:16:20 2006
+AltiVec	char	altivec	1	4089
+AltiVec	char	altivec	1	3619
+AltiVec	signed char	altivec	1	3903
+AltiVec	unsigned char	altivec	1	3558
+AltiVec	short int	altivec	1	8157
+AltiVec	unsigned short int	altivec	1	20027
+AltiVec	int	altivec	1	15909
+AltiVec	unsigned int	altivec	1	15912
+AltiVec	long int	altivec	1	15994
+AltiVec	unsigned long int	altivec	1	15908
+AltiVec	float	altivec	1	26238
+AltiVec	char	altivec	2	4246
+AltiVec	char	altivec	2	3969
+AltiVec	signed char	altivec	2	3350
+AltiVec	unsigned char	altivec	2	3531
+AltiVec	short int	altivec	2	8031
+AltiVec	unsigned short int	altivec	2	9585
+AltiVec	int	altivec	2	16627
+AltiVec	unsigned int	altivec	2	15789
+AltiVec	long int	altivec	2	24616
+AltiVec	unsigned long int	altivec	2	16091
+AltiVec	float	altivec	2	16046
+AltiVec	char	altivec	3	4114
+AltiVec	char	altivec	3	13583
+AltiVec	signed char	altivec	3	3745
+AltiVec	unsigned char	altivec	3	3625
+AltiVec	short int	altivec	3	8660
+AltiVec	unsigned short int	altivec	3	8190
+AltiVec	int	altivec	3	15880
+AltiVec	unsigned int	altivec	3	15806
+AltiVec	long int	altivec	3	16230
+AltiVec	unsigned long int	altivec	3	15894
+AltiVec	float	altivec	3	16958
+AltiVec	char	altivec	4	3676
+AltiVec	char	altivec	4	4305
+AltiVec	signed char	altivec	4	4145
+AltiVec	unsigned char	altivec	4	3471
+AltiVec	short int	altivec	4	8004
+AltiVec	unsigned short int	altivec	4	7546
+AltiVec	int	altivec	4	16833
+AltiVec	unsigned int	altivec	4	25481
+AltiVec	long int	altivec	4	16576
+AltiVec	unsigned long int	altivec	4	16024
+AltiVec	float	altivec	4	17047
+AltiVec	char	altivec	5	3706
+AltiVec	char	altivec	5	3947
+AltiVec	signed char	altivec	5	3750
+AltiVec	unsigned char	altivec	5	11619
+AltiVec	short int	altivec	5	7798
+AltiVec	unsigned short int	altivec	5	8731
+AltiVec	int	altivec	5	16598
+AltiVec	unsigned int	altivec	5	15833
+AltiVec	long int	altivec	5	16650
+AltiVec	unsigned long int	altivec	5	16418
+AltiVec	float	altivec	5	17849
+Run at Thu Oct  5 13:16:21 2006
+AltiVec	char	altivec	1	4009
+AltiVec	char	altivec	1	3714
+AltiVec	signed char	altivec	1	4220
+AltiVec	unsigned char	altivec	1	3401
+AltiVec	short int	altivec	1	7959
+AltiVec	unsigned short int	altivec	1	7699
+AltiVec	int	altivec	1	15690
+AltiVec	unsigned int	altivec	1	23155
+AltiVec	long int	altivec	1	15742
+AltiVec	unsigned long int	altivec	1	16536
+AltiVec	float	altivec	1	16104
+AltiVec	char	altivec	2	4094
+AltiVec	char	altivec	2	4333
+AltiVec	signed char	altivec	2	3390
+AltiVec	unsigned char	altivec	2	3969
+AltiVec	short int	altivec	2	7807
+AltiVec	unsigned short int	altivec	2	8101
+AltiVec	int	altivec	2	16653
+AltiVec	unsigned int	altivec	2	15590
+AltiVec	long int	altivec	2	16977
+AltiVec	unsigned long int	altivec	2	16195
+AltiVec	float	altivec	2	22197
+AltiVec	char	altivec	3	3716
+AltiVec	char	altivec	3	3837
+AltiVec	signed char	altivec	3	4278
+AltiVec	unsigned char	altivec	3	3378
+AltiVec	short int	altivec	3	8604
+AltiVec	unsigned short int	altivec	3	7705
+AltiVec	int	altivec	3	22039
+AltiVec	unsigned int	altivec	3	16449
+AltiVec	long int	altivec	3	16114
+AltiVec	unsigned long int	altivec	3	15953
+AltiVec	float	altivec	3	17242
+AltiVec	char	altivec	4	4345
+AltiVec	char	altivec	4	4020
+AltiVec	signed char	altivec	4	8473
+AltiVec	unsigned char	altivec	4	4350
+AltiVec	short int	altivec	4	7856
+AltiVec	unsigned short int	altivec	4	8615
+AltiVec	int	altivec	4	16770
+AltiVec	unsigned int	altivec	4	16468
+AltiVec	long int	altivec	4	15890
+AltiVec	unsigned long int	altivec	4	17408
+AltiVec	float	altivec	4	17169
+AltiVec	char	altivec	5	3797
+AltiVec	char	altivec	5	4429
+AltiVec	signed char	altivec	5	3539
+AltiVec	unsigned char	altivec	5	3722
+AltiVec	short int	altivec	5	8998
+AltiVec	unsigned short int	altivec	5	8199
+AltiVec	int	altivec	5	17206
+AltiVec	unsigned int	altivec	5	20536
+AltiVec	long int	altivec	5	16095
+AltiVec	unsigned long int	altivec	5	16337
+AltiVec	float	altivec	5	17516
+Run at Thu Oct  5 13:16:22 2006
+AltiVec	char	altivec	1	4668
+AltiVec	char	altivec	1	3668
+AltiVec	signed char	altivec	1	3483
+AltiVec	unsigned char	altivec	1	4059
+AltiVec	short int	altivec	1	8268
+AltiVec	unsigned short int	altivec	1	8337
+AltiVec	int	altivec	1	16460
+AltiVec	unsigned int	altivec	1	16585
+AltiVec	long int	altivec	1	15658
+AltiVec	unsigned long int	altivec	1	15905
+AltiVec	float	altivec	1	17030
+AltiVec	char	altivec	2	4073
+AltiVec	char	altivec	2	5338
+AltiVec	signed char	altivec	2	3661
+AltiVec	unsigned char	altivec	2	3838
+AltiVec	short int	altivec	2	7968
+AltiVec	unsigned short int	altivec	2	8073
+AltiVec	int	altivec	2	21486
+AltiVec	unsigned int	altivec	2	16294
+AltiVec	long int	altivec	2	16541
+AltiVec	unsigned long int	altivec	2	15090
+AltiVec	float	altivec	2	15824
+AltiVec	char	altivec	3	3739
+AltiVec	char	altivec	3	4435
+AltiVec	signed char	altivec	3	3865
+AltiVec	unsigned char	altivec	3	7408
+AltiVec	short int	altivec	3	8067
+AltiVec	unsigned short int	altivec	3	7848
+AltiVec	int	altivec	3	16028
+AltiVec	unsigned int	altivec	3	16277
+AltiVec	long int	altivec	3	16118
+AltiVec	unsigned long int	altivec	3	16288
+AltiVec	float	altivec	3	19872
+AltiVec	char	altivec	4	3810
+AltiVec	char	altivec	4	4547
+AltiVec	signed char	altivec	4	3795
+AltiVec	unsigned char	altivec	4	3596
+AltiVec	short int	altivec	4	8042
+AltiVec	unsigned short int	altivec	4	7858
+AltiVec	int	altivec	4	16980
+AltiVec	unsigned int	altivec	4	16528
+AltiVec	long int	altivec	4	17540
+AltiVec	unsigned long int	altivec	4	16411
+AltiVec	float	altivec	4	17581
+AltiVec	char	altivec	5	4064
+AltiVec	char	altivec	5	5570
+AltiVec	signed char	altivec	5	4471
+AltiVec	unsigned char	altivec	5	3426
+AltiVec	short int	altivec	5	8236
+AltiVec	unsigned short int	altivec	5	8323
+AltiVec	int	altivec	5	16330
+AltiVec	unsigned int	altivec	5	15889
+AltiVec	long int	altivec	5	16682
+AltiVec	unsigned long int	altivec	5	16821
+AltiVec	float	altivec	5	17515
+Run at Thu Oct  5 13:16:23 2006
+AltiVec	char	altivec	1	4268
+AltiVec	char	altivec	1	3325
+AltiVec	signed char	altivec	1	4148
+AltiVec	unsigned char	altivec	1	5094
+AltiVec	short int	altivec	1	7796
+AltiVec	unsigned short int	altivec	1	8886
+AltiVec	int	altivec	1	20594
+AltiVec	unsigned int	altivec	1	15950
+AltiVec	long int	altivec	1	15581
+AltiVec	unsigned long int	altivec	1	16430
+AltiVec	float	altivec	1	16117
+AltiVec	char	altivec	2	4138
+AltiVec	char	altivec	2	5318
+AltiVec	signed char	altivec	2	4351
+AltiVec	unsigned char	altivec	2	3518
+AltiVec	short int	altivec	2	7431
+AltiVec	unsigned short int	altivec	2	8172
+AltiVec	int	altivec	2	17076
+AltiVec	unsigned int	altivec	2	16201
+AltiVec	long int	altivec	2	16527
+AltiVec	unsigned long int	altivec	2	17573
+AltiVec	float	altivec	2	16440
+AltiVec	char	altivec	3	4157
+AltiVec	char	altivec	3	4031
+AltiVec	signed char	altivec	3	3419
+AltiVec	unsigned char	altivec	3	3959
+AltiVec	short int	altivec	3	8945
+AltiVec	unsigned short int	altivec	3	7616
+AltiVec	int	altivec	3	16523
+AltiVec	unsigned int	altivec	3	18827
+AltiVec	long int	altivec	3	15847
+AltiVec	unsigned long int	altivec	3	15892
+AltiVec	float	altivec	3	16856
+AltiVec	char	altivec	4	4357
+AltiVec	char	altivec	4	3815
+AltiVec	signed char	altivec	4	3781
+AltiVec	unsigned char	altivec	4	3393
+AltiVec	short int	altivec	4	7997
+AltiVec	unsigned short int	altivec	4	8214
+AltiVec	int	altivec	4	16651
+AltiVec	unsigned int	altivec	4	15583
+AltiVec	long int	altivec	4	16521
+AltiVec	unsigned long int	altivec	4	16153
+AltiVec	float	altivec	4	17444
+AltiVec	char	altivec	5	3793
+AltiVec	char	altivec	5	3933
+AltiVec	signed char	altivec	5	3531
+AltiVec	unsigned char	altivec	5	4014
+AltiVec	short int	altivec	5	8408
+AltiVec	unsigned short int	altivec	5	8052
+AltiVec	int	altivec	5	16964
+AltiVec	unsigned int	altivec	5	17317
+AltiVec	long int	altivec	5	16362
+AltiVec	unsigned long int	altivec	5	16244
+AltiVec	float	altivec	5	17751
+Run at Thu Oct  5 13:16:24 2006
+AltiVec	char	altivec	1	4103
+AltiVec	char	altivec	1	3730
+AltiVec	signed char	altivec	1	3508
+AltiVec	unsigned char	altivec	1	3509
+AltiVec	short int	altivec	1	8417
+AltiVec	unsigned short int	altivec	1	9253
+AltiVec	int	altivec	1	16744
+AltiVec	unsigned int	altivec	1	15828
+AltiVec	long int	altivec	1	16363
+AltiVec	unsigned long int	altivec	1	16896
+AltiVec	float	altivec	1	16365
+AltiVec	char	altivec	2	4024
+AltiVec	char	altivec	2	3857
+AltiVec	signed char	altivec	2	3946
+AltiVec	unsigned char	altivec	2	4254
+AltiVec	short int	altivec	2	7468
+AltiVec	unsigned short int	altivec	2	7484
+AltiVec	int	altivec	2	16606
+AltiVec	unsigned int	altivec	2	15564
+AltiVec	long int	altivec	2	15993
+AltiVec	unsigned long int	altivec	2	17483
+AltiVec	float	altivec	2	16390
+AltiVec	char	altivec	3	4321
+AltiVec	char	altivec	3	3692
+AltiVec	signed char	altivec	3	3753
+AltiVec	unsigned char	altivec	3	3457
+AltiVec	short int	altivec	3	8838
+AltiVec	unsigned short int	altivec	3	8220
+AltiVec	int	altivec	3	16496
+AltiVec	unsigned int	altivec	3	16223
+AltiVec	long int	altivec	3	16038
+AltiVec	unsigned long int	altivec	3	15688
+AltiVec	float	altivec	3	17453
+AltiVec	char	altivec	4	3844
+AltiVec	char	altivec	4	3931
+AltiVec	signed char	altivec	4	3892
+AltiVec	unsigned char	altivec	4	3498
+AltiVec	short int	altivec	4	7965
+AltiVec	unsigned short int	altivec	4	7991
+AltiVec	int	altivec	4	16732
+AltiVec	unsigned int	altivec	4	16336
+AltiVec	long int	altivec	4	16304
+AltiVec	unsigned long int	altivec	4	16976
+AltiVec	float	altivec	4	17551
+AltiVec	char	altivec	5	4505
+AltiVec	char	altivec	5	3661
+AltiVec	signed char	altivec	5	3432
+AltiVec	unsigned char	altivec	5	4236
+AltiVec	short int	altivec	5	8029
+AltiVec	unsigned short int	altivec	5	7605
+AltiVec	int	altivec	5	16521
+AltiVec	unsigned int	altivec	5	16772
+AltiVec	long int	altivec	5	16084
+AltiVec	unsigned long int	altivec	5	16032
+AltiVec	float	altivec	5	18422
+Run at Thu Oct  5 13:16:25 2006
+AltiVec	char	altivec	1	3875
+AltiVec	char	altivec	1	4050
+AltiVec	signed char	altivec	1	3812
+AltiVec	unsigned char	altivec	1	3362
+AltiVec	short int	altivec	1	8059
+AltiVec	unsigned short int	altivec	1	7579
+AltiVec	int	altivec	1	16126
+AltiVec	unsigned int	altivec	1	24659
+AltiVec	long int	altivec	1	17423
+AltiVec	unsigned long int	altivec	1	15953
+AltiVec	float	altivec	1	16438
+AltiVec	char	altivec	2	3771
+AltiVec	char	altivec	2	3380
+AltiVec	signed char	altivec	2	4169
+AltiVec	unsigned char	altivec	2	3370
+AltiVec	short int	altivec	2	7601
+AltiVec	unsigned short int	altivec	2	7902
+AltiVec	int	altivec	2	17273
+AltiVec	unsigned int	altivec	2	19602
+AltiVec	long int	altivec	2	16412
+AltiVec	unsigned long int	altivec	2	15942
+AltiVec	float	altivec	2	16038
+AltiVec	char	altivec	3	4114
+AltiVec	char	altivec	3	3469
+AltiVec	signed char	altivec	3	4048
+AltiVec	unsigned char	altivec	3	3873
+AltiVec	short int	altivec	3	13733
+AltiVec	unsigned short int	altivec	3	7883
+AltiVec	int	altivec	3	16231
+AltiVec	unsigned int	altivec	3	15588
+AltiVec	long int	altivec	3	17203
+AltiVec	unsigned long int	altivec	3	15490
+AltiVec	float	altivec	3	26127
+AltiVec	char	altivec	4	3773
+AltiVec	char	altivec	4	3415
+AltiVec	signed char	altivec	4	3677
+AltiVec	unsigned char	altivec	4	3670
+AltiVec	short int	altivec	4	7728
+AltiVec	unsigned short int	altivec	4	9292
+AltiVec	int	altivec	4	16816
+AltiVec	unsigned int	altivec	4	16249
+AltiVec	long int	altivec	4	25674
+AltiVec	unsigned long int	altivec	4	16531
+AltiVec	float	altivec	4	17530
+AltiVec	char	altivec	5	3847
+AltiVec	char	altivec	5	3807
+AltiVec	signed char	altivec	5	3977
+AltiVec	unsigned char	altivec	5	3974
+AltiVec	short int	altivec	5	8023
+AltiVec	unsigned short int	altivec	5	8095
+AltiVec	int	altivec	5	16425
+AltiVec	unsigned int	altivec	5	16290
+AltiVec	long int	altivec	5	15919
+AltiVec	unsigned long int	altivec	5	15659
+AltiVec	float	altivec	5	29855
+Run at Thu Oct  5 13:16:26 2006
+AltiVec	char	altivec	1	3741
+AltiVec	char	altivec	1	3388
+AltiVec	signed char	altivec	1	4207
+AltiVec	unsigned char	altivec	1	3687
+AltiVec	short int	altivec	1	7798
+AltiVec	unsigned short int	altivec	1	8490
+AltiVec	int	altivec	1	27673
+AltiVec	unsigned int	altivec	1	15758
+AltiVec	long int	altivec	1	15715
+AltiVec	unsigned long int	altivec	1	15924
+AltiVec	float	altivec	1	17135
+AltiVec	char	altivec	2	3740
+AltiVec	char	altivec	2	4082
+AltiVec	signed char	altivec	2	3497
+AltiVec	unsigned char	altivec	2	3827
+AltiVec	short int	altivec	2	7315
+AltiVec	unsigned short int	altivec	2	8264
+AltiVec	int	altivec	2	16660
+AltiVec	unsigned int	altivec	2	16107
+AltiVec	long int	altivec	2	16123
+AltiVec	unsigned long int	altivec	2	16616
+AltiVec	float	altivec	2	16856
+AltiVec	char	altivec	3	4245
+AltiVec	char	altivec	3	3366
+AltiVec	signed char	altivec	3	3731
+AltiVec	unsigned char	altivec	3	3851
+AltiVec	short int	altivec	3	7761
+AltiVec	unsigned short int	altivec	3	8775
+AltiVec	int	altivec	3	29357
+AltiVec	unsigned int	altivec	3	15987
+AltiVec	long int	altivec	3	16997
+AltiVec	unsigned long int	altivec	3	15824
+AltiVec	float	altivec	3	17157
+AltiVec	char	altivec	4	3993
+AltiVec	char	altivec	4	4070
+AltiVec	signed char	altivec	4	3567
+AltiVec	unsigned char	altivec	4	3921
+AltiVec	short int	altivec	4	7544
+AltiVec	unsigned short int	altivec	4	7590
+AltiVec	int	altivec	4	17897
+AltiVec	unsigned int	altivec	4	16341
+AltiVec	long int	altivec	4	29231
+AltiVec	unsigned long int	altivec	4	15653
+AltiVec	float	altivec	4	17315
+AltiVec	char	altivec	5	3989
+AltiVec	char	altivec	5	4370
+AltiVec	signed char	altivec	5	3553
+AltiVec	unsigned char	altivec	5	4023
+AltiVec	short int	altivec	5	7770
+AltiVec	unsigned short int	altivec	5	8337
+AltiVec	int	altivec	5	16937
+AltiVec	unsigned int	altivec	5	16164
+AltiVec	long int	altivec	5	16045
+AltiVec	unsigned long int	altivec	5	16441
+AltiVec	float	altivec	5	31307
+Run at Thu Oct  5 13:16:27 2006
+AltiVec	char	altivec	1	5163
+AltiVec	char	altivec	1	3357
+AltiVec	signed char	altivec	1	3767
+AltiVec	unsigned char	altivec	1	3600
+AltiVec	short int	altivec	1	7787
+AltiVec	unsigned short int	altivec	1	8118
+AltiVec	int	altivec	1	28921
+AltiVec	unsigned int	altivec	1	16382
+AltiVec	long int	altivec	1	16448
+AltiVec	unsigned long int	altivec	1	15686
+AltiVec	float	altivec	1	17534
+AltiVec	char	altivec	2	16390
+AltiVec	char	altivec	2	3430
+AltiVec	signed char	altivec	2	3406
+AltiVec	unsigned char	altivec	2	3962
+AltiVec	short int	altivec	2	7646
+AltiVec	unsigned short int	altivec	2	8261
+AltiVec	int	altivec	2	16169
+AltiVec	unsigned int	altivec	2	16226
+AltiVec	long int	altivec	2	16486
+AltiVec	unsigned long int	altivec	2	29714
+AltiVec	float	altivec	2	16268
+AltiVec	char	altivec	3	4248
+AltiVec	char	altivec	3	3438
+AltiVec	signed char	altivec	3	3509
+AltiVec	unsigned char	altivec	3	3703
+AltiVec	short int	altivec	3	7475
+AltiVec	unsigned short int	altivec	3	7875
+AltiVec	int	altivec	3	29195
+AltiVec	unsigned int	altivec	3	16051
+AltiVec	long int	altivec	3	17210
+AltiVec	unsigned long int	altivec	3	17502
+AltiVec	float	altivec	3	18348
+AltiVec	char	altivec	4	3749
+AltiVec	char	altivec	4	4145
+AltiVec	signed char	altivec	4	3776
+AltiVec	unsigned char	altivec	4	3682
+AltiVec	short int	altivec	4	7461
+AltiVec	unsigned short int	altivec	4	8247
+AltiVec	int	altivec	4	18119
+AltiVec	unsigned int	altivec	4	15736
+AltiVec	long int	altivec	4	29019
+AltiVec	unsigned long int	altivec	4	16375
+AltiVec	float	altivec	4	17402
+AltiVec	char	altivec	5	4634
+AltiVec	char	altivec	5	3426
+AltiVec	signed char	altivec	5	4323
+AltiVec	unsigned char	altivec	5	3799
+AltiVec	short int	altivec	5	8034
+AltiVec	unsigned short int	altivec	5	8032
+AltiVec	int	altivec	5	16520
+AltiVec	unsigned int	altivec	5	16018
+AltiVec	long int	altivec	5	16626
+AltiVec	unsigned long int	altivec	5	16109
+AltiVec	float	altivec	5	18411
+Run at Thu Oct  5 13:16:28 2006
+AltiVec	char	altivec	1	3829
+AltiVec	char	altivec	1	3911
+AltiVec	signed char	altivec	1	4484
+AltiVec	unsigned char	altivec	1	3507
+AltiVec	short int	altivec	1	7506
+AltiVec	unsigned short int	altivec	1	7911
+AltiVec	int	altivec	1	17082
+AltiVec	unsigned int	altivec	1	15752
+AltiVec	long int	altivec	1	16250
+AltiVec	unsigned long int	altivec	1	15587
+AltiVec	float	altivec	1	15699
+AltiVec	char	altivec	2	3885
+AltiVec	char	altivec	2	3765
+AltiVec	signed char	altivec	2	13402
+AltiVec	unsigned char	altivec	2	3476
+AltiVec	short int	altivec	2	8771
+AltiVec	unsigned short int	altivec	2	7805
+AltiVec	int	altivec	2	17036
+AltiVec	unsigned int	altivec	2	16331
+AltiVec	long int	altivec	2	15660
+AltiVec	unsigned long int	altivec	2	27167
+AltiVec	float	altivec	2	16300
+AltiVec	char	altivec	3	4042
+AltiVec	char	altivec	3	3880
+AltiVec	signed char	altivec	3	3378
+AltiVec	unsigned char	altivec	3	4405
+AltiVec	short int	altivec	3	7124
+AltiVec	unsigned short int	altivec	3	7901
+AltiVec	int	altivec	3	17616
+AltiVec	unsigned int	altivec	3	25163
+AltiVec	long int	altivec	3	15827
+AltiVec	unsigned long int	altivec	3	16147
+AltiVec	float	altivec	3	17701
+AltiVec	char	altivec	4	4430
+AltiVec	char	altivec	4	3615
+AltiVec	signed char	altivec	4	3492
+AltiVec	unsigned char	altivec	4	3767
+AltiVec	short int	altivec	4	8109
+AltiVec	unsigned short int	altivec	4	7647
+AltiVec	int	altivec	4	16602
+AltiVec	unsigned int	altivec	4	17837
+AltiVec	long int	altivec	4	15681
+AltiVec	unsigned long int	altivec	4	27085
+AltiVec	float	altivec	4	17950
+AltiVec	char	altivec	5	4026
+AltiVec	char	altivec	5	3449
+AltiVec	signed char	altivec	5	3756
+AltiVec	unsigned char	altivec	5	3649
+AltiVec	short int	altivec	5	8714
+AltiVec	unsigned short int	altivec	5	19559
+AltiVec	int	altivec	5	16454
+AltiVec	unsigned int	altivec	5	16091
+AltiVec	long int	altivec	5	16330
+AltiVec	unsigned long int	altivec	5	16013
+AltiVec	float	altivec	5	17715
+Run at Thu Oct  5 13:16:29 2006
+AltiVec	char	altivec	1	3631
+AltiVec	char	altivec	1	3933
+AltiVec	signed char	altivec	1	3346
+AltiVec	unsigned char	altivec	1	4220
+AltiVec	short int	altivec	1	7323
+AltiVec	unsigned short int	altivec	1	8833
+AltiVec	int	altivec	1	16748
+AltiVec	unsigned int	altivec	1	16047
+AltiVec	long int	altivec	1	28936
+AltiVec	unsigned long int	altivec	1	15929
+AltiVec	float	altivec	1	15289
+AltiVec	char	altivec	2	4431
+AltiVec	char	altivec	2	3366
+AltiVec	signed char	altivec	2	3600
+AltiVec	unsigned char	altivec	2	3356
+AltiVec	short int	altivec	2	8401
+AltiVec	unsigned short int	altivec	2	22541
+AltiVec	int	altivec	2	16206
+AltiVec	unsigned int	altivec	2	15831
+AltiVec	long int	altivec	2	16008
+AltiVec	unsigned long int	altivec	2	15837
+AltiVec	float	altivec	2	33391
+AltiVec	char	altivec	3	4332
+AltiVec	char	altivec	3	3580
+AltiVec	signed char	altivec	3	3810
+AltiVec	unsigned char	altivec	3	3895
+AltiVec	short int	altivec	3	7366
+AltiVec	unsigned short int	altivec	3	7518
+AltiVec	int	altivec	3	16671
+AltiVec	unsigned int	altivec	3	17024
+AltiVec	long int	altivec	3	16612
+AltiVec	unsigned long int	altivec	3	16152
+AltiVec	float	altivec	3	17380
+AltiVec	char	altivec	4	4336
+AltiVec	char	altivec	4	3606
+AltiVec	signed char	altivec	4	3824
+AltiVec	unsigned char	altivec	4	3956
+AltiVec	short int	altivec	4	7761
+AltiVec	unsigned short int	altivec	4	7783
+AltiVec	int	altivec	4	17072
+AltiVec	unsigned int	altivec	4	17931
+AltiVec	long int	altivec	4	15509
+AltiVec	unsigned long int	altivec	4	16470
+AltiVec	float	altivec	4	16977
+AltiVec	char	altivec	5	4075
+AltiVec	char	altivec	5	3900
+AltiVec	signed char	altivec	5	3496
+AltiVec	unsigned char	altivec	5	3531
+AltiVec	short int	altivec	5	8749
+AltiVec	unsigned short int	altivec	5	22109
+AltiVec	int	altivec	5	17112
+AltiVec	unsigned int	altivec	5	16391
+AltiVec	long int	altivec	5	15820
+AltiVec	unsigned long int	altivec	5	15690
+AltiVec	float	altivec	5	17561
+Run at Thu Oct  5 13:16:30 2006
+AltiVec	char	altivec	1	4034
+AltiVec	char	altivec	1	3452
+AltiVec	signed char	altivec	1	3722
+AltiVec	unsigned char	altivec	1	3706
+AltiVec	short int	altivec	1	7553
+AltiVec	unsigned short int	altivec	1	8484
+AltiVec	int	altivec	1	16188
+AltiVec	unsigned int	altivec	1	29056
+AltiVec	long int	altivec	1	16285
+AltiVec	unsigned long int	altivec	1	16275
+AltiVec	float	altivec	1	15818
+AltiVec	char	altivec	2	3637
+AltiVec	char	altivec	2	3492
+AltiVec	signed char	altivec	2	3855
+AltiVec	unsigned char	altivec	2	4109
+AltiVec	short int	altivec	2	19479
+AltiVec	unsigned short int	altivec	2	7601
+AltiVec	int	altivec	2	16670
+AltiVec	unsigned int	altivec	2	16221
+AltiVec	long int	altivec	2	16044
+AltiVec	unsigned long int	altivec	2	16646
+AltiVec	float	altivec	2	28844
+AltiVec	char	altivec	3	4267
+AltiVec	char	altivec	3	3585
+AltiVec	signed char	altivec	3	3751
+AltiVec	unsigned char	altivec	3	3813
+AltiVec	short int	altivec	3	8031
+AltiVec	unsigned short int	altivec	3	7939
+AltiVec	int	altivec	3	16444
+AltiVec	unsigned int	altivec	3	29852
+AltiVec	long int	altivec	3	16219
+AltiVec	unsigned long int	altivec	3	16008
+AltiVec	float	altivec	3	16854
+AltiVec	char	altivec	4	4216
+AltiVec	char	altivec	4	4270
+AltiVec	signed char	altivec	4	3584
+AltiVec	unsigned char	altivec	4	3477
+AltiVec	short int	altivec	4	7821
+AltiVec	unsigned short int	altivec	4	8022
+AltiVec	int	altivec	4	16864
+AltiVec	unsigned int	altivec	4	17138
+AltiVec	long int	altivec	4	16016
+AltiVec	unsigned long int	altivec	4	16647
+AltiVec	float	altivec	4	27083
+AltiVec	char	altivec	5	4511
+AltiVec	char	altivec	5	4203
+AltiVec	signed char	altivec	5	3483
+AltiVec	unsigned char	altivec	5	3789
+AltiVec	short int	altivec	5	8350
+AltiVec	unsigned short int	altivec	5	7597
+AltiVec	int	altivec	5	16806
+AltiVec	unsigned int	altivec	5	16885
+AltiVec	long int	altivec	5	16344
+AltiVec	unsigned long int	altivec	5	15887
+AltiVec	float	altivec	5	17712

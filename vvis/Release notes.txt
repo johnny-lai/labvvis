@@ -1,0 +1,10 @@
+Release 1.1:
+
++ Added xy_accessor
+	+ xy_accessor is only useable for
+		a. illife_planar_storage (1-channel)
+		b. illife_chunky_storage (1-channel)
+
++ Added hough
+	+ hough implements Hough's Transform
+	+ It requires the use of xy_accessor

@@ -1,0 +1,11 @@
+VVM Implementation Information
+Implementation: VVM Reference Implementation
+        Author: Bing-Chang Lai, Phillip John McKerrow
+       Company: University of Wollongong
+       Version: 0.1
+         Build: 1
+
+Vector Processor Information
+      Vector Processor: None
+          Scalar Count: 1
+Preferred Scalar Count: 1

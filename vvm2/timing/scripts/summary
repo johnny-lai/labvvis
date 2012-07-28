@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+require "$ENV{THESIS_PATH}/scripts/pts.inc";
+
+sub y_value($$$$) {
+	my ($op_count, $type, $version, $file) = @_;
+	return value_noerr("^.*\t$type\t$version\t$op_count\t", $file, 4)
+}
+
+sub diff_percent($$) {
+	my ($a, $b) = @_;
+	return (($b - $a) / $a) * 100;
+}
+
+$argc = @ARGV;
+if($argc != 0) {
+	print "To set base directory, set environment variable PTS_BASE\n";
+	print "Current PTS_BASE: $BASE\n";
+	die "summary\n";
+}
+@types = ("char", "signed char", "unsigned char", "short int", "unsigned short int", "int", "unsigned int", "long int", "unsigned long int", "float", "double");
+system("./build/implementation");
+$now = localtime;
+print $now . "\n";
+printf "%18s | %-34s | %-34s\n", "", "altivec", "scalar";
+printf "%18s | %6d %6d %6d %6d %6d | %6d %6d %6d %6d %6d","", 1, 2, 3, 4, 5, 1, 2, 3, 4, 5;
+print "\n";
+foreach $type (@types) {
+	printf "%18s | ", $type;
+	for($x = 1; $x <= 5; $x++) {
+		$altivec = y_value($x, $type, "altivec", "arithmetic_altivec");
+		if($altivec) {
+			$vvm_vp = y_value($x, $type, "vvm", "arithmetic_vp");
+			$diff_vp = diff_percent($altivec, $vvm_vp);
+			printf "%6.1f ", $diff_vp;
+		} else {
+			printf "%6s ", "N/A";
+		}
+			
+	}
+	print "| ";
+	for($x = 1; $x <= 5; $x++) {
+		$scalar = y_value($x, $type, "scalar", "arithmetic_novp");
+		$vvm_novp = y_value($x, $type, "vvm", "arithmetic_novp");
+		$diff_novp = diff_percent($scalar, $vvm_novp);
+		printf "%6.1f ", $diff_novp;
+	}
+	printf "\n";
+}

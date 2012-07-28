@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IFPkgDescriptionDescription</key>
+	<string>Contains labvvis.framework, vvis.framework and vvm.framework</string>
+	<key>IFPkgDescriptionTitle</key>
+	<string>LabVVIS Frameworks</string>
+</dict>
+</plist>

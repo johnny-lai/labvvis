@@ -1,0 +1,30 @@
+Compliant VVM implementations MUST specialize all the following traits
+Fundamental Scalar Traits:
+	111 11 11 11 111
+Fundamental Vp::Vector Traits:
+	111 11 11 11 111
+Bool Scalar Traits:
+	111 11 11 11 111
+Bool VpVector Traits:
+	111 11 11 11 111
+Vector Traits:
+	111 11 11 11 111
+Scalar to vp::vector mapping:
+Vp::Vector to scalar mapping:
+	char, signed char, unsigned char
+	short int, unsigned short int
+	int, unsigned int
+	long int, unsigned long int
+	float, double, long double
+Scalar to integer_type mapping:
+	char, signed char, unsigned char
+	short int, unsigned short int
+	int, unsigned int
+	long int, unsigned long int
+	int, int, int
+Scalar to real_type mapping:
+	float, float, float
+	float, float
+	float, float
+	float, float
+	float, double, long double

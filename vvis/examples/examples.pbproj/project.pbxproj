@@ -1,0 +1,1092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		02237EDA06534EE4005869EF = {
+			isa = PBXFileReference;
+			lastKnownFileType = "compiled.mach-o.dylib";
+			name = libboost_thread.dylib;
+			path = /Users/bclai/thesis/library/prebuilt/macosx.ppc/release/libboost_thread.dylib;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		02237EDB06534EE4005869EF = {
+			fileRef = 02237EDA06534EE4005869EF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02237EDC06534EE4005869EF = {
+			fileRef = 02237EDA06534EE4005869EF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02237EDD06534EE4005869EF = {
+			fileRef = 02237EDA06534EE4005869EF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02237EDE06534EE4005869EF = {
+			fileRef = 02237EDA06534EE4005869EF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866670623D29100FF12DB = {
+			children = (
+				02B866680623D29100FF12DB,
+				02B866690623D29100FF12DB,
+				02B8666A0623D29100FF12DB,
+				02B8666B0623D29100FF12DB,
+				02B8666C0623D29100FF12DB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		02B866680623D29100FF12DB = {
+			fileType = wrapper.framework;
+			isa = PBXReferenceProxy;
+			path = vvm.framework;
+			refType = 3;
+			remoteRef = 02B866800623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B866690623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = scratch;
+			refType = 3;
+			remoteRef = 02B866810623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8666A0623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = traits;
+			refType = 3;
+			remoteRef = 02B866820623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8666B0623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = math;
+			refType = 3;
+			remoteRef = 02B866830623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8666C0623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = test_all;
+			refType = 3;
+			remoteRef = 02B866840623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8666D0623D29100FF12DB = {
+			children = (
+				02B866700623D29100FF12DB,
+				02B866710623D29100FF12DB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		02B866700623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = typelist;
+			refType = 3;
+			remoteRef = 02B8667E0623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B866710623D29100FF12DB = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = tuple;
+			refType = 3;
+			remoteRef = 02B8667F0623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B866720623D29100FF12DB = {
+			children = (
+				02B866740623D29100FF12DB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		02B866740623D29100FF12DB = {
+			fileType = wrapper.framework;
+			isa = PBXReferenceProxy;
+			path = common.framework;
+			refType = 3;
+			remoteRef = 02B866860623D29900FF12DB;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8667E0623D29900FF12DB = {
+			containerPortal = ED45A66206202215009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = EDEAF6F0051445B10082428A;
+			remoteInfo = typelist;
+		};
+		02B8667F0623D29900FF12DB = {
+			containerPortal = ED45A66206202215009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED8C8B030516041600B617C2;
+			remoteInfo = tuple;
+		};
+		02B866800623D29900FF12DB = {
+			containerPortal = ED45A66C06202230009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED7A4CFF055B6748002850D7;
+			remoteInfo = vvm;
+		};
+		02B866810623D29900FF12DB = {
+			containerPortal = ED45A66C06202230009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED114D5A055B71450013DE4F;
+			remoteInfo = scratch;
+		};
+		02B866820623D29900FF12DB = {
+			containerPortal = ED45A66C06202230009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = EDD589BC04F5FF160048A8AE;
+			remoteInfo = traits;
+		};
+		02B866830623D29900FF12DB = {
+			containerPortal = ED45A66C06202230009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED487F4505B6DFE50012E6B4;
+			remoteInfo = math;
+		};
+		02B866840623D29900FF12DB = {
+			containerPortal = ED45A66C06202230009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = EDF36BD805F1783A008832A7;
+			remoteInfo = test_all;
+		};
+		02B866860623D29900FF12DB = {
+			containerPortal = ED45A65B062021FF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED59F86F05120331007CD1A9;
+			remoteInfo = common;
+		};
+		02B866DE0623D4FD00FF12DB = {
+			fileRef = EDC167F70499DA090082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866DF0623D50700FF12DB = {
+			fileRef = 02F5AD6A0623CDCF008DDCBF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E00623D50800FF12DB = {
+			fileRef = 02B866680623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E10623D50900FF12DB = {
+			fileRef = ED5BCF6C041C794E0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E20623D50E00FF12DB = {
+			fileRef = 02B866740623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E40623D50F00FF12DB = {
+			fileRef = EDC167FC0499DA2D0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E50623D5EE00FF12DB = {
+			fileRef = EDC167F70499DA090082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E60623D5F600FF12DB = {
+			fileRef = 02B866740623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E70623D5F800FF12DB = {
+			fileRef = 02F5AD6A0623CDCF008DDCBF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866E90623D5FA00FF12DB = {
+			fileRef = ED5BCF6C041C794E0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866EA0623D5FB00FF12DB = {
+			fileRef = 02B866680623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B866EB0623D5FC00FF12DB = {
+			fileRef = EDC167FC0499DA2D0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B8670A0623E6F000FF12DB = {
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		02B8670B0623E6FA00FF12DB = {
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		02B867210623EA0D00FF12DB = {
+			fileRef = 02B866680623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B867230623EA0E00FF12DB = {
+			fileRef = 02F5AD6A0623CDCF008DDCBF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B867240623EA0E00FF12DB = {
+			fileRef = 02B866740623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B8672F0623EB3C00FF12DB = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = grab_continuously.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		02B868220623EB5B00FF12DB = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B868230623EB5B00FF12DB = {
+			buildActionMask = 2147483647;
+			files = (
+				02B8682F0623EDB500FF12DB,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B868240623EB5B00FF12DB = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B868250623EB5B00FF12DB = {
+			buildActionMask = 2147483647;
+			files = (
+				02B868300623EDB800FF12DB,
+				02B868310623EDB900FF12DB,
+				02B868320623EDB900FF12DB,
+				02B868340623EDBA00FF12DB,
+				02B868350623EDBB00FF12DB,
+				02B868360623EDBB00FF12DB,
+				02237EDB06534EE4005869EF,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B868260623EB5B00FF12DB = {
+			buildPhases = (
+				02B868220623EB5B00FF12DB,
+				02B868230623EB5B00FF12DB,
+				02B868240623EB5B00FF12DB,
+				02B868250623EB5B00FF12DB,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/bl12/thesis/library/boost-1.30.2/libs/thread/build/bin/libboost_thread.dylib/darwin/debug/runtime-link-dynamic/shared-linkable-true";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Carbon";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grab_continuously;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = grab_continuously;
+			productName = grab_continuously;
+			productReference = 02B868270623EB5B00FF12DB;
+			productType = "com.apple.product-type.tool";
+		};
+		02B868270623EB5B00FF12DB = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = grab_continuously;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02B8682F0623EDB500FF12DB = {
+			fileRef = 02B8672F0623EB3C00FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868300623EDB800FF12DB = {
+			fileRef = 02F5AD6A0623CDCF008DDCBF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868310623EDB900FF12DB = {
+			fileRef = 02B866680623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868320623EDB900FF12DB = {
+			fileRef = 02B866740623D29100FF12DB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868340623EDBA00FF12DB = {
+			fileRef = EDC167FC0499DA2D0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868350623EDBB00FF12DB = {
+			fileRef = EDC167F70499DA090082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02B868360623EDBB00FF12DB = {
+			fileRef = ED5BCF6C041C794E0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		02F5AD5E0623CD71008DDCBF = {
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		02F5AD690623CDCF008DDCBF = {
+			children = (
+				02F5AD6A0623CDCF008DDCBF,
+				02F5AD6B0623CDCF008DDCBF,
+				02F5AD6C0623CDCF008DDCBF,
+				02F5AD6D0623CDCF008DDCBF,
+				02F5AD6E0623CDCF008DDCBF,
+				02F5AD6F0623CDCF008DDCBF,
+				02F5AD700623CDCF008DDCBF,
+				02F5AD710623CDCF008DDCBF,
+				ED523130078AAF6F00813B38,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		02F5AD6A0623CDCF008DDCBF = {
+			fileType = wrapper.framework;
+			isa = PBXReferenceProxy;
+			path = vvis.framework;
+			refType = 3;
+			remoteRef = 02F5AD720623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD6B0623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = scratch;
+			refType = 3;
+			remoteRef = 02F5AD730623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD6C0623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = algorithm;
+			refType = 3;
+			remoteRef = 02F5AD740623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD6D0623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = impex;
+			refType = 3;
+			remoteRef = 02F5AD750623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD6E0623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = sgimporter;
+			refType = 3;
+			remoteRef = 02F5AD760623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD6F0623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = region;
+			refType = 3;
+			remoteRef = 02F5AD770623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD700623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = image;
+			refType = 3;
+			remoteRef = 02F5AD780623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD710623CDCF008DDCBF = {
+			fileType = "compiled.mach-o.executable";
+			isa = PBXReferenceProxy;
+			path = test_all;
+			refType = 3;
+			remoteRef = 02F5AD790623CDFD008DDCBF;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02F5AD720623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED43886005BA2DCD00E1183F;
+			remoteInfo = vvis;
+		};
+		02F5AD730623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED43886F05BA2DCD00E1183F;
+			remoteInfo = scratch;
+		};
+		02F5AD740623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED43888005BA2DCD00E1183F;
+			remoteInfo = algorithm;
+		};
+		02F5AD750623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED43889005BA2DCD00E1183F;
+			remoteInfo = impex;
+		};
+		02F5AD760623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED43889D05BA2DCD00E1183F;
+			remoteInfo = sgimporter;
+		};
+		02F5AD770623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED4388AB05BA2DCD00E1183F;
+			remoteInfo = region;
+		};
+		02F5AD780623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED4388B905BA2DCD00E1183F;
+			remoteInfo = image;
+		};
+		02F5AD790623CDFD008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = 026E3C11061E638400E23D50;
+			remoteInfo = test_all;
+		};
+		02F5AD880623D227008DDCBF = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = ED43884305BA2DCD00E1183F;
+			remoteInfo = vvis;
+		};
+		02F5AD890623D227008DDCBF = {
+			isa = PBXTargetDependency;
+			name = "vvis (from vvis.pbproj)";
+			targetProxy = 02F5AD880623D227008DDCBF;
+		};
+//020
+//021
+//022
+//023
+//024
+//ED0
+//ED1
+//ED2
+//ED3
+//ED4
+		ED09B2AE0606FEF5001A1D74 = {
+			buildPhases = (
+				ED09B2AF0606FEF5001A1D74,
+				ED09B2B00606FEF5001A1D74,
+				ED09B2B20606FEF5001A1D74,
+				ED09B2BA0606FEF5001A1D74,
+			);
+			buildRules = (
+				02B8670B0623E6FA00FF12DB,
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/bclai/thesis/library/boost-1.30.2/libs/thread/build/bin/libboost_thread.dylib/darwin/debug/runtime-link-dynamic/shared-linkable-true";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Carbon";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grab_to_file;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = grab_to_file;
+			productInstallPath = /usr/local/bin;
+			productName = grab_to_file;
+			productReference = ED09B2BC0606FEF5001A1D74;
+			productType = "com.apple.product-type.tool";
+		};
+		ED09B2AF0606FEF5001A1D74 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED09B2B00606FEF5001A1D74 = {
+			buildActionMask = 2147483647;
+			files = (
+				ED09B2B10606FEF5001A1D74,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED09B2B10606FEF5001A1D74 = {
+			fileRef = ED121B05050720620082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED09B2B20606FEF5001A1D74 = {
+			buildActionMask = 2147483647;
+			files = (
+				ED09B2B40606FEF5001A1D74,
+				ED09B2B70606FEF5001A1D74,
+				ED09B2B80606FEF5001A1D74,
+				02B867210623EA0D00FF12DB,
+				02B867230623EA0E00FF12DB,
+				02B867240623EA0E00FF12DB,
+				02237EDE06534EE4005869EF,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED09B2B40606FEF5001A1D74 = {
+			fileRef = ED5BCF6C041C794E0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED09B2B70606FEF5001A1D74 = {
+			fileRef = EDC167F70499DA090082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED09B2B80606FEF5001A1D74 = {
+			fileRef = EDC167FC0499DA2D0082428A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED09B2BA0606FEF5001A1D74 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED09B2BC0606FEF5001A1D74 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = grab_to_file;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED121B040507201C0082428A = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				HEADER_SEARCH_PATHS = "$(BOOST_ROOT)";
+			};
+			isa = PBXBuildStyle;
+			name = "AltiVec (Release)";
+		};
+		ED121B05050720620082428A = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = grab_to_file.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED45A2F20620218C009CC24A = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = sub_images.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED45A317062021A6009CC24A = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45A318062021A6009CC24A = {
+			buildActionMask = 2147483647;
+			files = (
+				ED45A6FD06202520009CC24A,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45A319062021A6009CC24A = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45A31A062021A6009CC24A = {
+			buildActionMask = 2147483647;
+			files = (
+				02B866DE0623D4FD00FF12DB,
+				02B866DF0623D50700FF12DB,
+				02B866E00623D50800FF12DB,
+				02B866E10623D50900FF12DB,
+				02B866E20623D50E00FF12DB,
+				02B866E40623D50F00FF12DB,
+				02237EDD06534EE4005869EF,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED45A31B062021A6009CC24A = {
+			buildPhases = (
+				ED45A317062021A6009CC24A,
+				ED45A318062021A6009CC24A,
+				ED45A319062021A6009CC24A,
+				ED45A31A062021A6009CC24A,
+			);
+			buildRules = (
+				02F5AD5E0623CD71008DDCBF,
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/bl12/thesis/library/boost-1.30.2/libs/thread/build/bin/libboost_thread.dylib/darwin/debug/runtime-link-dynamic/shared-linkable-true";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Carbon";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sub_images;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+				02F5AD890623D227008DDCBF,
+			);
+			isa = PBXNativeTarget;
+			name = sub_images;
+			productName = add_images;
+			productReference = ED45A31C062021A6009CC24A;
+			productType = "com.apple.product-type.tool";
+		};
+		ED45A31C062021A6009CC24A = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = sub_images;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED45A325062021B1009CC24A = {
+			children = (
+				ED45A2F20620218C009CC24A,
+				ED121B05050720620082428A,
+				ED9C6F58062185FA00B659D7,
+				02B8672F0623EB3C00FF12DB,
+			);
+			isa = PBXGroup;
+			name = Sources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED45A32F062021BA009CC24A = {
+			children = (
+				02237EDA06534EE4005869EF,
+				ED45A66C06202230009CC24A,
+				ED45A66206202215009CC24A,
+				ED45A65B062021FF009CC24A,
+				ED45A60A062021DF009CC24A,
+				ED5BCF6C041C794E0082428A,
+				EDC167F70499DA090082428A,
+				EDC167FC0499DA2D0082428A,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED45A60A062021DF009CC24A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = vvis.pbproj;
+			path = ../vvis.pbproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		ED45A65B062021FF009CC24A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = common.pbproj;
+			path = ../../common/common.pbproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		ED45A66206202215009CC24A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = ct.pbproj;
+			path = ../../ct/ct.pbproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		ED45A66C06202230009CC24A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = vvm.pbproj;
+			path = ../../vvm2/vvm.pbproj;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		ED45A6FD06202520009CC24A = {
+			fileRef = ED45A2F20620218C009CC24A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED523130078AAF6F00813B38 = {
+			fileType = wrapper.application;
+			isa = PBXReferenceProxy;
+			path = cocoa.app;
+			refType = 3;
+			remoteRef = ED523141078AAF7500813B38;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED523141078AAF7500813B38 = {
+			containerPortal = ED45A60A062021DF009CC24A;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = ED849B0C0788E3C600FE2163;
+			remoteInfo = cocoa;
+		};
+		ED5BCF64041C78EE0082428A = {
+			children = (
+				ED45A325062021B1009CC24A,
+				ED5BCF77041C79830082428A,
+				ED45A32F062021BA009CC24A,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED5BCF66041C78EE0082428A = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "$(BOOST_ROOT) $(CT_INCLUDE_PATH)";
+			};
+			isa = PBXBuildStyle;
+			name = "Scalar (Development)";
+		};
+		ED5BCF67041C78EE0082428A = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				HEADER_SEARCH_PATHS = "$(BOOST_ROOT)";
+			};
+			isa = PBXBuildStyle;
+			name = "Scalar (Release)";
+		};
+		ED5BCF68041C78EE0082428A = {
+			buildSettings = {
+			};
+			buildStyles = (
+				ED5BCF66041C78EE0082428A,
+				ED5BCF67041C78EE0082428A,
+				ED5BCF83041C79B90082428A,
+				ED121B040507201C0082428A,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = ED5BCF64041C78EE0082428A;
+			productRefGroup = ED5BCF77041C79830082428A;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 02B8666D0623D29100FF12DB;
+					ProjectRef = ED45A66206202215009CC24A;
+				},
+				{
+					ProductGroup = 02B866670623D29100FF12DB;
+					ProjectRef = ED45A66C06202230009CC24A;
+				},
+				{
+					ProductGroup = 02F5AD690623CDCF008DDCBF;
+					ProjectRef = ED45A60A062021DF009CC24A;
+				},
+				{
+					ProductGroup = 02B866720623D29100FF12DB;
+					ProjectRef = ED45A65B062021FF009CC24A;
+				},
+			);
+			targets = (
+				ED09B2AE0606FEF5001A1D74,
+				ED45A31B062021A6009CC24A,
+				ED9C6F450621855E00B659D7,
+				02B868260623EB5B00FF12DB,
+			);
+		};
+		ED5BCF6C041C794E0082428A = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = vecLib.framework;
+			path = /System/Library/Frameworks/vecLib.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		ED5BCF77041C79830082428A = {
+			children = (
+				ED09B2BC0606FEF5001A1D74,
+				ED45A31C062021A6009CC24A,
+				ED9C6F460621855E00B659D7,
+				02B868270623EB5B00FF12DB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED5BCF83041C79B90082428A = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "$(BOOST_ROOT)";
+			};
+			isa = PBXBuildStyle;
+			name = "AltiVec (Development)";
+		};
+		ED9C6F410621855E00B659D7 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9C6F420621855E00B659D7 = {
+			buildActionMask = 2147483647;
+			files = (
+				ED9C6F5B062185FA00B659D7,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9C6F430621855E00B659D7 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9C6F440621855E00B659D7 = {
+			buildActionMask = 2147483647;
+			files = (
+				02B866E50623D5EE00FF12DB,
+				02B866E60623D5F600FF12DB,
+				02B866E70623D5F800FF12DB,
+				02B866E90623D5FA00FF12DB,
+				02B866EA0623D5FB00FF12DB,
+				02B866EB0623D5FC00FF12DB,
+				02237EDC06534EE4005869EF,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9C6F450621855E00B659D7 = {
+			buildPhases = (
+				ED9C6F410621855E00B659D7,
+				ED9C6F420621855E00B659D7,
+				ED9C6F430621855E00B659D7,
+				ED9C6F440621855E00B659D7,
+			);
+			buildRules = (
+				02B8670A0623E6F000FF12DB,
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "/Users/bl12/thesis/library/boost-1.30.2/libs/thread/build/bin/libboost_thread.dylib/darwin/debug/runtime-link-dynamic/shared-linkable-true";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Carbon";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grab_and_invert;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = grab_and_invert;
+			productName = grab_and_invert;
+			productReference = ED9C6F460621855E00B659D7;
+			productType = "com.apple.product-type.tool";
+		};
+		ED9C6F460621855E00B659D7 = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = grab_and_invert;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED9C6F58062185FA00B659D7 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = grab_and_invert.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		ED9C6F5B062185FA00B659D7 = {
+			fileRef = ED9C6F58062185FA00B659D7;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		EDC167F70499DA090082428A = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = QuickTime.framework;
+			path = /System/Library/Frameworks/QuickTime.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		EDC167FC0499DA2D0082428A = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = /System/Library/Frameworks/Carbon.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+	};
+	rootObject = ED5BCF68041C78EE0082428A;
+}

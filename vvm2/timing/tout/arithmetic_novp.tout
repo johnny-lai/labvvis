@@ -1,0 +1,3920 @@
+Run at Thu Oct  5 13:15:48 2006
+None	char	scalar	1	890
+None	char	vvm	1	526
+None	char	scalar	1	457
+None	char	scalar	1	504
+None	char	vvm	1	478
+None	char	scalar	1	444
+None	signed char	scalar	1	459
+None	signed char	vvm	1	518
+None	signed char	scalar	1	450
+None	unsigned char	scalar	1	454
+None	unsigned char	vvm	1	522
+None	unsigned char	scalar	1	411
+None	short int	scalar	1	879
+None	short int	vvm	1	827
+None	short int	scalar	1	698
+None	unsigned short int	scalar	1	814
+None	unsigned short int	vvm	1	741
+None	unsigned short int	scalar	1	1063
+None	int	scalar	1	2338
+None	int	vvm	1	1608
+None	int	scalar	1	1529
+None	unsigned int	scalar	1	1819
+None	unsigned int	vvm	1	1668
+None	unsigned int	scalar	1	1903
+None	long int	scalar	1	1957
+None	long int	vvm	1	1870
+None	long int	scalar	1	1562
+None	unsigned long int	scalar	1	1600
+None	unsigned long int	vvm	1	1891
+None	unsigned long int	scalar	1	1566
+None	float	scalar	1	1674
+None	float	vvm	1	2507
+None	float	scalar	1	2208
+None	double	scalar	1	3689
+None	double	vvm	1	3876
+None	double	scalar	1	4700
+None	long double	scalar	1	26018
+None	long double	vvm	1	15529
+None	long double	scalar	1	15160
+None	char	scalar	2	861
+None	char	vvm	2	516
+None	char	scalar	2	624
+None	char	scalar	2	651
+None	char	vvm	2	842
+None	char	scalar	2	654
+None	signed char	scalar	2	686
+None	signed char	vvm	2	887
+None	signed char	scalar	2	723
+None	unsigned char	scalar	2	475
+None	unsigned char	vvm	2	422
+None	unsigned char	scalar	2	432
+None	short int	scalar	2	933
+None	short int	vvm	2	841
+None	short int	scalar	2	749
+None	unsigned short int	scalar	2	776
+None	unsigned short int	vvm	2	864
+None	unsigned short int	scalar	2	759
+None	int	scalar	2	1987
+None	int	vvm	2	2124
+None	int	scalar	2	1636
+None	unsigned int	scalar	2	1739
+None	unsigned int	vvm	2	1556
+None	unsigned int	scalar	2	2303
+None	long int	scalar	2	1989
+None	long int	vvm	2	1705
+None	long int	scalar	2	2021
+None	unsigned long int	scalar	2	1678
+None	unsigned long int	vvm	2	2234
+None	unsigned long int	scalar	2	1704
+None	float	scalar	2	1798
+None	float	vvm	2	1842
+None	float	scalar	2	11252
+None	double	scalar	2	4417
+None	double	vvm	2	4620
+None	double	scalar	2	4744
+None	long double	scalar	2	22320
+None	long double	vvm	2	21753
+None	long double	scalar	2	22474
+None	char	scalar	3	856
+None	char	vvm	3	749
+None	char	scalar	3	454
+None	char	scalar	3	524
+None	char	vvm	3	418
+None	char	scalar	3	429
+None	signed char	scalar	3	468
+None	signed char	vvm	3	410
+None	signed char	scalar	3	438
+None	unsigned char	scalar	3	616
+None	unsigned char	vvm	3	388
+None	unsigned char	scalar	3	754
+None	short int	scalar	3	861
+None	short int	vvm	3	831
+None	short int	scalar	3	679
+None	unsigned short int	scalar	3	1358
+None	unsigned short int	vvm	3	744
+None	unsigned short int	scalar	3	1145
+None	int	scalar	3	1889
+None	int	vvm	3	1775
+None	int	scalar	3	1539
+None	unsigned int	scalar	3	1909
+None	unsigned int	vvm	3	1580
+None	unsigned int	scalar	3	1522
+None	long int	scalar	3	1577
+None	long int	vvm	3	2090
+None	long int	scalar	3	2103
+None	unsigned long int	scalar	3	1664
+None	unsigned long int	vvm	3	1702
+None	unsigned long int	scalar	3	1708
+None	float	scalar	3	2299
+None	float	vvm	3	3967
+None	float	scalar	3	2336
+None	double	scalar	3	3995
+None	double	vvm	3	4191
+None	double	scalar	3	4441
+None	long double	scalar	3	28477
+None	long double	vvm	3	28628
+None	long double	scalar	3	28919
+None	char	scalar	4	862
+None	char	vvm	4	766
+None	char	scalar	4	649
+None	char	scalar	4	663
+None	char	vvm	4	470
+None	char	scalar	4	617
+None	signed char	scalar	4	637
+None	signed char	vvm	4	463
+None	signed char	scalar	4	612
+None	unsigned char	scalar	4	915
+None	unsigned char	vvm	4	722
+None	unsigned char	scalar	4	748
+None	short int	scalar	4	957
+None	short int	vvm	4	1088
+None	short int	scalar	4	939
+None	unsigned short int	scalar	4	1022
+None	unsigned short int	vvm	4	832
+None	unsigned short int	scalar	4	957
+None	int	scalar	4	1964
+None	int	vvm	4	2215
+None	int	scalar	4	2062
+None	unsigned int	scalar	4	1658
+None	unsigned int	vvm	4	2114
+None	unsigned int	scalar	4	1952
+None	long int	scalar	4	1661
+None	long int	vvm	4	1562
+None	long int	scalar	4	1664
+None	unsigned long int	scalar	4	1955
+None	unsigned long int	vvm	4	2209
+None	unsigned long int	scalar	4	2056
+None	float	scalar	4	2559
+None	float	vvm	4	2645
+None	float	scalar	4	2766
+None	double	scalar	4	4646
+None	double	vvm	4	5517
+None	double	scalar	4	4353
+None	long double	scalar	4	35510
+None	long double	vvm	4	44798
+None	long double	scalar	4	36618
+None	char	scalar	5	908
+None	char	vvm	5	627
+None	char	scalar	5	1103
+None	char	scalar	5	734
+None	char	vvm	5	613
+None	char	scalar	5	701
+None	signed char	scalar	5	716
+None	signed char	vvm	5	530
+None	signed char	scalar	5	754
+None	unsigned char	scalar	5	693
+None	unsigned char	vvm	5	467
+None	unsigned char	scalar	5	687
+None	short int	scalar	5	1352
+None	short int	vvm	5	885
+None	short int	scalar	5	926
+None	unsigned short int	scalar	5	1288
+None	unsigned short int	vvm	5	958
+None	unsigned short int	scalar	5	1242
+None	int	scalar	5	1974
+None	int	vvm	5	1707
+None	int	scalar	5	1845
+None	unsigned int	scalar	5	2583
+None	unsigned int	vvm	5	1887
+None	unsigned int	scalar	5	1918
+None	long int	scalar	5	2102
+None	long int	vvm	5	2005
+None	long int	scalar	5	1864
+None	unsigned long int	scalar	5	1781
+None	unsigned long int	vvm	5	2002
+None	unsigned long int	scalar	5	1738
+None	float	scalar	5	3737
+None	float	vvm	5	2707
+None	float	scalar	5	2636
+None	double	scalar	5	5246
+None	double	vvm	5	5664
+None	double	scalar	5	6466
+None	long double	scalar	5	42674
+None	long double	vvm	5	50967
+None	long double	scalar	5	42640
+Run at Thu Oct  5 13:15:49 2006
+None	char	scalar	1	907
+None	char	vvm	1	822
+None	char	scalar	1	481
+None	char	scalar	1	475
+None	char	vvm	1	478
+None	char	scalar	1	435
+None	signed char	scalar	1	453
+None	signed char	vvm	1	453
+None	signed char	scalar	1	427
+None	unsigned char	scalar	1	396
+None	unsigned char	vvm	1	395
+None	unsigned char	scalar	1	413
+None	short int	scalar	1	1267
+None	short int	vvm	1	895
+None	short int	scalar	1	726
+None	unsigned short int	scalar	1	884
+None	unsigned short int	vvm	1	716
+None	unsigned short int	scalar	1	670
+None	int	scalar	1	1881
+None	int	vvm	1	1702
+None	int	scalar	1	1897
+None	unsigned int	scalar	1	1591
+None	unsigned int	vvm	1	1665
+None	unsigned int	scalar	1	1613
+None	long int	scalar	1	1629
+None	long int	vvm	1	2008
+None	long int	scalar	1	1619
+None	unsigned long int	scalar	1	1639
+None	unsigned long int	vvm	1	1635
+None	unsigned long int	scalar	1	1872
+None	float	scalar	1	2005
+None	float	vvm	1	1887
+None	float	scalar	1	1687
+None	double	scalar	1	3901
+None	double	vvm	1	4197
+None	double	scalar	1	3880
+None	long double	scalar	1	15037
+None	long double	vvm	1	15007
+None	long double	scalar	1	22315
+None	char	scalar	2	860
+None	char	vvm	2	575
+None	char	scalar	2	630
+None	char	scalar	2	666
+None	char	vvm	2	456
+None	char	scalar	2	652
+None	signed char	scalar	2	850
+None	signed char	vvm	2	482
+None	signed char	scalar	2	1033
+None	unsigned char	scalar	2	479
+None	unsigned char	vvm	2	421
+None	unsigned char	scalar	2	429
+None	short int	scalar	2	912
+None	short int	vvm	2	824
+None	short int	scalar	2	1058
+None	unsigned short int	scalar	2	842
+None	unsigned short int	vvm	2	775
+None	unsigned short int	scalar	2	854
+None	int	scalar	2	1994
+None	int	vvm	2	1701
+None	int	scalar	2	1908
+None	unsigned int	scalar	2	1900
+None	unsigned int	vvm	2	1579
+None	unsigned int	scalar	2	2512
+None	long int	scalar	2	1864
+None	long int	vvm	2	1747
+None	long int	scalar	2	1600
+None	unsigned long int	scalar	2	1930
+None	unsigned long int	vvm	2	1696
+None	unsigned long int	scalar	2	9661
+None	float	scalar	2	2235
+None	float	vvm	2	1821
+None	float	scalar	2	1744
+None	double	scalar	2	4515
+None	double	vvm	2	3770
+None	double	scalar	2	4040
+None	long double	scalar	2	21836
+None	long double	vvm	2	21290
+None	long double	scalar	2	23227
+None	char	scalar	3	687
+None	char	vvm	3	509
+None	char	scalar	3	454
+None	char	scalar	3	470
+None	char	vvm	3	416
+None	char	scalar	3	430
+None	signed char	scalar	3	496
+None	signed char	vvm	3	424
+None	signed char	scalar	3	449
+None	unsigned char	scalar	3	622
+None	unsigned char	vvm	3	698
+None	unsigned char	scalar	3	656
+None	short int	scalar	3	935
+None	short int	vvm	3	867
+None	short int	scalar	3	697
+None	unsigned short int	scalar	3	986
+None	unsigned short int	vvm	3	764
+None	unsigned short int	scalar	3	891
+None	int	scalar	3	2032
+None	int	vvm	3	1886
+None	int	scalar	3	1581
+None	unsigned int	scalar	3	1580
+None	unsigned int	vvm	3	1537
+None	unsigned int	scalar	3	1858
+None	long int	scalar	3	1994
+None	long int	vvm	3	1896
+None	long int	scalar	3	1583
+None	unsigned long int	scalar	3	1796
+None	unsigned long int	vvm	3	1877
+None	unsigned long int	scalar	3	2030
+None	float	scalar	3	2376
+None	float	vvm	3	2170
+None	float	scalar	3	2321
+None	double	scalar	3	4416
+None	double	vvm	3	4072
+None	double	scalar	3	5404
+None	long double	scalar	3	35852
+None	long double	vvm	3	29255
+None	long double	scalar	3	28893
+None	char	scalar	4	868
+None	char	vvm	4	512
+None	char	scalar	4	632
+None	char	scalar	4	831
+None	char	vvm	4	486
+None	char	scalar	4	682
+None	signed char	scalar	4	734
+None	signed char	vvm	4	479
+None	signed char	scalar	4	1100
+None	unsigned char	scalar	4	708
+None	unsigned char	vvm	4	461
+None	unsigned char	scalar	4	664
+None	short int	scalar	4	923
+None	short int	vvm	4	844
+None	short int	scalar	4	963
+None	unsigned short int	scalar	4	1011
+None	unsigned short int	vvm	4	757
+None	unsigned short int	scalar	4	2444
+None	int	scalar	4	2198
+None	int	vvm	4	1980
+None	int	scalar	4	1646
+None	unsigned int	scalar	4	1640
+None	unsigned int	vvm	4	7184
+None	unsigned int	scalar	4	1781
+None	long int	scalar	4	3190
+None	long int	vvm	4	1733
+None	long int	scalar	4	2076
+None	unsigned long int	scalar	4	1751
+None	unsigned long int	vvm	4	2347
+None	unsigned long int	scalar	4	1772
+None	float	scalar	4	2695
+None	float	vvm	4	2388
+None	float	scalar	4	3221
+None	double	scalar	4	4444
+None	double	vvm	4	4945
+None	double	scalar	4	5529
+None	long double	scalar	4	36242
+None	long double	vvm	4	41849
+None	long double	scalar	4	35492
+None	char	scalar	5	1152
+None	char	vvm	5	577
+None	char	scalar	5	672
+None	char	scalar	5	699
+None	char	vvm	5	864
+None	char	scalar	5	714
+None	signed char	scalar	5	1366
+None	signed char	vvm	5	556
+None	signed char	scalar	5	664
+None	unsigned char	scalar	5	679
+None	unsigned char	vvm	5	457
+None	unsigned char	scalar	5	658
+None	short int	scalar	5	1068
+None	short int	vvm	5	858
+None	short int	scalar	5	1029
+None	unsigned short int	scalar	5	1017
+None	unsigned short int	vvm	5	1270
+None	unsigned short int	scalar	5	1014
+None	int	scalar	5	2221
+None	int	vvm	5	1758
+None	int	scalar	5	2080
+None	unsigned int	scalar	5	2323
+None	unsigned int	vvm	5	1764
+None	unsigned int	scalar	5	2655
+None	long int	scalar	5	6559
+None	long int	vvm	5	1772
+None	long int	scalar	5	1794
+None	unsigned long int	scalar	5	1785
+None	unsigned long int	vvm	5	1953
+None	unsigned long int	scalar	5	2726
+None	float	scalar	5	3046
+None	float	vvm	5	2758
+None	float	scalar	5	3010
+None	double	scalar	5	5013
+None	double	vvm	5	5709
+None	double	scalar	5	4833
+None	long double	scalar	5	43323
+None	long double	vvm	5	48636
+None	long double	scalar	5	43026
+Run at Thu Oct  5 13:15:51 2006
+None	char	scalar	1	751
+None	char	vvm	1	509
+None	char	scalar	1	447
+None	char	scalar	1	472
+None	char	vvm	1	453
+None	char	scalar	1	433
+None	signed char	scalar	1	448
+None	signed char	vvm	1	453
+None	signed char	scalar	1	428
+None	unsigned char	scalar	1	629
+None	unsigned char	vvm	1	810
+None	unsigned char	scalar	1	421
+None	short int	scalar	1	890
+None	short int	vvm	1	1278
+None	short int	scalar	1	964
+None	unsigned short int	scalar	1	767
+None	unsigned short int	vvm	1	714
+None	unsigned short int	scalar	1	682
+None	int	scalar	1	1632
+None	int	vvm	1	2190
+None	int	scalar	1	1815
+None	unsigned int	scalar	1	1685
+None	unsigned int	vvm	1	1671
+None	unsigned int	scalar	1	1557
+None	long int	scalar	1	1599
+None	long int	vvm	1	1545
+None	long int	scalar	1	1979
+None	unsigned long int	scalar	1	3254
+None	unsigned long int	vvm	1	1727
+None	unsigned long int	scalar	1	1543
+None	float	scalar	1	1756
+None	float	vvm	1	2060
+None	float	scalar	1	1655
+None	double	scalar	1	4032
+None	double	vvm	1	4175
+None	double	scalar	1	3629
+None	long double	scalar	1	14557
+None	long double	vvm	1	15468
+None	long double	scalar	1	15634
+None	char	scalar	2	925
+None	char	vvm	2	609
+None	char	scalar	2	646
+None	char	scalar	2	669
+None	char	vvm	2	470
+None	char	scalar	2	614
+None	signed char	scalar	2	643
+None	signed char	vvm	2	599
+None	signed char	scalar	2	845
+None	unsigned char	scalar	2	514
+None	unsigned char	vvm	2	440
+None	unsigned char	scalar	2	442
+None	short int	scalar	2	973
+None	short int	vvm	2	1497
+None	short int	scalar	2	1140
+None	unsigned short int	scalar	2	869
+None	unsigned short int	vvm	2	786
+None	unsigned short int	scalar	2	755
+None	int	scalar	2	1688
+None	int	vvm	2	1747
+None	int	scalar	2	2287
+None	unsigned int	scalar	2	1702
+None	unsigned int	vvm	2	1568
+None	unsigned int	scalar	2	1958
+None	long int	scalar	2	1691
+None	long int	vvm	2	2349
+None	long int	scalar	2	1630
+None	unsigned long int	scalar	2	2188
+None	unsigned long int	vvm	2	1818
+None	unsigned long int	scalar	2	1592
+None	float	scalar	2	2421
+None	float	vvm	2	3048
+None	float	scalar	2	1818
+None	double	scalar	2	4549
+None	double	vvm	2	4110
+None	double	scalar	2	3818
+None	long double	scalar	2	22528
+None	long double	vvm	2	25303
+None	long double	scalar	2	22005
+None	char	scalar	3	681
+None	char	vvm	3	465
+None	char	scalar	3	447
+None	char	scalar	3	466
+None	char	vvm	3	412
+None	char	scalar	3	436
+None	signed char	scalar	3	608
+None	signed char	vvm	3	472
+None	signed char	scalar	3	451
+None	unsigned char	scalar	3	624
+None	unsigned char	vvm	3	443
+None	unsigned char	scalar	3	620
+None	short int	scalar	3	861
+None	short int	vvm	3	1792
+None	short int	scalar	3	1099
+None	unsigned short int	scalar	3	1003
+None	unsigned short int	vvm	3	787
+None	unsigned short int	scalar	3	896
+None	int	scalar	3	1607
+None	int	vvm	3	1776
+None	int	scalar	3	6166
+None	unsigned int	scalar	3	2075
+None	unsigned int	vvm	3	1596
+None	unsigned int	scalar	3	1970
+None	long int	scalar	3	1667
+None	long int	vvm	3	1892
+None	long int	scalar	3	1847
+None	unsigned long int	scalar	3	1755
+None	unsigned long int	vvm	3	2242
+None	unsigned long int	scalar	3	1583
+None	float	scalar	3	2083
+None	float	vvm	3	2194
+None	float	scalar	3	2482
+None	double	scalar	3	4831
+None	double	vvm	3	4174
+None	double	scalar	3	4453
+None	long double	scalar	3	28793
+None	long double	vvm	3	28247
+None	long double	scalar	3	32782
+None	char	scalar	4	862
+None	char	vvm	4	524
+None	char	scalar	4	641
+None	char	scalar	4	906
+None	char	vvm	4	523
+None	char	scalar	4	627
+None	signed char	scalar	4	648
+None	signed char	vvm	4	469
+None	signed char	scalar	4	622
+None	unsigned char	scalar	4	1004
+None	unsigned char	vvm	4	462
+None	unsigned char	scalar	4	678
+None	short int	scalar	4	1076
+None	short int	vvm	4	877
+None	short int	scalar	4	974
+None	unsigned short int	scalar	4	1035
+None	unsigned short int	vvm	4	1014
+None	unsigned short int	scalar	4	1016
+None	int	scalar	4	2250
+None	int	vvm	4	1723
+None	int	scalar	4	1925
+None	unsigned int	scalar	4	1663
+None	unsigned int	vvm	4	1626
+None	unsigned int	scalar	4	2011
+None	long int	scalar	4	2008
+None	long int	vvm	4	1910
+None	long int	scalar	4	1601
+None	unsigned long int	scalar	4	1625
+None	unsigned long int	vvm	4	2004
+None	unsigned long int	scalar	4	1777
+None	float	scalar	4	2915
+None	float	vvm	4	2926
+None	float	scalar	4	3005
+None	double	scalar	4	7173
+None	double	vvm	4	5463
+None	double	scalar	4	4324
+None	long double	scalar	4	36979
+None	long double	vvm	4	35655
+None	long double	scalar	4	36009
+None	char	scalar	5	986
+None	char	vvm	5	583
+None	char	scalar	5	682
+None	char	scalar	5	749
+None	char	vvm	5	566
+None	char	scalar	5	673
+None	signed char	scalar	5	779
+None	signed char	vvm	5	542
+None	signed char	scalar	5	667
+None	unsigned char	scalar	5	735
+None	unsigned char	vvm	5	503
+None	unsigned char	scalar	5	666
+None	short int	scalar	5	1376
+None	short int	vvm	5	866
+None	short int	scalar	5	919
+None	unsigned short int	scalar	5	987
+None	unsigned short int	vvm	5	1096
+None	unsigned short int	scalar	5	983
+None	int	scalar	5	2118
+None	int	vvm	5	1852
+None	int	scalar	5	1759
+None	unsigned int	scalar	5	2560
+None	unsigned int	vvm	5	1759
+None	unsigned int	scalar	5	1770
+None	long int	scalar	5	2088
+None	long int	vvm	5	1715
+None	long int	scalar	5	2121
+None	unsigned long int	scalar	5	1901
+None	unsigned long int	vvm	5	1715
+None	unsigned long int	scalar	5	1722
+None	float	scalar	5	3937
+None	float	vvm	5	2743
+None	float	scalar	5	2607
+None	double	scalar	5	5479
+None	double	vvm	5	5006
+None	double	scalar	5	7113
+None	long double	scalar	5	43314
+None	long double	vvm	5	41839
+None	long double	scalar	5	41886
+Run at Thu Oct  5 13:15:52 2006
+None	char	scalar	1	681
+None	char	vvm	1	514
+None	char	scalar	1	508
+None	char	scalar	1	475
+None	char	vvm	1	451
+None	char	scalar	1	426
+None	signed char	scalar	1	1116
+None	signed char	vvm	1	519
+None	signed char	scalar	1	440
+None	unsigned char	scalar	1	405
+None	unsigned char	vvm	1	414
+None	unsigned char	scalar	1	388
+None	short int	scalar	1	863
+None	short int	vvm	1	861
+None	short int	scalar	1	696
+None	unsigned short int	scalar	1	718
+None	unsigned short int	vvm	1	695
+None	unsigned short int	scalar	1	664
+None	int	scalar	1	1949
+None	int	vvm	1	2059
+None	int	scalar	1	1562
+None	unsigned int	scalar	1	1565
+None	unsigned int	vvm	1	1676
+None	unsigned int	scalar	1	2062
+None	long int	scalar	1	1773
+None	long int	vvm	1	1589
+None	long int	scalar	1	2014
+None	unsigned long int	scalar	1	1600
+None	unsigned long int	vvm	1	1988
+None	unsigned long int	scalar	1	1703
+None	float	scalar	1	1667
+None	float	vvm	1	1665
+None	float	scalar	1	1578
+None	double	scalar	1	4936
+None	double	vvm	1	4239
+None	double	scalar	1	3835
+None	long double	scalar	1	16520
+None	long double	vvm	1	15347
+None	long double	scalar	1	14665
+None	char	scalar	2	865
+None	char	vvm	2	651
+None	char	scalar	2	643
+None	char	scalar	2	662
+None	char	vvm	2	575
+None	char	scalar	2	640
+None	signed char	scalar	2	655
+None	signed char	vvm	2	469
+None	signed char	scalar	2	664
+None	unsigned char	scalar	2	452
+None	unsigned char	vvm	2	1093
+None	unsigned char	scalar	2	467
+None	short int	scalar	2	1216
+None	short int	vvm	2	1112
+None	short int	scalar	2	793
+None	unsigned short int	scalar	2	803
+None	unsigned short int	vvm	2	759
+None	unsigned short int	scalar	2	946
+None	int	scalar	2	1969
+None	int	vvm	2	1774
+None	int	scalar	2	1599
+None	unsigned int	scalar	2	1614
+None	unsigned int	vvm	2	1898
+None	unsigned int	scalar	2	1653
+None	long int	scalar	2	1891
+None	long int	vvm	2	1955
+None	long int	scalar	2	1601
+None	unsigned long int	scalar	2	1687
+None	unsigned long int	vvm	2	2128
+None	unsigned long int	scalar	2	1948
+None	float	scalar	2	1901
+None	float	vvm	2	1933
+None	float	scalar	2	4188
+None	double	scalar	2	3785
+None	double	vvm	2	4308
+None	double	scalar	2	3829
+None	long double	scalar	2	21604
+None	long double	vvm	2	22316
+None	long double	scalar	2	22114
+None	char	scalar	3	682
+None	char	vvm	3	471
+None	char	scalar	3	449
+None	char	scalar	3	489
+None	char	vvm	3	425
+None	char	scalar	3	435
+None	signed char	scalar	3	472
+None	signed char	vvm	3	414
+None	signed char	scalar	3	446
+None	unsigned char	scalar	3	633
+None	unsigned char	vvm	3	721
+None	unsigned char	scalar	3	645
+None	short int	scalar	3	941
+None	short int	vvm	3	1142
+None	short int	scalar	3	783
+None	unsigned short int	scalar	3	1147
+None	unsigned short int	vvm	3	762
+None	unsigned short int	scalar	3	1271
+None	int	scalar	3	1800
+None	int	vvm	3	1972
+None	int	scalar	3	1732
+None	unsigned int	scalar	3	1568
+None	unsigned int	vvm	3	1889
+None	unsigned int	scalar	3	1550
+None	long int	scalar	3	2734
+None	long int	vvm	3	1612
+None	long int	scalar	3	1808
+None	unsigned long int	scalar	3	1577
+None	unsigned long int	vvm	3	1691
+None	unsigned long int	scalar	3	2159
+None	float	scalar	3	2114
+None	float	vvm	3	2324
+None	float	scalar	3	2096
+None	double	scalar	3	4589
+None	double	vvm	3	4563
+None	double	scalar	3	4567
+None	long double	scalar	3	30040
+None	long double	vvm	3	31519
+None	long double	scalar	3	29350
+None	char	scalar	4	1103
+None	char	vvm	4	532
+None	char	scalar	4	636
+None	char	scalar	4	657
+None	char	vvm	4	472
+None	char	scalar	4	614
+None	signed char	scalar	4	1308
+None	signed char	vvm	4	522
+None	signed char	scalar	4	634
+None	unsigned char	scalar	4	693
+None	unsigned char	vvm	4	1074
+None	unsigned char	scalar	4	715
+None	short int	scalar	4	960
+None	short int	vvm	4	860
+None	short int	scalar	4	751
+None	unsigned short int	scalar	4	1059
+None	unsigned short int	vvm	4	899
+None	unsigned short int	scalar	4	1004
+None	int	scalar	4	1690
+None	int	vvm	4	2046
+None	int	scalar	4	1752
+None	unsigned int	scalar	4	1752
+None	unsigned int	vvm	4	1594
+None	unsigned int	scalar	4	2045
+None	long int	scalar	4	2030
+None	long int	vvm	4	1620
+None	long int	scalar	4	1958
+None	unsigned long int	scalar	4	1809
+None	unsigned long int	vvm	4	1832
+None	unsigned long int	scalar	4	1636
+None	float	scalar	4	2482
+None	float	vvm	4	2364
+None	float	scalar	4	3239
+None	double	scalar	4	4756
+None	double	vvm	4	4715
+None	double	scalar	4	4549
+None	long double	scalar	4	36744
+None	long double	vvm	4	35826
+None	long double	scalar	4	37146
+None	char	scalar	5	908
+None	char	vvm	5	570
+None	char	scalar	5	1205
+None	char	scalar	5	747
+None	char	vvm	5	546
+None	char	scalar	5	671
+None	signed char	scalar	5	754
+None	signed char	vvm	5	531
+None	signed char	scalar	5	662
+None	unsigned char	scalar	5	675
+None	unsigned char	vvm	5	459
+None	unsigned char	scalar	5	785
+None	short int	scalar	5	1127
+None	short int	vvm	5	1013
+None	short int	scalar	5	961
+None	unsigned short int	scalar	5	1259
+None	unsigned short int	vvm	5	807
+None	unsigned short int	scalar	5	961
+None	int	scalar	5	1828
+None	int	vvm	5	2328
+None	int	scalar	5	1857
+None	unsigned int	scalar	5	1967
+None	unsigned int	vvm	5	1866
+None	unsigned int	scalar	5	2906
+None	long int	scalar	5	1871
+None	long int	vvm	5	1677
+None	long int	scalar	5	1969
+None	unsigned long int	scalar	5	2439
+None	unsigned long int	vvm	5	1874
+None	unsigned long int	scalar	5	2050
+None	float	scalar	5	3064
+None	float	vvm	5	3088
+None	float	scalar	5	2970
+None	double	scalar	5	4774
+None	double	vvm	5	4892
+None	double	scalar	5	5287
+None	long double	scalar	5	42011
+None	long double	vvm	5	42138
+None	long double	scalar	5	44044
+Run at Thu Oct  5 13:15:53 2006
+None	char	scalar	1	682
+None	char	vvm	1	526
+None	char	scalar	1	459
+None	char	scalar	1	481
+None	char	vvm	1	467
+None	char	scalar	1	436
+None	signed char	scalar	1	465
+None	signed char	vvm	1	465
+None	signed char	scalar	1	435
+None	unsigned char	scalar	1	407
+None	unsigned char	vvm	1	404
+None	unsigned char	scalar	1	393
+None	short int	scalar	1	1132
+None	short int	vvm	1	1389
+None	short int	scalar	1	799
+None	unsigned short int	scalar	1	777
+None	unsigned short int	vvm	1	754
+None	unsigned short int	scalar	1	709
+None	int	scalar	1	1868
+None	int	vvm	1	2234
+None	int	scalar	1	1929
+None	unsigned int	scalar	1	1600
+None	unsigned int	vvm	1	1636
+None	unsigned int	scalar	1	2137
+None	long int	scalar	1	1657
+None	long int	vvm	1	1746
+None	long int	scalar	1	1771
+None	unsigned long int	scalar	1	1697
+None	unsigned long int	vvm	1	1948
+None	unsigned long int	scalar	1	1580
+None	float	scalar	1	1767
+None	float	vvm	1	2032
+None	float	scalar	1	1660
+None	double	scalar	1	3506
+None	double	vvm	1	4668
+None	double	scalar	1	3499
+None	long double	scalar	1	26183
+None	long double	vvm	1	25810
+None	long double	scalar	1	15533
+None	char	scalar	2	861
+None	char	vvm	2	547
+None	char	scalar	2	1387
+None	char	scalar	2	699
+None	char	vvm	2	477
+None	char	scalar	2	620
+None	signed char	scalar	2	643
+None	signed char	vvm	2	460
+None	signed char	scalar	2	610
+None	unsigned char	scalar	2	441
+None	unsigned char	vvm	2	409
+None	unsigned char	scalar	2	427
+None	short int	scalar	2	1160
+None	short int	vvm	2	998
+None	short int	scalar	2	1114
+None	unsigned short int	scalar	2	857
+None	unsigned short int	vvm	2	786
+None	unsigned short int	scalar	2	765
+None	int	scalar	2	1675
+None	int	vvm	2	1729
+None	int	scalar	2	1712
+None	unsigned int	scalar	2	2043
+None	unsigned int	vvm	2	1690
+None	unsigned int	scalar	2	2255
+None	long int	scalar	2	1789
+None	long int	vvm	2	1572
+None	long int	scalar	2	1736
+None	unsigned long int	scalar	2	1642
+None	unsigned long int	vvm	2	1699
+None	unsigned long int	scalar	2	1996
+None	float	scalar	2	2351
+None	float	vvm	2	1846
+None	float	scalar	2	2175
+None	double	scalar	2	3662
+None	double	vvm	2	4991
+None	double	scalar	2	3773
+None	long double	scalar	2	21785
+None	long double	vvm	2	22388
+None	long double	scalar	2	21762
+None	char	scalar	3	684
+None	char	vvm	3	465
+None	char	scalar	3	504
+None	char	scalar	3	485
+None	char	vvm	3	415
+None	char	scalar	3	426
+None	signed char	scalar	3	466
+None	signed char	vvm	3	407
+None	signed char	scalar	3	437
+None	unsigned char	scalar	3	701
+None	unsigned char	vvm	3	622
+None	unsigned char	scalar	3	646
+None	short int	scalar	3	991
+None	short int	vvm	3	853
+None	short int	scalar	3	1014
+None	unsigned short int	scalar	3	1373
+None	unsigned short int	vvm	3	929
+None	unsigned short int	scalar	3	935
+None	int	scalar	3	1757
+None	int	vvm	3	1710
+None	int	scalar	3	2474
+None	unsigned int	scalar	3	1695
+None	unsigned int	vvm	3	1999
+None	unsigned int	scalar	3	1951
+None	long int	scalar	3	1637
+None	long int	vvm	3	1558
+None	long int	scalar	3	1496
+None	unsigned long int	scalar	3	1909
+None	unsigned long int	vvm	3	1937
+None	unsigned long int	scalar	3	1532
+None	float	scalar	3	2910
+None	float	vvm	3	2233
+None	float	scalar	3	2111
+None	double	scalar	3	4210
+None	double	vvm	3	5527
+None	double	scalar	3	4086
+None	long double	scalar	3	28821
+None	long double	vvm	3	29068
+None	long double	scalar	3	28655
+None	char	scalar	4	860
+None	char	vvm	4	512
+None	char	scalar	4	627
+None	char	scalar	4	652
+None	char	vvm	4	454
+None	char	scalar	4	607
+None	signed char	scalar	4	628
+None	signed char	vvm	4	452
+None	signed char	scalar	4	606
+None	unsigned char	scalar	4	975
+None	unsigned char	vvm	4	436
+None	unsigned char	scalar	4	660
+None	short int	scalar	4	1265
+None	short int	vvm	4	1038
+None	short int	scalar	4	799
+None	unsigned short int	scalar	4	988
+None	unsigned short int	vvm	4	743
+None	unsigned short int	scalar	4	968
+None	int	scalar	4	2856
+None	int	vvm	4	2061
+None	int	scalar	4	1911
+None	unsigned int	scalar	4	2013
+None	unsigned int	vvm	4	1756
+None	unsigned int	scalar	4	1598
+None	long int	scalar	4	1750
+None	long int	vvm	4	1737
+None	long int	scalar	4	1581
+None	unsigned long int	scalar	4	1876
+None	unsigned long int	vvm	4	1618
+None	unsigned long int	scalar	4	1922
+None	float	scalar	4	2411
+None	float	vvm	4	2321
+None	float	scalar	4	2280
+None	double	scalar	4	4722
+None	double	vvm	4	5501
+None	double	scalar	4	4345
+None	long double	scalar	4	35473
+None	long double	vvm	4	35753
+None	long double	scalar	4	36570
+None	char	scalar	5	1193
+None	char	vvm	5	582
+None	char	scalar	5	1138
+None	char	scalar	5	748
+None	char	vvm	5	529
+None	char	scalar	5	662
+None	signed char	scalar	5	737
+None	signed char	vvm	5	531
+None	signed char	scalar	5	660
+None	unsigned char	scalar	5	671
+None	unsigned char	vvm	5	490
+None	unsigned char	scalar	5	684
+None	short int	scalar	5	1064
+None	short int	vvm	5	839
+None	short int	scalar	5	1280
+None	unsigned short int	scalar	5	1055
+None	unsigned short int	vvm	5	1036
+None	unsigned short int	scalar	5	987
+None	int	scalar	5	2073
+None	int	vvm	5	1771
+None	int	scalar	5	2114
+None	unsigned int	scalar	5	1836
+None	unsigned int	vvm	5	1750
+None	unsigned int	scalar	5	1705
+None	long int	scalar	5	2088
+None	long int	vvm	5	2418
+None	long int	scalar	5	1935
+None	unsigned long int	scalar	5	1791
+None	unsigned long int	vvm	5	1746
+None	unsigned long int	scalar	5	1774
+None	float	scalar	5	3478
+None	float	vvm	5	2859
+None	float	scalar	5	2629
+None	double	scalar	5	5018
+None	double	vvm	5	5279
+None	double	scalar	5	4802
+None	long double	scalar	5	43531
+None	long double	vvm	5	41723
+None	long double	scalar	5	46029
+Run at Thu Oct  5 13:15:54 2006
+None	char	scalar	1	689
+None	char	vvm	1	908
+None	char	scalar	1	469
+None	char	scalar	1	487
+None	char	vvm	1	462
+None	char	scalar	1	488
+None	signed char	scalar	1	483
+None	signed char	vvm	1	468
+None	signed char	scalar	1	497
+None	unsigned char	scalar	1	410
+None	unsigned char	vvm	1	400
+None	unsigned char	scalar	1	389
+None	short int	scalar	1	857
+None	short int	vvm	1	838
+None	short int	scalar	1	681
+None	unsigned short int	scalar	1	706
+None	unsigned short int	vvm	1	687
+None	unsigned short int	scalar	1	668
+None	int	scalar	1	2036
+None	int	vvm	1	2038
+None	int	scalar	1	1553
+None	unsigned int	scalar	1	1563
+None	unsigned int	vvm	1	1555
+None	unsigned int	scalar	1	1980
+None	long int	scalar	1	1607
+None	long int	vvm	1	1537
+None	long int	scalar	1	1570
+None	unsigned long int	scalar	1	3451
+None	unsigned long int	vvm	1	1728
+None	unsigned long int	scalar	1	1546
+None	float	scalar	1	1657
+None	float	vvm	1	1735
+None	float	scalar	1	2365
+None	double	scalar	1	4051
+None	double	vvm	1	3733
+None	double	scalar	1	4060
+None	long double	scalar	1	14671
+None	long double	vvm	1	21564
+None	long double	scalar	1	14169
+None	char	scalar	2	862
+None	char	vvm	2	521
+None	char	scalar	2	629
+None	char	scalar	2	668
+None	char	vvm	2	456
+None	char	scalar	2	966
+None	signed char	scalar	2	704
+None	signed char	vvm	2	480
+None	signed char	scalar	2	999
+None	unsigned char	scalar	2	630
+None	unsigned char	vvm	2	454
+None	unsigned char	scalar	2	445
+None	short int	scalar	2	919
+None	short int	vvm	2	837
+None	short int	scalar	2	777
+None	unsigned short int	scalar	2	835
+None	unsigned short int	vvm	2	1117
+None	unsigned short int	scalar	2	814
+None	int	scalar	2	1688
+None	int	vvm	2	2227
+None	int	scalar	2	1793
+None	unsigned int	scalar	2	1945
+None	unsigned int	vvm	2	1655
+None	unsigned int	scalar	2	12024
+None	long int	scalar	2	1850
+None	long int	vvm	2	1857
+None	long int	scalar	2	1590
+None	unsigned long int	scalar	2	2332
+None	unsigned long int	vvm	2	1854
+None	unsigned long int	scalar	2	1588
+None	float	scalar	2	2336
+None	float	vvm	2	2229
+None	float	scalar	2	1900
+None	double	scalar	2	3893
+None	double	vvm	2	4911
+None	double	scalar	2	3924
+None	long double	scalar	2	21636
+None	long double	vvm	2	21844
+None	long double	scalar	2	21599
+None	char	scalar	3	691
+None	char	vvm	3	468
+None	char	scalar	3	447
+None	char	scalar	3	513
+None	char	vvm	3	425
+None	char	scalar	3	437
+None	signed char	scalar	3	470
+None	signed char	vvm	3	417
+None	signed char	scalar	3	553
+None	unsigned char	scalar	3	648
+None	unsigned char	vvm	3	398
+None	unsigned char	scalar	3	616
+None	short int	scalar	3	853
+None	short int	vvm	3	1491
+None	short int	scalar	3	774
+None	unsigned short int	scalar	3	1168
+None	unsigned short int	vvm	3	936
+None	unsigned short int	scalar	3	902
+None	int	scalar	3	1601
+None	int	vvm	3	1589
+None	int	scalar	3	2117
+None	unsigned int	scalar	3	1615
+None	unsigned int	vvm	3	1848
+None	unsigned int	scalar	3	1532
+None	long int	scalar	3	1911
+None	long int	vvm	3	1924
+None	long int	scalar	3	1541
+None	unsigned long int	scalar	3	1552
+None	unsigned long int	vvm	3	1975
+None	unsigned long int	scalar	3	1626
+None	float	scalar	3	2521
+None	float	vvm	3	2382
+None	float	scalar	3	2020
+None	double	scalar	3	4436
+None	double	vvm	3	4366
+None	double	scalar	3	5346
+None	long double	scalar	3	39519
+None	long double	vvm	3	28872
+None	long double	scalar	3	28291
+None	char	scalar	4	1100
+None	char	vvm	4	526
+None	char	scalar	4	642
+None	char	scalar	4	661
+None	char	vvm	4	538
+None	char	scalar	4	637
+None	signed char	scalar	4	944
+None	signed char	vvm	4	493
+None	signed char	scalar	4	887
+None	unsigned char	scalar	4	784
+None	unsigned char	vvm	4	451
+None	unsigned char	scalar	4	676
+None	short int	scalar	4	936
+None	short int	vvm	4	843
+None	short int	scalar	4	760
+None	unsigned short int	scalar	4	1002
+None	unsigned short int	vvm	4	920
+None	unsigned short int	scalar	4	1322
+None	int	scalar	4	1840
+None	int	vvm	4	2161
+None	int	scalar	4	1656
+None	unsigned int	scalar	4	1707
+None	unsigned int	vvm	4	2099
+None	unsigned int	scalar	4	1618
+None	long int	scalar	4	1702
+None	long int	vvm	4	1637
+None	long int	scalar	4	2259
+None	unsigned long int	scalar	4	1721
+None	unsigned long int	vvm	4	1640
+None	unsigned long int	scalar	4	1541
+None	float	scalar	4	2614
+None	float	vvm	4	2771
+None	float	scalar	4	2349
+None	double	scalar	4	4376
+None	double	vvm	4	4776
+None	double	scalar	4	4855
+None	long double	scalar	4	47003
+None	long double	vvm	4	35870
+None	long double	scalar	4	35211
+None	char	scalar	5	947
+None	char	vvm	5	569
+None	char	scalar	5	673
+None	char	scalar	5	700
+None	char	vvm	5	515
+None	char	scalar	5	919
+None	signed char	scalar	5	705
+None	signed char	vvm	5	12534
+None	signed char	scalar	5	813
+None	unsigned char	scalar	5	720
+None	unsigned char	vvm	5	857
+None	unsigned char	scalar	5	699
+None	short int	scalar	5	1104
+None	short int	vvm	5	866
+None	short int	scalar	5	920
+None	unsigned short int	scalar	5	992
+None	unsigned short int	vvm	5	959
+None	unsigned short int	scalar	5	1018
+None	int	scalar	5	2947
+None	int	vvm	5	1805
+None	int	scalar	5	2059
+None	unsigned int	scalar	5	1943
+None	unsigned int	vvm	5	1930
+None	unsigned int	scalar	5	2321
+None	long int	scalar	5	1893
+None	long int	vvm	5	1988
+None	long int	scalar	5	1757
+None	unsigned long int	scalar	5	2354
+None	unsigned long int	vvm	5	1766
+None	unsigned long int	scalar	5	1804
+None	float	scalar	5	2827
+None	float	vvm	5	3519
+None	float	scalar	5	2994
+None	double	scalar	5	4712
+None	double	vvm	5	5074
+None	double	scalar	5	5045
+None	long double	scalar	5	56372
+None	long double	vvm	5	42432
+None	long double	scalar	5	43274
+Run at Thu Oct  5 13:15:55 2006
+None	char	scalar	1	681
+None	char	vvm	1	848
+None	char	scalar	1	485
+None	char	scalar	1	484
+None	char	vvm	1	469
+None	char	scalar	1	437
+None	signed char	scalar	1	460
+None	signed char	vvm	1	463
+None	signed char	scalar	1	560
+None	unsigned char	scalar	1	423
+None	unsigned char	vvm	1	443
+None	unsigned char	scalar	1	1119
+None	short int	scalar	1	938
+None	short int	vvm	1	853
+None	short int	scalar	1	687
+None	unsigned short int	scalar	1	718
+None	unsigned short int	vvm	1	687
+None	unsigned short int	scalar	1	649
+None	int	scalar	1	1579
+None	int	vvm	1	1993
+None	int	scalar	1	1573
+None	unsigned int	scalar	1	1753
+None	unsigned int	vvm	1	1933
+None	unsigned int	scalar	1	1650
+None	long int	scalar	1	1587
+None	long int	vvm	1	1682
+None	long int	scalar	1	1808
+None	unsigned long int	scalar	1	1639
+None	unsigned long int	vvm	1	1889
+None	unsigned long int	scalar	1	2199
+None	float	scalar	1	1728
+None	float	vvm	1	1771
+None	float	scalar	1	1591
+None	double	scalar	1	4361
+None	double	vvm	1	4054
+None	double	scalar	1	3541
+None	long double	scalar	1	28235
+None	long double	vvm	1	15076
+None	long double	scalar	1	15006
+None	char	scalar	2	1380
+None	char	vvm	2	513
+None	char	scalar	2	638
+None	char	scalar	2	798
+None	char	vvm	2	476
+None	char	scalar	2	764
+None	signed char	scalar	2	656
+None	signed char	vvm	2	502
+None	signed char	scalar	2	623
+None	unsigned char	scalar	2	452
+None	unsigned char	vvm	2	423
+None	unsigned char	scalar	2	434
+None	short int	scalar	2	927
+None	short int	vvm	2	1186
+None	short int	scalar	2	796
+None	unsigned short int	scalar	2	815
+None	unsigned short int	vvm	2	993
+None	unsigned short int	scalar	2	1027
+None	int	scalar	2	1763
+None	int	vvm	2	1732
+None	int	scalar	2	2048
+None	unsigned int	scalar	2	1663
+None	unsigned int	vvm	2	1929
+None	unsigned int	scalar	2	1758
+None	long int	scalar	2	2741
+None	long int	vvm	2	1850
+None	long int	scalar	2	1678
+None	unsigned long int	scalar	2	1651
+None	unsigned long int	vvm	2	14969
+None	unsigned long int	scalar	2	1831
+None	float	scalar	2	1823
+None	float	vvm	2	1783
+None	float	scalar	2	1759
+None	double	scalar	2	5280
+None	double	vvm	2	4083
+None	double	scalar	2	3955
+None	long double	scalar	2	21896
+None	long double	vvm	2	21775
+None	long double	scalar	2	35336
+None	char	scalar	3	734
+None	char	vvm	3	537
+None	char	scalar	3	486
+None	char	scalar	3	764
+None	char	vvm	3	474
+None	char	scalar	3	481
+None	signed char	scalar	3	509
+None	signed char	vvm	3	442
+None	signed char	scalar	3	474
+None	unsigned char	scalar	3	658
+None	unsigned char	vvm	3	421
+None	unsigned char	scalar	3	636
+None	short int	scalar	3	929
+None	short int	vvm	3	877
+None	short int	scalar	3	1009
+None	unsigned short int	scalar	3	1164
+None	unsigned short int	vvm	3	765
+None	unsigned short int	scalar	3	922
+None	int	scalar	3	1636
+None	int	vvm	3	2004
+None	int	scalar	3	1550
+None	unsigned int	scalar	3	1676
+None	unsigned int	vvm	3	1581
+None	unsigned int	scalar	3	2014
+None	long int	scalar	3	1977
+None	long int	vvm	3	3438
+None	long int	scalar	3	1707
+None	unsigned long int	scalar	3	1649
+None	unsigned long int	vvm	3	1610
+None	unsigned long int	scalar	3	1506
+None	float	scalar	3	2984
+None	float	vvm	3	2130
+None	float	scalar	3	2356
+None	double	scalar	3	4308
+None	double	vvm	3	4368
+None	double	scalar	3	3961
+None	long double	scalar	3	41458
+None	long double	vvm	3	28732
+None	long double	scalar	3	28836
+None	char	scalar	4	862
+None	char	vvm	4	525
+None	char	scalar	4	638
+None	char	scalar	4	1271
+None	char	vvm	4	903
+None	char	scalar	4	655
+None	signed char	scalar	4	916
+None	signed char	vvm	4	762
+None	signed char	scalar	4	649
+None	unsigned char	scalar	4	689
+None	unsigned char	vvm	4	453
+None	unsigned char	scalar	4	667
+None	short int	scalar	4	944
+None	short int	vvm	4	902
+None	short int	scalar	4	765
+None	unsigned short int	scalar	4	1042
+None	unsigned short int	vvm	4	774
+None	unsigned short int	scalar	4	935
+None	int	scalar	4	1846
+None	int	vvm	4	2019
+None	int	scalar	4	1667
+None	unsigned int	scalar	4	2085
+None	unsigned int	vvm	4	1658
+None	unsigned int	scalar	4	1628
+None	long int	scalar	4	1703
+None	long int	vvm	4	1740
+None	long int	scalar	4	2188
+None	unsigned long int	scalar	4	1746
+None	unsigned long int	vvm	4	1618
+None	unsigned long int	scalar	4	1554
+None	float	scalar	4	2762
+None	float	vvm	4	2583
+None	float	scalar	4	2617
+None	double	scalar	4	4970
+None	double	vvm	4	4311
+None	double	scalar	4	4724
+None	long double	scalar	4	48179
+None	long double	vvm	4	35520
+None	long double	scalar	4	35324
+None	char	scalar	5	955
+None	char	vvm	5	571
+None	char	scalar	5	709
+None	char	scalar	5	724
+None	char	vvm	5	518
+None	char	scalar	5	948
+None	signed char	scalar	5	1055
+None	signed char	vvm	5	598
+None	signed char	scalar	5	678
+None	unsigned char	scalar	5	696
+None	unsigned char	vvm	5	495
+None	unsigned char	scalar	5	661
+None	short int	scalar	5	1068
+None	short int	vvm	5	834
+None	short int	scalar	5	889
+None	unsigned short int	scalar	5	1268
+None	unsigned short int	vvm	5	792
+None	unsigned short int	scalar	5	1290
+None	int	scalar	5	2012
+None	int	vvm	5	1701
+None	int	scalar	5	1803
+None	unsigned int	scalar	5	1812
+None	unsigned int	vvm	5	2326
+None	unsigned int	scalar	5	2109
+None	long int	scalar	5	1949
+None	long int	vvm	5	1724
+None	long int	scalar	5	2294
+None	unsigned long int	scalar	5	1848
+None	unsigned long int	vvm	5	1906
+None	unsigned long int	scalar	5	1750
+None	float	scalar	5	2993
+None	float	vvm	5	2824
+None	float	scalar	5	2853
+None	double	scalar	5	5341
+None	double	vvm	5	4810
+None	double	scalar	5	5319
+None	long double	scalar	5	55036
+None	long double	vvm	5	42587
+None	long double	scalar	5	54795
+Run at Thu Oct  5 13:15:56 2006
+None	char	scalar	1	937
+None	char	vvm	1	534
+None	char	scalar	1	488
+None	char	scalar	1	550
+None	char	vvm	1	464
+None	char	scalar	1	434
+None	signed char	scalar	1	459
+None	signed char	vvm	1	457
+None	signed char	scalar	1	784
+None	unsigned char	scalar	1	441
+None	unsigned char	vvm	1	420
+None	unsigned char	scalar	1	408
+None	short int	scalar	1	1229
+None	short int	vvm	1	921
+None	short int	scalar	1	770
+None	unsigned short int	scalar	1	750
+None	unsigned short int	vvm	1	717
+None	unsigned short int	scalar	1	683
+None	int	scalar	1	1899
+None	int	vvm	1	1690
+None	int	scalar	1	1678
+None	unsigned int	scalar	1	1582
+None	unsigned int	vvm	1	2015
+None	unsigned int	scalar	1	1585
+None	long int	scalar	1	1777
+None	long int	vvm	1	1872
+None	long int	scalar	1	1578
+None	unsigned long int	scalar	1	1569
+None	unsigned long int	vvm	1	1692
+None	unsigned long int	scalar	1	2082
+None	float	scalar	1	1720
+None	float	vvm	1	1900
+None	float	scalar	1	1598
+None	double	scalar	1	4465
+None	double	vvm	1	4048
+None	double	scalar	1	4334
+None	long double	scalar	1	26793
+None	long double	vvm	1	15006
+None	long double	scalar	1	14841
+None	char	scalar	2	1469
+None	char	vvm	2	552
+None	char	scalar	2	709
+None	char	scalar	2	707
+None	char	vvm	2	475
+None	char	scalar	2	619
+None	signed char	scalar	2	678
+None	signed char	vvm	2	467
+None	signed char	scalar	2	779
+None	unsigned char	scalar	2	565
+None	unsigned char	vvm	2	446
+None	unsigned char	scalar	2	442
+None	short int	scalar	2	1188
+None	short int	vvm	2	13019
+None	short int	scalar	2	1010
+None	unsigned short int	scalar	2	830
+None	unsigned short int	vvm	2	778
+None	unsigned short int	scalar	2	730
+None	int	scalar	2	1914
+None	int	vvm	2	2258
+None	int	scalar	2	1698
+None	unsigned int	scalar	2	2008
+None	unsigned int	vvm	2	1627
+None	unsigned int	scalar	2	1692
+None	long int	scalar	2	2233
+None	long int	vvm	2	1647
+None	long int	scalar	2	1563
+None	unsigned long int	scalar	2	2014
+None	unsigned long int	vvm	2	2123
+None	unsigned long int	scalar	2	1964
+None	float	scalar	2	1852
+None	float	vvm	2	1896
+None	float	scalar	2	1731
+None	double	scalar	2	4377
+None	double	vvm	2	4263
+None	double	scalar	2	3613
+None	long double	scalar	2	21731
+None	long double	vvm	2	21726
+None	long double	scalar	2	22137
+None	char	scalar	3	684
+None	char	vvm	3	461
+None	char	scalar	3	442
+None	char	scalar	3	464
+None	char	vvm	3	481
+None	char	scalar	3	442
+None	signed char	scalar	3	599
+None	signed char	vvm	3	431
+None	signed char	scalar	3	446
+None	unsigned char	scalar	3	659
+None	unsigned char	vvm	3	395
+None	unsigned char	scalar	3	635
+None	short int	scalar	3	859
+None	short int	vvm	3	1135
+None	short int	scalar	3	736
+None	unsigned short int	scalar	3	1063
+None	unsigned short int	vvm	3	1037
+None	unsigned short int	scalar	3	1157
+None	int	scalar	3	1754
+None	int	vvm	3	1601
+None	int	scalar	3	1875
+None	unsigned int	scalar	3	2751
+None	unsigned int	vvm	3	2022
+None	unsigned int	scalar	3	1566
+None	long int	scalar	3	1606
+None	long int	vvm	3	1633
+None	long int	scalar	3	1896
+None	unsigned long int	scalar	3	1654
+None	unsigned long int	vvm	3	1629
+None	unsigned long int	scalar	3	1844
+None	float	scalar	3	2658
+None	float	vvm	3	2730
+None	float	scalar	3	2086
+None	double	scalar	3	15422
+None	double	vvm	3	4542
+None	double	scalar	3	4297
+None	long double	scalar	3	29032
+None	long double	vvm	3	28545
+None	long double	scalar	3	28358
+None	char	scalar	4	864
+None	char	vvm	4	790
+None	char	scalar	4	721
+None	char	scalar	4	1396
+None	char	vvm	4	551
+None	char	scalar	4	636
+None	signed char	scalar	4	653
+None	signed char	vvm	4	472
+None	signed char	scalar	4	615
+None	unsigned char	scalar	4	750
+None	unsigned char	vvm	4	434
+None	unsigned char	scalar	4	1079
+None	short int	scalar	4	989
+None	short int	vvm	4	1152
+None	short int	scalar	4	830
+None	unsigned short int	scalar	4	1147
+None	unsigned short int	vvm	4	789
+None	unsigned short int	scalar	4	1280
+None	int	scalar	4	1716
+None	int	vvm	4	2050
+None	int	scalar	4	1691
+None	unsigned int	scalar	4	1616
+None	unsigned int	vvm	4	1845
+None	unsigned int	scalar	4	1610
+None	long int	scalar	4	2680
+None	long int	vvm	4	1628
+None	long int	scalar	4	1564
+None	unsigned long int	scalar	4	1618
+None	unsigned long int	vvm	4	1799
+None	unsigned long int	scalar	4	2180
+None	float	scalar	4	2566
+None	float	vvm	4	2733
+None	float	scalar	4	2372
+None	double	scalar	4	4312
+None	double	vvm	4	5044
+None	double	scalar	4	4845
+None	long double	scalar	4	45884
+None	long double	vvm	4	35972
+None	long double	scalar	4	37328
+None	char	scalar	5	911
+None	char	vvm	5	1043
+None	char	scalar	5	720
+None	char	scalar	5	709
+None	char	vvm	5	560
+None	char	scalar	5	945
+None	signed char	scalar	5	715
+None	signed char	vvm	5	527
+None	signed char	scalar	5	663
+None	unsigned char	scalar	5	677
+None	unsigned char	vvm	5	460
+None	unsigned char	scalar	5	656
+None	short int	scalar	5	1073
+None	short int	vvm	5	857
+None	short int	scalar	5	964
+None	unsigned short int	scalar	5	1022
+None	unsigned short int	vvm	5	1478
+None	unsigned short int	scalar	5	1394
+None	int	scalar	5	1906
+None	int	vvm	5	1707
+None	int	scalar	5	2124
+None	unsigned int	scalar	5	2112
+None	unsigned int	vvm	5	1678
+None	unsigned int	scalar	5	1730
+None	long int	scalar	5	2304
+None	long int	vvm	5	1692
+None	long int	scalar	5	2479
+None	unsigned long int	scalar	5	1827
+None	unsigned long int	vvm	5	1745
+None	unsigned long int	scalar	5	1729
+None	float	scalar	5	3890
+None	float	vvm	5	2829
+None	float	scalar	5	2635
+None	double	scalar	5	5217
+None	double	vvm	5	5045
+None	double	scalar	5	5649
+None	long double	scalar	5	53919
+None	long double	vvm	5	42367
+None	long double	scalar	5	45041
+Run at Thu Oct  5 13:15:57 2006
+None	char	scalar	1	681
+None	char	vvm	1	501
+None	char	scalar	1	442
+None	char	scalar	1	463
+None	char	vvm	1	449
+None	char	scalar	1	427
+None	signed char	scalar	1	504
+None	signed char	vvm	1	509
+None	signed char	scalar	1	433
+None	unsigned char	scalar	1	401
+None	unsigned char	vvm	1	386
+None	unsigned char	scalar	1	778
+None	short int	scalar	1	1034
+None	short int	vvm	1	1071
+None	short int	scalar	1	732
+None	unsigned short int	scalar	1	723
+None	unsigned short int	vvm	1	687
+None	unsigned short int	scalar	1	656
+None	int	scalar	1	2151
+None	int	vvm	1	1649
+None	int	scalar	1	1515
+None	unsigned int	scalar	1	1533
+None	unsigned int	vvm	1	1691
+None	unsigned int	scalar	1	2175
+None	long int	scalar	1	1603
+None	long int	vvm	1	1546
+None	long int	scalar	1	1573
+None	unsigned long int	scalar	1	1637
+None	unsigned long int	vvm	1	2342
+None	unsigned long int	scalar	1	2500
+None	float	scalar	1	2015
+None	float	vvm	1	1964
+None	float	scalar	1	1941
+None	double	scalar	1	15353
+None	double	vvm	1	3656
+None	double	scalar	1	4269
+None	long double	scalar	1	15076
+None	long double	vvm	1	15315
+None	long double	scalar	1	14732
+None	char	scalar	2	973
+None	char	vvm	2	663
+None	char	scalar	2	634
+None	char	scalar	2	682
+None	char	vvm	2	465
+None	char	scalar	2	621
+None	signed char	scalar	2	686
+None	signed char	vvm	2	489
+None	signed char	scalar	2	615
+None	unsigned char	scalar	2	1183
+None	unsigned char	vvm	2	442
+None	unsigned char	scalar	2	434
+None	short int	scalar	2	1169
+None	short int	vvm	2	855
+None	short int	scalar	2	771
+None	unsigned short int	scalar	2	777
+None	unsigned short int	vvm	2	821
+None	unsigned short int	scalar	2	770
+None	int	scalar	2	2075
+None	int	vvm	2	2281
+None	int	scalar	2	1680
+None	unsigned int	scalar	2	13434
+None	unsigned int	vvm	2	1703
+None	unsigned int	scalar	2	1957
+None	long int	scalar	2	1796
+None	long int	vvm	2	1656
+None	long int	scalar	2	1621
+None	unsigned long int	scalar	2	1643
+None	unsigned long int	vvm	2	2391
+None	unsigned long int	scalar	2	1630
+None	float	scalar	2	1798
+None	float	vvm	2	1832
+None	float	scalar	2	1736
+None	double	scalar	2	4141
+None	double	vvm	2	3868
+None	double	scalar	2	4601
+None	long double	scalar	2	22339
+None	long double	vvm	2	22368
+None	long double	scalar	2	34531
+None	char	scalar	3	803
+None	char	vvm	3	480
+None	char	scalar	3	488
+None	char	scalar	3	472
+None	char	vvm	3	690
+None	char	scalar	3	465
+None	signed char	scalar	3	480
+None	signed char	vvm	3	419
+None	signed char	scalar	3	447
+None	unsigned char	scalar	3	779
+None	unsigned char	vvm	3	423
+None	unsigned char	scalar	3	627
+None	short int	scalar	3	1353
+None	short int	vvm	3	881
+None	short int	scalar	3	731
+None	unsigned short int	scalar	3	930
+None	unsigned short int	vvm	3	685
+None	unsigned short int	scalar	3	865
+None	int	scalar	3	1910
+None	int	vvm	3	2011
+None	int	scalar	3	1673
+None	unsigned int	scalar	3	1941
+None	unsigned int	vvm	3	1584
+None	unsigned int	scalar	3	1587
+None	long int	scalar	3	1658
+None	long int	vvm	3	1803
+None	long int	scalar	3	1543
+None	unsigned long int	scalar	3	1632
+None	unsigned long int	vvm	3	1905
+None	unsigned long int	scalar	3	1569
+None	float	scalar	3	2141
+None	float	vvm	3	2100
+None	float	scalar	3	2208
+None	double	scalar	3	4663
+None	double	vvm	3	4156
+None	double	scalar	3	4556
+None	long double	scalar	3	29298
+None	long double	vvm	3	28330
+None	long double	scalar	3	29084
+None	char	scalar	4	859
+None	char	vvm	4	506
+None	char	scalar	4	751
+None	char	scalar	4	701
+None	char	vvm	4	467
+None	char	scalar	4	610
+None	signed char	scalar	4	634
+None	signed char	vvm	4	465
+None	signed char	scalar	4	771
+None	unsigned char	scalar	4	1066
+None	unsigned char	vvm	4	445
+None	unsigned char	scalar	4	661
+None	short int	scalar	4	1139
+None	short int	vvm	4	868
+None	short int	scalar	4	784
+None	unsigned short int	scalar	4	978
+None	unsigned short int	vvm	4	791
+None	unsigned short int	scalar	4	948
+None	int	scalar	4	2319
+None	int	vvm	4	1727
+None	int	scalar	4	1609
+None	unsigned int	scalar	4	1709
+None	unsigned int	vvm	4	1874
+None	unsigned int	scalar	4	2060
+None	long int	scalar	4	1706
+None	long int	vvm	4	1783
+None	long int	scalar	4	1681
+None	unsigned long int	scalar	4	1644
+None	unsigned long int	vvm	4	1782
+None	unsigned long int	scalar	4	1706
+None	float	scalar	4	2440
+None	float	vvm	4	2906
+None	float	scalar	4	2554
+None	double	scalar	4	4299
+None	double	vvm	4	4680
+None	double	scalar	4	4711
+None	long double	scalar	4	50746
+None	long double	vvm	4	36096
+None	long double	scalar	4	50160
+None	char	scalar	5	902
+None	char	vvm	5	627
+None	char	scalar	5	682
+None	char	scalar	5	700
+None	char	vvm	5	512
+None	char	scalar	5	655
+None	signed char	scalar	5	1083
+None	signed char	vvm	5	548
+None	signed char	scalar	5	664
+None	unsigned char	scalar	5	937
+None	unsigned char	vvm	5	480
+None	unsigned char	scalar	5	661
+None	short int	scalar	5	1389
+None	short int	vvm	5	1000
+None	short int	scalar	5	934
+None	unsigned short int	scalar	5	1011
+None	unsigned short int	vvm	5	1062
+None	unsigned short int	scalar	5	978
+None	int	scalar	5	1829
+None	int	vvm	5	1801
+None	int	scalar	5	2046
+None	unsigned int	scalar	5	1807
+None	unsigned int	vvm	5	1925
+None	unsigned int	scalar	5	1778
+None	long int	scalar	5	1835
+None	long int	vvm	5	1839
+None	long int	scalar	5	2260
+None	unsigned long int	scalar	5	2087
+None	unsigned long int	vvm	5	2006
+None	unsigned long int	scalar	5	1943
+None	float	scalar	5	3197
+None	float	vvm	5	2722
+None	float	scalar	5	2690
+None	double	scalar	5	5322
+None	double	vvm	5	4999
+None	double	scalar	5	20134
+None	long double	scalar	5	42735
+None	long double	vvm	5	42736
+None	long double	scalar	5	56790
+Run at Thu Oct  5 13:15:58 2006
+None	char	scalar	1	680
+None	char	vvm	1	562
+None	char	scalar	1	467
+None	char	scalar	1	484
+None	char	vvm	1	466
+None	char	scalar	1	440
+None	signed char	scalar	1	465
+None	signed char	vvm	1	469
+None	signed char	scalar	1	492
+None	unsigned char	scalar	1	414
+None	unsigned char	vvm	1	406
+None	unsigned char	scalar	1	396
+None	short int	scalar	1	899
+None	short int	vvm	1	845
+None	short int	scalar	1	690
+None	unsigned short int	scalar	1	1099
+None	unsigned short int	vvm	1	979
+None	unsigned short int	scalar	1	722
+None	int	scalar	1	1695
+None	int	vvm	1	1662
+None	int	scalar	1	1521
+None	unsigned int	scalar	1	1976
+None	unsigned int	vvm	1	1675
+None	unsigned int	scalar	1	1910
+None	long int	scalar	1	1883
+None	long int	vvm	1	1934
+None	long int	scalar	1	1927
+None	unsigned long int	scalar	1	1588
+None	unsigned long int	vvm	1	2110
+None	unsigned long int	scalar	1	16232
+None	float	scalar	1	2030
+None	float	vvm	1	1837
+None	float	scalar	1	1898
+None	double	scalar	1	4491
+None	double	vvm	1	3639
+None	double	scalar	1	3533
+None	long double	scalar	1	15034
+None	long double	vvm	1	14516
+None	long double	scalar	1	15693
+None	char	scalar	2	899
+None	char	vvm	2	519
+None	char	scalar	2	1032
+None	char	scalar	2	678
+None	char	vvm	2	465
+None	char	scalar	2	656
+None	signed char	scalar	2	652
+None	signed char	vvm	2	463
+None	signed char	scalar	2	825
+None	unsigned char	scalar	2	484
+None	unsigned char	vvm	2	433
+None	unsigned char	scalar	2	434
+None	short int	scalar	2	1112
+None	short int	vvm	2	921
+None	short int	scalar	2	1054
+None	unsigned short int	scalar	2	878
+None	unsigned short int	vvm	2	1146
+None	unsigned short int	scalar	2	815
+None	int	scalar	2	1711
+None	int	vvm	2	1735
+None	int	scalar	2	1604
+None	unsigned int	scalar	2	2415
+None	unsigned int	vvm	2	1634
+None	unsigned int	scalar	2	1558
+None	long int	scalar	2	2084
+None	long int	vvm	2	1657
+None	long int	scalar	2	1672
+None	unsigned long int	scalar	2	1603
+None	unsigned long int	vvm	2	1673
+None	unsigned long int	scalar	2	2000
+None	float	scalar	2	1778
+None	float	vvm	2	2269
+None	float	scalar	2	1821
+None	double	scalar	2	3687
+None	double	vvm	2	4437
+None	double	scalar	2	4146
+None	long double	scalar	2	21714
+None	long double	vvm	2	34321
+None	long double	scalar	2	21948
+None	char	scalar	3	742
+None	char	vvm	3	469
+None	char	scalar	3	450
+None	char	scalar	3	473
+None	char	vvm	3	415
+None	char	scalar	3	492
+None	signed char	scalar	3	480
+None	signed char	vvm	3	425
+None	signed char	scalar	3	449
+None	unsigned char	scalar	3	911
+None	unsigned char	vvm	3	469
+None	unsigned char	scalar	3	732
+None	short int	scalar	3	891
+None	short int	vvm	3	1105
+None	short int	scalar	3	724
+None	unsigned short int	scalar	3	1531
+None	unsigned short int	vvm	3	749
+None	unsigned short int	scalar	3	890
+None	int	scalar	3	2191
+None	int	vvm	3	1723
+None	int	scalar	3	13891
+None	unsigned int	scalar	3	1785
+None	unsigned int	vvm	3	1662
+None	unsigned int	scalar	3	2119
+None	long int	scalar	3	2171
+None	long int	vvm	3	1619
+None	long int	scalar	3	1529
+None	unsigned long int	scalar	3	1659
+None	unsigned long int	vvm	3	1752
+None	unsigned long int	scalar	3	1539
+None	float	scalar	3	2234
+None	float	vvm	3	2308
+None	float	scalar	3	2665
+None	double	scalar	3	4568
+None	double	vvm	3	4211
+None	double	scalar	3	4380
+None	long double	scalar	3	28961
+None	long double	vvm	3	29321
+None	long double	scalar	3	41377
+None	char	scalar	4	863
+None	char	vvm	4	500
+None	char	scalar	4	618
+None	char	scalar	4	699
+None	char	vvm	4	653
+None	char	scalar	4	625
+None	signed char	scalar	4	641
+None	signed char	vvm	4	502
+None	signed char	scalar	4	624
+None	unsigned char	scalar	4	670
+None	unsigned char	vvm	4	411
+None	unsigned char	scalar	4	652
+None	short int	scalar	4	1174
+None	short int	vvm	4	887
+None	short int	scalar	4	1407
+None	unsigned short int	scalar	4	1248
+None	unsigned short int	vvm	4	1058
+None	unsigned short int	scalar	4	994
+None	int	scalar	4	1696
+None	int	vvm	4	2323
+None	int	scalar	4	1643
+None	unsigned int	scalar	4	1717
+None	unsigned int	vvm	4	1575
+None	unsigned int	scalar	4	1564
+None	long int	scalar	4	2742
+None	long int	vvm	4	1983
+None	long int	scalar	4	1618
+None	unsigned long int	scalar	4	1626
+None	unsigned long int	vvm	4	1640
+None	unsigned long int	scalar	4	1962
+None	float	scalar	4	2531
+None	float	vvm	4	2520
+None	float	scalar	4	2992
+None	double	scalar	4	4866
+None	double	vvm	4	4704
+None	double	scalar	4	4394
+None	long double	scalar	4	35828
+None	long double	vvm	4	34604
+None	long double	scalar	4	45692
+None	char	scalar	5	907
+None	char	vvm	5	593
+None	char	scalar	5	680
+None	char	scalar	5	728
+None	char	vvm	5	871
+None	char	scalar	5	689
+None	signed char	scalar	5	697
+None	signed char	vvm	5	531
+None	signed char	scalar	5	659
+None	unsigned char	scalar	5	885
+None	unsigned char	vvm	5	473
+None	unsigned char	scalar	5	659
+None	short int	scalar	5	1069
+None	short int	vvm	5	911
+None	short int	scalar	5	942
+None	unsigned short int	scalar	5	1525
+None	unsigned short int	vvm	5	869
+None	unsigned short int	scalar	5	1028
+None	int	scalar	5	1897
+None	int	vvm	5	1807
+None	int	scalar	5	2176
+None	unsigned int	scalar	5	2292
+None	unsigned int	vvm	5	1927
+None	unsigned int	scalar	5	1879
+None	long int	scalar	5	1980
+None	long int	vvm	5	2000
+None	long int	scalar	5	1784
+None	unsigned long int	scalar	5	12471
+None	unsigned long int	vvm	5	1966
+None	unsigned long int	scalar	5	2112
+None	float	scalar	5	3064
+None	float	vvm	5	3011
+None	float	scalar	5	2683
+None	double	scalar	5	5626
+None	double	vvm	5	4573
+None	double	scalar	5	5690
+None	long double	scalar	5	42293
+None	long double	vvm	5	43082
+None	long double	scalar	5	54863
+Run at Thu Oct  5 13:15:59 2006
+None	char	scalar	1	751
+None	char	vvm	1	513
+None	char	scalar	1	455
+None	char	scalar	1	479
+None	char	vvm	1	516
+None	char	scalar	1	466
+None	signed char	scalar	1	478
+None	signed char	vvm	1	1379
+None	signed char	scalar	1	950
+None	unsigned char	scalar	1	440
+None	unsigned char	vvm	1	412
+None	unsigned char	scalar	1	539
+None	short int	scalar	1	924
+None	short int	vvm	1	853
+None	short int	scalar	1	709
+None	unsigned short int	scalar	1	724
+None	unsigned short int	vvm	1	704
+None	unsigned short int	scalar	1	677
+None	int	scalar	1	10376
+None	int	vvm	1	2191
+None	int	scalar	1	1600
+None	unsigned int	scalar	1	1573
+None	unsigned int	vvm	1	1902
+None	unsigned int	scalar	1	1618
+None	long int	scalar	1	1954
+None	long int	vvm	1	2063
+None	long int	scalar	1	1551
+None	unsigned long int	scalar	1	1594
+None	unsigned long int	vvm	1	1699
+None	unsigned long int	scalar	1	2213
+None	float	scalar	1	2166
+None	float	vvm	1	2040
+None	float	scalar	1	1889
+None	double	scalar	1	3999
+None	double	vvm	1	3666
+None	double	scalar	1	4486
+None	long double	scalar	1	14231
+None	long double	vvm	1	14511
+None	long double	scalar	1	15369
+None	char	scalar	2	1132
+None	char	vvm	2	538
+None	char	scalar	2	630
+None	char	scalar	2	705
+None	char	vvm	2	508
+None	char	scalar	2	621
+None	signed char	scalar	2	639
+None	signed char	vvm	2	456
+None	signed char	scalar	2	642
+None	unsigned char	scalar	2	441
+None	unsigned char	vvm	2	408
+None	unsigned char	scalar	2	424
+None	short int	scalar	2	952
+None	short int	vvm	2	845
+None	short int	scalar	2	784
+None	unsigned short int	scalar	2	1117
+None	unsigned short int	vvm	2	965
+None	unsigned short int	scalar	2	1204
+None	int	scalar	2	1836
+None	int	vvm	2	1665
+None	int	scalar	2	1654
+None	unsigned int	scalar	2	1973
+None	unsigned int	vvm	2	1605
+None	unsigned int	scalar	2	1914
+None	long int	scalar	2	1979
+None	long int	vvm	2	1654
+None	long int	scalar	2	2335
+None	unsigned long int	scalar	2	1740
+None	unsigned long int	vvm	2	1614
+None	unsigned long int	scalar	2	1642
+None	float	scalar	2	2073
+None	float	vvm	2	2558
+None	float	scalar	2	1862
+None	double	scalar	2	3653
+None	double	vvm	2	4437
+None	double	scalar	2	4135
+None	long double	scalar	2	31558
+None	long double	vvm	2	21935
+None	long double	scalar	2	21772
+None	char	scalar	3	693
+None	char	vvm	3	484
+None	char	scalar	3	448
+None	char	scalar	3	503
+None	char	vvm	3	416
+None	char	scalar	3	430
+None	signed char	scalar	3	466
+None	signed char	vvm	3	416
+None	signed char	scalar	3	443
+None	unsigned char	scalar	3	680
+None	unsigned char	vvm	3	1288
+None	unsigned char	scalar	3	657
+None	short int	scalar	3	1047
+None	short int	vvm	3	867
+None	short int	scalar	3	730
+None	unsigned short int	scalar	3	947
+None	unsigned short int	vvm	3	711
+None	unsigned short int	scalar	3	917
+None	int	scalar	3	1697
+None	int	vvm	3	1681
+None	int	scalar	3	1611
+None	unsigned int	scalar	3	1977
+None	unsigned int	vvm	3	1815
+None	unsigned int	scalar	3	1558
+None	long int	scalar	3	1764
+None	long int	vvm	3	1577
+None	long int	scalar	3	1537
+None	unsigned long int	scalar	3	1642
+None	unsigned long int	vvm	3	10610
+None	unsigned long int	scalar	3	1770
+None	float	scalar	3	3161
+None	float	vvm	3	2389
+None	float	scalar	3	2209
+None	double	scalar	3	4641
+None	double	vvm	3	3978
+None	double	scalar	3	4793
+None	long double	scalar	3	28479
+None	long double	vvm	3	29728
+None	long double	scalar	3	38626
+None	char	scalar	4	864
+None	char	vvm	4	575
+None	char	scalar	4	681
+None	char	scalar	4	740
+None	char	vvm	4	467
+None	char	scalar	4	657
+None	signed char	scalar	4	1201
+None	signed char	vvm	4	516
+None	signed char	scalar	4	632
+None	unsigned char	scalar	4	676
+None	unsigned char	vvm	4	421
+None	unsigned char	scalar	4	652
+None	short int	scalar	4	974
+None	short int	vvm	4	844
+None	short int	scalar	4	773
+None	unsigned short int	scalar	4	986
+None	unsigned short int	vvm	4	759
+None	unsigned short int	scalar	4	1607
+None	int	scalar	4	1807
+None	int	vvm	4	2054
+None	int	scalar	4	1658
+None	unsigned int	scalar	4	1714
+None	unsigned int	vvm	4	1935
+None	unsigned int	scalar	4	1680
+None	long int	scalar	4	1640
+None	long int	vvm	4	1963
+None	long int	scalar	4	1566
+None	unsigned long int	scalar	4	2843
+None	unsigned long int	vvm	4	1655
+None	unsigned long int	scalar	4	1668
+None	float	scalar	4	2373
+None	float	vvm	4	3130
+None	float	scalar	4	2512
+None	double	scalar	4	5003
+None	double	vvm	4	4898
+None	double	scalar	4	4465
+None	long double	scalar	4	36426
+None	long double	vvm	4	35876
+None	long double	scalar	4	45237
+None	char	scalar	5	909
+None	char	vvm	5	592
+None	char	scalar	5	682
+None	char	scalar	5	1071
+None	char	vvm	5	554
+None	char	scalar	5	942
+None	signed char	scalar	5	733
+None	signed char	vvm	5	539
+None	signed char	scalar	5	671
+None	unsigned char	scalar	5	674
+None	unsigned char	vvm	5	466
+None	unsigned char	scalar	5	694
+None	short int	scalar	5	1227
+None	short int	vvm	5	927
+None	short int	scalar	5	1379
+None	unsigned short int	scalar	5	1094
+None	unsigned short int	vvm	5	817
+None	unsigned short int	scalar	5	987
+None	int	scalar	5	1904
+None	int	vvm	5	2070
+None	int	scalar	5	2211
+None	unsigned int	scalar	5	1979
+None	unsigned int	vvm	5	1953
+None	unsigned int	scalar	5	1886
+None	long int	scalar	5	2238
+None	long int	vvm	5	2066
+None	long int	scalar	5	1774
+None	unsigned long int	scalar	5	1869
+None	unsigned long int	vvm	5	1681
+None	unsigned long int	scalar	5	2632
+None	float	scalar	5	2716
+None	float	vvm	5	3034
+None	float	scalar	5	2721
+None	double	scalar	5	5281
+None	double	vvm	5	13282
+None	double	scalar	5	5123
+None	long double	scalar	5	41805
+None	long double	vvm	5	42871
+None	long double	scalar	5	53380
+Run at Thu Oct  5 13:16:01 2006
+None	char	scalar	1	686
+None	char	vvm	1	555
+None	char	scalar	1	458
+None	char	scalar	1	475
+None	char	vvm	1	455
+None	char	scalar	1	447
+None	signed char	scalar	1	461
+None	signed char	vvm	1	530
+None	signed char	scalar	1	442
+None	unsigned char	scalar	1	405
+None	unsigned char	vvm	1	406
+None	unsigned char	scalar	1	389
+None	short int	scalar	1	1259
+None	short int	vvm	1	887
+None	short int	scalar	1	723
+None	unsigned short int	scalar	1	732
+None	unsigned short int	vvm	1	980
+None	unsigned short int	scalar	1	737
+None	int	scalar	1	1659
+None	int	vvm	1	1732
+None	int	scalar	1	1914
+None	unsigned int	scalar	1	1691
+None	unsigned int	vvm	1	1869
+None	unsigned int	scalar	1	1616
+None	long int	scalar	1	1858
+None	long int	vvm	1	1745
+None	long int	scalar	1	1622
+None	unsigned long int	scalar	1	2114
+None	unsigned long int	vvm	1	2057
+None	unsigned long int	scalar	1	1913
+None	float	scalar	1	1711
+None	float	vvm	1	10829
+None	float	scalar	1	2029
+None	double	scalar	1	3651
+None	double	vvm	1	4082
+None	double	scalar	1	3619
+None	long double	scalar	1	15096
+None	long double	vvm	1	14333
+None	long double	scalar	1	14327
+None	char	scalar	2	990
+None	char	vvm	2	523
+None	char	scalar	2	643
+None	char	scalar	2	697
+None	char	vvm	2	469
+None	char	scalar	2	617
+None	signed char	scalar	2	898
+None	signed char	vvm	2	501
+None	signed char	scalar	2	836
+None	unsigned char	scalar	2	526
+None	unsigned char	vvm	2	435
+None	unsigned char	scalar	2	438
+None	short int	scalar	2	912
+None	short int	vvm	2	863
+None	short int	scalar	2	824
+None	unsigned short int	scalar	2	793
+None	unsigned short int	vvm	2	998
+None	unsigned short int	scalar	2	794
+None	int	scalar	2	2129
+None	int	vvm	2	2131
+None	int	scalar	2	1728
+None	unsigned int	scalar	2	1660
+None	unsigned int	vvm	2	1634
+None	unsigned int	scalar	2	1916
+None	long int	scalar	2	1740
+None	long int	vvm	2	1610
+None	long int	scalar	2	1787
+None	unsigned long int	scalar	2	1939
+None	unsigned long int	vvm	2	2344
+None	unsigned long int	scalar	2	1605
+None	float	scalar	2	1768
+None	float	vvm	2	1775
+None	float	scalar	2	1750
+None	double	scalar	2	4054
+None	double	vvm	2	3784
+None	double	scalar	2	4374
+None	long double	scalar	2	23061
+None	long double	vvm	2	21736
+None	long double	scalar	2	30458
+None	char	scalar	3	683
+None	char	vvm	3	467
+None	char	scalar	3	443
+None	char	scalar	3	774
+None	char	vvm	3	483
+None	char	scalar	3	446
+None	signed char	scalar	3	707
+None	signed char	vvm	3	450
+None	signed char	scalar	3	455
+None	unsigned char	scalar	3	633
+None	unsigned char	vvm	3	472
+None	unsigned char	scalar	3	845
+None	short int	scalar	3	979
+None	short int	vvm	3	1101
+None	short int	scalar	3	732
+None	unsigned short int	scalar	3	1337
+None	unsigned short int	vvm	3	767
+None	unsigned short int	scalar	3	903
+None	int	scalar	3	1707
+None	int	vvm	3	1626
+None	int	scalar	3	1654
+None	unsigned int	scalar	3	2134
+None	unsigned int	vvm	3	1816
+None	unsigned int	scalar	3	2159
+None	long int	scalar	3	1694
+None	long int	vvm	3	1566
+None	long int	scalar	3	1925
+None	unsigned long int	scalar	3	12054
+None	unsigned long int	vvm	3	1839
+None	unsigned long int	scalar	3	1862
+None	float	scalar	3	2106
+None	float	vvm	3	2892
+None	float	scalar	3	2175
+None	double	scalar	3	4375
+None	double	vvm	3	4624
+None	double	scalar	3	4354
+None	long double	scalar	3	29148
+None	long double	vvm	3	28689
+None	long double	scalar	3	28874
+None	char	scalar	4	1086
+None	char	vvm	4	539
+None	char	scalar	4	629
+None	char	scalar	4	653
+None	char	vvm	4	495
+None	char	scalar	4	619
+None	signed char	scalar	4	656
+None	signed char	vvm	4	468
+None	signed char	scalar	4	608
+None	unsigned char	scalar	4	669
+None	unsigned char	vvm	4	416
+None	unsigned char	scalar	4	928
+None	short int	scalar	4	930
+None	short int	vvm	4	859
+None	short int	scalar	4	772
+None	unsigned short int	scalar	4	1037
+None	unsigned short int	vvm	4	779
+None	unsigned short int	scalar	4	1178
+None	int	scalar	4	1760
+None	int	vvm	4	2433
+None	int	scalar	4	1696
+None	unsigned int	scalar	4	1641
+None	unsigned int	vvm	4	1640
+None	unsigned int	scalar	4	1548
+None	long int	scalar	4	1951
+None	long int	vvm	4	1668
+None	long int	scalar	4	1584
+None	unsigned long int	scalar	4	1639
+None	unsigned long int	vvm	4	1593
+None	unsigned long int	scalar	4	2039
+None	float	scalar	4	2401
+None	float	vvm	4	2836
+None	float	scalar	4	2877
+None	double	scalar	4	4421
+None	double	vvm	4	15029
+None	double	scalar	4	4657
+None	long double	scalar	4	36390
+None	long double	vvm	4	54993
+None	long double	scalar	4	47848
+None	char	scalar	5	1181
+None	char	vvm	5	629
+None	char	scalar	5	680
+None	char	scalar	5	704
+None	char	vvm	5	517
+None	char	scalar	5	702
+None	signed char	scalar	5	689
+None	signed char	vvm	5	549
+None	signed char	scalar	5	703
+None	unsigned char	scalar	5	1035
+None	unsigned char	vvm	5	498
+None	unsigned char	scalar	5	670
+None	short int	scalar	5	1123
+None	short int	vvm	5	853
+None	short int	scalar	5	1486
+None	unsigned short int	scalar	5	1077
+None	unsigned short int	vvm	5	1127
+None	unsigned short int	scalar	5	1005
+None	int	scalar	5	2386
+None	int	vvm	5	1879
+None	int	scalar	5	1785
+None	unsigned int	scalar	5	1959
+None	unsigned int	vvm	5	2349
+None	unsigned int	scalar	5	2140
+None	long int	scalar	5	2437
+None	long int	vvm	5	1914
+None	long int	scalar	5	1845
+None	unsigned long int	scalar	5	1897
+None	unsigned long int	vvm	5	14315
+None	unsigned long int	scalar	5	1878
+None	float	scalar	5	2711
+None	float	vvm	5	3058
+None	float	scalar	5	3268
+None	double	scalar	5	5073
+None	double	vvm	5	4707
+None	double	scalar	5	5897
+None	long double	scalar	5	41713
+None	long double	vvm	5	42204
+None	long double	scalar	5	54392
+Run at Thu Oct  5 13:16:02 2006
+None	char	scalar	1	683
+None	char	vvm	1	560
+None	char	scalar	1	459
+None	char	scalar	1	472
+None	char	vvm	1	451
+None	char	scalar	1	471
+None	signed char	scalar	1	460
+None	signed char	vvm	1	467
+None	signed char	scalar	1	437
+None	unsigned char	scalar	1	397
+None	unsigned char	vvm	1	392
+None	unsigned char	scalar	1	384
+None	short int	scalar	1	847
+None	short int	vvm	1	1325
+None	short int	scalar	1	808
+None	unsigned short int	scalar	1	744
+None	unsigned short int	vvm	1	691
+None	unsigned short int	scalar	1	823
+None	int	scalar	1	1852
+None	int	vvm	1	13056
+None	int	scalar	1	2767
+None	unsigned int	scalar	1	1655
+None	unsigned int	vvm	1	1554
+None	unsigned int	scalar	1	1794
+None	long int	scalar	1	1642
+None	long int	vvm	1	2102
+None	long int	scalar	1	1559
+None	unsigned long int	scalar	1	2115
+None	unsigned long int	vvm	1	1664
+None	unsigned long int	scalar	1	1579
+None	float	scalar	1	2092
+None	float	vvm	1	1878
+None	float	scalar	1	2115
+None	double	scalar	1	4261
+None	double	vvm	1	3706
+None	double	scalar	1	3507
+None	long double	scalar	1	14923
+None	long double	vvm	1	14622
+None	long double	scalar	1	16455
+None	char	scalar	2	866
+None	char	vvm	2	531
+None	char	scalar	2	644
+None	char	scalar	2	670
+None	char	vvm	2	482
+None	char	scalar	2	687
+None	signed char	scalar	2	781
+None	signed char	vvm	2	767
+None	signed char	scalar	2	680
+None	unsigned char	scalar	2	709
+None	unsigned char	vvm	2	467
+None	unsigned char	scalar	2	646
+None	short int	scalar	2	980
+None	short int	vvm	2	866
+None	short int	scalar	2	790
+None	unsigned short int	scalar	2	879
+None	unsigned short int	vvm	2	794
+None	unsigned short int	scalar	2	768
+None	int	scalar	2	2098
+None	int	vvm	2	1685
+None	int	scalar	2	1797
+None	unsigned int	scalar	2	2012
+None	unsigned int	vvm	2	1696
+None	unsigned int	scalar	2	1955
+None	long int	scalar	2	2167
+None	long int	vvm	2	1662
+None	long int	scalar	2	1650
+None	unsigned long int	scalar	2	1781
+None	unsigned long int	vvm	2	2302
+None	unsigned long int	scalar	2	1710
+None	float	scalar	2	1870
+None	float	vvm	2	1761
+None	float	scalar	2	2031
+None	double	scalar	2	3948
+None	double	vvm	2	4653
+None	double	scalar	2	4164
+None	long double	scalar	2	22065
+None	long double	vvm	2	21806
+None	long double	scalar	2	22249
+None	char	scalar	3	682
+None	char	vvm	3	602
+None	char	scalar	3	458
+None	char	scalar	3	752
+None	char	vvm	3	452
+None	char	scalar	3	443
+None	signed char	scalar	3	482
+None	signed char	vvm	3	418
+None	signed char	scalar	3	685
+None	unsigned char	scalar	3	644
+None	unsigned char	vvm	3	428
+None	unsigned char	scalar	3	645
+None	short int	scalar	3	866
+None	short int	vvm	3	840
+None	short int	scalar	3	692
+None	unsigned short int	scalar	3	990
+None	unsigned short int	vvm	3	825
+None	unsigned short int	scalar	3	979
+None	int	scalar	3	2090
+None	int	vvm	3	1797
+None	int	scalar	3	1937
+None	unsigned int	scalar	3	2025
+None	unsigned int	vvm	3	1727
+None	unsigned int	scalar	3	1772
+None	long int	scalar	3	1878
+None	long int	vvm	3	2379
+None	long int	scalar	3	1836
+None	unsigned long int	scalar	3	1827
+None	unsigned long int	vvm	3	1724
+None	unsigned long int	scalar	3	2262
+None	float	scalar	3	2402
+None	float	vvm	3	2511
+None	float	scalar	3	2194
+None	double	scalar	3	4569
+None	double	vvm	3	4545
+None	double	scalar	3	4899
+None	long double	scalar	3	28601
+None	long double	vvm	3	29186
+None	long double	scalar	3	37982
+None	char	scalar	4	1122
+None	char	vvm	4	520
+None	char	scalar	4	671
+None	char	scalar	4	656
+None	char	vvm	4	458
+None	char	scalar	4	834
+None	signed char	scalar	4	658
+None	signed char	vvm	4	804
+None	signed char	scalar	4	882
+None	unsigned char	scalar	4	712
+None	unsigned char	vvm	4	674
+None	unsigned char	scalar	4	676
+None	short int	scalar	4	962
+None	short int	vvm	4	865
+None	short int	scalar	4	776
+None	unsigned short int	scalar	4	988
+None	unsigned short int	vvm	4	977
+None	unsigned short int	scalar	4	2510
+None	int	scalar	4	2197
+None	int	vvm	4	1725
+None	int	scalar	4	1790
+None	unsigned int	scalar	4	1667
+None	unsigned int	vvm	4	1890
+None	unsigned int	scalar	4	1905
+None	long int	scalar	4	1690
+None	long int	vvm	4	1899
+None	long int	scalar	4	1699
+None	unsigned long int	scalar	4	2325
+None	unsigned long int	vvm	4	2655
+None	unsigned long int	scalar	4	1762
+None	float	scalar	4	2646
+None	float	vvm	4	2450
+None	float	scalar	4	3130
+None	double	scalar	4	4839
+None	double	vvm	4	4571
+None	double	scalar	4	4595
+None	long double	scalar	4	35332
+None	long double	vvm	4	36030
+None	long double	scalar	4	45381
+None	char	scalar	5	902
+None	char	vvm	5	569
+None	char	scalar	5	715
+None	char	scalar	5	701
+None	char	vvm	5	549
+None	char	scalar	5	940
+None	signed char	scalar	5	713
+None	signed char	vvm	5	526
+None	signed char	scalar	5	662
+None	unsigned char	scalar	5	668
+None	unsigned char	vvm	5	462
+None	unsigned char	scalar	5	656
+None	short int	scalar	5	1061
+None	short int	vvm	5	891
+None	short int	scalar	5	1154
+None	unsigned short int	scalar	5	1073
+None	unsigned short int	vvm	5	1770
+None	unsigned short int	scalar	5	1026
+None	int	scalar	5	2000
+None	int	vvm	5	1758
+None	int	scalar	5	1999
+None	unsigned int	scalar	5	2209
+None	unsigned int	vvm	5	1946
+None	unsigned int	scalar	5	2070
+None	long int	scalar	5	1858
+None	long int	vvm	5	1875
+None	long int	scalar	5	2172
+None	unsigned long int	scalar	5	1860
+None	unsigned long int	vvm	5	1695
+None	unsigned long int	scalar	5	2018
+None	float	scalar	5	3427
+None	float	vvm	5	2851
+None	float	scalar	5	2608
+None	double	scalar	5	14930
+None	double	vvm	5	4593
+None	double	scalar	5	4904
+None	long double	scalar	5	42258
+None	long double	vvm	5	52655
+None	long double	scalar	5	42553
+Run at Thu Oct  5 13:16:03 2006
+None	char	scalar	1	1143
+None	char	vvm	1	566
+None	char	scalar	1	482
+None	char	scalar	1	469
+None	char	vvm	1	458
+None	char	scalar	1	429
+None	signed char	scalar	1	452
+None	signed char	vvm	1	716
+None	signed char	scalar	1	450
+None	unsigned char	scalar	1	414
+None	unsigned char	vvm	1	424
+None	unsigned char	scalar	1	388
+None	short int	scalar	1	852
+None	short int	vvm	1	832
+None	short int	scalar	1	1034
+None	unsigned short int	scalar	1	769
+None	unsigned short int	vvm	1	789
+None	unsigned short int	scalar	1	717
+None	int	scalar	1	1792
+None	int	vvm	1	1606
+None	int	scalar	1	1576
+None	unsigned int	scalar	1	2252
+None	unsigned int	vvm	1	1584
+None	unsigned int	scalar	1	1751
+None	long int	scalar	1	1904
+None	long int	vvm	1	1602
+None	long int	scalar	1	1877
+None	unsigned long int	scalar	1	11558
+None	unsigned long int	vvm	1	1947
+None	unsigned long int	scalar	1	1752
+None	float	scalar	1	1667
+None	float	vvm	1	1622
+None	float	scalar	1	1658
+None	double	scalar	1	4211
+None	double	vvm	1	4107
+None	double	scalar	1	3615
+None	long double	scalar	1	14419
+None	long double	vvm	1	14758
+None	long double	scalar	1	15059
+None	char	scalar	2	851
+None	char	vvm	2	519
+None	char	scalar	2	630
+None	char	scalar	2	650
+None	char	vvm	2	522
+None	char	scalar	2	620
+None	signed char	scalar	2	642
+None	signed char	vvm	2	462
+None	signed char	scalar	2	625
+None	unsigned char	scalar	2	448
+None	unsigned char	vvm	2	672
+None	unsigned char	scalar	2	476
+None	short int	scalar	2	1678
+None	short int	vvm	2	1148
+None	short int	scalar	2	812
+None	unsigned short int	scalar	2	804
+None	unsigned short int	vvm	2	845
+None	unsigned short int	scalar	2	754
+None	int	scalar	2	1717
+None	int	vvm	2	1653
+None	int	scalar	2	1673
+None	unsigned int	scalar	2	1957
+None	unsigned int	vvm	2	1690
+None	unsigned int	scalar	2	1636
+None	long int	scalar	2	2359
+None	long int	vvm	2	1634
+None	long int	scalar	2	1658
+None	unsigned long int	scalar	2	1599
+None	unsigned long int	vvm	2	1891
+None	unsigned long int	scalar	2	1922
+None	float	scalar	2	1997
+None	float	vvm	2	1782
+None	float	scalar	2	1695
+None	double	scalar	2	4101
+None	double	vvm	2	4094
+None	double	scalar	2	3883
+None	long double	scalar	2	21171
+None	long double	vvm	2	30826
+None	long double	scalar	2	21823
+None	char	scalar	3	677
+None	char	vvm	3	465
+None	char	scalar	3	445
+None	char	scalar	3	479
+None	char	vvm	3	416
+None	char	scalar	3	506
+None	signed char	scalar	3	605
+None	signed char	vvm	3	449
+None	signed char	scalar	3	716
+None	unsigned char	scalar	3	698
+None	unsigned char	vvm	3	462
+None	unsigned char	scalar	3	691
+None	short int	scalar	3	894
+None	short int	vvm	3	846
+None	short int	scalar	3	710
+None	unsigned short int	scalar	3	927
+None	unsigned short int	vvm	3	725
+None	unsigned short int	scalar	3	883
+None	int	scalar	3	2003
+None	int	vvm	3	2182
+None	int	scalar	3	1982
+None	unsigned int	scalar	3	1890
+None	unsigned int	vvm	3	1644
+None	unsigned int	scalar	3	10387
+None	long int	scalar	3	2282
+None	long int	vvm	3	1629
+None	long int	scalar	3	1525
+None	unsigned long int	scalar	3	1886
+None	unsigned long int	vvm	3	1642
+None	unsigned long int	scalar	3	1959
+None	float	scalar	3	2519
+None	float	vvm	3	2469
+None	float	scalar	3	2033
+None	double	scalar	3	4202
+None	double	vvm	3	4612
+None	double	scalar	3	4621
+None	long double	scalar	3	28346
+None	long double	vvm	3	29411
+None	long double	scalar	3	29162
+None	char	scalar	4	894
+None	char	vvm	4	505
+None	char	scalar	4	629
+None	char	scalar	4	642
+None	char	vvm	4	575
+None	char	scalar	4	634
+None	signed char	scalar	4	644
+None	signed char	vvm	4	456
+None	signed char	scalar	4	919
+None	unsigned char	scalar	4	738
+None	unsigned char	vvm	4	426
+None	unsigned char	scalar	4	678
+None	short int	scalar	4	1159
+None	short int	vvm	4	868
+None	short int	scalar	4	752
+None	unsigned short int	scalar	4	978
+None	unsigned short int	vvm	4	738
+None	unsigned short int	scalar	4	933
+None	int	scalar	4	2206
+None	int	vvm	4	1828
+None	int	scalar	4	1905
+None	unsigned int	scalar	4	1632
+None	unsigned int	vvm	4	1794
+None	unsigned int	scalar	4	1677
+None	long int	scalar	4	1623
+None	long int	vvm	4	1531
+None	long int	scalar	4	1797
+None	unsigned long int	scalar	4	2025
+None	unsigned long int	vvm	4	1724
+None	unsigned long int	scalar	4	1936
+None	float	scalar	4	2981
+None	float	vvm	4	2411
+None	float	scalar	4	2522
+None	double	scalar	4	12416
+None	double	vvm	4	4707
+None	double	scalar	4	4871
+None	long double	scalar	4	36479
+None	long double	vvm	4	35159
+None	long double	scalar	4	36373
+None	char	scalar	5	903
+None	char	vvm	5	807
+None	char	scalar	5	695
+None	char	scalar	5	702
+None	char	vvm	5	521
+None	char	scalar	5	659
+None	signed char	scalar	5	696
+None	signed char	vvm	5	573
+None	signed char	scalar	5	1094
+None	unsigned char	scalar	5	736
+None	unsigned char	vvm	5	522
+None	unsigned char	scalar	5	679
+None	short int	scalar	5	1085
+None	short int	vvm	5	997
+None	short int	scalar	5	928
+None	unsigned short int	scalar	5	1004
+None	unsigned short int	vvm	5	816
+None	unsigned short int	scalar	5	1172
+None	int	scalar	5	2125
+None	int	vvm	5	1704
+None	int	scalar	5	1693
+None	unsigned int	scalar	5	1891
+None	unsigned int	vvm	5	2722
+None	unsigned int	scalar	5	1841
+None	long int	scalar	5	2164
+None	long int	vvm	5	1690
+None	long int	scalar	5	1721
+None	unsigned long int	scalar	5	2374
+None	unsigned long int	vvm	5	1887
+None	unsigned long int	scalar	5	1777
+None	float	scalar	5	3046
+None	float	vvm	5	3760
+None	float	scalar	5	3003
+None	double	scalar	5	5026
+None	double	vvm	5	5873
+None	double	scalar	5	4663
+None	long double	scalar	5	43131
+None	long double	vvm	5	43562
+None	long double	scalar	5	50149
+Run at Thu Oct  5 13:16:04 2006
+None	char	scalar	1	674
+None	char	vvm	1	506
+None	char	scalar	1	445
+None	char	scalar	1	469
+None	char	vvm	1	452
+None	char	scalar	1	428
+None	signed char	scalar	1	494
+None	signed char	vvm	1	750
+None	signed char	scalar	1	459
+None	unsigned char	scalar	1	415
+None	unsigned char	vvm	1	397
+None	unsigned char	scalar	1	394
+None	short int	scalar	1	886
+None	short int	vvm	1	831
+None	short int	scalar	1	707
+None	unsigned short int	scalar	1	703
+None	unsigned short int	vvm	1	730
+None	unsigned short int	scalar	1	687
+None	int	scalar	1	2451
+None	int	vvm	1	1700
+None	int	scalar	1	1859
+None	unsigned int	scalar	1	1550
+None	unsigned int	vvm	1	1537
+None	unsigned int	scalar	1	1890
+None	long int	scalar	1	1622
+None	long int	vvm	1	1930
+None	long int	scalar	1	1508
+None	unsigned long int	scalar	1	2444
+None	unsigned long int	vvm	1	2184
+None	unsigned long int	scalar	1	1532
+None	float	scalar	1	1655
+None	float	vvm	1	9296
+None	float	scalar	1	1742
+None	double	scalar	1	3558
+None	double	vvm	1	3980
+None	double	scalar	1	3952
+None	long double	scalar	1	15349
+None	long double	vvm	1	14407
+None	long double	scalar	1	14853
+None	char	scalar	2	854
+None	char	vvm	2	506
+None	char	scalar	2	629
+None	char	scalar	2	941
+None	char	vvm	2	519
+None	char	scalar	2	636
+None	signed char	scalar	2	647
+None	signed char	vvm	2	462
+None	signed char	scalar	2	864
+None	unsigned char	scalar	2	481
+None	unsigned char	vvm	2	572
+None	unsigned char	scalar	2	452
+None	short int	scalar	2	949
+None	short int	vvm	2	842
+None	short int	scalar	2	2795
+None	unsigned short int	scalar	2	1281
+None	unsigned short int	vvm	2	853
+None	unsigned short int	scalar	2	787
+None	int	scalar	2	1754
+None	int	vvm	2	1673
+None	int	scalar	2	10806
+None	unsigned int	scalar	2	1779
+None	unsigned int	vvm	2	1704
+None	unsigned int	scalar	2	1946
+None	long int	scalar	2	2009
+None	long int	vvm	2	1590
+None	long int	scalar	2	1655
+None	unsigned long int	scalar	2	1713
+None	unsigned long int	vvm	2	1698
+None	unsigned long int	scalar	2	1596
+None	float	scalar	2	2091
+None	float	vvm	2	3412
+None	float	scalar	2	2277
+None	double	scalar	2	3787
+None	double	vvm	2	4426
+None	double	scalar	2	3807
+None	long double	scalar	2	21448
+None	long double	vvm	2	22568
+None	long double	scalar	2	29609
+None	char	scalar	3	1133
+None	char	vvm	3	517
+None	char	scalar	3	456
+None	char	scalar	3	475
+None	char	vvm	3	416
+None	char	scalar	3	431
+None	signed char	scalar	3	518
+None	signed char	vvm	3	431
+None	signed char	scalar	3	448
+None	unsigned char	scalar	3	623
+None	unsigned char	vvm	3	391
+None	unsigned char	scalar	3	610
+None	short int	scalar	3	849
+None	short int	vvm	3	917
+None	short int	scalar	3	1022
+None	unsigned short int	scalar	3	1201
+None	unsigned short int	vvm	3	812
+None	unsigned short int	scalar	3	925
+None	int	scalar	3	1812
+None	int	vvm	3	1830
+None	int	scalar	3	1530
+None	unsigned int	scalar	3	3495
+None	unsigned int	vvm	3	1655
+None	unsigned int	scalar	3	1821
+None	long int	scalar	3	1799
+None	long int	vvm	3	2076
+None	long int	scalar	3	1534
+None	unsigned long int	scalar	3	1542
+None	unsigned long int	vvm	3	1568
+None	unsigned long int	scalar	3	1840
+None	float	scalar	3	2843
+None	float	vvm	3	2098
+None	float	scalar	3	2065
+None	double	scalar	3	3989
+None	double	vvm	3	4835
+None	double	scalar	3	4230
+None	long double	scalar	3	37455
+None	long double	vvm	3	28507
+None	long double	scalar	3	28638
+None	char	scalar	4	855
+None	char	vvm	4	531
+None	char	scalar	4	917
+None	char	scalar	4	979
+None	char	vvm	4	675
+None	char	scalar	4	647
+None	signed char	scalar	4	652
+None	signed char	vvm	4	470
+None	signed char	scalar	4	610
+None	unsigned char	scalar	4	669
+None	unsigned char	vvm	4	507
+None	unsigned char	scalar	4	662
+None	short int	scalar	4	935
+None	short int	vvm	4	832
+None	short int	scalar	4	1415
+None	unsigned short int	scalar	4	1291
+None	unsigned short int	vvm	4	971
+None	unsigned short int	scalar	4	1054
+None	int	scalar	4	1713
+None	int	vvm	4	1728
+None	int	scalar	4	1911
+None	unsigned int	scalar	4	1733
+None	unsigned int	vvm	4	1559
+None	unsigned int	scalar	4	1827
+None	long int	scalar	4	1801
+None	long int	vvm	4	2033
+None	long int	scalar	4	1936
+None	unsigned long int	scalar	4	1626
+None	unsigned long int	vvm	4	1876
+None	unsigned long int	scalar	4	1596
+None	float	scalar	4	3035
+None	float	vvm	4	2532
+None	float	scalar	4	2630
+None	double	scalar	4	4711
+None	double	vvm	4	4642
+None	double	scalar	4	5014
+None	long double	scalar	4	44660
+None	long double	vvm	4	35878
+None	long double	scalar	4	34974
+None	char	scalar	5	896
+None	char	vvm	5	969
+None	char	scalar	5	693
+None	char	scalar	5	768
+None	char	vvm	5	521
+None	char	scalar	5	657
+None	signed char	scalar	5	682
+None	signed char	vvm	5	522
+None	signed char	scalar	5	653
+None	unsigned char	scalar	5	1215
+None	unsigned char	vvm	5	499
+None	unsigned char	scalar	5	707
+None	short int	scalar	5	1083
+None	short int	vvm	5	1418
+None	short int	scalar	5	958
+None	unsigned short int	scalar	5	1004
+None	unsigned short int	vvm	5	762
+None	unsigned short int	scalar	5	930
+None	int	scalar	5	1807
+None	int	vvm	5	1805
+None	int	scalar	5	2512
+None	unsigned int	scalar	5	1819
+None	unsigned int	vvm	5	1984
+None	unsigned int	scalar	5	1828
+None	long int	scalar	5	1838
+None	long int	vvm	5	1702
+None	long int	scalar	5	1713
+None	unsigned long int	scalar	5	2225
+None	unsigned long int	vvm	5	1666
+None	unsigned long int	scalar	5	2596
+None	float	scalar	5	2735
+None	float	vvm	5	2983
+None	float	scalar	5	2599
+None	double	scalar	5	6503
+None	double	vvm	5	5049
+None	double	scalar	5	4981
+None	long double	scalar	5	51530
+None	long double	vvm	5	41963
+None	long double	scalar	5	42940
+Run at Thu Oct  5 13:16:05 2006
+None	char	scalar	1	675
+None	char	vvm	1	502
+None	char	scalar	1	453
+None	char	scalar	1	470
+None	char	vvm	1	458
+None	char	scalar	1	428
+None	signed char	scalar	1	502
+None	signed char	vvm	1	468
+None	signed char	scalar	1	430
+None	unsigned char	scalar	1	396
+None	unsigned char	vvm	1	387
+None	unsigned char	scalar	1	385
+None	short int	scalar	1	1211
+None	short int	vvm	1	1245
+None	short int	scalar	1	1013
+None	unsigned short int	scalar	1	922
+None	unsigned short int	vvm	1	788
+None	unsigned short int	scalar	1	736
+None	int	scalar	1	1804
+None	int	vvm	1	1582
+None	int	scalar	1	1508
+None	unsigned int	scalar	1	1611
+None	unsigned int	vvm	1	1682
+None	unsigned int	scalar	1	1859
+None	long int	scalar	1	1583
+None	long int	vvm	1	1546
+None	long int	scalar	1	1680
+None	unsigned long int	scalar	1	1560
+None	unsigned long int	vvm	1	1614
+None	unsigned long int	scalar	1	1949
+None	float	scalar	1	2299
+None	float	vvm	1	1792
+None	float	scalar	1	1582
+None	double	scalar	1	3457
+None	double	vvm	1	4573
+None	double	scalar	1	3715
+None	long double	scalar	1	14693
+None	long double	vvm	1	23225
+None	long double	scalar	1	14597
+None	char	scalar	2	907
+None	char	vvm	2	505
+None	char	scalar	2	621
+None	char	scalar	2	902
+None	char	vvm	2	477
+None	char	scalar	2	618
+None	signed char	scalar	2	642
+None	signed char	vvm	2	466
+None	signed char	scalar	2	617
+None	unsigned char	scalar	2	808
+None	unsigned char	vvm	2	443
+None	unsigned char	scalar	2	465
+None	short int	scalar	2	971
+None	short int	vvm	2	878
+None	short int	scalar	2	763
+None	unsigned short int	scalar	2	774
+None	unsigned short int	vvm	2	755
+None	unsigned short int	scalar	2	1013
+None	int	scalar	2	1763
+None	int	vvm	2	1790
+None	int	scalar	2	1582
+None	unsigned int	scalar	2	1728
+None	unsigned int	vvm	2	1761
+None	unsigned int	scalar	2	2289
+None	long int	scalar	2	8799
+None	long int	vvm	2	2218
+None	long int	scalar	2	1770
+None	unsigned long int	scalar	2	1648
+None	unsigned long int	vvm	2	1936
+None	unsigned long int	scalar	2	1849
+None	float	scalar	2	2271
+None	float	vvm	2	2129
+None	float	scalar	2	1842
+None	double	scalar	2	3735
+None	double	vvm	2	3869
+None	double	scalar	2	4297
+None	long double	scalar	2	21814
+None	long double	vvm	2	21715
+None	long double	scalar	2	22772
+None	char	scalar	3	684
+None	char	vvm	3	472
+None	char	scalar	3	451
+None	char	scalar	3	477
+None	char	vvm	3	421
+None	char	scalar	3	485
+None	signed char	scalar	3	511
+None	signed char	vvm	3	460
+None	signed char	scalar	3	460
+None	unsigned char	scalar	3	858
+None	unsigned char	vvm	3	427
+None	unsigned char	scalar	3	636
+None	short int	scalar	3	937
+None	short int	vvm	3	849
+None	short int	scalar	3	695
+None	unsigned short int	scalar	3	1226
+None	unsigned short int	vvm	3	759
+None	unsigned short int	scalar	3	895
+None	int	scalar	3	1664
+None	int	vvm	3	2036
+None	int	scalar	3	1654
+None	unsigned int	scalar	3	1696
+None	unsigned int	vvm	3	1548
+None	unsigned int	scalar	3	1506
+None	long int	scalar	3	2132
+None	long int	vvm	3	1809
+None	long int	scalar	3	1527
+None	unsigned long int	scalar	3	1538
+None	unsigned long int	vvm	3	1885
+None	unsigned long int	scalar	3	1539
+None	float	scalar	3	2144
+None	float	vvm	3	2106
+None	float	scalar	3	2180
+None	double	scalar	3	4809
+None	double	vvm	3	4067
+None	double	scalar	3	5114
+None	long double	scalar	3	35589
+None	long double	vvm	3	28715
+None	long double	scalar	3	28428
+None	char	scalar	4	851
+None	char	vvm	4	505
+None	char	scalar	4	870
+None	char	scalar	4	680
+None	char	vvm	4	463
+None	char	scalar	4	611
+None	signed char	scalar	4	634
+None	signed char	vvm	4	525
+None	signed char	scalar	4	912
+None	unsigned char	scalar	4	820
+None	unsigned char	vvm	4	693
+None	unsigned char	scalar	4	814
+None	short int	scalar	4	1222
+None	short int	vvm	4	906
+None	short int	scalar	4	1021
+None	unsigned short int	scalar	4	1113
+None	unsigned short int	vvm	4	812
+None	unsigned short int	scalar	4	956
+None	int	scalar	4	1933
+None	int	vvm	4	8516
+None	int	scalar	4	1965
+None	unsigned int	scalar	4	1675
+None	unsigned int	vvm	4	1907
+None	unsigned int	scalar	4	1578
+None	long int	scalar	4	1961
+None	long int	vvm	4	2300
+None	long int	scalar	4	1773
+None	unsigned long int	scalar	4	1619
+None	unsigned long int	vvm	4	1601
+None	unsigned long int	scalar	4	1837
+None	float	scalar	4	2748
+None	float	vvm	4	3316
+None	float	scalar	4	2533
+None	double	scalar	4	4721
+None	double	vvm	4	4596
+None	double	scalar	4	4683
+None	long double	scalar	4	35386
+None	long double	vvm	4	42335
+None	long double	scalar	4	35632
+None	char	scalar	5	1405
+None	char	vvm	5	597
+None	char	scalar	5	684
+None	char	scalar	5	823
+None	char	vvm	5	538
+None	char	scalar	5	721
+None	signed char	scalar	5	691
+None	signed char	vvm	5	524
+None	signed char	scalar	5	664
+None	unsigned char	scalar	5	666
+None	unsigned char	vvm	5	450
+None	unsigned char	scalar	5	664
+None	short int	scalar	5	1482
+None	short int	vvm	5	912
+None	short int	scalar	5	935
+None	unsigned short int	scalar	5	1329
+None	unsigned short int	vvm	5	1104
+None	unsigned short int	scalar	5	1025
+None	int	scalar	5	2161
+None	int	vvm	5	2093
+None	int	scalar	5	1961
+None	unsigned int	scalar	5	1787
+None	unsigned int	vvm	5	7005
+None	unsigned int	scalar	5	2255
+None	long int	scalar	5	1836
+None	long int	vvm	5	1644
+None	long int	scalar	5	1804
+None	unsigned long int	scalar	5	1862
+None	unsigned long int	vvm	5	1715
+None	unsigned long int	scalar	5	2197
+None	float	scalar	5	2763
+None	float	vvm	5	2770
+None	float	scalar	5	2608
+None	double	scalar	5	5331
+None	double	vvm	5	4702
+None	double	scalar	5	5334
+None	long double	scalar	5	42392
+None	long double	vvm	5	47482
+None	long double	scalar	5	42138
+Run at Thu Oct  5 13:16:06 2006
+None	char	scalar	1	670
+None	char	vvm	1	506
+None	char	scalar	1	443
+None	char	scalar	1	465
+None	char	vvm	1	520
+None	char	scalar	1	610
+None	signed char	scalar	1	560
+None	signed char	vvm	1	512
+None	signed char	scalar	1	442
+None	unsigned char	scalar	1	741
+None	unsigned char	vvm	1	441
+None	unsigned char	scalar	1	457
+None	short int	scalar	1	992
+None	short int	vvm	1	839
+None	short int	scalar	1	732
+None	unsigned short int	scalar	1	746
+None	unsigned short int	vvm	1	899
+None	unsigned short int	scalar	1	998
+None	int	scalar	1	6439
+None	int	vvm	1	2178
+None	int	scalar	1	2225
+None	unsigned int	scalar	1	1616
+None	unsigned int	vvm	1	1617
+None	unsigned int	scalar	1	1571
+None	long int	scalar	1	1564
+None	long int	vvm	1	1893
+None	long int	scalar	1	1861
+None	unsigned long int	scalar	1	1831
+None	unsigned long int	vvm	1	1605
+None	unsigned long int	scalar	1	1489
+None	float	scalar	1	2362
+None	float	vvm	1	1802
+None	float	scalar	1	1597
+None	double	scalar	1	4471
+None	double	vvm	1	3627
+None	double	scalar	1	3636
+None	long double	scalar	1	14991
+None	long double	vvm	1	14792
+None	long double	scalar	1	15126
+None	char	scalar	2	852
+None	char	vvm	2	516
+None	char	scalar	2	629
+None	char	scalar	2	670
+None	char	vvm	2	485
+None	char	scalar	2	624
+None	signed char	scalar	2	687
+None	signed char	vvm	2	477
+None	signed char	scalar	2	619
+None	unsigned char	scalar	2	450
+None	unsigned char	vvm	2	417
+None	unsigned char	scalar	2	441
+None	short int	scalar	2	1488
+None	short int	vvm	2	1127
+None	short int	scalar	2	860
+None	unsigned short int	scalar	2	832
+None	unsigned short int	vvm	2	828
+None	unsigned short int	scalar	2	772
+None	int	scalar	2	1675
+None	int	vvm	2	1722
+None	int	scalar	2	1741
+None	unsigned int	scalar	2	1733
+None	unsigned int	vvm	2	1637
+None	unsigned int	scalar	2	1635
+None	long int	scalar	2	1962
+None	long int	vvm	2	1696
+None	long int	scalar	2	1562
+None	unsigned long int	scalar	2	1608
+None	unsigned long int	vvm	2	1655
+None	unsigned long int	scalar	2	2082
+None	float	scalar	2	1931
+None	float	vvm	2	3003
+None	float	scalar	2	1752
+None	double	scalar	2	3990
+None	double	vvm	2	4334
+None	double	scalar	2	4184
+None	long double	scalar	2	21129
+None	long double	vvm	2	27468
+None	long double	scalar	2	21657
+None	char	scalar	3	732
+None	char	vvm	3	469
+None	char	scalar	3	451
+None	char	scalar	3	504
+None	char	vvm	3	422
+None	char	scalar	3	431
+None	signed char	scalar	3	469
+None	signed char	vvm	3	412
+None	signed char	scalar	3	441
+None	unsigned char	scalar	3	616
+None	unsigned char	vvm	3	388
+None	unsigned char	scalar	3	638
+None	short int	scalar	3	1974
+None	short int	vvm	3	922
+None	short int	scalar	3	719
+None	unsigned short int	scalar	3	942
+None	unsigned short int	vvm	3	698
+None	unsigned short int	scalar	3	869
+None	int	scalar	3	1577
+None	int	vvm	3	6046
+None	int	scalar	3	2105
+None	unsigned int	scalar	3	1867
+None	unsigned int	vvm	3	1938
+None	unsigned int	scalar	3	1571
+None	long int	scalar	3	1593
+None	long int	vvm	3	1907
+None	long int	scalar	3	1548
+None	unsigned long int	scalar	3	2310
+None	unsigned long int	vvm	3	1744
+None	unsigned long int	scalar	3	1528
+None	float	scalar	3	2109
+None	float	vvm	3	2083
+None	float	scalar	3	2684
+None	double	scalar	3	4826
+None	double	vvm	3	4768
+None	double	scalar	3	3977
+None	long double	scalar	3	28658
+None	long double	vvm	3	28298
+None	long double	scalar	3	32487
+None	char	scalar	4	1016
+None	char	vvm	4	521
+None	char	scalar	4	634
+None	char	scalar	4	663
+None	char	vvm	4	458
+None	char	scalar	4	1006
+None	signed char	scalar	4	659
+None	signed char	vvm	4	471
+None	signed char	scalar	4	631
+None	unsigned char	scalar	4	704
+None	unsigned char	vvm	4	478
+None	unsigned char	scalar	4	682
+None	short int	scalar	4	1004
+None	short int	vvm	4	848
+None	short int	scalar	4	780
+None	unsigned short int	scalar	4	1003
+None	unsigned short int	vvm	4	853
+None	unsigned short int	scalar	4	1196
+None	int	scalar	4	1733
+None	int	vvm	4	2190
+None	int	scalar	4	1701
+None	unsigned int	scalar	4	1635
+None	unsigned int	vvm	4	1574
+None	unsigned int	scalar	4	1659
+None	long int	scalar	4	1697
+None	long int	vvm	4	1883
+None	long int	scalar	4	2001
+None	unsigned long int	scalar	4	1766
+None	unsigned long int	vvm	4	2039
+None	unsigned long int	scalar	4	1721
+None	float	scalar	4	2370
+None	float	vvm	4	3094
+None	float	scalar	4	3181
+None	double	scalar	4	7748
+None	double	vvm	4	5053
+None	double	scalar	4	4643
+None	long double	scalar	4	35533
+None	long double	vvm	4	35278
+None	long double	scalar	4	36406
+None	char	scalar	5	901
+None	char	vvm	5	570
+None	char	scalar	5	813
+None	char	scalar	5	714
+None	char	vvm	5	521
+None	char	scalar	5	662
+None	signed char	scalar	5	678
+None	signed char	vvm	5	521
+None	signed char	scalar	5	1267
+None	unsigned char	scalar	5	874
+None	unsigned char	vvm	5	482
+None	unsigned char	scalar	5	669
+None	short int	scalar	5	1121
+None	short int	vvm	5	857
+None	short int	scalar	5	1149
+None	unsigned short int	scalar	5	1031
+None	unsigned short int	vvm	5	777
+None	unsigned short int	scalar	5	1795
+None	int	scalar	5	1938
+None	int	vvm	5	2017
+None	int	scalar	5	1992
+None	unsigned int	scalar	5	1895
+None	unsigned int	vvm	5	1979
+None	unsigned int	scalar	5	1726
+None	long int	scalar	5	1924
+None	long int	vvm	5	1719
+None	long int	scalar	5	2038
+None	unsigned long int	scalar	5	2537
+None	unsigned long int	vvm	5	1761
+None	unsigned long int	scalar	5	1803
+None	float	scalar	5	2817
+None	float	vvm	5	2713
+None	float	scalar	5	3243
+None	double	scalar	5	5324
+None	double	vvm	5	4817
+None	double	scalar	5	6988
+None	long double	scalar	5	42879
+None	long double	vvm	5	42257
+None	long double	scalar	5	43662
+Run at Thu Oct  5 13:16:07 2006
+None	char	scalar	1	821
+None	char	vvm	1	765
+None	char	scalar	1	510
+None	char	scalar	1	578
+None	char	vvm	1	489
+None	char	scalar	1	438
+None	signed char	scalar	1	486
+None	signed char	vvm	1	524
+None	signed char	scalar	1	435
+None	unsigned char	scalar	1	449
+None	unsigned char	vvm	1	425
+None	unsigned char	scalar	1	411
+None	short int	scalar	1	912
+None	short int	vvm	1	888
+None	short int	scalar	1	719
+None	unsigned short int	scalar	1	1381
+None	unsigned short int	vvm	1	803
+None	unsigned short int	scalar	1	1024
+None	int	scalar	1	1744
+None	int	vvm	1	1855
+None	int	scalar	1	1531
+None	unsigned int	scalar	1	1871
+None	unsigned int	vvm	1	1766
+None	unsigned int	scalar	1	1588
+None	long int	scalar	1	1577
+None	long int	vvm	1	2116
+None	long int	scalar	1	2300
+None	unsigned long int	scalar	1	1731
+None	unsigned long int	vvm	1	1621
+None	unsigned long int	scalar	1	1493
+None	float	scalar	1	1712
+None	float	vvm	1	2078
+None	float	scalar	1	2144
+None	double	scalar	1	4332
+None	double	vvm	1	4440
+None	double	scalar	1	5343
+None	long double	scalar	1	15038
+None	long double	vvm	1	14690
+None	long double	scalar	1	14956
+None	char	scalar	2	984
+None	char	vvm	2	513
+None	char	scalar	2	631
+None	char	scalar	2	695
+None	char	vvm	2	466
+None	char	scalar	2	614
+None	signed char	scalar	2	644
+None	signed char	vvm	2	512
+None	signed char	scalar	2	867
+None	unsigned char	scalar	2	490
+None	unsigned char	vvm	2	432
+None	unsigned char	scalar	2	432
+None	short int	scalar	2	914
+None	short int	vvm	2	886
+None	short int	scalar	2	757
+None	unsigned short int	scalar	2	1442
+None	unsigned short int	vvm	2	847
+None	unsigned short int	scalar	2	959
+None	int	scalar	2	1709
+None	int	vvm	2	1675
+None	int	scalar	2	1577
+None	unsigned int	scalar	2	2032
+None	unsigned int	vvm	2	1887
+None	unsigned int	scalar	2	1563
+None	long int	scalar	2	1609
+None	long int	vvm	2	1601
+None	long int	scalar	2	2262
+None	unsigned long int	scalar	2	1918
+None	unsigned long int	vvm	2	1702
+None	unsigned long int	scalar	2	1902
+None	float	scalar	2	3830
+None	float	vvm	2	1872
+None	float	scalar	2	1724
+None	double	scalar	2	4012
+None	double	vvm	2	4165
+None	double	scalar	2	3811
+None	long double	scalar	2	22081
+None	long double	vvm	2	21587
+None	long double	scalar	2	22146
+None	char	scalar	3	684
+None	char	vvm	3	515
+None	char	scalar	3	451
+None	char	scalar	3	545
+None	char	vvm	3	435
+None	char	scalar	3	436
+None	signed char	scalar	3	478
+None	signed char	vvm	3	418
+None	signed char	scalar	3	444
+None	unsigned char	scalar	3	665
+None	unsigned char	vvm	3	408
+None	unsigned char	scalar	3	612
+None	short int	scalar	3	1066
+None	short int	vvm	3	907
+None	short int	scalar	3	769
+None	unsigned short int	scalar	3	1425
+None	unsigned short int	vvm	3	924
+None	unsigned short int	scalar	3	934
+None	int	scalar	3	1900
+None	int	vvm	3	1688
+None	int	scalar	3	1865
+None	unsigned int	scalar	3	1908
+None	unsigned int	vvm	3	1554
+None	unsigned int	scalar	3	1589
+None	long int	scalar	3	1778
+None	long int	vvm	3	1550
+None	long int	scalar	3	2217
+None	unsigned long int	scalar	3	1634
+None	unsigned long int	vvm	3	1754
+None	unsigned long int	scalar	3	1543
+None	float	scalar	3	2350
+None	float	vvm	3	2546
+None	float	scalar	3	2075
+None	double	scalar	3	4246
+None	double	vvm	3	4803
+None	double	scalar	3	4135
+None	long double	scalar	3	29093
+None	long double	vvm	3	29558
+None	long double	scalar	3	28990
+None	char	scalar	4	854
+None	char	vvm	4	524
+None	char	scalar	4	640
+None	char	scalar	4	662
+None	char	vvm	4	565
+None	char	scalar	4	1019
+None	signed char	scalar	4	691
+None	signed char	vvm	4	563
+None	signed char	scalar	4	669
+None	unsigned char	scalar	4	704
+None	unsigned char	vvm	4	437
+None	unsigned char	scalar	4	671
+None	short int	scalar	4	1119
+None	short int	vvm	4	1015
+None	short int	scalar	4	1005
+None	unsigned short int	scalar	4	1508
+None	unsigned short int	vvm	4	877
+None	unsigned short int	scalar	4	1002
+None	int	scalar	4	2141
+None	int	vvm	4	1677
+None	int	scalar	4	1647
+None	unsigned int	scalar	4	2096
+None	unsigned int	vvm	4	1890
+None	unsigned int	scalar	4	1588
+None	long int	scalar	4	1627
+None	long int	vvm	4	1889
+None	long int	scalar	4	1990
+None	unsigned long int	scalar	4	1649
+None	unsigned long int	vvm	4	2068
+None	unsigned long int	scalar	4	2020
+None	float	scalar	4	2404
+None	float	vvm	4	2724
+None	float	scalar	4	2450
+None	double	scalar	4	4655
+None	double	vvm	4	4412
+None	double	scalar	4	4503
+None	long double	scalar	4	36787
+None	long double	vvm	4	35435
+None	long double	scalar	4	35313
+None	char	scalar	5	897
+None	char	vvm	5	573
+None	char	scalar	5	1528
+None	char	scalar	5	746
+None	char	vvm	5	531
+None	char	scalar	5	664
+None	signed char	scalar	5	696
+None	signed char	vvm	5	521
+None	signed char	scalar	5	658
+None	unsigned char	scalar	5	732
+None	unsigned char	vvm	5	508
+None	unsigned char	scalar	5	670
+None	short int	scalar	5	1341
+None	short int	vvm	5	880
+None	short int	scalar	5	950
+None	unsigned short int	scalar	5	1026
+None	unsigned short int	vvm	5	791
+None	unsigned short int	scalar	5	1024
+None	int	scalar	5	2603
+None	int	vvm	5	2254
+None	int	scalar	5	1875
+None	unsigned int	scalar	5	2220
+None	unsigned int	vvm	5	1666
+None	unsigned int	scalar	5	4022
+None	long int	scalar	5	2017
+None	long int	vvm	5	1673
+None	long int	scalar	5	1972
+None	unsigned long int	scalar	5	2172
+None	unsigned long int	vvm	5	1765
+None	unsigned long int	scalar	5	1711
+None	float	scalar	5	3351
+None	float	vvm	5	2813
+None	float	scalar	5	2928
+None	double	scalar	5	4952
+None	double	vvm	5	5242
+None	double	scalar	5	5194
+None	long double	scalar	5	42031
+None	long double	vvm	5	42466
+None	long double	scalar	5	42583
+Run at Thu Oct  5 13:16:08 2006
+None	char	scalar	1	671
+None	char	vvm	1	498
+None	char	scalar	1	434
+None	char	scalar	1	720
+None	char	vvm	1	490
+None	char	scalar	1	456
+None	signed char	scalar	1	454
+None	signed char	vvm	1	451
+None	signed char	scalar	1	426
+None	unsigned char	scalar	1	387
+None	unsigned char	vvm	1	382
+None	unsigned char	scalar	1	376
+None	short int	scalar	1	1322
+None	short int	vvm	1	909
+None	short int	scalar	1	712
+None	unsigned short int	scalar	1	709
+None	unsigned short int	vvm	1	759
+None	unsigned short int	scalar	1	667
+None	int	scalar	1	1711
+None	int	vvm	1	2581
+None	int	scalar	1	2102
+None	unsigned int	scalar	1	1693
+None	unsigned int	vvm	1	1930
+None	unsigned int	scalar	1	3048
+None	long int	scalar	1	2087
+None	long int	vvm	1	1611
+None	long int	scalar	1	1958
+None	unsigned long int	scalar	1	1563
+None	unsigned long int	vvm	1	1923
+None	unsigned long int	scalar	1	2220
+None	float	scalar	1	1951
+None	float	vvm	1	1810
+None	float	scalar	1	1583
+None	double	scalar	1	4285
+None	double	vvm	1	4347
+None	double	scalar	1	3694
+None	long double	scalar	1	14358
+None	long double	vvm	1	14558
+None	long double	scalar	1	14765
+None	char	scalar	2	854
+None	char	vvm	2	585
+None	char	scalar	2	666
+None	char	scalar	2	657
+None	char	vvm	2	498
+None	char	scalar	2	645
+None	signed char	scalar	2	653
+None	signed char	vvm	2	464
+None	signed char	scalar	2	729
+None	unsigned char	scalar	2	824
+None	unsigned char	vvm	2	456
+None	unsigned char	scalar	2	443
+None	short int	scalar	2	954
+None	short int	vvm	2	1634
+None	short int	scalar	2	845
+None	unsigned short int	scalar	2	868
+None	unsigned short int	vvm	2	790
+None	unsigned short int	scalar	2	1015
+None	int	scalar	2	1754
+None	int	vvm	2	1657
+None	int	scalar	2	2164
+None	unsigned int	scalar	2	1674
+None	unsigned int	vvm	2	1548
+None	unsigned int	scalar	2	1911
+None	long int	scalar	2	1645
+None	long int	vvm	2	2263
+None	long int	scalar	2	1589
+None	unsigned long int	scalar	2	1611
+None	unsigned long int	vvm	2	1639
+None	unsigned long int	scalar	2	1654
+None	float	scalar	2	2411
+None	float	vvm	2	1802
+None	float	scalar	2	2069
+None	double	scalar	2	3953
+None	double	vvm	2	3712
+None	double	scalar	2	4138
+None	long double	scalar	2	22024
+None	long double	vvm	2	21904
+None	long double	scalar	2	23105
+None	char	scalar	3	932
+None	char	vvm	3	486
+None	char	scalar	3	451
+None	char	scalar	3	540
+None	char	vvm	3	426
+None	char	scalar	3	1031
+None	signed char	scalar	3	508
+None	signed char	vvm	3	433
+None	signed char	scalar	3	454
+None	unsigned char	scalar	3	629
+None	unsigned char	vvm	3	396
+None	unsigned char	scalar	3	620
+None	short int	scalar	3	1003
+None	short int	vvm	3	870
+None	short int	scalar	3	695
+None	unsigned short int	scalar	3	973
+None	unsigned short int	vvm	3	750
+None	unsigned short int	scalar	3	1187
+None	int	scalar	3	1874
+None	int	vvm	3	1596
+None	int	scalar	3	1682
+None	unsigned int	scalar	3	1580
+None	unsigned int	vvm	3	2101
+None	unsigned int	scalar	3	1585
+None	long int	scalar	3	1588
+None	long int	vvm	3	1874
+None	long int	scalar	3	1683
+None	unsigned long int	scalar	3	2184
+None	unsigned long int	vvm	3	1662
+None	unsigned long int	scalar	3	1772
+None	float	scalar	3	2080
+None	float	vvm	3	2235
+None	float	scalar	3	2677
+None	double	scalar	3	4280
+None	double	vvm	3	4489
+None	double	scalar	3	3918
+None	long double	scalar	3	29319
+None	long double	vvm	3	28878
+None	long double	scalar	3	28674
+None	char	scalar	4	904
+None	char	vvm	4	721
+None	char	scalar	4	859
+None	char	scalar	4	866
+None	char	vvm	4	508
+None	char	scalar	4	622
+None	signed char	scalar	4	641
+None	signed char	vvm	4	457
+None	signed char	scalar	4	608
+None	unsigned char	scalar	4	664
+None	unsigned char	vvm	4	530
+None	unsigned char	scalar	4	1005
+None	short int	scalar	4	1059
+None	short int	vvm	4	852
+None	short int	scalar	4	759
+None	unsigned short int	scalar	4	993
+None	unsigned short int	vvm	4	750
+None	unsigned short int	scalar	4	1333
+None	int	scalar	4	2016
+None	int	vvm	4	2026
+None	int	scalar	4	1718
+None	unsigned int	scalar	4	1654
+None	unsigned int	vvm	4	1539
+None	unsigned int	scalar	4	1688
+None	long int	scalar	4	2108
+None	long int	vvm	4	2119
+None	long int	scalar	4	1618
+None	unsigned long int	scalar	4	1728
+None	unsigned long int	vvm	4	1757
+None	unsigned long int	scalar	4	1929
+None	float	scalar	4	2376
+None	float	vvm	4	2441
+None	float	scalar	4	2621
+None	double	scalar	4	4863
+None	double	vvm	4	4372
+None	double	scalar	4	5073
+None	long double	scalar	4	36877
+None	long double	vvm	4	35265
+None	long double	scalar	4	35111
+None	char	scalar	5	897
+None	char	vvm	5	703
+None	char	scalar	5	681
+None	char	scalar	5	693
+None	char	vvm	5	794
+None	char	scalar	5	698
+None	signed char	scalar	5	721
+None	signed char	vvm	5	524
+None	signed char	scalar	5	1131
+None	unsigned char	scalar	5	698
+None	unsigned char	vvm	5	465
+None	unsigned char	scalar	5	657
+None	short int	scalar	5	1063
+None	short int	vvm	5	1103
+None	short int	scalar	5	978
+None	unsigned short int	scalar	5	1714
+None	unsigned short int	vvm	5	965
+None	unsigned short int	scalar	5	995
+None	int	scalar	5	1839
+None	int	vvm	5	1673
+None	int	scalar	5	2105
+None	unsigned int	scalar	5	2110
+None	unsigned int	vvm	5	2064
+None	unsigned int	scalar	5	1736
+None	long int	scalar	5	2032
+None	long int	vvm	5	1645
+None	long int	scalar	5	2185
+None	unsigned long int	scalar	5	2101
+None	unsigned long int	vvm	5	2247
+None	unsigned long int	scalar	5	1846
+None	float	scalar	5	3128
+None	float	vvm	5	2853
+None	float	scalar	5	2608
+None	double	scalar	5	5328
+None	double	vvm	5	5030
+None	double	scalar	5	4879
+None	long double	scalar	5	42002
+None	long double	vvm	5	42299
+None	long double	scalar	5	43030
+Run at Thu Oct  5 13:16:09 2006
+None	char	scalar	1	676
+None	char	vvm	1	647
+None	char	scalar	1	469
+None	char	scalar	1	479
+None	char	vvm	1	473
+None	char	scalar	1	468
+None	signed char	scalar	1	467
+None	signed char	vvm	1	558
+None	signed char	scalar	1	458
+None	unsigned char	scalar	1	431
+None	unsigned char	vvm	1	453
+None	unsigned char	scalar	1	402
+None	short int	scalar	1	870
+None	short int	vvm	1	837
+None	short int	scalar	1	680
+None	unsigned short int	scalar	1	937
+None	unsigned short int	vvm	1	791
+None	unsigned short int	scalar	1	693
+None	int	scalar	1	1668
+None	int	vvm	1	2134
+None	int	scalar	1	1692
+None	unsigned int	scalar	1	1681
+None	unsigned int	vvm	1	1604
+None	unsigned int	scalar	1	1511
+None	long int	scalar	1	2214
+None	long int	vvm	1	1837
+None	long int	scalar	1	1644
+None	unsigned long int	scalar	1	1987
+None	unsigned long int	vvm	1	1839
+None	unsigned long int	scalar	1	1754
+None	float	scalar	1	1738
+None	float	vvm	1	2011
+None	float	scalar	1	1829
+None	double	scalar	1	3878
+None	double	vvm	1	3555
+None	double	scalar	1	4260
+None	long double	scalar	1	14181
+None	long double	vvm	1	14710
+None	long double	scalar	1	14348
+None	char	scalar	2	854
+None	char	vvm	2	504
+None	char	scalar	2	695
+None	char	scalar	2	660
+None	char	vvm	2	454
+None	char	scalar	2	605
+None	signed char	scalar	2	634
+None	signed char	vvm	2	455
+None	signed char	scalar	2	977
+None	unsigned char	scalar	2	754
+None	unsigned char	vvm	2	457
+None	unsigned char	scalar	2	470
+None	short int	scalar	2	934
+None	short int	vvm	2	893
+None	short int	scalar	2	794
+None	unsigned short int	scalar	2	771
+None	unsigned short int	vvm	2	751
+None	unsigned short int	scalar	2	728
+None	int	scalar	2	1650
+None	int	vvm	2	2090
+None	int	scalar	2	1711
+None	unsigned int	scalar	2	1822
+None	unsigned int	vvm	2	1649
+None	unsigned int	scalar	2	1546
+None	long int	scalar	2	2049
+None	long int	vvm	2	1585
+None	long int	scalar	2	1548
+None	unsigned long int	scalar	2	1568
+None	unsigned long int	vvm	2	2240
+None	unsigned long int	scalar	2	2056
+None	float	scalar	2	1814
+None	float	vvm	2	1737
+None	float	scalar	2	1668
+None	double	scalar	2	4010
+None	double	vvm	2	4895
+None	double	scalar	2	4409
+None	long double	scalar	2	21374
+None	long double	vvm	2	27887
+None	long double	scalar	2	22547
+None	char	scalar	3	678
+None	char	vvm	3	476
+None	char	scalar	3	462
+None	char	scalar	3	472
+None	char	vvm	3	421
+None	char	scalar	3	430
+None	signed char	scalar	3	469
+None	signed char	vvm	3	416
+None	signed char	scalar	3	447
+None	unsigned char	scalar	3	1015
+None	unsigned char	vvm	3	444
+None	unsigned char	scalar	3	1056
+None	short int	scalar	3	908
+None	short int	vvm	3	850
+None	short int	scalar	3	703
+None	unsigned short int	scalar	3	923
+None	unsigned short int	vvm	3	697
+None	unsigned short int	scalar	3	872
+None	int	scalar	3	1706
+None	int	vvm	3	2020
+None	int	scalar	3	1587
+None	unsigned int	scalar	3	2033
+None	unsigned int	vvm	3	1706
+None	unsigned int	scalar	3	1527
+None	long int	scalar	3	1908
+None	long int	vvm	3	1586
+None	long int	scalar	3	1505
+None	unsigned long int	scalar	3	1622
+None	unsigned long int	vvm	3	2422
+None	unsigned long int	scalar	3	2347
+None	float	scalar	3	2208
+None	float	vvm	3	2051
+None	float	scalar	3	12192
+None	double	scalar	3	4618
+None	double	vvm	3	3970
+None	double	scalar	3	4668
+None	long double	scalar	3	28626
+None	long double	vvm	3	28404
+None	long double	scalar	3	38546
+None	char	scalar	4	861
+None	char	vvm	4	516
+None	char	scalar	4	630
+None	char	scalar	4	653
+None	char	vvm	4	604
+None	char	scalar	4	636
+None	signed char	scalar	4	687
+None	signed char	vvm	4	510
+None	signed char	scalar	4	963
+None	unsigned char	scalar	4	759
+None	unsigned char	vvm	4	447
+None	unsigned char	scalar	4	673
+None	short int	scalar	4	922
+None	short int	vvm	4	849
+None	short int	scalar	4	737
+None	unsigned short int	scalar	4	1059
+None	unsigned short int	vvm	4	828
+None	unsigned short int	scalar	4	965
+None	int	scalar	4	1952
+None	int	vvm	4	1717
+None	int	scalar	4	1669
+None	unsigned int	scalar	4	1753
+None	unsigned int	vvm	4	3673
+None	unsigned int	scalar	4	1693
+None	long int	scalar	4	1718
+None	long int	vvm	4	1746
+None	long int	scalar	4	1680
+None	unsigned long int	scalar	4	2305
+None	unsigned long int	vvm	4	1716
+None	unsigned long int	scalar	4	2120
+None	float	scalar	4	2390
+None	float	vvm	4	2890
+None	float	scalar	4	2452
+None	double	scalar	4	4486
+None	double	vvm	4	5168
+None	double	scalar	4	4346
+None	long double	scalar	4	54971
+None	long double	vvm	4	35380
+None	long double	scalar	4	47584
+None	char	scalar	5	911
+None	char	vvm	5	577
+None	char	scalar	5	680
+None	char	scalar	5	707
+None	char	vvm	5	523
+None	char	scalar	5	1425
+None	signed char	scalar	5	744
+None	signed char	vvm	5	542
+None	signed char	scalar	5	761
+None	unsigned char	scalar	5	725
+None	unsigned char	vvm	5	483
+None	unsigned char	scalar	5	666
+None	short int	scalar	5	1151
+None	short int	vvm	5	961
+None	short int	scalar	5	1058
+None	unsigned short int	scalar	5	1301
+None	unsigned short int	vvm	5	831
+None	unsigned short int	scalar	5	1051
+None	int	scalar	5	1841
+None	int	vvm	5	1947
+None	int	scalar	5	1744
+None	unsigned int	scalar	5	2253
+None	unsigned int	vvm	5	1686
+None	unsigned int	scalar	5	1774
+None	long int	scalar	5	1766
+None	long int	vvm	5	1688
+None	long int	scalar	5	2627
+None	unsigned long int	scalar	5	1798
+None	unsigned long int	vvm	5	1875
+None	unsigned long int	scalar	5	1707
+None	float	scalar	5	3300
+None	float	vvm	5	2692
+None	float	scalar	5	2899
+None	double	scalar	5	5457
+None	double	vvm	5	17155
+None	double	scalar	5	5057
+None	long double	scalar	5	43064
+None	long double	vvm	5	42740
+None	long double	scalar	5	42013

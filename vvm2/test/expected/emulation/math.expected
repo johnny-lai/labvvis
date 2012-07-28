@@ -1,0 +1,72 @@
+Testing char
+Testing signed char
+Testing unsigned char
+Testing short int
+Testing unsigned short int
+Testing int
+Testing unsigned int
+Testing long int
+Testing unsigned long int
+Testing float
++   scalar_count: 1
++ vpvector_count: 1
+>         abs(v1) = 10.4
+>        acos(v2) = 0.451027
+>        asin(v2) = 1.11977
+>        atan(v2) = 0.732815
+>       atan2(v2) = 0.785398
+>        ceil(v1) = -10
+>         cos(v2) = 0.62161
+>        cosh(v2) = 1.43309
+>         exp(v2) = 3.04325e-005
+>       floor(v1) = -11
+>         log(v2) = -0.105361
+>       log10(v2) = -0.0457575
+>     pow(v2, v2) = 0.909533
+>         sin(v2) = 0.783327
+>        sinh(v2) = 1.02652
+>        sqrt(v2) = 0.948683
+>         tan(v2) = 1.26016
+>        tanh(v2) = 0.716298
+Testing double
++   scalar_count: 1
++ vpvector_count: 1
+>         abs(v1) = 10.4
+>        acos(v2) = 0.451027
+>        asin(v2) = 1.11977
+>        atan(v2) = 0.732815
+>       atan2(v2) = 0.785398
+>        ceil(v1) = -10
+>         cos(v2) = 0.62161
+>        cosh(v2) = 1.43309
+>         exp(v2) = 3.04325e-005
+>       floor(v1) = -11
+>         log(v2) = -0.105361
+>       log10(v2) = -0.0457575
+>     pow(v2, v2) = 0.909533
+>         sin(v2) = 0.783327
+>        sinh(v2) = 1.02652
+>        sqrt(v2) = 0.948683
+>         tan(v2) = 1.26016
+>        tanh(v2) = 0.716298
+Testing long double
++   scalar_count: 1
++ vpvector_count: 1
+>         abs(v1) = 10.4
+>        acos(v2) = 0.451027
+>        asin(v2) = 1.11977
+>        atan(v2) = 0.732815
+>       atan2(v2) = 0.785398
+>        ceil(v1) = -10
+>         cos(v2) = 0.62161
+>        cosh(v2) = 1.43309
+>         exp(v2) = 3.04325e-005
+>       floor(v1) = -11
+>         log(v2) = -0.105361
+>       log10(v2) = -0.0457575
+>     pow(v2, v2) = 0.909533
+>         sin(v2) = 0.783327
+>        sinh(v2) = 1.02652
+>        sqrt(v2) = 0.948683
+>         tan(v2) = 1.26016
+>        tanh(v2) = 0.716298

@@ -1,0 +1,99 @@
+Testing char
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing signed char
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing unsigned char
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing short int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing unsigned short int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing unsigned int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing long int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
+Testing unsigned long int
++   scalar_count: 1
++ vpvector_count: 1
+>                    v1 = 7
+>                    v2 = 0
+>       greater(v1, v2) = 1
+>          less(v1, v2) = 0
+> greater_equal(v1, v2) = 1
+>    less_equal(v1, v2) = 0
+>      equal_to(v1, v2) = 0
+>  not_equal_to(v1, v2) = 1
