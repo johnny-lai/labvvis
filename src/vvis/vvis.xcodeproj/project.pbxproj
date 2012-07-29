@@ -189,7 +189,7 @@
 		ED4B57E905782787004159BD /* test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = test.h; path = test/include/algorithm/test.h; sourceTree = "<group>"; };
 		ED4B57EE0578297F004159BD /* scratch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = scratch.cpp; path = scratch/scratch.cpp; sourceTree = "<group>"; };
 		ED4C430506A7C564001D977B /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
-		ED4DD7000AF5A53B0045A84C /* scratch2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scratch2; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4DD7000AF5A53B0045A84C /* scratch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scratch; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DD7050AF5A5750045A84C /* scratch2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scratch2.cpp; path = scratch/scratch2.cpp; sourceTree = "<group>"; };
 		ED4DD9500AFA043D0045A84C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		ED4DD9610AFA050F0045A84C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
@@ -207,7 +207,7 @@
 		ED80AC79048724020082428A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = test/include/image/test.h; sourceTree = "<group>"; };
 		ED80AC7E048725B60082428A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = test/include/iterator/test.h; sourceTree = "<group>"; };
 		ED849B0C0788E3C600FE2163 /* cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED849B0E0788E3C600FE2163 /* cocoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "cocoa-Info.plist"; path = "/Users/bclai/thesis/projects/vvis/cocoa-Info.plist"; sourceTree = "<absolute>"; };
+		ED849B0E0788E3C600FE2163 /* cocoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "cocoa-Info.plist"; path = "/Users/bclai/thesis/projects/vvis/cocoa-Info.plist"; sourceTree = "<absolute>"; };
 		ED849B240788E4C700FE2163 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		ED849B250788E4C700FE2163 /* CameraViewController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraViewController.mm; sourceTree = "<group>"; };
 		ED849B270788E4C700FE2163 /* GWorldView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GWorldView.h; sourceTree = "<group>"; };
@@ -222,10 +222,10 @@
 		ED9F652504B7CDA50082428A /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = image.cpp; path = scratch/image.cpp; sourceTree = "<group>"; };
 		ED9F653604B7E4B70082428A /* storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = storage.h; path = include/vvis/storage.h; sourceTree = "<group>"; };
 		EDB2E22E0A49187A0028DB0A /* hough.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hough.cpp; path = scratch/hough.cpp; sourceTree = "<group>"; };
-		EDB2E2440A4918910028DB0A /* hough */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hough; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB2E2440A4918910028DB0A /* scratch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scratch; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB8DF5F0788E87F008B1AAF /* Design thoughts.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Design thoughts.txt"; sourceTree = "<group>"; };
 		EDB8DF7A0788EAEB008B1AAF /* iterator_policies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iterator_policies.h; path = include/vvis/iterator_policies.h; sourceTree = "<group>"; };
-		EDBCC3E40559177400B81CA9 /* Info-vvis__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-vvis__Upgraded_.plist"; sourceTree = "<group>"; };
+		EDBCC3E40559177400B81CA9 /* Info-vvis__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-vvis__Upgraded_.plist"; sourceTree = "<group>"; };
 		EDC167D80499D2100082428A /* impex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = impex.h; path = include/vvis/impex.h; sourceTree = "<group>"; };
 		EDC167F70499DA090082428A /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		EDC167FC0499DA2D0082428A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
@@ -465,8 +465,8 @@
 				ED4388B905BA2DCD00E1183F /* image */,
 				026E3C11061E638400E23D50 /* test_all */,
 				ED849B0C0788E3C600FE2163 /* cocoa.app */,
-				EDB2E2440A4918910028DB0A /* hough */,
-				ED4DD7000AF5A53B0045A84C /* scratch2 */,
+				EDB2E2440A4918910028DB0A /* scratch */,
+				ED4DD7000AF5A53B0045A84C /* scratch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -821,7 +821,7 @@
 			name = scratch2;
 			productInstallPath = /usr/local/bin;
 			productName = scratch;
-			productReference = ED4DD7000AF5A53B0045A84C /* scratch2 */;
+			productReference = ED4DD7000AF5A53B0045A84C /* scratch */;
 			productType = "com.apple.product-type.tool";
 		};
 		ED849B0B0788E3C600FE2163 /* cocoa */ = {
@@ -858,7 +858,7 @@
 			name = hough;
 			productInstallPath = /usr/local/bin;
 			productName = scratch;
-			productReference = EDB2E2440A4918910028DB0A /* hough */;
+			productReference = EDB2E2440A4918910028DB0A /* scratch */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -868,7 +868,11 @@
 			isa = PBXProject;
 			buildConfigurationList = ED4C4C44085D42A400266BDC /* Build configuration list for PBXProject "vvis" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = ED5BCF64041C78EE0082428A;
 			productRefGroup = ED5BCF77041C79830082428A /* Products */;
 			projectDirPath = "";
@@ -1778,7 +1782,6 @@
 		ED4C4C45085D42A400266BDC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = ppc;
 				BOOST_ROOT = /Users/bclai/thesis/library/boost_1_33_1;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				HEADER_SEARCH_PATHS = (
@@ -1790,17 +1793,13 @@
 					"$(inherited)",
 				);
 				OTHER_LDFLAGS = "-lpthread";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 			};
 			name = Development;
 		};
 		ED4C4C47085D42A400266BDC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				BOOST_ROOT = /Users/bclai/thesis/library/boost_1_33_1;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
@@ -1812,7 +1811,7 @@
 				OTHER_LDFLAGS = "-lpthread";
 				OTHER_LDFLAGS_i386 = "-L$(BOOST_ROOT)/bin/boost/libs/thread/build/libboost_thread.a/darwin.x86/release -lboost_thread-1_33_1";
 				OTHER_LDFLAGS_ppc = "-L$(BOOST_ROOT)/bin/boost/libs/thread/build/libboost_thread.a/darwin.ppc/release -lboost_thread-1_33_1";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 			};
 			name = Deployment;
 		};

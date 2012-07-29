@@ -18,14 +18,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = EDFBD4330D817D740012B6ED /* common.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = ED59F86F05120331007CD1A9 /* common.framework */;
+			remoteGlobalIDString = ED59F86F05120331007CD1A9;
 			remoteInfo = common;
 		};
 		EDFBD44E0D81807F0012B6ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDFBD4330D817D740012B6ED /* common.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = ED59F86E05120331007CD1A9 /* common */;
+			remoteGlobalIDString = ED59F86E05120331007CD1A9;
 			remoteInfo = common;
 		};
 /* End PBXContainerItemProxy section */
@@ -209,7 +209,11 @@
 			isa = PBXProject;
 			buildConfigurationList = ED1D63C10BF8AF050055258C /* Build configuration list for PBXProject "ct" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = ED2347D304BFC6F40082428A;
 			productRefGroup = ED2347E204BFC91B0082428A /* Products */;
 			projectDirPath = "";
@@ -462,6 +466,7 @@
 		ED1D63C20BF8AF050055258C /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = ../boost_1_34_0;
 			};
 			name = Development;
@@ -469,6 +474,7 @@
 		ED1D63C30BF8AF050055258C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = ../boost_1_34_0;
 			};
 			name = Deployment;
@@ -476,6 +482,7 @@
 		ED1D63C40BF8AF050055258C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = ../boost_1_34_0;
 			};
 			name = Default;

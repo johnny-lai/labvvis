@@ -112,7 +112,11 @@
 			isa = PBXProject;
 			buildConfigurationList = ED5C3102085E8B0700B25663 /* Build configuration list for PBXProject "common" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = F5B2925603EE762801BCAA81;
 			productRefGroup = F5B2926403EE765001BCAA81 /* Products */;
 			projectDirPath = "";
@@ -225,22 +229,14 @@
 		ED5C3103085E8B0700B25663 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 			};
 			name = Development;
 		};
 		ED5C3104085E8B0700B25663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

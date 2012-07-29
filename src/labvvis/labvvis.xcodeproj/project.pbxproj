@@ -232,12 +232,12 @@
 		ED8561F7095F85AB001F6A79 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = src/labvvis/util.cpp; sourceTree = "<group>"; };
 		ED8561FB095F85C0001F6A79 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = include/labvvis/util.h; sourceTree = "<group>"; };
 		ED85639D095FBA31001F6A79 /* background.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = background.tif; path = "configure-app/background.tif"; sourceTree = "<group>"; };
-		ED89108B088D471600737521 /* Info-labvvis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-labvvis.plist"; sourceTree = "<group>"; };
+		ED89108B088D471600737521 /* Info-labvvis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-labvvis.plist"; sourceTree = "<group>"; };
 		ED89108C088D471600737521 /* labvvis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = labvvis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8B7EA1084F2D28009F7797 /* stub_iio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub_iio.cpp; sourceTree = "<group>"; };
 		ED8B7EA4084F2D51009F7797 /* stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stub.h; path = include/labvvis/stub.h; sourceTree = SOURCE_ROOT; };
 		EDB7D4CA0AA9B36F00329157 /* acg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = acg.cpp; path = src/acg/acg.cpp; sourceTree = "<group>"; };
-		EDB7D5590AA9DC7400329157 /* Info-labvvis_cin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-labvvis_cin.plist"; sourceTree = "<group>"; };
+		EDB7D5590AA9DC7400329157 /* Info-labvvis_cin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-labvvis_cin.plist"; sourceTree = "<group>"; };
 		EDB7D55D0AA9DC7400329157 /* labvvis-cin.tmp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "labvvis-cin.tmp.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC4BABD0835C80300211AA6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		EDD1FF85082B46C800BC0FCD /* stub_io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub_io.cpp; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		EDE4905A0CDD834F00542FF0 /* BigInt.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = BigInt.c; path = src/acg/BigInt.c; sourceTree = "<group>"; };
 		EDE4905B0CDD834F00542FF0 /* GenericDecode.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GenericDecode.c; path = src/acg/GenericDecode.c; sourceTree = "<group>"; };
 		EDE4905C0CDD835000542FF0 /* mallocTracking.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mallocTracking.c; path = src/acg/mallocTracking.c; sourceTree = "<group>"; };
-		EDF010A30C5B106200B75243 /* Info-labvvis_cin__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-labvvis_cin__Upgraded_.plist"; sourceTree = "<group>"; };
+		EDF010A30C5B106200B75243 /* Info-labvvis_cin__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-labvvis_cin__Upgraded_.plist"; sourceTree = "<group>"; };
 		EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt-1_34.a"; path = "../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi/libboost_thread-mt-1_34.a"; sourceTree = SOURCE_ROOT; };
 		F5B335500395196501002793 /* liblabviewcin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblabviewcin.a; path = "/Applications/National Instruments/LabVIEW 8.2/cintools/Mach-O/liblabviewcin.a"; sourceTree = "<absolute>"; };
 		F5B335790395235601002793 /* liblvexports.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblvexports.a; path = "/Applications/National Instruments/LabVIEW 8.2/cintools/Mach-O/liblvexports.a"; sourceTree = "<absolute>"; };
@@ -350,7 +350,7 @@
 			children = (
 				ED2F6F0D0C5A328D00E7C543 /* vvis.framework */,
 				ED2F6F0F0C5A328D00E7C543 /* scratch */,
-				ED2F6F110C5A328D00E7C543 /* hough */,
+				ED2F6F110C5A328D00E7C543 /* scratch */,
 				ED2F6F130C5A328D00E7C543 /* algorithm */,
 				ED2F6F150C5A328D00E7C543 /* impex */,
 				ED2F6F170C5A328D00E7C543 /* sgimporter */,
@@ -358,7 +358,7 @@
 				ED2F6F1B0C5A328D00E7C543 /* image */,
 				ED2F6F1D0C5A328D00E7C543 /* test_all */,
 				ED2F6F1F0C5A328D00E7C543 /* cocoa.app */,
-				ED2F6F210C5A328D00E7C543 /* scratch2 */,
+				ED2F6F210C5A328D00E7C543 /* scratch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -481,7 +481,11 @@
 			isa = PBXProject;
 			buildConfigurationList = EDFFF731085EE743003ABED0 /* Build configuration list for PBXProject "labvvis" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* labvvis */;
 			projectDirPath = "";
 			projectReferences = (
@@ -518,10 +522,10 @@
 			remoteRef = ED2F6F0E0C5A328D00E7C543 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		ED2F6F110C5A328D00E7C543 /* hough */ = {
+		ED2F6F110C5A328D00E7C543 /* scratch */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = hough;
+			path = scratch;
 			remoteRef = ED2F6F100C5A328D00E7C543 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -574,10 +578,10 @@
 			remoteRef = ED2F6F1E0C5A328D00E7C543 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		ED2F6F210C5A328D00E7C543 /* scratch2 */ = {
+		ED2F6F210C5A328D00E7C543 /* scratch */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = scratch2;
+			path = scratch;
 			remoteRef = ED2F6F200C5A328D00E7C543 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -944,13 +948,12 @@
 		EDFFF732085EE743003ABED0 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = ppc;
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
 				FRAMEWORK_SEARCH_PATHS = Frameworks;
 				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				OTHER_CFLAGS = "-maltivec";
 				OTHER_LDFLAGS = "-lpthread";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};
@@ -959,13 +962,12 @@
 		EDFFF733085EE743003ABED0 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				OTHER_CFLAGS = "-maltivec";
 				OTHER_LDFLAGS = "-lpthread";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};

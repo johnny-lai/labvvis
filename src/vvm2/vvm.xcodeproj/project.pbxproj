@@ -86,7 +86,7 @@
 
 /* Begin PBXFileReference section */
 		ED21DD1606A769A400DBB519 /* vvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED21DD1806A769A400DBB519 /* vvm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "vvm-Info.plist"; path = "/Users/bclai/thesis/projects/vvm2/vvm-Info.plist"; sourceTree = "<absolute>"; };
+		ED21DD1806A769A400DBB519 /* vvm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vvm-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ED21DD1E06A769F200DBB519 /* altivec_implementation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = altivec_implementation.h; path = include/vvm/altivec_implementation.h; sourceTree = "<group>"; };
 		ED21DD1F06A769F200DBB519 /* altivec_math.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = altivec_math.h; path = include/vvm/altivec_math.h; sourceTree = "<group>"; };
 		ED21DD2006A769F200DBB519 /* altivec_traits.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = altivec_traits.h; path = include/vvm/altivec_traits.h; sourceTree = "<group>"; };
@@ -401,7 +401,11 @@
 			isa = PBXProject;
 			buildConfigurationList = ED5C3080085E898D00B25663 /* Build configuration list for PBXProject "vvm" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = ED21DCFE06A7697300DBB519;
 			productRefGroup = ED21DD1706A769A400DBB519 /* Products */;
 			projectDirPath = "";
@@ -664,32 +668,14 @@
 		ED5C3081085E898D00B25663 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = macosx10.7;
 			};
 			name = Development;
 		};
 		ED5C3082085E898D00B25663 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = macosx10.7;
 			};
 			name = Deployment;
 		};
