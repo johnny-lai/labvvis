@@ -10,8 +10,8 @@
 		025F1530061E5BD600415043 /* iterator_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 025F152F061E5BD600415043 /* iterator_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		02D6E38D061E669500A550FF /* test_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025F1550061E62F300415043 /* test_all.cpp */; };
 		02D6E394061E66A600A550FF /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43886005BA2DCD00E1183F /* vvis.framework */; };
+		2C0B54FC15C588C90090A055 /* vvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0B54FB15C588C90090A055 /* vvm.framework */; };
 		ED1FC4170CCE3E48006083CB /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43886005BA2DCD00E1183F /* vvis.framework */; };
-		ED4068DD0C676871007F55A8 /* vvm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ED556D2F0B51D4AD009D4EEA /* vvm.framework */; };
 		ED43884505BA2DCD00E1183F /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5BCF6B041C79020082428A /* transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED43884605BA2DCD00E1183F /* functor.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5BCF69041C79020082428A /* functor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED43884705BA2DCD00E1183F /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF49D8C0421E32B006B36A1 /* image.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,9 +66,6 @@
 		ED4DD9810AFA050F0045A84C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DD9610AFA050F0045A84C /* QuartzCore.framework */; };
 		ED4DD98C0AFA05270045A84C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DD9830AFA05270045A84C /* Quartz.framework */; };
 		ED550DD90BE4C63A00A4CF3E /* external_image.h in Headers */ = {isa = PBXBuildFile; fileRef = ED550DD80BE4C63A00A4CF3E /* external_image.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		ED556DDB0B51D670009D4EEA /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED556D480B51D4CF009D4EEA /* common.framework */; };
-		ED556E470B51FCF4009D4EEA /* vvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED556D2F0B51D4AD009D4EEA /* vvm.framework */; };
-		ED599D7F0B6A207400BAED9A /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED556D480B51D4CF009D4EEA /* common.framework */; };
 		ED5BFB8D0A7B03E600B1758A /* Release notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED5BFB8C0A7B03E600B1758A /* Release notes.txt */; };
 		ED6E8B6D05BC061E009D7B6E /* impex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED35BB47049F1FCA0082428A /* impex.cpp */; };
 		ED6E8B7305BC068F009D7B6E /* quicktime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED6E8B7205BC068F009D7B6E /* quicktime.cpp */; };
@@ -158,7 +155,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ED4068DD0C676871007F55A8 /* vvm.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +164,7 @@
 		025F152F061E5BD600415043 /* iterator_helper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = iterator_helper.h; path = include/vvis/iterator_helper.h; sourceTree = "<group>"; };
 		025F1550061E62F300415043 /* test_all.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = test_all.cpp; path = test/test_all.cpp; sourceTree = "<group>"; };
 		026E3C11061E638400E23D50 /* test_all */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_all; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0B54FB15C588C90090A055 /* vvm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vvm.framework; path = "../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development/vvm.framework"; sourceTree = "<group>"; };
 		ED109C9E050212CA0082424C /* metafunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = metafunction.h; path = include/vvis/metafunction.h; sourceTree = "<group>"; };
 		ED14EA6C055FB2D5000BDE42 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = macros.h; path = include/vvis/macros.h; sourceTree = "<group>"; };
 		ED1815B204B688C3009B14C6 /* region.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = region.h; path = include/vvis/region.h; sourceTree = "<group>"; };
@@ -195,8 +192,6 @@
 		ED4DD9610AFA050F0045A84C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		ED4DD9830AFA05270045A84C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		ED550DD80BE4C63A00A4CF3E /* external_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = external_image.h; path = include/vvis/external_image.h; sourceTree = "<group>"; };
-		ED556D2F0B51D4AD009D4EEA /* vvm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vvm.framework; path = ../vvm2/build/Deployment/vvm.framework; sourceTree = SOURCE_ROOT; };
-		ED556D480B51D4CF009D4EEA /* common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = common.framework; path = ../common/build/Release/common.framework; sourceTree = SOURCE_ROOT; };
 		ED5BCF69041C79020082428A /* functor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = functor.h; path = include/vvis/functor.h; sourceTree = "<group>"; };
 		ED5BCF6A041C79020082428A /* vvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vvis.h; path = include/vvis/vvis.h; sourceTree = "<group>"; };
 		ED5BCF6B041C79020082428A /* transform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = transform.h; path = include/vvis/transform.h; sourceTree = "<group>"; };
@@ -248,7 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D6E394061E66A600A550FF /* vvis.framework in Frameworks */,
-				ED556DDB0B51D670009D4EEA /* common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +250,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0B54FC15C588C90090A055 /* vvm.framework in Frameworks */,
 				ED43885B05BA2DCD00E1183F /* Carbon.framework in Frameworks */,
 				ED43885C05BA2DCD00E1183F /* QuickTime.framework in Frameworks */,
 				ED43AC0708A62A74007090B3 /* vecLib.framework in Frameworks */,
-				ED556E470B51FCF4009D4EEA /* vvm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +274,6 @@
 				ED43887A05BA2DCD00E1183F /* QuickTime.framework in Frameworks */,
 				ED43887B05BA2DCD00E1183F /* Carbon.framework in Frameworks */,
 				ED4388E405BA2DCE00E1183F /* vvis.framework in Frameworks */,
-				ED599D7F0B6A207400BAED9A /* common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +417,7 @@
 		ED4B585C05782B08004159BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED556D480B51D4CF009D4EEA /* common.framework */,
-				ED556D2F0B51D4AD009D4EEA /* vvm.framework */,
+				2C0B54FB15C588C90090A055 /* vvm.framework */,
 				ED4DD9830AFA05270045A84C /* Quartz.framework */,
 				ED4DD9610AFA050F0045A84C /* QuartzCore.framework */,
 				ED4DD9500AFA043D0045A84C /* CoreServices.framework */,
@@ -1167,29 +1159,18 @@
 		ED4C4C0F085D42A400266BDC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../vvm2/build/AltiVec - Deployment\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../common/build\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../vvm2/build\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../vvm3/build/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
 				INFOPLIST_FILE = "Info-vvis__Upgraded_.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = "$(_CFLAGS)";
@@ -1208,24 +1189,17 @@
 		ED4C4C11085D42A400266BDC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../common/build\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
 				INFOPLIST_FILE = "Info-vvis__Upgraded_.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_CFLAGS = "$(_CFLAGS)";
@@ -1234,7 +1208,6 @@
 				PRINCIPAL_CLASS = "";
 				PRODUCT_NAME = vvis;
 				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -1431,20 +1404,11 @@
 		ED4C4C27085D42A400266BDC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
-				LIBRARY_SEARCH_PATHS = /Users/bclai/thesis/library/prebuilt/macosx.ppc/release;
 				OTHER_CFLAGS = "$(_CFLAGS)";
-				OTHER_LDFLAGS = "-lpthread";
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = sgimporter;
@@ -1463,16 +1427,9 @@
 		ED4C4C29085D42A400266BDC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
 				OTHER_CFLAGS = "$(_CFLAGS)";
-				OTHER_LDFLAGS = "-lpthread";
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = sgimporter;
@@ -1782,17 +1739,13 @@
 		ED4C4C45085D42A400266BDC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BOOST_ROOT = /Users/bclai/thesis/library/boost_1_33_1;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
+				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-lboost_system",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(BOOST_ROOT)/bin/boost/libs/thread/build/libboost_thread.a/darwin.ppc/release",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "-lpthread";
 				SDKROOT = macosx10.7;
 			};
 			name = Development;
@@ -1800,17 +1753,15 @@
 		ED4C4C47085D42A400266BDC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BOOST_ROOT = /Users/bclai/thesis/library/boost_1_33_1;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(BOOST_ROOT)",
-					"$(CT_INCLUDE_PATH)",
-				);
+				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
+				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-lpthread";
-				OTHER_LDFLAGS_i386 = "-L$(BOOST_ROOT)/bin/boost/libs/thread/build/libboost_thread.a/darwin.x86/release -lboost_thread-1_33_1";
-				OTHER_LDFLAGS_ppc = "-L$(BOOST_ROOT)/bin/boost/libs/thread/build/libboost_thread.a/darwin.ppc/release -lboost_thread-1_33_1";
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-lboost_system",
+				);
 				SDKROOT = macosx10.7;
 			};
 			name = Deployment;

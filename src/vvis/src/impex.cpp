@@ -116,7 +116,7 @@ namespace vvis {
 		_VVIS_CHECK_OSERR(GraphicsImportGetImageDescription(_gi, &_desc),
 			setstate(badbit); return);
 		// Use default matrix, clip, source rect etc
-		RgnHandle clip_region = NewRgn();
+		RgnHandle clip_region;
 		if(GraphicsImportGetDefaultClip(_gi, &clip_region) == noErr) {
 			// Clipping region found
 			_VVIS_WARN("Setting clip region");

@@ -40,7 +40,6 @@
 		ED89107F088D471600737521 /* image_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED80C3F70835C37500F8388C /* image_manager.cpp */; };
 		ED891083088D471600737521 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC4BABD0835C80300211AA6 /* Carbon.framework */; };
 		EDA1174C0C731FD700CE47AA /* liblvexports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335790395235601002793 /* liblvexports.a */; };
-		EDA117560C73236400CE47AA /* liblabviewcin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335500395196501002793 /* liblabviewcin.a */; };
 		EDA117570C73236400CE47AA /* liblvexports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335790395235601002793 /* liblvexports.a */; };
 		EDB7D4FF0AA9B4FE00329157 /* acg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDB7D4CA0AA9B36F00329157 /* acg.cpp */; };
 		EDB7D5440AA9DC7300329157 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD1FFC3082B4BF700BC0FCD /* image.h */; };
@@ -61,7 +60,6 @@
 		EDFBD4DA0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */; };
 		EDFBD4DB0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */; };
 		EDFBD4EE0D8185A70012B6ED /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2F6F0D0C5A328D00E7C543 /* vvis.framework */; };
-		EDFBD4F00D8185BF0012B6ED /* liblabviewcin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335500395196501002793 /* liblabviewcin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -247,8 +245,7 @@
 		EDE4905C0CDD835000542FF0 /* mallocTracking.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mallocTracking.c; path = src/acg/mallocTracking.c; sourceTree = "<group>"; };
 		EDF010A30C5B106200B75243 /* Info-labvvis_cin__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-labvvis_cin__Upgraded_.plist"; sourceTree = "<group>"; };
 		EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt-1_34.a"; path = "../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi/libboost_thread-mt-1_34.a"; sourceTree = SOURCE_ROOT; };
-		F5B335500395196501002793 /* liblabviewcin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblabviewcin.a; path = "/Applications/National Instruments/LabVIEW 8.2/cintools/Mach-O/liblabviewcin.a"; sourceTree = "<absolute>"; };
-		F5B335790395235601002793 /* liblvexports.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblvexports.a; path = "/Applications/National Instruments/LabVIEW 8.2/cintools/Mach-O/liblvexports.a"; sourceTree = "<absolute>"; };
+		F5B335790395235601002793 /* liblvexports.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblvexports.a; path = "cintools/Mach-O/liblvexports.a"; sourceTree = "<group>"; };
 		F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cin_seqgrabber.cpp; path = src/labvvis/cin_seqgrabber.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,7 +261,6 @@
 				EDA1174C0C731FD700CE47AA /* liblvexports.a in Frameworks */,
 				EDFBD4DB0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */,
 				EDFBD4EE0D8185A70012B6ED /* vvis.framework in Frameworks */,
-				EDFBD4F00D8185BF0012B6ED /* liblabviewcin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +271,6 @@
 				EDB7D54E0AA9DC7300329157 /* QuickTime.framework in Frameworks */,
 				EDB7D54F0AA9DC7300329157 /* Cocoa.framework in Frameworks */,
 				EDF010A80C5B107E00B75243 /* vvis.framework in Frameworks */,
-				EDA117560C73236400CE47AA /* liblabviewcin.a in Frameworks */,
 				EDA117570C73236400CE47AA /* liblvexports.a in Frameworks */,
 				EDFBD4DA0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */,
 			);
@@ -305,6 +300,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2C0B54F515C51D960090A055 /* LabVIEW */,
 				EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */,
 				ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */,
 				ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */,
@@ -312,8 +308,6 @@
 				EDC4BABD0835C80300211AA6 /* Carbon.framework */,
 				ED2C77B307F97F9900300BEC /* Cocoa.framework */,
 				ED108A6507E838CE00D6A1B1 /* QuickTime.framework */,
-				F5B335500395196501002793 /* liblabviewcin.a */,
-				F5B335790395235601002793 /* liblvexports.a */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -344,6 +338,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		2C0B54F515C51D960090A055 /* LabVIEW */ = {
+			isa = PBXGroup;
+			children = (
+				F5B335790395235601002793 /* liblvexports.a */,
+			);
+			name = LabVIEW;
+			path = "/Applications/National Instruments/LabVIEW 2011";
+			sourceTree = "<absolute>";
 		};
 		ED2F6EF40C5A328D00E7C543 /* Products */ = {
 			isa = PBXGroup;

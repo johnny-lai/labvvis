@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0B54CE15C5131C0090A055 /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0B54CD15C5131C0090A055 /* common.framework */; };
+		2C0B54F415C5177A0090A055 /* libboost_unit_test_framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0B54F315C5177A0090A055 /* libboost_unit_test_framework.a */; };
+		2C0B54FA15C588B20090A055 /* ct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0B54F915C588B20090A055 /* ct.framework */; };
 		ED21DD2406A769F200DBB519 /* altivec_implementation.h in Headers */ = {isa = PBXBuildFile; fileRef = ED21DD1E06A769F200DBB519 /* altivec_implementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED21DD2506A769F200DBB519 /* altivec_math.h in Headers */ = {isa = PBXBuildFile; fileRef = ED21DD1F06A769F200DBB519 /* altivec_math.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED21DD2606A769F200DBB519 /* altivec_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = ED21DD2006A769F200DBB519 /* altivec_traits.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +31,6 @@
 		ED21DD4406A76A0700DBB519 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = ED21DD3606A76A0700DBB519 /* vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED21DD4506A76A0700DBB519 /* vvm.h in Headers */ = {isa = PBXBuildFile; fileRef = ED21DD3706A76A0700DBB519 /* vvm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED21DD4C06A76A4200DBB519 /* vecLib_wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED21DD4906A76A4200DBB519 /* vecLib_wrappers.cpp */; };
-		ED2549C80ADA1531009EE67B /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C3132085E8BCB00B25663 /* common.framework */; };
 		ED3B703C06B2432000E4010F /* load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3B700F06B2426E00E4010F /* load.cpp */; };
 		ED3B703E06B2433200E4010F /* vvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED21DD1606A769A400DBB519 /* vvm.framework */; };
 		ED43AB8308A6292E007090B3 /* vecLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43AB8208A6292E007090B3 /* vecLib.framework */; };
@@ -37,7 +39,6 @@
 		ED43AB8608A6292E007090B3 /* vecLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43AB8208A6292E007090B3 /* vecLib.framework */; };
 		ED5C30DA085E8A7A00B25663 /* test_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5C30C7085E8A4200B25663 /* test_all.cpp */; };
 		ED5C30E9085E8ACB00B25663 /* vvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED21DD1606A769A400DBB519 /* vvm.framework */; };
-		ED5C3147085E8CBA00B25663 /* libboost_unit_test_framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C3146085E8CBA00B25663 /* libboost_unit_test_framework.a */; };
 		ED6D268608228012005D0FE8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED6D267D08227FF2005D0FE8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -68,23 +69,12 @@
 			remoteGlobalIDString = ED21DD1506A769A400DBB519;
 			remoteInfo = vvm;
 		};
-		ED5C3131085E8BCB00B25663 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED5C312C085E8BCB00B25663 /* common.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED59F86F05120331007CD1A9;
-			remoteInfo = common;
-		};
-		ED5C313A085E8C0900B25663 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED5C312C085E8BCB00B25663 /* common.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ED59F86E05120331007CD1A9;
-			remoteInfo = common;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0B54CD15C5131C0090A055 /* common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = common.framework; path = "../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development/common.framework"; sourceTree = "<group>"; };
+		2C0B54F315C5177A0090A055 /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = ../boost_1_50_0/stage/lib/libboost_unit_test_framework.a; sourceTree = "<group>"; };
+		2C0B54F915C588B20090A055 /* ct.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ct.framework; path = "../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development/ct.framework"; sourceTree = "<group>"; };
 		ED21DD1606A769A400DBB519 /* vvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED21DD1806A769A400DBB519 /* vvm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vvm-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ED21DD1E06A769F200DBB519 /* altivec_implementation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = altivec_implementation.h; path = include/vvm/altivec_implementation.h; sourceTree = "<group>"; };
@@ -125,8 +115,6 @@
 		ED5C30CA085E8A4200B25663 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = test/util.cpp; sourceTree = "<group>"; };
 		ED5C30CB085E8A4200B25663 /* vector_cast.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vector_cast.cpp; path = test/vector_cast.cpp; sourceTree = "<group>"; };
 		ED5C30D4085E8A7000B25663 /* test_all */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_all; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED5C312C085E8BCB00B25663 /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = common.xcodeproj; path = ../common/common.xcodeproj; sourceTree = SOURCE_ROOT; };
-		ED5C3146085E8CBA00B25663 /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = ../../library/prebuilt/macosx.ppc/debug/libboost_unit_test_framework.a; sourceTree = SOURCE_ROOT; };
 		ED6D267B08227FF2005D0FE8 /* altivec.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = altivec.cpp; path = timing/altivec.cpp; sourceTree = "<group>"; };
 		ED6D267C08227FF2005D0FE8 /* implementation.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = implementation.cpp; path = timing/implementation.cpp; sourceTree = "<group>"; };
 		ED6D267D08227FF2005D0FE8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = timing/main.cpp; sourceTree = "<group>"; };
@@ -138,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0B54FA15C588B20090A055 /* ct.framework in Frameworks */,
+				2C0B54CE15C5131C0090A055 /* common.framework in Frameworks */,
 				ED43AB8308A6292E007090B3 /* vecLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5C30E9085E8ACB00B25663 /* vvm.framework in Frameworks */,
-				ED5C3147085E8CBA00B25663 /* libboost_unit_test_framework.a in Frameworks */,
 				ED43AB8408A6292E007090B3 /* vecLib.framework in Frameworks */,
-				ED2549C80ADA1531009EE67B /* common.framework in Frameworks */,
+				2C0B54F415C5177A0090A055 /* libboost_unit_test_framework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +242,6 @@
 			name = Test;
 			sourceTree = "<group>";
 		};
-		ED5C312D085E8BCB00B25663 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ED5C3132085E8BCB00B25663 /* common.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		ED6D267808227FCA005D0FE8 /* Timing */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,9 +255,10 @@
 		EDDE840206A7806A00063A07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C0B54F315C5177A0090A055 /* libboost_unit_test_framework.a */,
+				2C0B54F915C588B20090A055 /* ct.framework */,
+				2C0B54CD15C5131C0090A055 /* common.framework */,
 				ED43AB8208A6292E007090B3 /* vecLib.framework */,
-				ED5C3146085E8CBA00B25663 /* libboost_unit_test_framework.a */,
-				ED5C312C085E8BCB00B25663 /* common.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,7 +352,6 @@
 				ED5C3159085E8D3E00B25663 /* PBXBuildRule */,
 			);
 			dependencies = (
-				ED5C313B085E8C0900B25663 /* PBXTargetDependency */,
 			);
 			name = test_all;
 			productName = test_all;
@@ -409,12 +390,6 @@
 			mainGroup = ED21DCFE06A7697300DBB519;
 			productRefGroup = ED21DD1706A769A400DBB519 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ED5C312D085E8BCB00B25663 /* Products */;
-					ProjectRef = ED5C312C085E8BCB00B25663 /* common.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ED21DD1506A769A400DBB519 /* vvm */,
@@ -424,16 +399,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		ED5C3132085E8BCB00B25663 /* common.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = common.framework;
-			remoteRef = ED5C3131085E8BCB00B25663 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ED21DD1106A769A400DBB519 /* Resources */ = {
@@ -503,11 +468,6 @@
 			target = ED21DD1506A769A400DBB519 /* vvm */;
 			targetProxy = ED3B703F06B2434800E4010F /* PBXContainerItemProxy */;
 		};
-		ED5C313B085E8C0900B25663 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = common;
-			targetProxy = ED5C313A085E8C0900B25663 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -517,7 +477,11 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORKS_ROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
@@ -541,7 +505,11 @@
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORKS_ROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -668,6 +636,10 @@
 		ED5C3081085E898D00B25663 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				BOOST_PATH = "${PROJECT_DIR}/../boost_1_50_0";
+				HEADER_SEARCH_PATHS = "${BOOST_PATH}";
 				SDKROOT = macosx10.7;
 			};
 			name = Development;
@@ -675,6 +647,10 @@
 		ED5C3082085E898D00B25663 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				BOOST_PATH = "${PROJECT_DIR}/../boost_1_50_0";
+				HEADER_SEARCH_PATHS = "${BOOST_PATH}";
 				SDKROOT = macosx10.7;
 			};
 			name = Deployment;
@@ -690,12 +666,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(BOOST_PATH)/stage/lib",
 				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../library/prebuilt/macosx.ppc/debug\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../common/build/Development\"";
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = test_all;
@@ -718,12 +692,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(BOOST_PATH)/stage/lib",
 				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../library/prebuilt/macosx.ppc/debug\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../common/build/Development\"";
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = test_all;

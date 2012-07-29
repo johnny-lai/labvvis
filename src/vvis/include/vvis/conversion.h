@@ -19,91 +19,111 @@ namespace vvis {
 	namespace priv {
 		template<int pixelFormat, typename imageT>
 		struct gworld_converter {
+            // How to read pixel data from CGImageRef:
+            //   https://developer.apple.com/library/prerelease/mac/#qa/qa1509/_index.html
+            //   http://stackoverflow.com/questions/6073259/getting-rgb-pixel-data-from-cgimage
 			// Can convert from any gworld to any 1-channel image
 			template<typename T, template<typename> class storageP>
-			static void to_image(image<T, storageP>& image, GWorldPtr gworld, const int width, const int height) {
-				_VVIS_WARN("Converting GWorld to image using GetCPixel");
-				const T t_max = std::numeric_limits<T>::max();
-				const float us_max = static_cast<float>(std::numeric_limits<unsigned short>::max());
-				CGrafPtr orig_port;
-				GDHandle orig_device;
-				GetGWorld(&orig_port, &orig_device);
-				SetGWorld(gworld, NULL);
-				for(int y = 0; y < height; ++y) {
-					for(int x = 0; x < width; ++x) {
-						RGBColor color;
-						GetCPixel(x, y, &color);
-						image.pixel(x, y) = static_cast<T>((color.red / us_max) * t_max);
-						// TODO: convert properly
-					}
-				}
-				SetGWorld(orig_port, orig_device);
+			static void to_image(image<T, storageP>& image, CGImageRef imageRef, const int width, const int height) {
+                const float t_max = static_cast<float>(std::numeric_limits<T>::max());
+				
+                size_t bytesPerPixel = 4;
+                size_t bytesPerRow = bytesPerPixel * width;
+                size_t bitsPerComponent = 8;
+                
+                UInt8 *rawData = (UInt8*)calloc(height * width * 4, sizeof(UInt8));
+                draw_rgba(rawData, imageRef);
+                
+                for(int y = 0; y < height; ++y) {
+                    int byteIndex = (bytesPerRow * y);
+                    for(int x = 0 ; x < width; ++x) {
+                        CGFloat red   = (rawData[byteIndex]     * 1.0) / 255.0;
+                        CGFloat green = (rawData[byteIndex + 1] * 1.0) / 255.0;
+                        CGFloat blue  = (rawData[byteIndex + 2] * 1.0) / 255.0;
+                        CGFloat alpha = (rawData[byteIndex + 3] * 1.0) / 255.0;
+                        byteIndex += 4;
+
+						image.pixel(x, y) = static_cast<T>(red * t_max);
+                    }
+                }
 			}
 			// Can convert from any 1-channel image to any gworld
 			template<typename T, template<typename> class storageP>
-			static void to_gworld(const GWorldPtr gworld, const image<T, storageP>& image, const int width, const int height) {
-				_VVIS_WARN("Converting image to GWorld using SetCPixel");
+			static CGContextRef to_cgcontext(const image<T, storageP>& image, const int width, const int height) {
 				const float t_max = static_cast<float>(std::numeric_limits<T>::max());
-				const float us_max = static_cast<float>(std::numeric_limits<unsigned short>::max());
-				CGrafPtr orig_port;
-				GDHandle orig_device;
-				GetGWorld(&orig_port, &orig_device);
-				SetGWorld(gworld, NULL);
-				for(int y = 0; y < height; ++y) {
-					for(int x = 0; x < width; ++x) {
-						RGBColor color;
-						color.red = static_cast<unsigned short>((image.pixel(x, y) / t_max) * us_max);
-						color.green = static_cast<unsigned short>((image.pixel(x, y) / t_max) * us_max);
-						color.blue = static_cast<unsigned short>((image.pixel(x, y) / t_max) * us_max);
-						SetCPixel(x, y, &color);
-					}
-				}
-				SetGWorld(orig_port, orig_device);
+				
+                size_t bytesPerPixel = 4;
+                size_t bytesPerRow = bytesPerPixel * width;
+                size_t bitsPerComponent = 8;
+                
+                UInt8 *rawData = (UInt8*)calloc(height * width * 4, sizeof(UInt8));
+                CGContextRef contextRef = create_cgcontext_rgba(rawData, width, height);
+                
+                for(int y = 0; y < height; ++y) {
+                    int byteIndex = (bytesPerRow * y);
+                    for(int x = 0 ; x < width; ++x) {
+                        UInt8 pixel = static_cast<UInt8>((image.pixel(x, y) / t_max) * 255.0);
+                        rawData[byteIndex    ] = pixel;
+                        rawData[byteIndex + 1] = pixel;
+                        rawData[byteIndex + 2] = pixel;
+                        rawData[byteIndex + 3] = 0xFF;  // Alpha
+                        byteIndex += 4;
+                    }
+                }
+                
+                return contextRef;
 			}
 			// Can convert from any gworld to any rgb image
 			template<typename T, template<typename> class storageP>
-			static void to_image(rgb_image<T, storageP>& image, GWorldPtr gworld, const int width, const int height) {
-				_VVIS_WARN("Converting GWorld to rgb_image using GetCPixel");
-				const T t_max = std::numeric_limits<T>::max();
-				//const unsigned short us_max = static_castMstd::numeric_limits<unsigned short>::max();
-				const float us_max = static_cast<float>(std::numeric_limits<unsigned short>::max());
-				CGrafPtr orig_port;
-				GDHandle orig_device;
-				GetGWorld(&orig_port, &orig_device);
-				SetGWorld(gworld, NULL);
-				for(int y = 0; y < height; ++y) {
-					for(int x = 0; x < width; ++x) {
-						RGBColor color;
-						GetCPixel(x, y, &color);
-						image.red(x, y) = static_cast<T>((color.red / us_max) * t_max);
-						image.green(x, y) = static_cast<T>((color.green / us_max) * t_max);
-						image.blue(x, y) = static_cast<T>((color.blue / us_max) * t_max);
-						//cout << color.red << ", " << color.green << ", " << color.blue << " -> "
-						//	<< image.red(x, y) << ", " << image.green(x, y) << ", " << image.blue(x, y) << endl;
-					}
-				}
-				SetGWorld(orig_port, orig_device);
+			static void to_image(rgb_image<T, storageP>& image, CGImageRef imageRef, const int width, const int height) {
+                const float t_max = static_cast<float>(std::numeric_limits<T>::max());
+				
+                size_t bytesPerPixel = 4;
+                size_t bytesPerRow = bytesPerPixel * width;
+                size_t bitsPerComponent = 8;
+                
+                UInt8 *rawData = (UInt8*)calloc(height * width * 4, sizeof(UInt8));
+                draw_rgba(rawData, imageRef);
+                
+                for(int y = 0; y < height; ++y) {
+                    int byteIndex = (bytesPerRow * y);
+                    for(int x = 0 ; x < width; ++x) {
+                        CGFloat red   = (rawData[byteIndex]     * 1.0) / 255.0;
+                        CGFloat green = (rawData[byteIndex + 1] * 1.0) / 255.0;
+                        CGFloat blue  = (rawData[byteIndex + 2] * 1.0) / 255.0;
+                        CGFloat alpha = (rawData[byteIndex + 3] * 1.0) / 255.0;
+                        byteIndex += 4;
+
+						image.red(x, y) = static_cast<T>(red * t_max);
+						image.green(x, y) = static_cast<T>(green * t_max);
+						image.blue(x, y) = static_cast<T>(blue * t_max);
+                    }
+                }
 			}
 			// Can convert from any rgb_image to any gworld
 			template<typename T, template<typename> class storageP>
-			static void to_gworld(const GWorldPtr gworld, const rgb_image<T, storageP>& image, const int width, const int height) {
-				_VVIS_WARN("Converting rgb_image to GWorld using SetCPixel");
-				const float t_max = static_cast<float>(std::numeric_limits<T>::max());
-				const float us_max = static_cast<float>(std::numeric_limits<unsigned short>::max());
-				CGrafPtr orig_port;
-				GDHandle orig_device;
-				GetGWorld(&orig_port, &orig_device);
-				SetGWorld(gworld, NULL);
-				for(int y = 0; y < height; ++y) {
-					for(int x = 0; x < width; ++x) {
-						RGBColor color;
-						color.red = static_cast<unsigned short>((image.red(x, y) / t_max) * us_max);
-						color.green = static_cast<unsigned short>((image.green(x, y) / t_max) * us_max);
-						color.blue = static_cast<unsigned short>((image.blue(x, y) / t_max) * us_max);
-						SetCPixel(x, y, &color);
-					}
-				}
-				SetGWorld(orig_port, orig_device);
+			static CGContextRef to_cgcontext(const rgb_image<T, storageP>& image, const int width, const int height) {
+                const float t_max = static_cast<float>(std::numeric_limits<T>::max());
+				
+                size_t bytesPerPixel = 4;
+                size_t bytesPerRow = bytesPerPixel * width;
+                size_t bitsPerComponent = 8;
+                
+                UInt8 *rawData = (UInt8*)calloc(height * width * 4, sizeof(UInt8));
+                CGContextRef contextRef = create_cgcontext_rgba(rawData, width, height);
+                
+                for(int y = 0; y < height; ++y) {
+                    int byteIndex = (bytesPerRow * y);
+                    for(int x = 0 ; x < width; ++x) {
+                        rawData[byteIndex    ] = static_cast<UInt8>((image.red(x, y)   / t_max) * 255.0);
+                        rawData[byteIndex + 1] = static_cast<UInt8>((image.green(x, y) / t_max) * 255.0);
+                        rawData[byteIndex + 2] = static_cast<UInt8>((image.blue(x, y)  / t_max) * 255.0);
+                        rawData[byteIndex + 3] = 0xFF;  // Alpha
+                        byteIndex += 4;
+                    }
+                }
+                
+                return contextRef;
 			}
 		};
 
@@ -520,7 +540,7 @@ namespace vvis {
 				}
 			}
 		};
-#else
+#elif 0
 		// GetPixBaseAddr conversion
 		template<
 			template<typename> class storageP
@@ -637,7 +657,7 @@ namespace vvis {
 		};
 #endif
 	} // End of priv namespace
-	
+#if 0
 	// Image conversion function
 	template<typename imageT> imageT image_cast(GWorldPtr gworld) {
 		PixMapHandle pixmap = GetGWorldPixMap(gworld);
@@ -701,6 +721,7 @@ namespace vvis {
 		}
 		return noErr; 
 	}
+#endif
 } // End of vvis namespace
 
 #endif

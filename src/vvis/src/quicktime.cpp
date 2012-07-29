@@ -38,8 +38,36 @@ namespace vvis {
 		// otherwise it is a BitMap
 		return (**pixmap).rowBytes & 0x3fff;
 	#else			// Macintosh Implementation
-		return GetPixRowBytes(pixmap);
+		return QTGetPixMapHandleRowBytes(pixmap);
 	#endif
 	}
 
+    #ifndef _WIN32
+    CGContextRef create_cgcontext_rgba(UInt8 *rawData, const size_t width, const size_t height)
+    {
+        // First get the image into your data buffer
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        size_t bytesPerPixel = 4;
+        size_t bytesPerRow = bytesPerPixel * width;
+        size_t bitsPerComponent = 8;
+        CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+                        bitsPerComponent, bytesPerRow, colorSpace,
+                        kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+        CGColorSpaceRelease(colorSpace);
+
+        return context;
+    }
+    
+    void draw_rgba(UInt8 *rawData, CGImageRef imageRef)
+    {
+        size_t width = CGImageGetWidth(imageRef);
+        size_t height = CGImageGetHeight(imageRef);
+        
+        CGContextRef context = create_cgcontext_rgba(rawData, width, height);
+        CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+        CGContextRelease(context);
+
+        // Now your rawData contains the image data in the RGBA8888 pixel format.
+    }
+    #endif
 } // End of vvis namespace

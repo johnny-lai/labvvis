@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'ct' target in the 'ct' project
+//
+
+#ifdef __OBJC__
+#endif

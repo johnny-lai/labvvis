@@ -26,6 +26,10 @@
 namespace vvis {
 	OSErr make_fsspec(FSSpec& fsspec, const char path[]);
 	long get_row_bytes(PixMapHandle pixmap);
+#if !defined _WIN32
+    CGContextRef create_cgcontext_rgba(UInt8 *rawData, const size_t width, const size_t height);
+    void draw_rgba(UInt8 *rawData, CGImageRef imageRef);
+#endif
 } // End of vvis namespace
 
 #endif

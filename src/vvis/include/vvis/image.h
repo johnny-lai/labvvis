@@ -25,7 +25,7 @@ namespace vvis {
 	 */
 	template<
 		typename typelistT,
-		template<typename typelistT> class storageP = VVIS_DEFAULT_STORAGE_POLICY
+		template<typename storagePTypelistT> class storageP = VVIS_DEFAULT_STORAGE_POLICY
 	> class base_image : public image_base, public storageP<typelistT> {
 	public:
 		typedef base_image<typelistT, storageP> self_type;

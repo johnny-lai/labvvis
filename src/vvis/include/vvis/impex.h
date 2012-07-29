@@ -145,23 +145,18 @@ namespace vvis {
 				setstate(eofbit);
 				return *this;
 			}
-			Rect r;
-			GWorldPtr gworld;
+			CGImageRef imageref;
 			// Import
 			const int w = width();
 			const int h = height();
-			MacSetRect(&r, 0, 0, width(), height());
-			_VVIS_CHECK_OSERR(
-				QTNewGWorld(&gworld, k32ARGBPixelFormat, &r, 0, NULL, 0),
-				setstate(badbit); goto cleanup);
-			_VVIS_CHECK_OSERR(
-				GraphicsImportSetGWorld(_gi, gworld, 0),
-				setstate(badbit); goto cleanup);
+            _VVIS_CHECK_OSERR(
+                GraphicsImportCreateCGImage(_gi, &imageref, kGraphicsImportCreateCGImageUsingCurrentSettings),
+                setstate(badbit); goto cleanup);
 			GraphicsImportDraw(_gi);
 			// Convert to rgb_image<scalarT>
 			// Resize image if required
 			image.resize(w, h);
-			priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_image(image, gworld, w, h);
+			priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_image(image, imageref, w, h);
 			// Prepare for next frame
 			++_current_index;
 			_VVIS_CHECK_OSERR(GraphicsImportSetImageIndex(_gi, _current_index), setstate(badbit); goto cleanup);
@@ -169,7 +164,7 @@ namespace vvis {
 			_VVIS_CHECK_OSERR(GraphicsImportGetImageDescription(_gi, &_desc), setstate(badbit); goto cleanup);
 		cleanup:
 			//TODO: Figure out why DisposeGWorld(gworld) causes problems in AltiVec
-			DisposeGWorld(gworld);
+			CGImageRelease(imageref);
 			return *this;
 		}
 	protected:
@@ -200,19 +195,13 @@ namespace vvis {
 		template<typename imageT>
 		typename ct::enable_if<is_image<imageT>::value, fexporter&>::type
 		operator<<(const imageT& image) {
-			GWorldPtr gworld = NULL;
-			Rect rect;
-			MacSetRect(&rect, 0, 0, image.width(), image.height());
-			// Convert to GWorld
-			_VVIS_CHECK_OSERR(
-				QTNewGWorld(&gworld, k32ARGBPixelFormat, &rect, 0, NULL, 0),
-				setstate(badbit); goto cleanup);
-			LockPixels(GetGWorldPixMap(gworld));
-			priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_gworld(gworld, image, image.width(), image.height());
-			UnlockPixels(GetGWorldPixMap(gworld));
+			CGContextRef contextRef = NULL;
+			// Convert to CGContextRef
+            contextRef = priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_cgcontext(image, image.width(), image.height());
+
 			// Perform Export
 			_VVIS_CHECK_OSERR(
-				GraphicsExportSetInputGWorld(_ge, gworld),
+				GraphicsExportSetInputCGBitmapContext(_ge, contextRef),
 				setstate(badbit); goto cleanup);
 			_VVIS_CHECK_OSERR(
 				GraphicsExportSetOutputFile(_ge, &_fss),
@@ -221,7 +210,7 @@ namespace vvis {
 				GraphicsExportDoExport(_ge, NULL),
 				setstate(badbit); goto cleanup);
 		cleanup:
-			DisposeGWorld(gworld);
+			CGContextRelease(contextRef);
 			return *this;
 		}
 	protected:
@@ -431,7 +420,7 @@ namespace vvis {
 		sgimporterT& _sgimporter;
 		ImageSequence _decomp_seq;
 		boost::thread_group _record_threads;
-		boost::condition _frame_ready_cond;
+		boost::condition_variable _frame_ready_cond;
 		boost::mutex _frame_ready_mutex;
 		boost::mutex _gworld_in_use_mutex;
 		boost::mutex::scoped_lock _gworld_in_use_lock;
