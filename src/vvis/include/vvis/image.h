@@ -60,13 +60,15 @@ namespace vvis {
 	public:
 		template<int channel> typename ct::type_at<component_ref_tl, channel>::type
 		component(const coordinate_type x, const coordinate_type y) {
-			storageP<typelistT>& storage = *this;
-			return storage.component<channel>(x, y);
+			typedef storageP<typelistT> storage_t;
+            storage_t& storage = *this;
+			return storage.template component<channel>(x, y);
 		}
 		template<int channel> typename ct::type_at<component_const_ref_tl, channel>::type
 		component(const coordinate_type x, const coordinate_type y) const {
-			const storageP<typelistT>& storage = *this;
-			return storage.component<channel>(x, y);
+			typedef storageP<typelistT> storage_t;
+            const storage_t& storage = *this;
+			return storage.template component<channel>(x, y);
 		}
 	};
 	

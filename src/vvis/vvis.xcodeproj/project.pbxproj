@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		02D6E38D061E669500A550FF /* test_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 025F1550061E62F300415043 /* test_all.cpp */; };
 		02D6E394061E66A600A550FF /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43886005BA2DCD00E1183F /* vvis.framework */; };
 		2C0B54FC15C588C90090A055 /* vvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0B54FB15C588C90090A055 /* vvm.framework */; };
+		2C8D22C015CA16CA00F73E9E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22BD15CA169F00F73E9E /* libboost_system.a */; };
+		2C8D22C115CA16D300F73E9E /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22BB15CA15F700F73E9E /* libboost_thread.a */; };
 		ED1FC4170CCE3E48006083CB /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED43886005BA2DCD00E1183F /* vvis.framework */; };
 		ED43884505BA2DCD00E1183F /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5BCF6B041C79020082428A /* transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED43884605BA2DCD00E1183F /* functor.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5BCF69041C79020082428A /* functor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,6 +167,8 @@
 		025F1550061E62F300415043 /* test_all.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = test_all.cpp; path = test/test_all.cpp; sourceTree = "<group>"; };
 		026E3C11061E638400E23D50 /* test_all */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_all; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0B54FB15C588C90090A055 /* vvm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vvm.framework; path = "../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development/vvm.framework"; sourceTree = "<group>"; };
+		2C8D22BB15CA15F700F73E9E /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/stage/lib/libboost_thread.a; sourceTree = "<group>"; };
+		2C8D22BD15CA169F00F73E9E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/stage/lib/libboost_system.a; sourceTree = "<group>"; };
 		ED109C9E050212CA0082424C /* metafunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = metafunction.h; path = include/vvis/metafunction.h; sourceTree = "<group>"; };
 		ED14EA6C055FB2D5000BDE42 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = macros.h; path = include/vvis/macros.h; sourceTree = "<group>"; };
 		ED1815B204B688C3009B14C6 /* region.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = region.h; path = include/vvis/region.h; sourceTree = "<group>"; };
@@ -291,6 +295,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8D22C115CA16D300F73E9E /* libboost_thread.a in Frameworks */,
+				2C8D22C015CA16CA00F73E9E /* libboost_system.a in Frameworks */,
 				ED1FC4170CCE3E48006083CB /* vvis.framework in Frameworks */,
 				ED43889905BA2DCD00E1183F /* QuickTime.framework in Frameworks */,
 				ED43889A05BA2DCD00E1183F /* Carbon.framework in Frameworks */,
@@ -431,6 +437,8 @@
 		ED5BCF64041C78EE0082428A = {
 			isa = PBXGroup;
 			children = (
+				2C8D22BD15CA169F00F73E9E /* libboost_system.a */,
+				2C8D22BB15CA15F700F73E9E /* libboost_thread.a */,
 				ED4C430506A7C564001D977B /* Readme.txt */,
 				EDB8DF5F0788E87F008B1AAF /* Design thoughts.txt */,
 				ED5BFB8C0A7B03E600B1758A /* Release notes.txt */,
@@ -858,8 +866,11 @@
 /* Begin PBXProject section */
 		ED5BCF68041C78EE0082428A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = ED4C4C44085D42A400266BDC /* Build configuration list for PBXProject "vvis" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -1168,12 +1179,19 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				INFOPLIST_FILE = "Info-vvis__Upgraded_.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../boost_1_50_0/stage/lib\"",
+				);
 				OTHER_CFLAGS = "$(_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-lboost_system",
+				);
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
@@ -1198,11 +1216,18 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/labvvis-afxhdvyhmimrmccvqcbdldhxjufc/Build/Products/Development\"";
 				FRAMEWORK_VERSION = A;
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				INFOPLIST_FILE = "Info-vvis__Upgraded_.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../boost_1_50_0/stage/lib\"",
+				);
 				OTHER_CFLAGS = "$(_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-lboost_system",
+				);
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
@@ -1221,7 +1246,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1241,7 +1265,6 @@
 				);
 				OTHER_LDFLAGS = "-lpthread";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = scratch;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1257,7 +1280,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1278,7 +1300,6 @@
 					"-bind_at_load",
 				);
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = scratch;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1298,7 +1319,6 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../common/build\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1330,7 +1350,6 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../common/build\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1355,7 +1374,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1383,7 +1401,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1406,11 +1423,13 @@
 			buildSettings = {
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../boost_1_50_0/stage/lib\"",
+				);
 				OTHER_CFLAGS = "$(_CFLAGS)";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = sgimporter;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1428,10 +1447,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../boost_1_50_0/stage/lib\"",
+				);
 				OTHER_CFLAGS = "$(_CFLAGS)";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = sgimporter;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1451,7 +1472,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
@@ -1477,7 +1497,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_ROOT)",
 					"$(CT_INCLUDE_PATH)",
@@ -1500,7 +1519,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
@@ -1511,7 +1529,6 @@
 				OTHER_CFLAGS = "$(_CFLAGS)";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = image;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1531,7 +1548,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_ROOT)",
 					"$(CT_INCLUDE_PATH)",
@@ -1539,7 +1555,6 @@
 				OTHER_CFLAGS = "$(_CFLAGS)";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = image;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1568,7 +1583,6 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../vvm3/build/Release\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1621,7 +1635,6 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../vvm2/build\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../vvm3/build/Release\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1663,7 +1676,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1688,7 +1700,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cocoa;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.3.9.sdk";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1706,7 +1718,6 @@
 				ARCHS = ppc;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				HEADER_SEARCH_PATHS = (
@@ -1725,7 +1736,7 @@
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cocoa;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.3.9.sdk";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1739,22 +1750,27 @@
 		ED4C4C45085D42A400266BDC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "_VVIS_TREAT_CONTIGUOUS_AS_UNKNOWN=1";
 				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
 				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_LDFLAGS = (
 					"-lpthread",
 					"-lboost_system",
 				);
-				SDKROOT = macosx10.7;
 			};
 			name = Development;
 		};
 		ED4C4C47085D42A400266BDC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "_VVIS_TREAT_CONTIGUOUS_AS_UNKNOWN=1";
 				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
 				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_CFLAGS = "";
@@ -1762,7 +1778,6 @@
 					"-lpthread",
 					"-lboost_system",
 				);
-				SDKROOT = macosx10.7;
 			};
 			name = Deployment;
 		};
@@ -1771,7 +1786,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
@@ -1785,7 +1799,6 @@
 					"-D_VVIS_NO_SPECIALIZED_ALGORITHMS",
 				);
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = scratch;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1800,7 +1813,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				LIBRARY_SEARCH_PATHS = (
@@ -1813,7 +1825,6 @@
 					"-D_VVIS_NO_SPECIALIZED_ALGORITHMS",
 				);
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = scratch2;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1829,7 +1840,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -1849,7 +1859,6 @@
 				);
 				OTHER_LDFLAGS = "-lpthread";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = scratch;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";
@@ -1865,7 +1874,6 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				GCC_ALTIVEC_EXTENSIONS = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1886,7 +1894,6 @@
 					"-bind_at_load",
 				);
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = hough;
 				REZ_EXECUTABLE = YES;
 				SECTORDER_FLAGS = "";

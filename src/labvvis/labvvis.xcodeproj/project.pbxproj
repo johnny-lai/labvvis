@@ -951,12 +951,13 @@
 		EDFFF732085EE743003ABED0 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
 				FRAMEWORK_SEARCH_PATHS = Frameworks;
 				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				OTHER_CFLAGS = "-maltivec";
 				OTHER_LDFLAGS = "-lpthread";
-				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};
@@ -965,12 +966,13 @@
 		EDFFF733085EE743003ABED0 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
 				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
 				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				OTHER_CFLAGS = "-maltivec";
 				OTHER_LDFLAGS = "-lpthread";
-				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};

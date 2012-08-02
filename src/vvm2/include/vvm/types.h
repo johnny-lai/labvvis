@@ -100,11 +100,6 @@ namespace vvm {
 				boolean_types,
 				ct::has_sizeof<size>::template func>::type type;
 		};
-
-		template<typename T> struct get_type {
-			enum {
-			};
-		};
 	} // End of priv namespace
 	
 	//===============================================================================

@@ -396,8 +396,10 @@ namespace vvis {
 			boost::mutex::scoped_lock scoped_lock(_gworld_in_use_mutex);
 			// Resize image if required
 			image.resize(_sgimporter._settings.width, _sgimporter._settings.height);
+#if 0
 			priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_image(image, _sgimporter._gworld,
 				_sgimporter._settings.width, _sgimporter._settings.height);
+#endif
 			return *this;
 		}
 		GWorldPtr wait_for_locked_gworld() {
@@ -428,8 +430,8 @@ namespace vvis {
 	};
 	template<typename sgimporterT>
 	sync_capture<sgimporterT>::sync_capture(sgimporterT& sgi)
-	: _sgimporter(sgi), _decomp_seq(0), _gworld_in_use_lock(_gworld_in_use_mutex, false),
-		_temp_gworld_lock(_gworld_in_use_mutex, false) , _temp_frame_lock(_frame_ready_mutex, false) {
+	: _sgimporter(sgi), _decomp_seq(0), _gworld_in_use_lock(_gworld_in_use_mutex),
+		_temp_gworld_lock(_gworld_in_use_mutex) , _temp_frame_lock(_frame_ready_mutex) {
 	}
 	template<typename sgimporterT>
 	sync_capture<sgimporterT>::~sync_capture() {
@@ -509,8 +511,10 @@ namespace vvis {
 		operator>>(imageT& image){
 			// Resize image if required
 			image.resize(_sgimporter._settings.width, _sgimporter._settings.height);
+#if 0
 			priv::gworld_converter<k32ARGBPixelFormat, imageT>::to_image(image, _sgimporter._gworld,
 				_sgimporter._settings.width, _sgimporter._settings.height);
+#endif
 			return *this;
 		}
 	protected:
@@ -737,6 +741,7 @@ namespace vvis {
 				_settings.height = _bounds_rect.bottom - _bounds_rect.top;
 			}
 		}
+#if 0
 		// Setup _bounds_rect
 		MacSetRect(&_bounds_rect, 0, 0, _settings.width, _settings.height);
 		// Set Video Bounds
@@ -752,6 +757,7 @@ namespace vvis {
 			setstate(badbit);
 			return;
 		}
+#endif
 		// Set GWorld to the offscreen GWorld
 		_VVIS_CHECK_OSERR(SGSetGWorld(_seq_grabber, _gworld, NULL), setstate(badbit); return);
 		// Tell capture_policy

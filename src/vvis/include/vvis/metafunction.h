@@ -136,8 +136,11 @@ namespace vvis {
 	namespace priv {
 		/// Metafunction to check if an image uses illife storage
 		template<typename imageT> struct uses_illife_storage {
+            static const bool value = false;
+            /*
 			static const bool value = boost::is_base_and_derived<
 				vvis::illife_storage, imageT>::value;
+                */
 		};
 		
 		/// Metafunction to check if an image uses contiguous storage
