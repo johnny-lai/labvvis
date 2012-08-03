@@ -145,12 +145,11 @@ namespace vvis {
 		
 		/// Metafunction to check if an image uses contiguous storage
 		template<typename imageT> struct uses_contiguous_storage {
-#if defined _VVIS_TREAT_CONTIGUOUS_AS_UNKNOWN
 			static const bool value = false;
-#else
+            /*
 			static const bool value = boost::is_base_and_derived<
 				contiguous_storage, imageT>::value;
-#endif
+            */
 		};
 		/** Metafunction to check if an image uses unknown storage
 		* Unknown storages refers to storages that VVIS does not know about.

@@ -725,95 +725,30 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../vvm3/build/Release\"";
 				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = (
-					"$(CT_INCLUDE_PATH)",
-					"$(BOOST_ROOT)",
-					include,
-					include/cintools,
-					/Developer/Headers/FlatCarbon,
-				);
 				INFOPLIST_FILE = "Info-labvvis.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Frameworks",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "$(SYSTEM_APPS_DIR)/National\\ Instruments/LabVIEW\\ 7.1/cintools/Mach-O";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
 				PRODUCT_NAME = labvvis;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = YES;
 			};
 			name = Development;
 		};
 		ED891089088D471600737521 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(CT_INCLUDE_PATH)",
-					"$(BOOST_ROOT)",
-					include,
-					include/cintools,
-					/Developer/Headers/FlatCarbon,
-				);
 				INFOPLIST_FILE = "Info-labvvis.plist";
 				INSTALL_PATH = /Library/Frameworks;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Frameworks",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "$(SYSTEM_APPS_DIR)/National\\ Instruments/LabVIEW\\ 7.1/cintools/Mach-O";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOL_FLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRINCIPAL_CLASS = "";
 				PRODUCT_NAME = labvvis;
 				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = framework;
-				ZERO_LINK = NO;
 			};
 			name = Deployment;
 		};
@@ -953,13 +888,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
-				FRAMEWORK_SEARCH_PATHS = Frameworks;
-				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
-				OTHER_CFLAGS = "-maltivec";
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				HEADER_SEARCH_PATHS = (
+					"$(BOOST_PATH)",
+					"$(CINTOOLS_PATH)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_LDFLAGS = "-lpthread";
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};
 			name = Development;
 		};
@@ -968,13 +904,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 8.2/cintools\"";
-				FRAMEWORK_SEARCH_PATHS = "$(FRAMEWORKS_ROOT)";
-				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
-				OTHER_CFLAGS = "-maltivec";
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				HEADER_SEARCH_PATHS = (
+					"$(BOOST_PATH)",
+					"$(CINTOOLS_PATH)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_LDFLAGS = "-lpthread";
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(CINTOOLS_PATH)";
 			};
 			name = Deployment;
 		};
