@@ -3,7 +3,6 @@
 #include <dlfcn.h>
 #include <iostream>
 #include <vector>
-#include <vvis/vvis.h>
 #include <labvvis/labvvis.h>
 #include <labvvis/image_manager.h>
 #include <labvvis/object_manager.h>
@@ -12,12 +11,12 @@
 #include "acg.h"
 
 using namespace lv;
-
+/*
 typedef vvis::xy_accessor<pixel_accessor_1ch> xy_accessor_t;
 typedef vvis::hough<xy_accessor_t> hough_t;
 typedef object_manager<hough_id_t, hough_t> houghs_object_manager;
 houghs_object_manager houghs;
-
+*/
 #define PRE_FLIGHT(LSTR) \
 if(lv::lstrlen(LSTR)) \
 return;
@@ -44,30 +43,23 @@ if(CID >= image_manager::instance().image(IID).channel_count()) { \
 }
 
 //=
+#if 0
 // For sequence grabber
 int32 get_address(const image_id idnt) {
 	return (int32)(&(image_manager::instance().image(idnt)));
 }
-
+#endif
 //= Image Allocation/Deallocation ==============================================
-static int demo_image_count = 0;
 image_id new_image(const int width, const int height, const int channel_count, LStrHandle error) {
 	// Skip if there was an error
 	if(lv::lstrlen(error))
 		return -1;
 	
-	if(isAuthorized())
-		return image_manager::instance().new_image(width, height, channel_count);
-	else if(demo_image_count < 5) {
-		++demo_image_count;
-		return image_manager::instance().new_image(width, height, channel_count);
-	}
-	else
-	{
-		lv::to_lstr(error, "LabVVIS is not registered. You have tried to allocate more than 5 images. " 
-					"To remove this limit, you need to register using the Register LabVVIS program.");
-		return -1;
-	}
+    image_id new_image_id = image_manager::instance().new_image(width, height, channel_count);
+    if (new_image_id == -1) {
+        lv::to_lstr(error, "Failed to create image. Only 4-channel images currently supported.");
+    }
+    return new_image_id;
 }
 
 void delete_image(const image_id idnt, LStrHandle error) {
@@ -102,7 +94,7 @@ void convert_from_pixmap(const unsigned long *img, const image_id idnt, const ch
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(idnt, cid, error);
 	
-	lv::image lvimg = image_manager::instance().image(idnt);
+	lv::image &lvimg = image_manager::instance().image(idnt);
 
 	// Convert vimg to picture
 	const int h = lvimg.height();
@@ -110,23 +102,24 @@ void convert_from_pixmap(const unsigned long *img, const image_id idnt, const ch
 	for(int y = 0; y < h; ++y) {
 		const int offset = y * w;
 		for(int x= 0; x < w; ++x) {
-			vvis::uint8 v[3];
+			UInt8 v[3];
 			v[0] = (img[offset + x] & 0xff0000) >> 16;
 			v[1] = (img[offset + x] & 0xff00) >> 8;
 			v[2] = (img[offset + x] & 0xff);
 			// Convert to pixel
+            UInt8 *argb_pixel = lvimg.pixelData(x, y);
 			switch(lvimg.channel_count()) {
 				case 1:
-					lvimg[0].pixel(x, y) = (v[0] + v[1] + v[1] + v[2]) / 4;
+					//lvimg[0].pixel(x, y) = (v[0] + v[1] + v[1] + v[2]) / 4;
 					break;
 				case 4:
 					if(cid >= 0)
-						lvimg[cid].pixel(x, y) = v[cid];
+						argb_pixel[cid + 1] = v[cid];
 					else {
-						lvimg[0].pixel(x, y) = v[0];
-						lvimg[1].pixel(x, y) = v[1];
-						lvimg[2].pixel(x, y) = v[2];
-						lvimg[3].pixel(x, y) = 0xff;	// Alpha
+						argb_pixel[0] = 0xff;	// Alpha
+						argb_pixel[1] = v[0];
+						argb_pixel[2] = v[1];
+						argb_pixel[3] = v[2];
 					}
 					break;
 			}
@@ -138,7 +131,7 @@ void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long 
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(idnt, cid, error);
 	
-	lv::image lvimg = image_manager::instance().image(idnt);
+	lv::image &lvimg = image_manager::instance().image(idnt);
 
 	// Convert vimg to picture
 	const int h = lvimg.height();
@@ -147,27 +140,28 @@ void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long 
 		const int offset = y * w;	// LabVIEW image
 		for(int x= 0; x < w; ++x) {
 			// Convert to pixel
+            UInt8 *argb_pixel = lvimg.pixelData(x, y);
 			switch(lvimg.channel_count()) {
 				case 1: {
-					unsigned char gray = lvimg[0].pixel(x, y);
+					unsigned char gray = argb_pixel[1];
 					img[offset + x] = (gray << 16) + 
 						(gray << 8) +
 						(gray);
 				}	break;
 				case 4:
 					if(cid >= 0) {
-						img[offset + x] = lvimg[cid].pixel(x, y) << (16 - cid*8);
+						img[offset + x] = argb_pixel[cid+1] << (16 - cid*8);
 					} else {
-						img[offset + x] = (lvimg[0].pixel(x, y) << 16) + 
-							(lvimg[1].pixel(x, y) << 8) +
-							(lvimg[2].pixel(x, y));
+						img[offset + x] = (argb_pixel[1] << 16) +
+							(argb_pixel[2] << 8) +
+							(argb_pixel[3]);
 					}
 					break;
 			}
 		}
 	}
 }
-
+#if 0
 //= Image Initialisation =======================================================
 void fill(const image_id o, const channel_id och, const vvis::uint8 c, LStrHandle error) {
 	PRE_FLIGHT(error);
@@ -245,6 +239,7 @@ void copy(const image_id in, const channel_id icid, const image_id out, const ch
 	}
 }
 */
+#endif
 //= Image Information ==========================================================
 void image_size(const image_id o, int *width, int *height, LStrHandle error) {
 	PRE_FLIGHT(error);
@@ -260,6 +255,7 @@ void image_size(const image_id o, int *width, int *height, LStrHandle error) {
 	}
 }
 
+#if 0
 void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, vvis::uint8 *value, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
@@ -783,3 +779,4 @@ void delete_hough(int hough_id, LStrHandle error) {
 		houghs.erase(i);
 	}
 }
+#endif

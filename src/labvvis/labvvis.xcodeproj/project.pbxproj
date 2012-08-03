@@ -24,8 +24,14 @@
 /* Begin PBXBuildFile section */
 		2C8D22C415CA1E0500F73E9E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C215CA1E0400F73E9E /* libboost_system.a */; };
 		2C8D22C515CA1E0500F73E9E /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C315CA1E0400F73E9E /* libboost_thread.a */; };
-		2C8D22C615CA22A800F73E9E /* stub_iio.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7EA1084F2D28009F7797 /* stub_iio.m */; };
 		2C8D22C915CA281D00F73E9E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C815CA281D00F73E9E /* QuartzCore.framework */; };
+		2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
+		2CB9D95715CC21E100DD7F10 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */; };
+		2CB9D95815CC21F300DD7F10 /* object_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5B3D650A81EA810068420C /* object_manager.cpp */; };
+		2CB9D95915CC21F900DD7F10 /* image_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED80C3F70835C37500F8388C /* image_manager.mm */; };
+		2CB9D95A15CC24FE00DD7F10 /* stub_iio.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7EA1084F2D28009F7797 /* stub_iio.m */; };
+		2CB9D97A15CC291600DD7F10 /* labvvis.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED108A7307E8396900D6A1B1 /* labvvis.mm */; };
+		2CB9D97D15CC2D0700DD7F10 /* image.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9D97C15CC2B0300DD7F10 /* image.mm */; };
 		ED4AA25509458C5300A74566 /* GenericDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25109458C5300A74566 /* GenericDecode.h */; };
 		ED4AA25609458C5300A74566 /* acg.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25209458C5300A74566 /* acg.h */; };
 		ED4AA25709458C5300A74566 /* mallocTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25309458C5300A74566 /* mallocTracking.h */; };
@@ -39,7 +45,6 @@
 		EDB7D5440AA9DC7300329157 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD1FFC3082B4BF700BC0FCD /* image.h */; };
 		EDB7D5450AA9DC7300329157 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8561FB095F85C0001F6A79 /* util.h */; };
 		EDB7D5480AA9DC7300329157 /* cin_seqgrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */; };
-		EDB7D5490AA9DC7300329157 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED79C0D10946EE5C00C577F2 /* image.cpp */; };
 		EDB7D54A0AA9DC7300329157 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
 		EDB7D54E0AA9DC7300329157 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED108A6507E838CE00D6A1B1 /* QuickTime.framework */; };
 		EDB7D54F0AA9DC7300329157 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C77B307F97F9900300BEC /* Cocoa.framework */; };
@@ -93,8 +98,10 @@
 		2C8D22C315CA1E0400F73E9E /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/stage/lib/libboost_thread.a; sourceTree = "<group>"; };
 		2C8D22C715CA23D000F73E9E /* labvvis-exports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "labvvis-exports.h"; sourceTree = "<group>"; };
 		2C8D22C815CA281D00F73E9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		2CB9D97C15CC2B0300DD7F10 /* image.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = image.mm; path = src/labvvis/image.mm; sourceTree = "<group>"; };
 		ED108A6507E838CE00D6A1B1 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		ED108A7307E8396900D6A1B1 /* labvvis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = labvvis.cpp; path = src/labvvis/labvvis.cpp; sourceTree = "<group>"; };
+		ED108A7307E8396900D6A1B1 /* labvvis.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = labvvis.mm; path = src/labvvis/labvvis.mm; sourceTree = "<group>"; };
 		ED108A7A07E8397900D6A1B1 /* labvvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = labvvis.h; path = include/labvvis/labvvis.h; sourceTree = "<group>"; };
 		ED2C77B307F97F9900300BEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		ED41603C0863B2AF00629EBA /* stub_o.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub_o.cpp; sourceTree = "<group>"; };
@@ -106,9 +113,8 @@
 		ED4AA25409458C5300A74566 /* BigInt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BigInt.h; path = include/BigInt.h; sourceTree = "<group>"; };
 		ED5B3D610A81EA6A0068420C /* object_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object_manager.h; path = include/labvvis/object_manager.h; sourceTree = "<group>"; };
 		ED5B3D650A81EA810068420C /* object_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object_manager.cpp; path = src/labvvis/object_manager.cpp; sourceTree = "<group>"; };
-		ED79C0D10946EE5C00C577F2 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = image.cpp; path = src/labvvis/image.cpp; sourceTree = "<group>"; };
 		ED79C11F0946F32100C577F2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		ED80C3F70835C37500F8388C /* image_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image_manager.cpp; path = src/labvvis/image_manager.cpp; sourceTree = "<group>"; };
+		ED80C3F70835C37500F8388C /* image_manager.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = image_manager.mm; path = src/labvvis/image_manager.mm; sourceTree = "<group>"; };
 		ED80C3FB0835C38200F8388C /* image_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = image_manager.h; path = include/labvvis/image_manager.h; sourceTree = "<group>"; };
 		ED8561F7095F85AB001F6A79 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = src/labvvis/util.cpp; sourceTree = "<group>"; };
 		ED8561FB095F85C0001F6A79 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = include/labvvis/util.h; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB9D95715CC21E100DD7F10 /* CoreFoundation.framework in Frameworks */,
 				2C8D22C915CA281D00F73E9E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +164,7 @@
 		089C166AFE841209C02AAC07 /* labvvis */ = {
 			isa = PBXGroup;
 			children = (
+				2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */,
 				2C8D22C815CA281D00F73E9E /* QuartzCore.framework */,
 				2C8D22C215CA1E0400F73E9E /* libboost_system.a */,
 				2C8D22C315CA1E0400F73E9E /* libboost_thread.a */,
@@ -194,11 +202,11 @@
 				ED8561FB095F85C0001F6A79 /* util.h */,
 				ED8561F7095F85AB001F6A79 /* util.cpp */,
 				EDD1FFC3082B4BF700BC0FCD /* image.h */,
-				ED79C0D10946EE5C00C577F2 /* image.cpp */,
+				2CB9D97C15CC2B0300DD7F10 /* image.mm */,
 				ED80C3FB0835C38200F8388C /* image_manager.h */,
-				ED80C3F70835C37500F8388C /* image_manager.cpp */,
+				ED80C3F70835C37500F8388C /* image_manager.mm */,
 				ED108A7A07E8397900D6A1B1 /* labvvis.h */,
-				ED108A7307E8396900D6A1B1 /* labvvis.cpp */,
+				ED108A7307E8396900D6A1B1 /* labvvis.mm */,
 				F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */,
 			);
 			name = Labvvis;
@@ -406,7 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8D22C615CA22A800F73E9E /* stub_iio.m in Sources */,
+				2CB9D95815CC21F300DD7F10 /* object_manager.cpp in Sources */,
+				2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */,
+				2CB9D95A15CC24FE00DD7F10 /* stub_iio.m in Sources */,
+				2CB9D97D15CC2D0700DD7F10 /* image.mm in Sources */,
+				2CB9D95915CC21F900DD7F10 /* image_manager.mm in Sources */,
+				2CB9D97A15CC291600DD7F10 /* labvvis.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +428,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB7D5480AA9DC7300329157 /* cin_seqgrabber.cpp in Sources */,
-				EDB7D5490AA9DC7300329157 /* image.cpp in Sources */,
 				EDB7D54A0AA9DC7300329157 /* util.cpp in Sources */,
 				EDE4905D0CDD835000542FF0 /* BigInt.c in Sources */,
 				EDE4905E0CDD835000542FF0 /* GenericDecode.c in Sources */,
@@ -540,15 +552,18 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
-				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
 				);
-				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
-				LABVIEW_PATH = "\"/Applications/National Instruments/LabVIEW 2011\"";
-				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
-				OTHER_LDFLAGS = "-lpthread";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BOOST_PATH)/stage/lib",
+					"$(CINTOOLS_PATH)/Mach-O",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-llvexports",
+				);
 			};
 			name = Development;
 		};
@@ -559,13 +574,18 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
-				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
 				);
-				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
-				OTHER_LDFLAGS = "-lpthread";
+				LIBRARY_SEARCH_PATHS = (
+					"$(BOOST_PATH)/stage/lib",
+					"$(CINTOOLS_PATH)/Mach-O",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-llvexports",
+				);
 			};
 			name = Deployment;
 		};

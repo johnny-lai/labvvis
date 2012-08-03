@@ -10,9 +10,7 @@
 #ifndef LABVVIS_IMAGE_H
 #define LABVVIS_IMAGE_H
 
-#include <vvis/vvis.h>
-#include <boost/shared_array.hpp>
-#include <Accelerate/Accelerate.h>
+#import <QuartzCore/CIImage.h>
 #include "extcode.h"
 
 //= LabVIEW ====================================================================
@@ -26,28 +24,33 @@ typedef TD1 **TD1Hdl;
 typedef short int image_id;
 typedef short int channel_id;
 
-namespace lv {
-	typedef vvis::image<vvis::uint8> one_channel;
-	typedef vvis::pixel_accessor<one_channel> pixel_accessor_1ch;
-	typedef one_channel::pixel_type pixel_type_1ch;
-	
+namespace lv {	
 	//= image ==================================================================
 	class image {
 	public:
 		image();
 		image(const int width, const int height, const int channel_count);
+        ~image();
 	public:
 		const int channel_count();
-		one_channel &operator[](const int idx);
-		const one_channel &operator[](const int idx) const;
 		const int height() const;
 		const int width() const;
-		image &operator=(const image &rhs);
-		void delete_image();
+    public:
+        UInt8 *bitmapData();
+        UInt8 *pixelData(const int x, const int y) {
+            return bitmapData() + (bytesPerRow() * y) + (bytesPerPixel() * x);
+        }
+        const int bytesPerPixel() const {
+            return 4;
+        }
+        const int bytesPerRow() const {
+            return _width * bytesPerPixel();
+        }
 	private:
-		typedef boost::shared_array<one_channel*> many_channels;
 		int _channel_count;
-		many_channels _channels;
+        int _width, _height;
+		NSMutableData *_bitmap_data;
+        CIImage *_ci_image;
 	};
 	
 } // End of namespace lv;

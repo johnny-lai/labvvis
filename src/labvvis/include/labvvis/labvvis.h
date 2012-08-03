@@ -37,30 +37,30 @@ extern "C" {
 	void delete_image(const image_id idnt, LStrHandle error);
 	int allocated_count();
 	//image_id new_subimage_channel(const image_id oid, const channel_id ocid, const channnel_id ncid, LStrHandle error);
-	
+
 	//= Image Conversion ===========================================================
 	void convert_from_pixmap(const unsigned long *pixmap, const image_id idnt, const channel_id cid, LStrHandle error);
 	void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long *pixmap, LStrHandle error);
 	
 	//= Image Initialisation =======================================================
-	void fill(const image_id o, const channel_id ocid, const vvis::uint8 c, LStrHandle error);
-	void fill_rect(const image_id o, const channel_id ocid, const vvis::uint8 c,
+	void fill(const image_id o, const channel_id ocid, const UInt8 c, LStrHandle error);
+	void fill_rect(const image_id o, const channel_id ocid, const UInt8 c,
 				   const int ix, const int iy, const int width, const int height,
 				   LStrHandle error);
 	//void copy(const image_id in, const channel_id icid, const image_id out, const channel_id ocid, LStrHandle error);
 	
 	//= Image Information ==========================================================
 	void image_size(const image_id o, int *width, int *height, LStrHandle error);
-	void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, vvis::uint8 *value, LStrHandle error);
+	void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, UInt8 *value, LStrHandle error);
 	void get_pixel_rgba(const image_id iid, const channel_id cid, const int x, const int y,
-						vvis::uint8 *r, vvis::uint8 *g, vvis::uint8 *b, vvis::uint8 *a,
+						UInt8 *r, UInt8 *g, UInt8 *b, UInt8 *a,
 						LStrHandle error);
-	void set_pixel(const image_id imgid, const channel_id cid, const int x, const int y, const vvis::uint8 value, LStrHandle error);
+	void set_pixel(const image_id imgid, const channel_id cid, const int x, const int y, const UInt8 value, LStrHandle error);
 	void set_pixel_rgba(const image_id imgid, const channel_id cid, const int x, const int y,
-						const vvis::uint8 r, const vvis::uint8 g, const vvis::uint8 b, const vvis::uint8 a,
+						const UInt8 r, const UInt8 g, const UInt8 b, const UInt8 a,
 						LStrHandle error);
 
-	void count_pixels(const image_id iid, const channel_id cid, const vvis::uint8 pixel, unsigned int *count, LStrHandle error);
+	void count_pixels(const image_id iid, const channel_id cid, const UInt8 pixel, unsigned int *count, LStrHandle error);
 	
 	//= Image Operations ===========================================================
 	void unary_operation(const unary_functions f, const image_id i1, const channel_id c1,
@@ -72,15 +72,15 @@ extern "C" {
 	
 	void equalize(const image_id i1, const channel_id icid,
 				  const image_id o, const channel_id ocid,
-				  const vvis::uint8 min, const vvis::uint8 max, LStrHandle error);
+				  const UInt8 min, const UInt8 max, LStrHandle error);
 		
 	void threshold(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid, 
 				   const int value, LStrHandle error);
 	
 	void linear_filter(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
-					   vvis::sint8 mask[], const int kw, const int kh, LStrHandle error);
+					   SInt8 mask[], const int kw, const int kh, LStrHandle error);
 	void max_filter(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
-					vvis::sint8 mask[], const int kw, const int kh, LStrHandle error);
+					SInt8 mask[], const int kw, const int kh, LStrHandle error);
 
 	void histogram(const image_id i1, const channel_id icid, int counts[], const int counts_size, LStrHandle error);
 	

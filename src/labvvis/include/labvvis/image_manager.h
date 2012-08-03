@@ -18,18 +18,18 @@
 
 namespace lv {
 	//= Image Manager ==========================================================
-	typedef std::map<image_id, lv::image> images_t;
+	typedef std::map<image_id, lv::image *> images_t;
 	
 	class image_manager {
 	public:
 		static image_manager &instance();
 		
 		image_id new_image(const int width, const int height, const int channel_count);
-		void delete_image(const image_id id);
-		lv::image &image(const image_id id);
+		void delete_image(const image_id imgid);
+		lv::image &image(const image_id imgid);
 		int allocated_count() const;
 	
-		bool image_exists(const image_id id) const;
+		bool image_exists(const image_id imgid) const;
 	private:
 		image_manager();
 		~image_manager();

@@ -7,8 +7,7 @@
  *
  */
 
-#include <iostream>
-#include <labvvis/image_manager.h>
+#import <labvvis/image_manager.h>
 
 namespace lv {
 	//= Image Manager ==========================================================
@@ -23,24 +22,24 @@ namespace lv {
 	
 	image_manager::~image_manager() {
 		for(images_t::iterator i = _images.begin(); i != _images.end(); ++i) {
-			i->second.delete_image();
+            delete i->second;
 		}
 		_images.clear();
 	}
 	
 	image_id image_manager::new_image(const int width, const int height, const int channel_count) {
-		++_next_id;
-		_images[_next_id] = lv::image(width, height, channel_count);
-		return _next_id;
+        ++_next_id;
+        _images[_next_id] = new lv::image(width, height, channel_count);
+        return _next_id;
 	}
 	
-	void image_manager::delete_image(const image_id id) {
-		_images[id].delete_image();
-		_images.erase(_images.find(id));
+	void image_manager::delete_image(const image_id imgid) {
+		delete _images[imgid];
+		_images.erase(_images.find(imgid));
 	}
 	
-	lv::image &image_manager::image(const image_id id) {
-		return _images[id];
+	lv::image &image_manager::image(const image_id imgid) {
+		return *_images[imgid];
 	}
 	
 	int image_manager::allocated_count() const {
