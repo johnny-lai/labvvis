@@ -22,26 +22,20 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		ED2F6F220C5A329200E7C543 /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2F6F0D0C5A328D00E7C543 /* vvis.framework */; };
+		2C8D22C415CA1E0500F73E9E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C215CA1E0400F73E9E /* libboost_system.a */; };
+		2C8D22C515CA1E0500F73E9E /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C315CA1E0400F73E9E /* libboost_thread.a */; };
+		2C8D22C615CA22A800F73E9E /* stub_iio.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7EA1084F2D28009F7797 /* stub_iio.m */; };
+		2C8D22C915CA281D00F73E9E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C815CA281D00F73E9E /* QuartzCore.framework */; };
 		ED4AA25509458C5300A74566 /* GenericDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25109458C5300A74566 /* GenericDecode.h */; };
 		ED4AA25609458C5300A74566 /* acg.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25209458C5300A74566 /* acg.h */; };
 		ED4AA25709458C5300A74566 /* mallocTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25309458C5300A74566 /* mallocTracking.h */; };
 		ED4AA25809458C5300A74566 /* BigInt.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25409458C5300A74566 /* BigInt.h */; };
 		ED5B3D620A81EA6A0068420C /* object_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5B3D610A81EA6A0068420C /* object_manager.h */; };
-		ED5B3D660A81EA810068420C /* object_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5B3D650A81EA810068420C /* object_manager.cpp */; };
-		ED79C0D20946EE5C00C577F2 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED79C0D10946EE5C00C577F2 /* image.cpp */; };
-		ED79C1280946F32200C577F2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED79C11F0946F32100C577F2 /* Accelerate.framework */; };
-		ED8561F8095F85AB001F6A79 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
 		ED8561FC095F85C0001F6A79 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8561FB095F85C0001F6A79 /* util.h */; };
 		ED891079088D471600737521 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD1FFC3082B4BF700BC0FCD /* image.h */; };
 		ED89107A088D471600737521 /* image_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED80C3FB0835C38200F8388C /* image_manager.h */; };
 		ED89107B088D471600737521 /* labvvis.h in Headers */ = {isa = PBXBuildFile; fileRef = ED108A7A07E8397900D6A1B1 /* labvvis.h */; };
-		ED89107E088D471600737521 /* labvvis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED108A7307E8396900D6A1B1 /* labvvis.cpp */; };
-		ED89107F088D471600737521 /* image_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED80C3F70835C37500F8388C /* image_manager.cpp */; };
-		ED891083088D471600737521 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC4BABD0835C80300211AA6 /* Carbon.framework */; };
-		EDA1174C0C731FD700CE47AA /* liblvexports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335790395235601002793 /* liblvexports.a */; };
 		EDA117570C73236400CE47AA /* liblvexports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B335790395235601002793 /* liblvexports.a */; };
-		EDB7D4FF0AA9B4FE00329157 /* acg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDB7D4CA0AA9B36F00329157 /* acg.cpp */; };
 		EDB7D5440AA9DC7300329157 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD1FFC3082B4BF700BC0FCD /* image.h */; };
 		EDB7D5450AA9DC7300329157 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8561FB095F85C0001F6A79 /* util.h */; };
 		EDB7D5480AA9DC7300329157 /* cin_seqgrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */; };
@@ -49,17 +43,9 @@
 		EDB7D54A0AA9DC7300329157 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
 		EDB7D54E0AA9DC7300329157 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED108A6507E838CE00D6A1B1 /* QuickTime.framework */; };
 		EDB7D54F0AA9DC7300329157 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C77B307F97F9900300BEC /* Cocoa.framework */; };
-		EDCAF9CB089F7EA4007C117B /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED108A6507E838CE00D6A1B1 /* QuickTime.framework */; };
 		EDE4905D0CDD835000542FF0 /* BigInt.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905A0CDD834F00542FF0 /* BigInt.c */; };
 		EDE4905E0CDD835000542FF0 /* GenericDecode.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905B0CDD834F00542FF0 /* GenericDecode.c */; };
 		EDE4905F0CDD835000542FF0 /* mallocTracking.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905C0CDD835000542FF0 /* mallocTracking.c */; };
-		EDE490600CDD835000542FF0 /* BigInt.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905A0CDD834F00542FF0 /* BigInt.c */; };
-		EDE490610CDD835000542FF0 /* GenericDecode.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905B0CDD834F00542FF0 /* GenericDecode.c */; };
-		EDE490620CDD835000542FF0 /* mallocTracking.c in Sources */ = {isa = PBXBuildFile; fileRef = EDE4905C0CDD835000542FF0 /* mallocTracking.c */; };
-		EDF010A80C5B107E00B75243 /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2F6F0D0C5A328D00E7C543 /* vvis.framework */; };
-		EDFBD4DA0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */; };
-		EDFBD4DB0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */; };
-		EDFBD4EE0D8185A70012B6ED /* vvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2F6F0D0C5A328D00E7C543 /* vvis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -74,83 +60,6 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
-		ED2F6F0C0C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED43886005BA2DCD00E1183F;
-			remoteInfo = vvis;
-		};
-		ED2F6F0E0C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED43886F05BA2DCD00E1183F;
-			remoteInfo = scratch;
-		};
-		ED2F6F100C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EDB2E2440A4918910028DB0A;
-			remoteInfo = hough;
-		};
-		ED2F6F120C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED43888005BA2DCD00E1183F;
-			remoteInfo = algorithm;
-		};
-		ED2F6F140C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED43889005BA2DCD00E1183F;
-			remoteInfo = impex;
-		};
-		ED2F6F160C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED43889D05BA2DCD00E1183F;
-			remoteInfo = sgimporter;
-		};
-		ED2F6F180C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED4388AB05BA2DCD00E1183F;
-			remoteInfo = region;
-		};
-		ED2F6F1A0C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED4388B905BA2DCD00E1183F;
-			remoteInfo = image;
-		};
-		ED2F6F1C0C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 026E3C11061E638400E23D50;
-			remoteInfo = test_all;
-		};
-		ED2F6F1E0C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED849B0C0788E3C600FE2163;
-			remoteInfo = cocoa;
-		};
-		ED2F6F200C5A328D00E7C543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED4DD7000AF5A53B0045A84C;
-			remoteInfo = scratch2;
-		};
 		ED9BE0A50C6B6F5D002902AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
@@ -164,34 +73,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = EDB7D5410AA9DC7300329157;
 			remoteInfo = "labvvis-cin (Upgraded)";
-		};
-		EDF887C10C74971F0065D1A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED21DD1606A769A400DBB519;
-			remoteInfo = vvm;
-		};
-		EDF887C30C74971F0065D1A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED3B703306B242F000E4010F;
-			remoteInfo = load;
-		};
-		EDF887C50C74971F0065D1A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED6D268108228006005D0FE8;
-			remoteInfo = timing;
-		};
-		EDF887C70C74971F0065D1A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED5C30D4085E8A7000B25663;
-			remoteInfo = test_all;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -208,12 +89,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C8D22C215CA1E0400F73E9E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/stage/lib/libboost_system.a; sourceTree = "<group>"; };
+		2C8D22C315CA1E0400F73E9E /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/stage/lib/libboost_thread.a; sourceTree = "<group>"; };
+		2C8D22C715CA23D000F73E9E /* labvvis-exports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "labvvis-exports.h"; sourceTree = "<group>"; };
+		2C8D22C815CA281D00F73E9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
 		ED108A6507E838CE00D6A1B1 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		ED108A7307E8396900D6A1B1 /* labvvis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = labvvis.cpp; path = src/labvvis/labvvis.cpp; sourceTree = "<group>"; };
 		ED108A7A07E8397900D6A1B1 /* labvvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = labvvis.h; path = include/labvvis/labvvis.h; sourceTree = "<group>"; };
 		ED2C77B307F97F9900300BEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vvis.xcodeproj; path = ../vvis/vvis.xcodeproj; sourceTree = SOURCE_ROOT; };
-		ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vvm.xcodeproj; path = ../vvm2/vvm.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ED41603C0863B2AF00629EBA /* stub_o.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub_o.cpp; sourceTree = "<group>"; };
 		ED42BB810AAAFFBA00A36E36 /* Thoughts.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Thoughts.txt; sourceTree = "<group>"; };
 		ED42BB820AAAFFDC00A36E36 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Readme.txt; path = installer/Install/Readme.txt; sourceTree = "<group>"; };
@@ -229,10 +112,9 @@
 		ED80C3FB0835C38200F8388C /* image_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = image_manager.h; path = include/labvvis/image_manager.h; sourceTree = "<group>"; };
 		ED8561F7095F85AB001F6A79 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = src/labvvis/util.cpp; sourceTree = "<group>"; };
 		ED8561FB095F85C0001F6A79 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = include/labvvis/util.h; sourceTree = "<group>"; };
-		ED85639D095FBA31001F6A79 /* background.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = background.tif; path = "configure-app/background.tif"; sourceTree = "<group>"; };
 		ED89108B088D471600737521 /* Info-labvvis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-labvvis.plist"; sourceTree = "<group>"; };
 		ED89108C088D471600737521 /* labvvis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = labvvis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED8B7EA1084F2D28009F7797 /* stub_iio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub_iio.cpp; sourceTree = "<group>"; };
+		ED8B7EA1084F2D28009F7797 /* stub_iio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stub_iio.m; sourceTree = "<group>"; };
 		ED8B7EA4084F2D51009F7797 /* stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stub.h; path = include/labvvis/stub.h; sourceTree = SOURCE_ROOT; };
 		EDB7D4CA0AA9B36F00329157 /* acg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = acg.cpp; path = src/acg/acg.cpp; sourceTree = "<group>"; };
 		EDB7D5590AA9DC7400329157 /* Info-labvvis_cin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-labvvis_cin.plist"; sourceTree = "<group>"; };
@@ -243,7 +125,6 @@
 		EDE4905A0CDD834F00542FF0 /* BigInt.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = BigInt.c; path = src/acg/BigInt.c; sourceTree = "<group>"; };
 		EDE4905B0CDD834F00542FF0 /* GenericDecode.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GenericDecode.c; path = src/acg/GenericDecode.c; sourceTree = "<group>"; };
 		EDE4905C0CDD835000542FF0 /* mallocTracking.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mallocTracking.c; path = src/acg/mallocTracking.c; sourceTree = "<group>"; };
-		EDF010A30C5B106200B75243 /* Info-labvvis_cin__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-labvvis_cin__Upgraded_.plist"; sourceTree = "<group>"; };
 		EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt-1_34.a"; path = "../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi/libboost_thread-mt-1_34.a"; sourceTree = SOURCE_ROOT; };
 		F5B335790395235601002793 /* liblvexports.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblvexports.a; path = "cintools/Mach-O/liblvexports.a"; sourceTree = "<group>"; };
 		F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cin_seqgrabber.cpp; path = src/labvvis/cin_seqgrabber.cpp; sourceTree = "<group>"; };
@@ -254,13 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED891083088D471600737521 /* Carbon.framework in Frameworks */,
-				EDCAF9CB089F7EA4007C117B /* QuickTime.framework in Frameworks */,
-				ED79C1280946F32200C577F2 /* Accelerate.framework in Frameworks */,
-				ED2F6F220C5A329200E7C543 /* vvis.framework in Frameworks */,
-				EDA1174C0C731FD700CE47AA /* liblvexports.a in Frameworks */,
-				EDFBD4DB0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */,
-				EDFBD4EE0D8185A70012B6ED /* vvis.framework in Frameworks */,
+				2C8D22C915CA281D00F73E9E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +143,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8D22C415CA1E0500F73E9E /* libboost_system.a in Frameworks */,
+				2C8D22C515CA1E0500F73E9E /* libboost_thread.a in Frameworks */,
 				EDB7D54E0AA9DC7300329157 /* QuickTime.framework in Frameworks */,
 				EDB7D54F0AA9DC7300329157 /* Cocoa.framework in Frameworks */,
-				EDF010A80C5B107E00B75243 /* vvis.framework in Frameworks */,
 				EDA117570C73236400CE47AA /* liblvexports.a in Frameworks */,
-				EDFBD4DA0D8182460012B6ED /* libboost_thread-mt-1_34.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +157,9 @@
 		089C166AFE841209C02AAC07 /* labvvis */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D22C815CA281D00F73E9E /* QuartzCore.framework */,
+				2C8D22C215CA1E0400F73E9E /* libboost_system.a */,
+				2C8D22C315CA1E0400F73E9E /* libboost_thread.a */,
 				ED42BB820AAAFFDC00A36E36 /* Readme.txt */,
 				ED42BB810AAAFFBA00A36E36 /* Thoughts.txt */,
 				ED4AA22F09458B3B00A74566 /* Acg */,
@@ -290,8 +168,6 @@
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
 				ED89108B088D471600737521 /* Info-labvvis.plist */,
-				ED85639D095FBA31001F6A79 /* background.tif */,
-				EDF010A30C5B106200B75243 /* Info-labvvis_cin__Upgraded_.plist */,
 				EDB7D5590AA9DC7400329157 /* Info-labvvis_cin.plist */,
 			);
 			name = labvvis;
@@ -302,8 +178,6 @@
 			children = (
 				2C0B54F515C51D960090A055 /* LabVIEW */,
 				EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */,
-				ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */,
-				ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */,
 				ED79C11F0946F32100C577F2 /* Accelerate.framework */,
 				EDC4BABD0835C80300211AA6 /* Carbon.framework */,
 				ED2C77B307F97F9900300BEC /* Cocoa.framework */,
@@ -348,24 +222,6 @@
 			path = "/Applications/National Instruments/LabVIEW 2011";
 			sourceTree = "<absolute>";
 		};
-		ED2F6EF40C5A328D00E7C543 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ED2F6F0D0C5A328D00E7C543 /* vvis.framework */,
-				ED2F6F0F0C5A328D00E7C543 /* scratch */,
-				ED2F6F110C5A328D00E7C543 /* scratch */,
-				ED2F6F130C5A328D00E7C543 /* algorithm */,
-				ED2F6F150C5A328D00E7C543 /* impex */,
-				ED2F6F170C5A328D00E7C543 /* sgimporter */,
-				ED2F6F190C5A328D00E7C543 /* region */,
-				ED2F6F1B0C5A328D00E7C543 /* image */,
-				ED2F6F1D0C5A328D00E7C543 /* test_all */,
-				ED2F6F1F0C5A328D00E7C543 /* cocoa.app */,
-				ED2F6F210C5A328D00E7C543 /* scratch */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		ED4AA22F09458B3B00A74566 /* Acg */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,22 +242,12 @@
 			children = (
 				ED41603C0863B2AF00629EBA /* stub_o.cpp */,
 				EDD1FF85082B46C800BC0FCD /* stub_io.cpp */,
-				ED8B7EA1084F2D28009F7797 /* stub_iio.cpp */,
+				ED8B7EA1084F2D28009F7797 /* stub_iio.m */,
 				ED8B7EA4084F2D51009F7797 /* stub.h */,
+				2C8D22C715CA23D000F73E9E /* labvvis-exports.h */,
 			);
 			name = Stub;
 			path = src/stub;
-			sourceTree = "<group>";
-		};
-		EDF887BB0C74971F0065D1A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EDF887C20C74971F0065D1A6 /* vvm.framework */,
-				EDF887C40C74971F0065D1A6 /* load */,
-				EDF887C60C74971F0065D1A6 /* timing */,
-				EDF887C80C74971F0065D1A6 /* test_all */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,16 +337,6 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* labvvis */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ED2F6EF40C5A328D00E7C543 /* Products */;
-					ProjectRef = ED2F6EF30C5A328D00E7C543 /* vvis.xcodeproj */;
-				},
-				{
-					ProductGroup = EDF887BB0C74971F0065D1A6 /* Products */;
-					ProjectRef = ED2F6F4F0C5A334E00E7C543 /* vvm.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EDB7D5380AA9DC7300329157 /* labvvis-all (Copied) */,
@@ -509,114 +345,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		ED2F6F0D0C5A328D00E7C543 /* vvis.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = vvis.framework;
-			remoteRef = ED2F6F0C0C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F0F0C5A328D00E7C543 /* scratch */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = scratch;
-			remoteRef = ED2F6F0E0C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F110C5A328D00E7C543 /* scratch */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = scratch;
-			remoteRef = ED2F6F100C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F130C5A328D00E7C543 /* algorithm */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = algorithm;
-			remoteRef = ED2F6F120C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F150C5A328D00E7C543 /* impex */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = impex;
-			remoteRef = ED2F6F140C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F170C5A328D00E7C543 /* sgimporter */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = sgimporter;
-			remoteRef = ED2F6F160C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F190C5A328D00E7C543 /* region */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = region;
-			remoteRef = ED2F6F180C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F1B0C5A328D00E7C543 /* image */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = image;
-			remoteRef = ED2F6F1A0C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F1D0C5A328D00E7C543 /* test_all */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = test_all;
-			remoteRef = ED2F6F1C0C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F1F0C5A328D00E7C543 /* cocoa.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = cocoa.app;
-			remoteRef = ED2F6F1E0C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ED2F6F210C5A328D00E7C543 /* scratch */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = scratch;
-			remoteRef = ED2F6F200C5A328D00E7C543 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EDF887C20C74971F0065D1A6 /* vvm.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = vvm.framework;
-			remoteRef = EDF887C10C74971F0065D1A6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EDF887C40C74971F0065D1A6 /* load */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = load;
-			remoteRef = EDF887C30C74971F0065D1A6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EDF887C60C74971F0065D1A6 /* timing */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = timing;
-			remoteRef = EDF887C50C74971F0065D1A6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EDF887C80C74971F0065D1A6 /* test_all */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = test_all;
-			remoteRef = EDF887C70C74971F0065D1A6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ED89107C088D471600737521 /* Resources */ = {
@@ -678,15 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED89107E088D471600737521 /* labvvis.cpp in Sources */,
-				ED89107F088D471600737521 /* image_manager.cpp in Sources */,
-				ED79C0D20946EE5C00C577F2 /* image.cpp in Sources */,
-				ED8561F8095F85AB001F6A79 /* util.cpp in Sources */,
-				ED5B3D660A81EA810068420C /* object_manager.cpp in Sources */,
-				EDB7D4FF0AA9B4FE00329157 /* acg.cpp in Sources */,
-				EDE490600CDD835000542FF0 /* BigInt.c in Sources */,
-				EDE490610CDD835000542FF0 /* GenericDecode.c in Sources */,
-				EDE490620CDD835000542FF0 /* mallocTracking.c in Sources */,
+				2C8D22C615CA22A800F73E9E /* stub_iio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,15 +442,10 @@
 		ED891088088D471600737521 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				INFOPLIST_FILE = "Info-labvvis.plist";
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = labvvis;
-				SECTORDER_FLAGS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Development;
@@ -738,16 +453,10 @@
 		ED891089088D471600737521 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				INFOPLIST_FILE = "Info-labvvis.plist";
-				INSTALL_PATH = /Library/Frameworks;
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = labvvis;
-				SECTORDER_FLAGS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Deployment;
@@ -793,93 +502,34 @@
 		EDB7D5560AA9DC7300329157 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					build,
-					/Users/bclai/thesis/projects/labvvis/Frameworks,
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = TARGET_API_MAC_CARBON;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(CT_INCLUDE_PATH)",
-					"$(BOOST_ROOT)",
-					include,
-					include/cintools,
-					/Developer/Headers/FlatCarbon,
-				);
-				INFOPLIST_FILE = "Info-labvvis_cin__Upgraded_.plist";
-				LABVIEW_PATH = "/Applications/National Instruments/LabVIEW 7.1";
+				INFOPLIST_FILE = "Info-labvvis_cin.plist";
 				LIBRARY_SEARCH_PATHS = (
-					/Users/bclai/thesis/projects/labvvis/Frameworks,
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_4)",
+					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "$(SYSTEM_APPS_DIR)/National\\ Instruments/LabVIEW\\ 7.1/cintools/Mach-O";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../library/boost_1_33_1/bin/boost/libs/thread/build/libboost_thread.a/darwin.ppc/release\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../../library/boost_1_33_1/bin/boost/libs/thread/build/libboost_thread.a/darwin.x86/release\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi\"";
-				LIBRARY_STYLE = "\U0001BUNDLE";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_50_0/stage/lib\"";
 				OTHER_CFLAGS = "-malign-natural";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "labvvis-cin.tmp";
-				SECTORDER_FLAGS = "";
-				SYMROOT = "$SRCROOT/$PRODUCT_NAME Intermediates";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
 			};
 			name = Development;
 		};
 		EDB7D5570AA9DC7300329157 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
-				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = TARGET_API_MAC_CARBON;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(CT_INCLUDE_PATH)",
-					"$(BOOST_ROOT)",
-					include,
-					include/cintools,
-					/Developer/Headers/FlatCarbon,
-				);
 				INFOPLIST_FILE = "Info-labvvis_cin.plist";
-				LABVIEW_PATH = "/Applications/National Instruments/LabVIEW 8.2";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/National Instruments/LabVIEW 8.2/cintools/Mach-O\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../library/boost_1_33_1/bin/boost/libs/thread/build/libboost_thread.a/darwin.x86/release\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi\"";
-				LIBRARY_STYLE = "\U0001BUNDLE";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../boost_1_50_0/stage/lib\"";
 				OTHER_CFLAGS = "-malign-natural";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = "labvvis-cin.tmp";
-				SECTORDER_FLAGS = "";
-				SYMROOT = "$SRCROOT/$PRODUCT_NAME Intermediates";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
 			};
 			name = Deployment;
 		};
@@ -890,10 +540,13 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
 				);
+				HEADER_SEARCH_PATHS = "$(BOOST_PATH)";
+				LABVIEW_PATH = "\"/Applications/National Instruments/LabVIEW 2011\"";
 				LIBRARY_SEARCH_PATHS = "$(BOOST_PATH)/stage/lib";
 				OTHER_LDFLAGS = "-lpthread";
 			};
@@ -906,6 +559,7 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				LIBRARY_SEARCH_PATHS = "$(CINTOOLS_PATH)/Mach-O";
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
