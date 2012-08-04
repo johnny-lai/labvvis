@@ -232,7 +232,7 @@ void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long 
 		}
 	}
 }
-#if 0
+
 //= Image Initialisation =======================================================
 void fill(const image_id o, const channel_id och, const UInt8 c, LStrHandle error) {
 	PRE_FLIGHT(error);
@@ -245,14 +245,12 @@ void fill(const image_id o, const channel_id och, const UInt8 c, LStrHandle erro
 	// Perform the operation
 	if(och == -1) {
 		for(int i = 0; i < out_image.channel_count(); ++i) {
-			lv::one_channel &ch = out_image[i];
-			vvis::transform(ch, pixel_accessor_1ch(), ch, pixel_accessor_1ch(),
-							vvis::constant<UInt8>(c));
+			vImage_Buffer &ch = out_image[i];
+			labvvis::transform(ch, ch, labvvis::constant<UInt8>(c));
 		}
 	} else {
-		lv::one_channel &ch = out_image[och];
-		vvis::transform(ch, pixel_accessor_1ch(), ch, pixel_accessor_1ch(),
-						vvis::constant<UInt8>(c));
+		vImage_Buffer &ch = out_image[och];
+		labvvis::transform(ch, ch, labvvis::constant<UInt8>(c));
 	}
 }
 
@@ -276,14 +274,14 @@ void fill_rect(const image_id o, const channel_id cid, const UInt8 c,
 	if(cid >= 0) {
 		for(int y = iy; y < ey; ++y) {
 			for(int x = ix; x < ex; ++x) {
-				oimg[cid].pixel(x, y) = c;
+				oimg.pixel(cid, x, y) = c;
 			}
 		}
 	} else {
 		for(int i = 0; i < oimg.channel_count(); ++i) {
 			for(int y = iy; y < ey; ++y) {
 				for(int x = ix; x < ex; ++x) {
-					oimg[i].pixel(x, y) = c;
+					oimg.pixel(cid, x, y) = c;
 				}
 			}
 		}
@@ -310,7 +308,7 @@ void copy(const image_id in, const channel_id icid, const image_id out, const ch
 	}
 }
 */
-#endif
+
 //= Image Information ==========================================================
 void image_size(const image_id o, int *width, int *height, LStrHandle error) {
 	PRE_FLIGHT(error);
@@ -326,7 +324,7 @@ void image_size(const image_id o, int *width, int *height, LStrHandle error) {
 	}
 }
 
-#if 0
+
 void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, UInt8 *value, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
@@ -344,7 +342,7 @@ void get_pixel(const image_id iid, const channel_id cid, const int x, const int 
 		}
 	}
 	
-	*value = img[real_cid].pixel(x, y);
+	*value = img.pixel(real_cid, x, y);
 }
 
 void get_pixel_rgba(const image_id iid, const channel_id cid, const int x, const int y,
@@ -359,10 +357,10 @@ void get_pixel_rgba(const image_id iid, const channel_id cid, const int x, const
 		lv::to_lstr(error, "A RGBA image was expected");
 		return;
 	} else {
-		*r = img[0].pixel(x, y);
-		*g = img[1].pixel(x, y);
-		*b = img[2].pixel(x, y);
-		*a = img[3].pixel(x, y);
+		*r = img.pixel(0, x, y);
+		*g = img.pixel(1, x, y);
+		*b = img.pixel(2, x, y);
+		*a = img.pixel(3, x, y);
 	}
 }
 
@@ -383,7 +381,7 @@ void set_pixel(const image_id iid, const channel_id cid, const int x, const int 
 		}
 	}
 	
-	img[real_cid].pixel(x, y) = value;
+	img.pixel(real_cid, x, y) = value;
 }
 
 void set_pixel_rgba(const image_id iid, const channel_id cid, const int x, const int y,
@@ -399,13 +397,13 @@ void set_pixel_rgba(const image_id iid, const channel_id cid, const int x, const
 		lv::to_lstr(error, "A RGBA image was expected");
 		return;
 	} else {
-		img[0].pixel(x, y) = r;
-		img[1].pixel(x, y) = g;
-		img[2].pixel(x, y) = b;
-		img[3].pixel(x, y) = a;
+		img.pixel(0, x, y) = r;
+		img.pixel(1, x, y) = g;
+		img.pixel(2, x, y) = b;
+		img.pixel(3, x, y) = a;
 	}
 }
-#endif
+
 void count_pixels(const image_id iid, const channel_id cid, const UInt8 pixel, unsigned int *count, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
