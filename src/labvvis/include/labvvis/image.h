@@ -10,7 +10,7 @@
 #ifndef LABVVIS_IMAGE_H
 #define LABVVIS_IMAGE_H
 
-#import <QuartzCore/CIImage.h>
+#include <Accelerate/Accelerate.h>
 #include "extcode.h"
 
 //= LabVIEW ====================================================================
@@ -36,21 +36,35 @@ namespace lv {
 		const int height() const;
 		const int width() const;
     public:
-        UInt8 *bitmapData();
-        UInt8 *pixelData(const int x, const int y) {
-            return bitmapData() + (bytesPerRow() * y) + (bytesPerPixel() * x);
+        vImage_Buffer &operator[](const int ch) {
+            return _vimage_buffer[ch];
         }
-        const int bytesPerPixel() const {
-            return 4;
+		const vImage_Buffer &operator[](const int ch) const {
+            return _vimage_buffer[ch];
         }
-        const int bytesPerRow() const {
-            return _width * bytesPerPixel();
+        UInt8 *begin(const int ch) {
+            return bitmapData(ch);
+        }
+        UInt8 *end(const int ch) {
+            return bitmapData(ch) + bytesCount(ch);
+        }
+    public:
+        UInt8 *bitmapData(const int i);
+        UInt8 &pixel(const int i, const int x, const int y) {
+            return *(bitmapData(i) + (bytesPerRow() * y) + (bytesPerPixel() * x));
+        }
+        const int bytesPerPixel() {
+            return 1;
+        }
+        const int bytesPerRow() {
+            return _vimage_buffer[0].rowBytes;
+        }
+        const int bytesCount(const int ch) {
+            return _vimage_buffer[ch].rowBytes * _vimage_buffer[ch].height;
         }
 	private:
 		int _channel_count;
-        int _width, _height;
-		NSMutableData *_bitmap_data;
-        CIImage *_ci_image;
+        vImage_Buffer _vimage_buffer[4];
 	};
 	
 } // End of namespace lv;

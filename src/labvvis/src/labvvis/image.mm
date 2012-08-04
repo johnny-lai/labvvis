@@ -11,22 +11,39 @@
 #include <labvvis/image.h>
 
 namespace lv {
-	image::image() : _channel_count(0), _width(0), _height(0), _bitmap_data(nil), _ci_image(nil) {
+	image::image() : _channel_count(0) {
 	}
 	
 	image::image(const int width, const int height, const int channel_count) 
-	: _channel_count(channel_count), _width(width), _height(height) {
-        _bitmap_data = [[NSMutableData alloc] initWithCapacity:(bytesPerRow() * _height)];
-        _ci_image = [[CIImage alloc] initWithBitmapData:_bitmap_data
-                                            bytesPerRow:bytesPerRow()
-                                                   size:CGSizeMake(_width, _height)
-                                                 format:kCIFormatARGB8
-                                             colorSpace:nil];
+	: _channel_count(channel_count) {
+        size_t bytesPerPixel = 1;
+        size_t rowBytes = width * bytesPerPixel;
+
+        //Widen rowBytes out to a integer multiple of 16 bytes
+        rowBytes = (rowBytes + 15) & ~15;
+        
+        //Make sure we are not an even power of 2 wide. 
+        //Will loop a few times for rowBytes <= 16.
+        while( 0 == (rowBytes & (rowBytes - 1) ) )
+            rowBytes += 16;	//grow rowBytes
+        
+        for(int i = 0; i < _channel_count; ++i) {
+            //Set up the buffer
+            _vimage_buffer[i].height = height;
+            _vimage_buffer[i].width = width;
+            _vimage_buffer[i].rowBytes = rowBytes;
+            _vimage_buffer[i].data = malloc( rowBytes * height );
+        }
 	}
 
     image::~image() {
-        [_ci_image release];
-        [_bitmap_data release];
+        for(int i = 0; i < _channel_count; ++i) {
+            if (_vimage_buffer[i].data) {
+                free(_vimage_buffer[i].data);
+                _vimage_buffer[i].data = NULL;
+            }
+        }
+        _channel_count = 0;
     }
     
 	const int image::channel_count() {
@@ -34,15 +51,15 @@ namespace lv {
 	}
 	
 	const int image::height() const {
-		return _height;
+		return _vimage_buffer[0].height;
 	}
 	
 	const int image::width() const {
-		return _width;
+		return _vimage_buffer[0].width;
 	}
     
-    UInt8 *image::bitmapData() {
-        return (UInt8 *)[_bitmap_data mutableBytes];
+    UInt8 *image::bitmapData(const int i) {
+        return (UInt8 *)_vimage_buffer[i].data;
     }
 	
 }

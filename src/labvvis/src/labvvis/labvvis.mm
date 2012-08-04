@@ -10,6 +10,10 @@
 #include <boost/preprocessor/stringize.hpp>
 #include "acg.h"
 
+#include <Accelerate/Accelerate.h>
+
+#include <labvvis/functor.h>
+
 using namespace lv;
 /*
 typedef vvis::xy_accessor<pixel_accessor_1ch> xy_accessor_t;
@@ -40,6 +44,34 @@ if(CID >= image_manager::instance().image(IID).channel_count()) { \
 			return; \
 		} \
 	} \
+}
+
+namespace labvvis {
+    template<typename functorT>
+    void transform(const vImage_Buffer &in, vImage_Buffer &out, functorT f) {
+        UInt8 *out_data = (UInt8*)out.data;
+        UInt8 *in_data = (UInt8*)in.data;
+        for (int y = 0; y < in.height; ++y) {
+            for (int x = 0; x < in.width; ++x) {
+                UInt8 in_pixel = in_data[(in.rowBytes * y) + x];
+                out_data[(out.rowBytes * y) + x] = f(in_pixel);
+            }
+        }
+    }
+    
+    template<typename functorT>
+    void transform(const vImage_Buffer &in1, const vImage_Buffer &in2, vImage_Buffer &out, functorT f) {
+        UInt8 *out_data = (UInt8*)out.data;
+        UInt8 *in1_data = (UInt8*)in1.data;
+        UInt8 *in2_data = (UInt8*)in2.data;
+        for (int y = 0; y < in1.height; ++y) {
+            for (int x = 0; x < in1.width; ++x) {
+                UInt8 in1_pixel = in1_data[(in1.rowBytes * y) + x];
+                UInt8 in2_pixel = in2_data[(in2.rowBytes * y) + x];
+                out_data[(out.rowBytes * y) + x] = f(in1_pixel, in2_pixel);
+            }
+        }
+    }
 }
 
 //=
@@ -107,19 +139,18 @@ void convert_from_pixmap(const unsigned long *img, const image_id idnt, const ch
 			v[1] = (img[offset + x] & 0xff00) >> 8;
 			v[2] = (img[offset + x] & 0xff);
 			// Convert to pixel
-            UInt8 *argb_pixel = lvimg.pixelData(x, y);
 			switch(lvimg.channel_count()) {
 				case 1:
-					//lvimg[0].pixel(x, y) = (v[0] + v[1] + v[1] + v[2]) / 4;
+					lvimg.pixel(0, x, y) = (v[0] + v[1] + v[1] + v[2]) / 4;
 					break;
 				case 4:
 					if(cid >= 0)
-						argb_pixel[cid + 1] = v[cid];
+						lvimg.pixel(0, x, y) = v[cid];
 					else {
-						argb_pixel[0] = 0xff;	// Alpha
-						argb_pixel[1] = v[0];
-						argb_pixel[2] = v[1];
-						argb_pixel[3] = v[2];
+						lvimg.pixel(0, x, y) = v[0]; // R
+						lvimg.pixel(1, x, y) = v[1]; // G
+						lvimg.pixel(2, x, y) = v[2]; // B
+						lvimg.pixel(3, x, y) = 0xff; // A
 					}
 					break;
 			}
@@ -140,21 +171,20 @@ void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long 
 		const int offset = y * w;	// LabVIEW image
 		for(int x= 0; x < w; ++x) {
 			// Convert to pixel
-            UInt8 *argb_pixel = lvimg.pixelData(x, y);
 			switch(lvimg.channel_count()) {
 				case 1: {
-					unsigned char gray = argb_pixel[1];
+					unsigned char gray = lvimg.pixel(0, x, y);
 					img[offset + x] = (gray << 16) + 
 						(gray << 8) +
 						(gray);
 				}	break;
 				case 4:
 					if(cid >= 0) {
-						img[offset + x] = argb_pixel[cid+1] << (16 - cid*8);
+						img[offset + x] = lvimg.pixel(cid, x, y) << (16 - cid*8);
 					} else {
-						img[offset + x] = (argb_pixel[1] << 16) +
-							(argb_pixel[2] << 8) +
-							(argb_pixel[3]);
+						img[offset + x] = (lvimg.pixel(0, x, y) << 16) +
+							(lvimg.pixel(1, x, y) << 8) +
+							(lvimg.pixel(2, x, y));
 					}
 					break;
 			}
@@ -163,7 +193,7 @@ void convert_to_pixmap(const image_id idnt, const channel_id cid, unsigned long 
 }
 #if 0
 //= Image Initialisation =======================================================
-void fill(const image_id o, const channel_id och, const vvis::uint8 c, LStrHandle error) {
+void fill(const image_id o, const channel_id och, const UInt8 c, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(o, och, error);
 	
@@ -185,7 +215,7 @@ void fill(const image_id o, const channel_id och, const vvis::uint8 c, LStrHandl
 	}
 }
 
-void fill_rect(const image_id o, const channel_id cid, const vvis::uint8 c,
+void fill_rect(const image_id o, const channel_id cid, const UInt8 c,
 			   const int ix, const int iy, const int width, const int height,
 			   LStrHandle error) {
 	PRE_FLIGHT(error);
@@ -256,7 +286,7 @@ void image_size(const image_id o, int *width, int *height, LStrHandle error) {
 }
 
 #if 0
-void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, vvis::uint8 *value, LStrHandle error) {
+void get_pixel(const image_id iid, const channel_id cid, const int x, const int y, UInt8 *value, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
 	
@@ -277,7 +307,7 @@ void get_pixel(const image_id iid, const channel_id cid, const int x, const int 
 }
 
 void get_pixel_rgba(const image_id iid, const channel_id cid, const int x, const int y,
-					vvis::uint8 *r, vvis::uint8 *g, vvis::uint8 *b, vvis::uint8 *a, LStrHandle error) {
+					UInt8 *r, UInt8 *g, UInt8 *b, UInt8 *a, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
 	
@@ -295,7 +325,7 @@ void get_pixel_rgba(const image_id iid, const channel_id cid, const int x, const
 	}
 }
 
-void set_pixel(const image_id iid, const channel_id cid, const int x, const int y, const vvis::uint8 value, LStrHandle error) {
+void set_pixel(const image_id iid, const channel_id cid, const int x, const int y, const UInt8 value, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
 
@@ -316,7 +346,7 @@ void set_pixel(const image_id iid, const channel_id cid, const int x, const int 
 }
 
 void set_pixel_rgba(const image_id iid, const channel_id cid, const int x, const int y,
-					const vvis::uint8 r, const vvis::uint8 g, const vvis::uint8 b, const vvis::uint8 a,
+					const UInt8 r, const UInt8 g, const UInt8 b, const UInt8 a,
 					LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
@@ -335,7 +365,7 @@ void set_pixel_rgba(const image_id iid, const channel_id cid, const int x, const
 	}
 }
 
-void count_pixels(const image_id iid, const channel_id cid, const vvis::uint8 pixel, unsigned int *count, LStrHandle error) {
+void count_pixels(const image_id iid, const channel_id cid, const UInt8 pixel, unsigned int *count, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
 	
@@ -353,10 +383,11 @@ void count_pixels(const image_id iid, const channel_id cid, const vvis::uint8 pi
 		}
 	}
 	
-	vvis::count_if<vvis::uint8, vvis::equal_to<vvis::uint8> > c(vvis::equal_to<vvis::uint8>(), pixel);
+	vvis::count_if<UInt8, vvis::equal_to<UInt8> > c(vvis::equal_to<UInt8>(), pixel);
 	vvis::for_each(img[real_cid], pixel_accessor_1ch(), c);
 	*count = c.count();
 }
+#endif
 
 //= Image Operations ===========================================================
 void unary_operation(const unary_functions f, const image_id i1, const channel_id c1,
@@ -369,14 +400,10 @@ void unary_operation(const unary_functions f, const image_id i1, const channel_i
 	lv::image &img1 = manager.image(i1); \
 	lv::image &imgo = manager.image(o);	\
 	if(c1 >= 0 && co >= 0) { \
-		vvis::transform(img1[c1], pixel_accessor_1ch(), \
-						imgo[co], pixel_accessor_1ch(), \
-						vvis::F<>()); \
+		labvvis::transform(img1[c1], imgo[co], labvvis::F<>()); \
 	} else { \
 		for(int i = 0; i < img1.channel_count(); ++i) { \
-			vvis::transform(img1[i], pixel_accessor_1ch(), \
-							imgo[i], pixel_accessor_1ch(), \
-							vvis::F<>()); \
+            labvvis::transform(img1[i], imgo[i], labvvis::F<>()); \
 		} \
 	} \
 }
@@ -401,16 +428,10 @@ void binary_operation(const binary_functions f, const image_id i1, const channel
 	lv::image &img2 = manager.image(i2); \
 	lv::image &imgo = manager.image(o);	\
 	if(c1 >= 0 && c2 >= 0 && co >= 0) { \
-		vvis::transform(img1[c1], pixel_accessor_1ch(), \
-						img2[c2], pixel_accessor_1ch(), \
-						imgo[co], pixel_accessor_1ch(), \
-						vvis::F<>()); \
+        labvvis::transform(img1[c1], img2[c2], imgo[co], labvvis::F<>()); \
 	} else { \
 		for(int i = 0; i < img1.channel_count(); ++i) { \
-			vvis::transform(img1[i], pixel_accessor_1ch(), \
-							img2[i], pixel_accessor_1ch(), \
-							imgo[i], pixel_accessor_1ch(), \
-							vvis::F<>()); \
+            labvvis::transform(img1[i], img2[i], imgo[i], labvvis::F<>()); \
 		} \
 	} \
 }
@@ -436,7 +457,7 @@ void binary_operation(const binary_functions f, const image_id i1, const channel
 }
 
 void equalize(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
-			  const vvis::uint8 min, const vvis::uint8 max, LStrHandle error) {
+			  const UInt8 min, const UInt8 max, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(i1, icid, error);
 	CHECK_CHANNEL(o, ocid, error);
@@ -448,12 +469,10 @@ void equalize(const image_id i1, const channel_id icid, const image_id o, const 
 	
 	// Perform operation
 	if(icid >= 0 && ocid >= 0) {
-		vvis::transform(src_image[icid], pixel_accessor_1ch(), out_image[ocid], pixel_accessor_1ch(),
-						vvis::equalize<pixel_type_1ch>(min, max));
+        vImageEqualization_Planar8(&src_image[icid], &out_image[ocid], 0);
 	} else {
 		for(int i = 0; i < src_image.channel_count(); ++i) {
-			vvis::transform(src_image[i], pixel_accessor_1ch(), out_image[i], pixel_accessor_1ch(),
-							vvis::equalize<pixel_type_1ch>(min, max));
+			vImageEqualization_Planar8(&src_image[i], &out_image[i], 0);
 		}
 	}
 }
@@ -471,16 +490,16 @@ void threshold(const image_id i1, const channel_id icid, const image_id o, const
 
 	// Perform operation
 	if(icid >= 0 && ocid >= 0) {
-		vvis::transform(src_image[icid], pixel_accessor_1ch(), out_image[ocid], pixel_accessor_1ch(),
-						vvis::bind2nd(vvis::greater<pixel_type_1ch>(), value));
+		labvvis::transform(src_image[icid], out_image[ocid],
+						std::bind2nd(labvvis::greater<UInt8>(), value));
 	} else {
 		for(int i = 0; i < src_image.channel_count(); ++i) {
-			vvis::transform(src_image[i], pixel_accessor_1ch(), out_image[i], pixel_accessor_1ch(),
-							vvis::bind2nd(vvis::greater<pixel_type_1ch>(), value));
+            labvvis::transform(src_image[i], out_image[i],
+						std::bind2nd(labvvis::greater<UInt8>(), value));
 		}
 	}
 }
-
+#if 0
 void linear_filter(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
 				vvis::sint8 mask[], const int kw, const int kh, LStrHandle error) {
 	PRE_FLIGHT(error);
