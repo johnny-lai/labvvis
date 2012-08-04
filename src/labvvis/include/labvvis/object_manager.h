@@ -17,7 +17,7 @@ public:
 public:
 	idT new_object(const objectT &o) {
 		++_last_id;
-		insert(std::make_pair(_last_id, o));
+		this->insert(std::make_pair(_last_id, o));
 		return _last_id;
 	}
 private:

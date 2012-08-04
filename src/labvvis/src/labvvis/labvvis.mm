@@ -17,7 +17,7 @@
 using namespace lv;
 /*
 typedef vvis::xy_accessor<pixel_accessor_1ch> xy_accessor_t;
-typedef vvis::hough<xy_accessor_t> hough_t;
+typedef labvvis::hough<xy_accessor_t> hough_t;
 typedef object_manager<hough_id_t, hough_t> houghs_object_manager;
 houghs_object_manager houghs;
 */
@@ -48,6 +48,17 @@ if(CID >= image_manager::instance().image(IID).channel_count()) { \
 
 namespace labvvis {
     template<typename functorT>
+    void for_each(const vImage_Buffer &in, functorT f) {
+        UInt8 *in_data = (UInt8*)in.data;
+        for (int y = 0; y < in.height; ++y) {
+            for (int x = 0; x < in.width; ++x) {
+                UInt8 in_pixel = in_data[(in.rowBytes * y) + x];
+                f(in_pixel);
+            }
+        }
+    }
+    
+    template<typename functorT>
     void transform(const vImage_Buffer &in, vImage_Buffer &out, functorT f) {
         UInt8 *out_data = (UInt8*)out.data;
         UInt8 *in_data = (UInt8*)in.data;
@@ -69,6 +80,36 @@ namespace labvvis {
                 UInt8 in1_pixel = in1_data[(in1.rowBytes * y) + x];
                 UInt8 in2_pixel = in2_data[(in2.rowBytes * y) + x];
                 out_data[(out.rowBytes * y) + x] = f(in1_pixel, in2_pixel);
+            }
+        }
+    }
+    
+    template<typename functorT>
+    void convolute(const vImage_Buffer& in, vImage_Buffer& out,functorT f) {
+        const UInt8 *in_data = (UInt8*)in.data;
+        UInt8 *out_data = (UInt8*)out.data;
+        
+        // Get Kernel Width and Height
+        const int kernel_width = f.kernel().width();
+        const int kernel_height = f.kernel().height();
+        const int height = in.height - f.kernel().height() + 1;
+        // Work across Rows
+        for(int y = 0; y < height; ++y) {
+            // Get beginning and end of row
+            const UInt8 *pi = in_data + (in.rowBytes * y);
+            const UInt8 *end = (pi + in.width) - (kernel_width - 1);
+            UInt8 *po = out_data + (out.rowBytes * y);
+            // Apply functor
+            for(int i = 0; pi != end; ++i, ++pi, ++po) {
+                f.reset();
+                for(int ky = 0; ky < kernel_height; ++ky) {
+                    // Move to appropriate position
+                    const UInt8 *itr = in_data + (in.rowBytes * (y + ky)) + i;
+                    for(int kx = 0; kx < kernel_width; ++kx) {
+                        f.accumulate(itr[kx]);
+                    }
+                }
+                *po = f.scalar_result();
             }
         }
     }
@@ -206,12 +247,12 @@ void fill(const image_id o, const channel_id och, const UInt8 c, LStrHandle erro
 		for(int i = 0; i < out_image.channel_count(); ++i) {
 			lv::one_channel &ch = out_image[i];
 			vvis::transform(ch, pixel_accessor_1ch(), ch, pixel_accessor_1ch(),
-							vvis::constant<pixel_type_1ch>(c));
+							vvis::constant<UInt8>(c));
 		}
 	} else {
 		lv::one_channel &ch = out_image[och];
 		vvis::transform(ch, pixel_accessor_1ch(), ch, pixel_accessor_1ch(),
-						vvis::constant<pixel_type_1ch>(c));
+						vvis::constant<UInt8>(c));
 	}
 }
 
@@ -364,7 +405,7 @@ void set_pixel_rgba(const image_id iid, const channel_id cid, const int x, const
 		img[3].pixel(x, y) = a;
 	}
 }
-
+#endif
 void count_pixels(const image_id iid, const channel_id cid, const UInt8 pixel, unsigned int *count, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(iid, cid, error);
@@ -383,11 +424,10 @@ void count_pixels(const image_id iid, const channel_id cid, const UInt8 pixel, u
 		}
 	}
 	
-	vvis::count_if<UInt8, vvis::equal_to<UInt8> > c(vvis::equal_to<UInt8>(), pixel);
-	vvis::for_each(img[real_cid], pixel_accessor_1ch(), c);
+	labvvis::count_if<UInt8, labvvis::equal_to<UInt8> > c(labvvis::equal_to<UInt8>(), pixel);
+	labvvis::for_each(img[real_cid], c);
 	*count = c.count();
 }
-#endif
 
 //= Image Operations ===========================================================
 void unary_operation(const unary_functions f, const image_id i1, const channel_id c1,
@@ -499,9 +539,9 @@ void threshold(const image_id i1, const channel_id icid, const image_id o, const
 		}
 	}
 }
-#if 0
+
 void linear_filter(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
-				vvis::sint8 mask[], const int kw, const int kh, LStrHandle error) {
+				SInt8 mask[], const int kw, const int kh, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(i1, icid, error);
 	CHECK_CHANNEL(o, ocid, error);
@@ -513,22 +553,20 @@ void linear_filter(const image_id i1, const channel_id icid, const image_id o, c
 	
 	// Perform operation
 	if(icid >= 0 && ocid >= 0) {
-		vvis::kernel2d<vvis::sint8> kernel(mask, kw, kh);
-		vvis::convolute(src_image[icid], pixel_accessor_1ch(),
-						out_image[ocid], pixel_accessor_1ch(),
-						vvis::linear_filter<vvis::sint8, pixel_type_1ch>(kernel));
+		labvvis::kernel2d<SInt8> kernel(mask, kw, kh);
+		labvvis::convolute(src_image[icid], out_image[ocid],
+                           labvvis::linear_filter<SInt8, UInt8>(kernel));
 	} else {
 		for(int i = 0; i < src_image.channel_count(); ++i) {
-			vvis::kernel2d<vvis::sint8> kernel(mask, kw, kh);
-			vvis::convolute(src_image[i], pixel_accessor_1ch(),
-							out_image[i], pixel_accessor_1ch(),
-							vvis::linear_filter<vvis::sint8, pixel_type_1ch>(kernel));
+            labvvis::kernel2d<SInt8> kernel(mask, kw, kh);
+            labvvis::convolute(src_image[i], out_image[i],
+                               labvvis::linear_filter<SInt8, UInt8>(kernel));
 		}
 	}
 }
 
 void max_filter(const image_id i1, const channel_id icid, const image_id o, const channel_id ocid,
-				vvis::sint8 mask[], const int kw, const int kh, LStrHandle error) {
+				SInt8 mask[], const int kw, const int kh, LStrHandle error) {
 	PRE_FLIGHT(error);
 	CHECK_CHANNEL(i1, icid, error);
 	CHECK_CHANNEL(o, ocid, error);
@@ -540,38 +578,31 @@ void max_filter(const image_id i1, const channel_id icid, const image_id o, cons
 	
 	// Perform operation
 	if(icid >= 0 && ocid >= 0) {
-		vvis::kernel2d<vvis::sint8> kernel(mask, kw, kh);
-		vvis::convolute(src_image[icid], pixel_accessor_1ch(),
-						out_image[ocid], pixel_accessor_1ch(),
-						vvis::linear_filter<vvis::sint8, pixel_type_1ch>(kernel));
+        labvvis::kernel2d<SInt8> kernel(mask, kw, kh);
+        labvvis::convolute(src_image[icid], out_image[ocid],
+                           labvvis::max_filter<SInt8, UInt8>(kernel));
 	} else {
 		for(int i = 0; i < src_image.channel_count(); ++i) {
-			vvis::kernel2d<vvis::sint8> kernel(mask, kw, kh);
-			vvis::convolute(src_image[i], pixel_accessor_1ch(),
-							out_image[i], pixel_accessor_1ch(),
-							vvis::linear_filter<vvis::sint8, pixel_type_1ch>(kernel));
+			labvvis::kernel2d<SInt8> kernel(mask, kw, kh);
+            labvvis::convolute(src_image[i], out_image[i],
+                               labvvis::max_filter<SInt8, UInt8>(kernel));
 		}
 	}
 }
 
 namespace lv {
 	struct histogram {
-		typedef vvm::add_vector<pixel_type_1ch>::type vector_type;
 		histogram(int *counts)
 			: _counts(counts) {
 				for(int i = 0; i < 256; ++i) {
 					_counts[i] = 0;
 				}
 			}
-		void operator()(const pixel_type_1ch p) {
+		void operator()(const UInt8 p) {
 			++_counts[p];
 		}
-		void operator()(const vector_type &v) {
-			for(int i = 0; i < vvm::vector_traits<vector_type>::scalar_count; ++i)
-				++_counts[v.scalar(i)];
-		}
 	private:
-			int *_counts;
+        int *_counts;
 	};
 } // End of lv namespace
 /*
@@ -603,12 +634,13 @@ void histogram(const image_id i1, const channel_id icid, int counts[], const int
 	
 	// Perform operation
 	lv::histogram h(counts);
-	vvis::for_each(src_image[icid], pixel_accessor_1ch(), h);
+	labvvis::for_each(src_image[icid], h);
 }
 
 
+#if 0
 namespace priv {
-	pixel_type_1ch pixel(const one_channel &a, const int x, const int y) {
+	UInt8 pixel(const one_channel &a, const int x, const int y) {
 		if(x < 0 || y < 0 || x >= a.width() || y >= a.height()) {
 			return 0;
 		} else {
@@ -625,12 +657,12 @@ namespace priv {
 	}
 }
 
-std::map<pixel_type_1ch, vvis::rect>
+std::map<UInt8, vvis::rect>
 _grow_blob(const one_channel &a, one_channel &o, const int blob_start, const int blob_step) {
-	std::map<pixel_type_1ch, vvis::rect> blobs;	// Blob number : First row
+	std::map<UInt8, vvis::rect> blobs;	// Blob number : First row
 	int current_blob = blob_start - blob_step;
 	// Fill out with 0
-	vvis::transform(o, pixel_accessor_1ch(), o, pixel_accessor_1ch(), vvis::constant<pixel_type_1ch>(0));
+	vvis::transform(o, pixel_accessor_1ch(), o, pixel_accessor_1ch(), vvis::constant<UInt8>(0));
 	for(int y = 0; y < a.height(); ++y) {
 		for(int x = 0; x < a.width(); ++x) {
 			int window_state = priv::window_state(a, x, y);
@@ -690,9 +722,9 @@ _grow_blob(const one_channel &a, one_channel &o, const int blob_start, const int
 				}	break;
 				case 11: {
 					// 6 End of background blob, connect to object blob and merge object blobs
-					pixel_type_1ch this_blob = o.pixel(x-1, y);
+					UInt8 this_blob = o.pixel(x-1, y);
 					// y must be >0 since there is a 1 above
-					pixel_type_1ch to_replace = o.pixel(x, y-1);
+					UInt8 to_replace = o.pixel(x, y-1);
 					vvis::rect &old_r = blobs[to_replace];
 					//blobs[this_blob] = old_r;
 					for(int y_ = old_r.top; y_ <= y; ++y_) {
@@ -734,7 +766,7 @@ void grow_blob(const image_id i1, const channel_id icid,
 	lv::image &out_image = manager.image(o);
 	
 	// Perform operation
-	std::map<pixel_type_1ch, vvis::rect> blobs =
+	std::map<UInt8, vvis::rect> blobs =
 		_grow_blob(src_image[icid], out_image[ocid], blob_start, blob_step);
 }
 
@@ -764,7 +796,7 @@ void hough_transform(const image_id i1, const channel_id icid, hough_id_t *hough
 	
 	// Perform operation
 	// Create a hough tranform object for image img
-	vvis::for_each(src_image[icid], xy_accessor_t(), i->second);
+	labvvis::for_each(src_image[icid], i->second);
 }
 
 void get_hough_lines(const hough_id_t hough_id, const unsigned short threshold, hough_lines_handle hlines_hdl, 
