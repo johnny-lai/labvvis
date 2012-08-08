@@ -26,6 +26,8 @@
 		2C30312715D29F6A00F04429 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30312615D29F6A00F04429 /* Cocoa.framework */; };
 		2C30313115D29F6B00F04429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C30312F15D29F6B00F04429 /* InfoPlist.strings */; };
 		2C30313415D29F6B00F04429 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30313315D29F6B00F04429 /* UnitTests.m */; };
+		2C30313B15D2A10000F04429 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313A15D2A10000F04429 /* QTKit.framework */; };
+		2C30313D15D2A86600F04429 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313C15D2A86600F04429 /* CoreVideo.framework */; };
 		2C8D22C415CA1E0500F73E9E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C215CA1E0400F73E9E /* libboost_system.a */; };
 		2C8D22C515CA1E0500F73E9E /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C315CA1E0400F73E9E /* libboost_thread.a */; };
 		2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
@@ -110,6 +112,8 @@
 		2C30313215D29F6B00F04429 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
 		2C30313315D29F6B00F04429 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		2C30313515D29F6B00F04429 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2C30313A15D2A10000F04429 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = ../../../../../../System/Library/Frameworks/QTKit.framework; sourceTree = "<group>"; };
+		2C30313C15D2A86600F04429 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../../../../../../System/Library/Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
 		2C8D22C215CA1E0400F73E9E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/stage/lib/libboost_system.a; sourceTree = "<group>"; };
 		2C8D22C315CA1E0400F73E9E /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/stage/lib/libboost_thread.a; sourceTree = "<group>"; };
 		2C8D22C715CA23D000F73E9E /* labvvis-exports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "labvvis-exports.h"; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C30313D15D2A86600F04429 /* CoreVideo.framework in Frameworks */,
+				2C30313B15D2A10000F04429 /* QTKit.framework in Frameworks */,
 				2C30312515D29F6A00F04429 /* SenTestingKit.framework in Frameworks */,
 				2C30312715D29F6A00F04429 /* Cocoa.framework in Frameworks */,
 			);
@@ -201,6 +207,8 @@
 		089C166AFE841209C02AAC07 /* labvvis */ = {
 			isa = PBXGroup;
 			children = (
+				2C30313C15D2A86600F04429 /* CoreVideo.framework */,
+				2C30313A15D2A10000F04429 /* QTKit.framework */,
 				2C8D22C215CA1E0400F73E9E /* libboost_system.a */,
 				2C8D22C315CA1E0400F73E9E /* libboost_thread.a */,
 				ED42BB820AAAFFDC00A36E36 /* Readme.txt */,

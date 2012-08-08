@@ -8,6 +8,8 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface UnitTests : SenTestCase
+@interface UnitTests : SenTestCase {
+    int framesCaptured;
+}
 
 @end
