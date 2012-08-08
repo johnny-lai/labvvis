@@ -22,6 +22,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2C30312515D29F6A00F04429 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30312415D29F6A00F04429 /* SenTestingKit.framework */; };
+		2C30312715D29F6A00F04429 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30312615D29F6A00F04429 /* Cocoa.framework */; };
+		2C30313115D29F6B00F04429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C30312F15D29F6B00F04429 /* InfoPlist.strings */; };
+		2C30313415D29F6B00F04429 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30313315D29F6B00F04429 /* UnitTests.m */; };
 		2C8D22C415CA1E0500F73E9E /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C215CA1E0400F73E9E /* libboost_system.a */; };
 		2C8D22C515CA1E0500F73E9E /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D22C315CA1E0400F73E9E /* libboost_thread.a */; };
 		2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
@@ -95,6 +99,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C30312215D29F6A00F04429 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C30312415D29F6A00F04429 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2C30312615D29F6A00F04429 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		2C30312915D29F6B00F04429 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2C30312A15D29F6B00F04429 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C30312B15D29F6B00F04429 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C30312E15D29F6B00F04429 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		2C30313015D29F6B00F04429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C30313215D29F6B00F04429 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
+		2C30313315D29F6B00F04429 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		2C30313515D29F6B00F04429 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		2C8D22C215CA1E0400F73E9E /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../boost_1_50_0/stage/lib/libboost_system.a; sourceTree = "<group>"; };
 		2C8D22C315CA1E0400F73E9E /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../boost_1_50_0/stage/lib/libboost_thread.a; sourceTree = "<group>"; };
 		2C8D22C715CA23D000F73E9E /* labvvis-exports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "labvvis-exports.h"; sourceTree = "<group>"; };
@@ -150,6 +165,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C30311E15D29F6A00F04429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30312515D29F6A00F04429 /* SenTestingKit.framework in Frameworks */,
+				2C30312715D29F6A00F04429 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED891080088D471600737521 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +210,8 @@
 				EDD1FF82082B46A400BC0FCD /* Stub */,
 				08FB77AFFE84173DC02AAC07 /* Labvvis */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				2C30312C15D29F6B00F04429 /* UnitTests */,
+				2C30312315D29F6A00F04429 /* Frameworks */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
 				ED89108B088D471600737521 /* Info-labvvis.plist */,
 				EDB7D5590AA9DC7400329157 /* Info-labvvis_cin.plist */,
@@ -232,6 +258,7 @@
 			children = (
 				ED89108C088D471600737521 /* labvvis.framework */,
 				EDB7D55D0AA9DC7400329157 /* labvvis-cin.tmp.bundle */,
+				2C30312215D29F6A00F04429 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +271,46 @@
 			name = LabVIEW;
 			path = "/Applications/National Instruments/LabVIEW 2011";
 			sourceTree = "<absolute>";
+		};
+		2C30312315D29F6A00F04429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C30312415D29F6A00F04429 /* SenTestingKit.framework */,
+				2C30312615D29F6A00F04429 /* Cocoa.framework */,
+				2C30312815D29F6B00F04429 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C30312815D29F6B00F04429 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C30312915D29F6B00F04429 /* AppKit.framework */,
+				2C30312A15D29F6B00F04429 /* CoreData.framework */,
+				2C30312B15D29F6B00F04429 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2C30312C15D29F6B00F04429 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C30313215D29F6B00F04429 /* UnitTests.h */,
+				2C30313315D29F6B00F04429 /* UnitTests.m */,
+				2C30312D15D29F6B00F04429 /* Supporting Files */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		2C30312D15D29F6B00F04429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C30312E15D29F6B00F04429 /* UnitTests-Info.plist */,
+				2C30312F15D29F6B00F04429 /* InfoPlist.strings */,
+				2C30313515D29F6B00F04429 /* UnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
 		};
 		2CB9D98015CCDF7200DD7F10 /* include */ = {
 			isa = PBXGroup;
@@ -332,6 +399,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2C30312115D29F6A00F04429 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C30313815D29F6B00F04429 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				2C30311D15D29F6A00F04429 /* Sources */,
+				2C30311E15D29F6A00F04429 /* Frameworks */,
+				2C30311F15D29F6A00F04429 /* Resources */,
+				2C30312015D29F6A00F04429 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 2C30312215D29F6A00F04429 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		ED891077088D471600737521 /* labvvis */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED891087088D471600737521 /* Build configuration list for PBXNativeTarget "labvvis" */;
@@ -393,11 +478,20 @@
 				EDB7D5380AA9DC7300329157 /* labvvis-all (Copied) */,
 				EDB7D5410AA9DC7300329157 /* labvvis-cin */,
 				ED891077088D471600737521 /* labvvis */,
+				2C30312115D29F6A00F04429 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C30311F15D29F6A00F04429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30313115D29F6B00F04429 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED89107C088D471600737521 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +526,19 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C30312015D29F6A00F04429 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		EDB7D5420AA9DC7300329157 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +560,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C30311D15D29F6A00F04429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30313415D29F6B00F04429 /* UnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED89107D088D471600737521 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,7 +607,74 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2C30312F15D29F6B00F04429 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C30313015D29F6B00F04429 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2C30313615D29F6B00F04429 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Development;
+		};
+		2C30313715D29F6B00F04429 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Deployment;
+		};
 		ED891088088D471600737521 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -634,6 +816,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C30313815D29F6B00F04429 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C30313615D29F6B00F04429 /* Development */,
+				2C30313715D29F6B00F04429 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ED891087088D471600737521 /* Build configuration list for PBXNativeTarget "labvvis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
