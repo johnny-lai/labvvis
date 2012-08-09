@@ -10,6 +10,8 @@
 #include <boost/preprocessor/stringize.hpp>
 #include "acg.h"
 
+#import "SequenceGrabber.h"
+
 #include <Accelerate/Accelerate.h>
 
 #include <labvvis/functor.h>
@@ -507,10 +509,10 @@ void equalize(const image_id i1, const channel_id icid, const image_id o, const 
 	
 	// Perform operation
 	if(icid >= 0 && ocid >= 0) {
-        vImageEqualization_Planar8(&src_image[icid], &out_image[ocid], 0);
+        labvvis::transform(src_image[icid], out_image[ocid], labvvis::equalize<UInt8>(min, max));
 	} else {
 		for(int i = 0; i < src_image.channel_count(); ++i) {
-			vImageEqualization_Planar8(&src_image[i], &out_image[i], 0);
+            labvvis::transform(src_image[i], out_image[i], labvvis::equalize<UInt8>(min, max));
 		}
 	}
 }
@@ -829,3 +831,22 @@ void delete_hough(int hough_id, LStrHandle error) {
 	}
 }
 #endif
+
+void start_sequence_grabber(const int width, const int height, LStrHandle error) {
+    SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
+    NSError *e = nil;
+    [grabber startCaptureAtSize:NSMakeSize(width, height) error:&e];
+    if (e != nil) {
+        lv::to_lstr(error, "Failed to start capture");
+    }
+}
+
+void grab_sequence_grabber(const image_id o, const channel_id ocid, LStrHandle error) {
+
+}
+
+void stop_sequence_grabber(LStrHandle error) {
+    SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
+    [grabber stopCapture];
+}
+

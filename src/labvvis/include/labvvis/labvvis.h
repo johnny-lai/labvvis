@@ -106,6 +106,11 @@ extern "C" {
 
 	void get_hough_lines(const hough_id_t hough_id, const unsigned short threshold, hough_lines_handle hlines_hdl, 
 		unsigned short *lines_count, LStrHandle error);
+    
+    //= Sequence Grabber ===========================================================
+    void start_sequence_grabber(const int width, const int height, LStrHandle error);
+    void grab_sequence_grabber(const image_id o, const channel_id ocid, LStrHandle error);
+    void stop_sequence_grabber(LStrHandle error);
 }
 
 #endif
