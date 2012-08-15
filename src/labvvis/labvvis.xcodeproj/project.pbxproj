@@ -40,7 +40,7 @@
 		2CB9D99015CCE00C00DD7F10 /* functor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB9D98F15CCDFDC00DD7F10 /* functor.h */; };
 		2CB9D99215CCEED600DD7F10 /* kernel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB9D99115CCEEC900DD7F10 /* kernel.h */; };
 		2CE4543515D3E9A500BFCD34 /* SequenceGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */; };
-		2CE4543615D3E9A500BFCD34 /* SequenceGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4543415D3E9A500BFCD34 /* SequenceGrabber.m */; };
+		2CE4543615D3E9A500BFCD34 /* SequenceGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */; };
 		2CE4543815D3F26B00BFCD34 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313A15D2A10000F04429 /* QTKit.framework */; };
 		2CE4543915D3F2AA00BFCD34 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313C15D2A86600F04429 /* CoreVideo.framework */; };
 		ED4AA25509458C5300A74566 /* GenericDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4AA25109458C5300A74566 /* GenericDecode.h */; };
@@ -137,7 +137,7 @@
 		2CB9D98F15CCDFDC00DD7F10 /* functor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = functor.h; path = include/labvvis/functor.h; sourceTree = "<group>"; };
 		2CB9D99115CCEEC900DD7F10 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel.h; path = include/labvvis/kernel.h; sourceTree = "<group>"; };
 		2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SequenceGrabber.h; path = src/labvvis/SequenceGrabber.h; sourceTree = "<group>"; };
-		2CE4543415D3E9A500BFCD34 /* SequenceGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SequenceGrabber.m; path = src/labvvis/SequenceGrabber.m; sourceTree = "<group>"; };
+		2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SequenceGrabber.mm; path = src/labvvis/SequenceGrabber.mm; sourceTree = "<group>"; };
 		ED108A6507E838CE00D6A1B1 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		ED108A7307E8396900D6A1B1 /* labvvis.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = labvvis.mm; path = src/labvvis/labvvis.mm; sourceTree = "<group>"; };
 		ED108A7A07E8397900D6A1B1 /* labvvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = labvvis.h; path = include/labvvis/labvvis.h; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 				ED108A7307E8396900D6A1B1 /* labvvis.mm */,
 				F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */,
 				2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */,
-				2CE4543415D3E9A500BFCD34 /* SequenceGrabber.m */,
+				2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */,
 			);
 			name = Labvvis;
 			sourceTree = "<group>";
@@ -596,7 +596,7 @@
 				2CB9D97D15CC2D0700DD7F10 /* image.mm in Sources */,
 				2CB9D95915CC21F900DD7F10 /* image_manager.mm in Sources */,
 				2CB9D97A15CC291600DD7F10 /* labvvis.mm in Sources */,
-				2CE4543615D3E9A500BFCD34 /* SequenceGrabber.m in Sources */,
+				2CE4543615D3E9A500BFCD34 /* SequenceGrabber.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +796,7 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				GCC_OPTIMIZATION_LEVEL = s;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
@@ -818,6 +819,7 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				GCC_OPTIMIZATION_LEVEL = s;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",

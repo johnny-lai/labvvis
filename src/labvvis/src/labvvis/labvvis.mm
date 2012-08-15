@@ -833,6 +833,8 @@ void delete_hough(int hough_id, LStrHandle error) {
 #endif
 
 void start_sequence_grabber(const int width, const int height, LStrHandle error) {
+    NSLog(@"start_sequence_grabber");
+	PRE_FLIGHT(error);
     SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
     NSError *e = nil;
     [grabber startCaptureAtSize:NSMakeSize(width, height) error:&e];
@@ -842,10 +844,20 @@ void start_sequence_grabber(const int width, const int height, LStrHandle error)
 }
 
 void grab_sequence_grabber(const image_id o, const channel_id ocid, LStrHandle error) {
-
+	PRE_FLIGHT(error);
+	CHECK_CHANNEL(o, ocid, error);
+	
+	// Extract image
+	image_manager &manager = image_manager::instance();
+	lv::image &image = manager.image(o);
+    
+    SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
+    NSError *e = nil;
+    [grabber waitUntilFrameCapturedTo:&image error:&e];
 }
 
 void stop_sequence_grabber(LStrHandle error) {
+    NSLog(@"stop_sequence_grabber");
     SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
     [grabber stopCapture];
 }
