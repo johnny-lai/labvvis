@@ -7,7 +7,6 @@
 #include <labvvis/image_manager.h>
 #include <labvvis/object_manager.h>
 #include <labvvis/util.h>
-#include <boost/preprocessor/stringize.hpp>
 #include "acg.h"
 
 #import "SequenceGrabber.h"
@@ -833,7 +832,6 @@ void delete_hough(int hough_id, LStrHandle error) {
 #endif
 
 void start_sequence_grabber(const int width, const int height, LStrHandle error) {
-    NSLog(@"start_sequence_grabber");
 	PRE_FLIGHT(error);
     SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
     NSError *e = nil;
@@ -857,7 +855,6 @@ void grab_sequence_grabber(const image_id o, const channel_id ocid, LStrHandle e
 }
 
 void stop_sequence_grabber(LStrHandle error) {
-    NSLog(@"stop_sequence_grabber");
     SequenceGrabber *grabber = [SequenceGrabber sharedInstance];
     [grabber stopCapture];
 }

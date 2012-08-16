@@ -17,10 +17,7 @@
     QTCaptureDeviceInput *input;
     QTCaptureDecompressedVideoOutput *output;
     
-    NSThread *thread;
-    BOOL shouldKeepRunning;
     lv::image *targetBuffer;
-    NSCondition *targetBufferFilled;
 }
 
 + (SequenceGrabber *)sharedInstance;
