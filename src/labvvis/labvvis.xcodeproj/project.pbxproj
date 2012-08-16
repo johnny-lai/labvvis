@@ -796,7 +796,6 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
-				GCC_OPTIMIZATION_LEVEL = s;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
@@ -819,7 +818,6 @@
 				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
 				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
-				GCC_OPTIMIZATION_LEVEL = s;
 				HEADER_SEARCH_PATHS = (
 					"$(BOOST_PATH)",
 					"$(CINTOOLS_PATH)",
