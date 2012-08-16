@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C30312515D29F6A00F04429 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30312415D29F6A00F04429 /* SenTestingKit.framework */; };
+		2C30313115D29F6B00F04429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C30312F15D29F6B00F04429 /* InfoPlist.strings */; };
+		2C30313415D29F6B00F04429 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30313315D29F6B00F04429 /* UnitTests.m */; };
+		2C30313B15D2A10000F04429 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313A15D2A10000F04429 /* QTKit.framework */; };
+		2C30313D15D2A86600F04429 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313C15D2A86600F04429 /* CoreVideo.framework */; };
+		2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED8561F7095F85AB001F6A79 /* util.cpp */; };
+		2CB9D95715CC21E100DD7F10 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */; };
+		2CB9D95815CC21F300DD7F10 /* object_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED5B3D650A81EA810068420C /* object_manager.cpp */; };
+		2CB9D95915CC21F900DD7F10 /* image_manager.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED80C3F70835C37500F8388C /* image_manager.mm */; };
+		2CB9D97A15CC291600DD7F10 /* labvvis.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED108A7307E8396900D6A1B1 /* labvvis.mm */; };
+		2CB9D97D15CC2D0700DD7F10 /* image.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9D97C15CC2B0300DD7F10 /* image.mm */; };
+		2CB9D97E15CC372E00DD7F10 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED79C11F0946F32100C577F2 /* Accelerate.framework */; };
+		2CB9D99015CCE00C00DD7F10 /* functor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB9D98F15CCDFDC00DD7F10 /* functor.h */; };
+		2CB9D99215CCEED600DD7F10 /* kernel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB9D99115CCEEC900DD7F10 /* kernel.h */; };
+		2CE4543515D3E9A500BFCD34 /* SequenceGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */; };
+		2CE4543615D3E9A500BFCD34 /* SequenceGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */; };
+		2CE4543815D3F26B00BFCD34 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313A15D2A10000F04429 /* QTKit.framework */; };
+		2CE4543915D3F2AA00BFCD34 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30313C15D2A86600F04429 /* CoreVideo.framework */; };
+		ED5B3D620A81EA6A0068420C /* object_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5B3D610A81EA6A0068420C /* object_manager.h */; };
+		ED8561FC095F85C0001F6A79 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8561FB095F85C0001F6A79 /* util.h */; };
+		ED891079088D471600737521 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD1FFC3082B4BF700BC0FCD /* image.h */; };
+		ED89107A088D471600737521 /* image_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED80C3FB0835C38200F8388C /* image_manager.h */; };
+		ED89107B088D471600737521 /* labvvis.h in Headers */ = {isa = PBXBuildFile; fileRef = ED108A7A07E8397900D6A1B1 /* labvvis.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		EDB7D5990AA9DFA800329157 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED2F6F390C5A32D100E7C543 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C30312215D29F6A00F04429 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C30312415D29F6A00F04429 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2C30312E15D29F6B00F04429 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		2C30313015D29F6B00F04429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C30313215D29F6B00F04429 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
+		2C30313315D29F6B00F04429 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		2C30313515D29F6B00F04429 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2C30313A15D2A10000F04429 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		2C30313C15D2A86600F04429 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2CB9D97C15CC2B0300DD7F10 /* image.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = image.mm; path = src/labvvis/image.mm; sourceTree = "<group>"; };
+		2CB9D98515CCDF7200DD7F10 /* image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		2CB9D98615CCDF7200DD7F10 /* image_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_manager.h; sourceTree = "<group>"; };
+		2CB9D98715CCDF7200DD7F10 /* labvvis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = labvvis.h; sourceTree = "<group>"; };
+		2CB9D98815CCDF7200DD7F10 /* object_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object_manager.h; sourceTree = "<group>"; };
+		2CB9D98A15CCDF7200DD7F10 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		2CB9D98B15CCDF7200DD7F10 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		2CB9D98F15CCDFDC00DD7F10 /* functor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = functor.h; path = include/labvvis/functor.h; sourceTree = "<group>"; };
+		2CB9D99115CCEEC900DD7F10 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel.h; path = include/labvvis/kernel.h; sourceTree = "<group>"; };
+		2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SequenceGrabber.h; path = src/labvvis/SequenceGrabber.h; sourceTree = "<group>"; };
+		2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SequenceGrabber.mm; path = src/labvvis/SequenceGrabber.mm; sourceTree = "<group>"; };
+		ED108A6507E838CE00D6A1B1 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		ED108A7307E8396900D6A1B1 /* labvvis.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = labvvis.mm; path = src/labvvis/labvvis.mm; sourceTree = "<group>"; };
+		ED108A7A07E8397900D6A1B1 /* labvvis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = labvvis.h; path = include/labvvis/labvvis.h; sourceTree = "<group>"; };
+		ED2C77B307F97F9900300BEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		ED42BB820AAAFFDC00A36E36 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Readme.txt; path = installer/Install/Readme.txt; sourceTree = "<group>"; };
+		ED5B3D610A81EA6A0068420C /* object_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object_manager.h; path = include/labvvis/object_manager.h; sourceTree = "<group>"; };
+		ED5B3D650A81EA810068420C /* object_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object_manager.cpp; path = src/labvvis/object_manager.cpp; sourceTree = "<group>"; };
+		ED79C11F0946F32100C577F2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		ED80C3F70835C37500F8388C /* image_manager.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = image_manager.mm; path = src/labvvis/image_manager.mm; sourceTree = "<group>"; };
+		ED80C3FB0835C38200F8388C /* image_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = image_manager.h; path = include/labvvis/image_manager.h; sourceTree = "<group>"; };
+		ED8561F7095F85AB001F6A79 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = src/labvvis/util.cpp; sourceTree = "<group>"; };
+		ED8561FB095F85C0001F6A79 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = include/labvvis/util.h; sourceTree = "<group>"; };
+		ED89108B088D471600737521 /* Info-labvvis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-labvvis.plist"; sourceTree = "<group>"; };
+		ED89108C088D471600737521 /* labvvis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = labvvis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC4BABD0835C80300211AA6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		EDD1FFC3082B4BF700BC0FCD /* image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = image.h; path = include/labvvis/image.h; sourceTree = "<group>"; };
+		EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt-1_34.a"; path = "../boost_1_34_0/bin.v2/libs/thread/build/darwin/release/link-static/threading-multi/libboost_thread-mt-1_34.a"; sourceTree = SOURCE_ROOT; };
+		F5B335790395235601002793 /* liblvexports.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblvexports.a; path = "cintools/Mach-O/liblvexports.a"; sourceTree = "<group>"; };
+		F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cin_seqgrabber.cpp; path = src/labvvis/cin_seqgrabber.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C30311E15D29F6A00F04429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30313D15D2A86600F04429 /* CoreVideo.framework in Frameworks */,
+				2C30313B15D2A10000F04429 /* QTKit.framework in Frameworks */,
+				2C30312515D29F6A00F04429 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED891080088D471600737521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE4543915D3F2AA00BFCD34 /* CoreVideo.framework in Frameworks */,
+				2CE4543815D3F26B00BFCD34 /* QTKit.framework in Frameworks */,
+				2CB9D97E15CC372E00DD7F10 /* Accelerate.framework in Frameworks */,
+				2CB9D95715CC21E100DD7F10 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* labvvis */ = {
+			isa = PBXGroup;
+			children = (
+				ED42BB820AAAFFDC00A36E36 /* Readme.txt */,
+				2CB9D98015CCDF7200DD7F10 /* include */,
+				08FB77AFFE84173DC02AAC07 /* Labvvis */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				2C30312C15D29F6B00F04429 /* UnitTests */,
+				2C30312315D29F6A00F04429 /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				ED89108B088D471600737521 /* Info-labvvis.plist */,
+			);
+			name = labvvis;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2C0B54F515C51D960090A055 /* LabVIEW */,
+				EDFBD4D90D8182460012B6ED /* libboost_thread-mt-1_34.a */,
+				2CB9D95615CC21E100DD7F10 /* CoreFoundation.framework */,
+				ED79C11F0946F32100C577F2 /* Accelerate.framework */,
+				EDC4BABD0835C80300211AA6 /* Carbon.framework */,
+				ED2C77B307F97F9900300BEC /* Cocoa.framework */,
+				ED108A6507E838CE00D6A1B1 /* QuickTime.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Labvvis */ = {
+			isa = PBXGroup;
+			children = (
+				2CB9D99115CCEEC900DD7F10 /* kernel.h */,
+				2CB9D98F15CCDFDC00DD7F10 /* functor.h */,
+				ED5B3D610A81EA6A0068420C /* object_manager.h */,
+				ED5B3D650A81EA810068420C /* object_manager.cpp */,
+				ED8561FB095F85C0001F6A79 /* util.h */,
+				ED8561F7095F85AB001F6A79 /* util.cpp */,
+				EDD1FFC3082B4BF700BC0FCD /* image.h */,
+				2CB9D97C15CC2B0300DD7F10 /* image.mm */,
+				ED80C3FB0835C38200F8388C /* image_manager.h */,
+				ED80C3F70835C37500F8388C /* image_manager.mm */,
+				ED108A7A07E8397900D6A1B1 /* labvvis.h */,
+				ED108A7307E8396900D6A1B1 /* labvvis.mm */,
+				F5F0F3B4033A95B501002793 /* cin_seqgrabber.cpp */,
+				2CE4543315D3E9A500BFCD34 /* SequenceGrabber.h */,
+				2CE4543415D3E9A500BFCD34 /* SequenceGrabber.mm */,
+			);
+			name = Labvvis;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED89108C088D471600737521 /* labvvis.framework */,
+				2C30312215D29F6A00F04429 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C0B54F515C51D960090A055 /* LabVIEW */ = {
+			isa = PBXGroup;
+			children = (
+				F5B335790395235601002793 /* liblvexports.a */,
+			);
+			name = LabVIEW;
+			path = "/Applications/National Instruments/LabVIEW 2011";
+			sourceTree = "<absolute>";
+		};
+		2C30312315D29F6A00F04429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C30313C15D2A86600F04429 /* CoreVideo.framework */,
+				2C30313A15D2A10000F04429 /* QTKit.framework */,
+				2C30312415D29F6A00F04429 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C30312C15D29F6B00F04429 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C30313215D29F6B00F04429 /* UnitTests.h */,
+				2C30313315D29F6B00F04429 /* UnitTests.m */,
+				2C30312D15D29F6B00F04429 /* Supporting Files */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		2C30312D15D29F6B00F04429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C30312E15D29F6B00F04429 /* UnitTests-Info.plist */,
+				2C30312F15D29F6B00F04429 /* InfoPlist.strings */,
+				2C30313515D29F6B00F04429 /* UnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CB9D98015CCDF7200DD7F10 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2CB9D98415CCDF7200DD7F10 /* labvvis */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2CB9D98415CCDF7200DD7F10 /* labvvis */ = {
+			isa = PBXGroup;
+			children = (
+				2CB9D98515CCDF7200DD7F10 /* image.h */,
+				2CB9D98615CCDF7200DD7F10 /* image_manager.h */,
+				2CB9D98715CCDF7200DD7F10 /* labvvis.h */,
+				2CB9D98815CCDF7200DD7F10 /* object_manager.h */,
+				2CB9D98A15CCDF7200DD7F10 /* types.h */,
+				2CB9D98B15CCDF7200DD7F10 /* util.h */,
+			);
+			path = labvvis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED891078088D471600737521 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB9D99015CCE00C00DD7F10 /* functor.h in Headers */,
+				2CB9D99215CCEED600DD7F10 /* kernel.h in Headers */,
+				ED891079088D471600737521 /* image.h in Headers */,
+				ED89107A088D471600737521 /* image_manager.h in Headers */,
+				ED89107B088D471600737521 /* labvvis.h in Headers */,
+				ED8561FC095F85C0001F6A79 /* util.h in Headers */,
+				ED5B3D620A81EA6A0068420C /* object_manager.h in Headers */,
+				2CE4543515D3E9A500BFCD34 /* SequenceGrabber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C30312115D29F6A00F04429 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C30313815D29F6B00F04429 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				2C30311D15D29F6A00F04429 /* Sources */,
+				2C30311E15D29F6A00F04429 /* Frameworks */,
+				2C30311F15D29F6A00F04429 /* Resources */,
+				2C30312015D29F6A00F04429 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 2C30312215D29F6A00F04429 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ED891077088D471600737521 /* labvvis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED891087088D471600737521 /* Build configuration list for PBXNativeTarget "labvvis" */;
+			buildPhases = (
+				ED891078088D471600737521 /* Headers */,
+				ED89107C088D471600737521 /* Resources */,
+				ED89107D088D471600737521 /* Sources */,
+				ED891080088D471600737521 /* Frameworks */,
+				ED891084088D471600737521 /* Rez */,
+				ED2F6F390C5A32D100E7C543 /* CopyFiles */,
+			);
+			buildRules = (
+				EDB7D5990AA9DFA800329157 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = labvvis;
+			productName = labvvis;
+			productReference = ED89108C088D471600737521 /* labvvis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EDFFF731085EE743003ABED0 /* Build configuration list for PBXProject "labvvis" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* labvvis */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED891077088D471600737521 /* labvvis */,
+				2C30312115D29F6A00F04429 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C30311F15D29F6A00F04429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30313115D29F6B00F04429 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED89107C088D471600737521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		ED891084088D471600737521 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C30312015D29F6A00F04429 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C30311D15D29F6A00F04429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C30313415D29F6B00F04429 /* UnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED89107D088D471600737521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB9D95815CC21F300DD7F10 /* object_manager.cpp in Sources */,
+				2CB9D95515CC211F00DD7F10 /* util.cpp in Sources */,
+				2CB9D97D15CC2D0700DD7F10 /* image.mm in Sources */,
+				2CB9D95915CC21F900DD7F10 /* image_manager.mm in Sources */,
+				2CB9D97A15CC291600DD7F10 /* labvvis.mm in Sources */,
+				2CE4543615D3E9A500BFCD34 /* SequenceGrabber.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C30312F15D29F6B00F04429 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C30313015D29F6B00F04429 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C30313615D29F6B00F04429 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Development;
+		};
+		2C30313715D29F6B00F04429 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Deployment;
+		};
+		ED891088088D471600737521 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				INFOPLIST_FILE = "Info-labvvis.plist";
+				PRODUCT_NAME = labvvis;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Development;
+		};
+		ED891089088D471600737521 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INFOPLIST_FILE = "Info-labvvis.plist";
+				PRODUCT_NAME = labvvis;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Deployment;
+		};
+		EDFFF732085EE743003ABED0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				HEADER_SEARCH_PATHS = (
+					"$(BOOST_PATH)",
+					"$(CINTOOLS_PATH)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(BOOST_PATH)/stage/lib",
+					"$(CINTOOLS_PATH)/Mach-O",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-llvexports",
+				);
+			};
+			name = Development;
+		};
+		EDFFF733085EE743003ABED0 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				BOOST_PATH = "$(PROJECT_DIR)/../boost_1_50_0";
+				CINTOOLS_PATH = "\"/Applications/National Instruments/LabVIEW 2011/cintools\"";
+				HEADER_SEARCH_PATHS = (
+					"$(BOOST_PATH)",
+					"$(CINTOOLS_PATH)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(BOOST_PATH)/stage/lib",
+					"$(CINTOOLS_PATH)/Mach-O",
+				);
+				OTHER_LDFLAGS = (
+					"-lpthread",
+					"-llvexports",
+				);
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C30313815D29F6B00F04429 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C30313615D29F6B00F04429 /* Development */,
+				2C30313715D29F6B00F04429 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		ED891087088D471600737521 /* Build configuration list for PBXNativeTarget "labvvis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED891088088D471600737521 /* Development */,
+				ED891089088D471600737521 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		EDFFF731085EE743003ABED0 /* Build configuration list for PBXProject "labvvis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFFF732085EE743003ABED0 /* Development */,
+				EDFFF733085EE743003ABED0 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
