@@ -5,19 +5,10 @@
       location = "container:src"
       name = "src">
       <FileRef
-         location = "group:common/common.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:ct/ct.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:labvvis/labvvis.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:vvis/vvis.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:vvm2/vvm.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

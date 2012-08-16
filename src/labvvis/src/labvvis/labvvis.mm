@@ -7,7 +7,6 @@
 #include <labvvis/image_manager.h>
 #include <labvvis/object_manager.h>
 #include <labvvis/util.h>
-#include "acg.h"
 
 #import "SequenceGrabber.h"
 

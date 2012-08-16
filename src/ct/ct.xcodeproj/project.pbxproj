@@ -19,26 +19,7 @@
 		2C0B54F215C513F30090A055 /* empty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED2347EE04BFC9710082428A /* empty.cpp */; };
 		ED35DEC0055B52AB0082428A /* tuple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED35DEBF055B52AB0082428A /* tuple.cpp */; };
 		EDEAF6F6051445BD0082428A /* typelist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED2347DA04BFC8480082428A /* typelist.cpp */; };
-		EDFBD4390D817D7A0012B6ED /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4380D817D740012B6ED /* common.framework */; };
-		EDFBD43A0D817D7C0012B6ED /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFBD4380D817D740012B6ED /* common.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EDFBD4370D817D740012B6ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EDFBD4330D817D740012B6ED /* common.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED59F86F05120331007CD1A9;
-			remoteInfo = common;
-		};
-		EDFBD44E0D81807F0012B6ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EDFBD4330D817D740012B6ED /* common.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ED59F86E05120331007CD1A9;
-			remoteInfo = common;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2C0B54D415C513950090A055 /* ct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +44,6 @@
 		EDD5892304F5146E0048A8AE /* metafunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = metafunction.cpp; path = scratch/metafunction.cpp; sourceTree = "<group>"; };
 		EDD58A1404F84DD30048A8AE /* enabler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enabler.h; path = include/ct/enabler.h; sourceTree = "<group>"; };
 		EDEAF6F0051445B10082428A /* typelist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = typelist; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDFBD4330D817D740012B6ED /* common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = common.xcodeproj; path = ../common/common.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFBD43A0D817D7C0012B6ED /* common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFBD4390D817D7A0012B6ED /* common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,19 +166,10 @@
 		EDEAF6F8051445C90082428A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EDFBD4330D817D740012B6ED /* common.xcodeproj */,
 				2C0B54D515C513950090A055 /* Cocoa.framework */,
 				2C0B54D715C513950090A055 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EDFBD4340D817D740012B6ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EDFBD4380D817D740012B6ED /* common.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +236,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EDFBD44F0D81807F0012B6ED /* PBXTargetDependency */,
 			);
 			name = tuple;
 			productName = tuple;
@@ -307,12 +275,6 @@
 			mainGroup = ED2347D304BFC6F40082428A;
 			productRefGroup = ED2347E204BFC91B0082428A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EDFBD4340D817D740012B6ED /* Products */;
-					ProjectRef = EDFBD4330D817D740012B6ED /* common.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2C0B54D315C513950090A055 /* ct */,
@@ -321,16 +283,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EDFBD4380D817D740012B6ED /* common.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = common.framework;
-			remoteRef = EDFBD4370D817D740012B6ED /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2C0B54D215C513950090A055 /* Resources */ = {
@@ -386,14 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EDFBD44F0D81807F0012B6ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = common;
-			targetProxy = EDFBD44E0D81807F0012B6ED /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2C0B54DE15C513950090A055 /* InfoPlist.strings */ = {
