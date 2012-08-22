@@ -15,12 +15,11 @@
 #include <labvvis/functor.h>
 
 using namespace lv;
-/*
-typedef vvis::xy_accessor<pixel_accessor_1ch> xy_accessor_t;
-typedef labvvis::hough<xy_accessor_t> hough_t;
+
+typedef labvvis::hough<UInt8> hough_t;
 typedef object_manager<hough_id_t, hough_t> houghs_object_manager;
 houghs_object_manager houghs;
-*/
+
 #define PRE_FLIGHT(LSTR) \
 if(lv::lstrlen(LSTR)) \
 return;
@@ -54,6 +53,17 @@ namespace labvvis {
             for (int x = 0; x < in.width; ++x) {
                 UInt8 in_pixel = in_data[(in.rowBytes * y) + x];
                 f(in_pixel);
+            }
+        }
+    }
+    
+    template<typename functorT>
+    void for_each_xy(const vImage_Buffer &in, functorT f) {
+        UInt8 *in_data = (UInt8*)in.data;
+        for (int y = 0; y < in.height; ++y) {
+            for (int x = 0; x < in.width; ++x) {
+                UInt8 in_pixel = in_data[(in.rowBytes * y) + x];
+                f(in_pixel, x, y);
             }
         }
     }
@@ -767,6 +777,7 @@ void grow_blob(const image_id i1, const channel_id icid,
 	std::map<UInt8, vvis::rect> blobs =
 		_grow_blob(src_image[icid], out_image[ocid], blob_start, blob_step);
 }
+#endif
 
 //==============================================================================
 // Hough's Transform
@@ -794,7 +805,7 @@ void hough_transform(const image_id i1, const channel_id icid, hough_id_t *hough
 	
 	// Perform operation
 	// Create a hough tranform object for image img
-	labvvis::for_each(src_image[icid], i->second);
+	labvvis::for_each_xy(src_image[icid], i->second);
 }
 
 void get_hough_lines(const hough_id_t hough_id, const unsigned short threshold, hough_lines_handle hlines_hdl, 
@@ -828,7 +839,6 @@ void delete_hough(int hough_id, LStrHandle error) {
 		houghs.erase(i);
 	}
 }
-#endif
 
 void start_sequence_grabber(const int width, const int height, LStrHandle error) {
 	PRE_FLIGHT(error);

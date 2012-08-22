@@ -601,8 +601,7 @@ namespace labvvis
 		int count;
 	};
 
-	template<typename accessorT> class hough {
-		typedef typename accessorT::scalar_type scalar_type;
+	template<typename T> class hough {
 		typedef std::map<int, int> rq_t;
 	public:
 		typedef hough_line value_type;
@@ -612,12 +611,12 @@ namespace labvvis
 		~hough() {
 		}
 		
-		void operator()(const scalar_type& p) {
-			if(p.value) {
+		void operator()(const T value, const int x, const int y) {
+			if(value) {
 				for(int q = 0; q < 180; q += 1) {
 					double rad = q*M_PI/180.0;
 					// Keep up to 2 decimals
-					int r = round((p.x*cos(rad) + p.y*sin(rad)) * 100);
+					int r = round((x*cos(rad) + y*sin(rad)) * 100);
 					++_accumulator[q][r];
 				}
 			}
