@@ -58,7 +58,7 @@ namespace labvvis {
     }
     
     template<typename functorT>
-    void for_each_xy(const vImage_Buffer &in, functorT f) {
+    void for_each_xy(const vImage_Buffer &in, functorT &f) {
         UInt8 *in_data = (UInt8*)in.data;
         for (int y = 0; y < in.height; ++y) {
             for (int x = 0; x < in.width; ++x) {
