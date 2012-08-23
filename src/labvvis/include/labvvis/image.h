@@ -24,7 +24,15 @@ typedef TD1 **TD1Hdl;
 typedef short int image_id;
 typedef short int channel_id;
 
-namespace lv {	
+namespace lv {
+    static inline const UInt8 &pixel(const vImage_Buffer &a, const int x, const int y) {
+        return ((UInt8 *)a.data)[a.rowBytes * y + x];
+    }
+    
+    static inline UInt8 &pixel(vImage_Buffer &a, const int x, const int y) {
+        return ((UInt8 *)a.data)[a.rowBytes * y + x];
+    }
+    
 	//= image ==================================================================
 	class image {
 	public:

@@ -645,19 +645,17 @@ void histogram(const image_id i1, const channel_id icid, int counts[], const int
 	labvvis::for_each(src_image[icid], h);
 }
 
-
-#if 0
 namespace priv {
-	UInt8 pixel(const one_channel &a, const int x, const int y) {
-		if(x < 0 || y < 0 || x >= a.width() || y >= a.height()) {
+	UInt8 pixel(const vImage_Buffer &a, const int x, const int y) {
+		if(x < 0 || y < 0 || x >= a.width || y >= a.height) {
 			return 0;
 		} else {
-			return a.pixel(x, y) > 0 ? 1 : 0;
+			return lv::pixel(a, x, y) > 0 ? 1 : 0;
 		}
 	}
 	// 4 2
 	// 8 0 <- x,y
-	int window_state(const one_channel &a, const int x, const int y) {
+	int window_state(const vImage_Buffer &a, const int x, const int y) {
 		return pixel(a, x, y) +
 			2*pixel(a, x, y-1) +
 			4*pixel(a, x-1, y-1) +
@@ -665,14 +663,14 @@ namespace priv {
 	}
 }
 
-std::map<UInt8, vvis::rect>
-_grow_blob(const one_channel &a, one_channel &o, const int blob_start, const int blob_step) {
-	std::map<UInt8, vvis::rect> blobs;	// Blob number : First row
+std::map<UInt8, CGRect>
+_grow_blob(const vImage_Buffer &a, vImage_Buffer &o, const int blob_start, const int blob_step) {
+	std::map<UInt8, CGRect> blobs;	// Blob number : First row
 	int current_blob = blob_start - blob_step;
 	// Fill out with 0
-	vvis::transform(o, pixel_accessor_1ch(), o, pixel_accessor_1ch(), vvis::constant<UInt8>(0));
-	for(int y = 0; y < a.height(); ++y) {
-		for(int x = 0; x < a.width(); ++x) {
+	labvvis::transform(o, o, labvvis::constant<UInt8>(0));
+	for(int y = 0; y < a.height; ++y) {
+		for(int x = 0; x < a.width; ++x) {
 			int window_state = priv::window_state(a, x, y);
 			switch(window_state) {
 				case 0:
@@ -686,71 +684,71 @@ _grow_blob(const one_channel &a, one_channel &o, const int blob_start, const int
 				case 1:
 					// 2 Start new object blob
 					current_blob += blob_step;
-					o.pixel(x, y) = current_blob;
-					blobs[current_blob] = vvis::rect(x, y, 1, 1);
+                    lv::pixel(o, x, y) = current_blob;
+					blobs[current_blob] = CGRectMake(x, y, 1, 1);
 					break;
 				case 3:
 				case 7:
 				case 15: {
 					// 3 Connect to object blob (all cases assumed to have previous on top)
-					o.pixel(x, y) = o.pixel(x, y-1);
+					lv::pixel(o, x, y) = lv::pixel(o, x, y-1);
 					// Adjust rect
-					vvis::rect &r = blobs[o.pixel(x, y)];
-					if(x < r.left)
-						r.left = x;
-					int w = x - r.left + 1;
-					if(w > r.width)
-						r.width = w;
+					CGRect &r = blobs[lv::pixel(o, x, y)];
+					if(x < r.origin.x)
+						r.origin.x = x;
+					float w = x - r.origin.x + 1;
+					if(w > r.size.width)
+						r.size.width = w;
 				}	break;
 				case 9:
 				case 13: {
 					// 3 Connect to object blob (all cases assumed to have previous in front)
-					o.pixel(x, y) = o.pixel(x-1, y);
+					lv::pixel(o, x, y) = lv::pixel(o, x-1, y);
 					// Adjust rect
-					vvis::rect &r = blobs[o.pixel(x, y)];
-					if(x < r.left)
-						r.left = x;
-					int w = x - r.left + 1;
-					if(w > r.width)
-						r.width = w;
+					CGRect &r = blobs[lv::pixel(o, x, y)];
+					if(x < r.origin.x)
+						r.origin.x = x;
+					float w = x - r.origin.x + 1;
+					if(w > r.size.width)
+						r.size.width = w;
 				}	break;					
 				case 4: {
 					// 4 End of object blob, connect to background blob and merge background blobs
-					vvis::rect &r = blobs[o.pixel(x-1, y-1)];
-					r.height = y - r.top + 1;
+					CGRect &r = blobs[lv::pixel(o, x-1, y-1)];
+					r.size.height = y - r.origin.y + 1;
 				}	break;
 				case 5: {
 					// 5 Start new object blob and end old object blob
-					vvis::rect &r = blobs[o.pixel(x-1, y-1)];
-					r.height = y - r.top + 1;
+					CGRect &r = blobs[lv::pixel(o, x-1, y-1)];
+					r.size.height = y - r.origin.y + 1;
 					
 					current_blob += blob_step;
-					o.pixel(x, y) = current_blob;
-					blobs[current_blob] = vvis::rect(x, y, 1, 1);
+					lv::pixel(o, x, y) = current_blob;
+					blobs[current_blob] = CGRectMake(x, y, 1, 1);
 				}	break;
 				case 11: {
 					// 6 End of background blob, connect to object blob and merge object blobs
-					UInt8 this_blob = o.pixel(x-1, y);
+					UInt8 this_blob = lv::pixel(o, x-1, y);
 					// y must be >0 since there is a 1 above
-					UInt8 to_replace = o.pixel(x, y-1);
-					vvis::rect &old_r = blobs[to_replace];
+					UInt8 to_replace = lv::pixel(o, x, y-1);
+					CGRect &old_r = blobs[to_replace];
 					//blobs[this_blob] = old_r;
-					for(int y_ = old_r.top; y_ <= y; ++y_) {
-						for(int x_ = old_r.left; x_ < (old_r.left + old_r.width); ++x_) {
-							if(o.pixel(x_, y_) == to_replace) {
-								o.pixel(x_, y_) = this_blob;
+					for(int y_ = old_r.origin.y; y_ <= y; ++y_) {
+						for(int x_ = old_r.origin.x; x_ < (old_r.origin.x + old_r.size.width); ++x_) {
+							if(lv::pixel(o, x_, y_) == to_replace) {
+								lv::pixel(o, x_, y_) = this_blob;
 							}
 						}
 					}
 					blobs.erase(to_replace);
-					o.pixel(x, y) = this_blob;
+					lv::pixel(o, x, y) = this_blob;
 					// Adjust rect
-					vvis::rect &r = blobs[this_blob];
-					if(x < r.left)
-						r.left = x;
-					int w = x - r.left + 1;
-					if(w > r.width)
-						r.width = w;
+					CGRect &r = blobs[this_blob];
+					if(x < r.origin.x)
+						r.origin.x = x;
+					float w = x - r.origin.x + 1;
+					if(w > r.size.width)
+						r.size.width = w;
 				}	break;
 				case 14:
 					// 7 Start new background blob
@@ -774,10 +772,9 @@ void grow_blob(const image_id i1, const channel_id icid,
 	lv::image &out_image = manager.image(o);
 	
 	// Perform operation
-	std::map<UInt8, vvis::rect> blobs =
+	std::map<UInt8, CGRect> blobs =
 		_grow_blob(src_image[icid], out_image[ocid], blob_start, blob_step);
 }
-#endif
 
 //==============================================================================
 // Hough's Transform
