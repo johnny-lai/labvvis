@@ -694,11 +694,11 @@ _grow_blob(const vImage_Buffer &a, vImage_Buffer &o, const int blob_start, const
 					lv::pixel(o, x, y) = lv::pixel(o, x, y-1);
 					// Adjust rect
 					CGRect &r = blobs[lv::pixel(o, x, y)];
-					if(x < r.origin.x)
-						r.origin.x = x;
-					float w = x - r.origin.x + 1;
-					if(w > r.size.width)
-						r.size.width = w;
+					if(y < r.origin.y)
+						r.origin.y = y;
+					float h = y - r.origin.x + 1;
+					if(h > r.size.height)
+						r.size.height = h;
 				}	break;
 				case 9:
 				case 13: {
